@@ -34,7 +34,7 @@ color:
 footer:
   copyright: soma0sd
   location:
-  social: https://soma0sd.com
+  social: '홈페이지: <a href="https://soma0sd.com">https://soma0sd.com</a>'
   credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
@@ -56,7 +56,7 @@ social:
 #   - line: Beverly Hills, CA 90210
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+# credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Build settings
 markdown: kramdown
