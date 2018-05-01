@@ -1,0 +1,46 @@
+// 각종 색상
+$color-html-bg: #263238;
+$color-layout-bg: #37474F;
+$color-theme-primary: #2196F3;
+$color-componet-bg: RGBA(255, 255, 255, .9);
+$color-primary-text: RGBA(255, 255, 255, .9);
+$color-secondary-text: RGBA(255, 255, 255, .7);
+$color-primary-sub-text: RGBA(0, 0, 0, .87);
+$color-secondary-sub-text: RGBA(0, 0, 0, .54);
+$color-dividers: RGBA(255, 255, 255, .12);
+
+body {
+  background-color: $color-html-bg;
+  color: $color-primary-text;
+}
+nav.sticky {background-color: darken($color-html-bg, .2);}
+header { background-color: $color-layout-bg;}
+hr { border-color: $color-dividers; }
+
+p { color: $color-secondary-text; }
+dl {
+  dd {color: $color-secondary-text;}
+}
+a {
+  color: inherit;
+  .fa { color: $color-secondary-text; }
+}
+#nav-title {color: $color-theme-primary;}
+.nav-btn {
+  color: $color-secondary-text;
+  border-color: $color-theme-primary;
+  &:hover {border-bottom: 3px solid $color-theme-primary}
+  &.active {border-bottom: 3px solid $color-theme-primary}
+}
+.card {
+  background-color: $color-componet-bg;
+  color: $color-primary-sub-text;
+  .sub-title {color: $color-theme-primary;}
+  .major {color: $color-secondary-sub-text;}
+  .desc {color: $color-secondary-sub-text;}
+  &.top-border {border-top: 5px solid $color-theme-primary}
+  p,
+  a {color: $color-secondary-sub-text;}
+  a .fa {color: $color-theme-primary;}
+}
+li .term {color: $color-theme-primary;}

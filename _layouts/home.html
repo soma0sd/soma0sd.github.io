@@ -1,0 +1,31 @@
+<html lang="ko">
+<head>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+  <script src="/js/jquery-3.3.1.min.js"></script>
+</head>
+<body id="home">
+  {% include navbar.html %}
+  <div id="contents-wrap">
+    <header id="section-about">
+      {% include section_about.html %}
+    </header>
+    <div id="section-works" class="section">
+      {% include section_works.html %}
+    </div>
+    <div id="section-education" class="section">
+      {% include section_education.html %}
+    </div>
+    <div id="section-skills" class="section">
+      {% include section_skills.html %}
+    </div>
+    <div id="section-contact" class="section">
+      {% include section_contact.html %}
+    </div>
+  </div>
+  <script src="/js/functions.js"></script>
+</body>
+</html>

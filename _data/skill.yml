@@ -1,0 +1,20 @@
+- name: python
+  image: /img/python.png
+  desc: |
+    * numpy를 활용한 수치해석
+    * matplotlib을 이용한 2D/3D 그래프 등
+
+- name: WordPress/php
+  image: /img/wordpress.png
+  desc: |
+    * 플러그인과 테마
+
+- name: jQuery/js
+  image: /img/jquery.png
+  desc: |
+    * 웹페이지를 위한 스크립트
+
+- name: ROOT/C++
+  image: /img/root.png
+  desc: |
+    * 수치해석 및 GUI

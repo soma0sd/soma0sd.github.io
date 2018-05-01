@@ -1,0 +1,121 @@
+
+// 그림자
+.shadow {
+  &-dp-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  &-dp-2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  &-dp-3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  &-dp-4 {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  &-dp-5 {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+}
+
+// @ 그리드
+//   컨테이너(부모요소)가 .row 클래스를 가지고 있어야 함
+//   12개 그리드로 분할
+// @ 사용 방법
+//   col 클래스와 디바이스 크기별 약어 + 그리드 수
+//   약어: s, m, l, xl
+// @ 사용예시
+//   <div class="col s3 m2 l1"></div>
+$grid-gap: 2%;  // 그리드 사이의 간격
+$grid-num: 12; // 그리드의 갯수
+@mixin gen-cols($prefix, $index){
+  &.#{$prefix}#{$index} {
+     width: (100% * $index / $grid-num)
+            - ($grid-gap * $index / $grid-num);
+  }
+}
+.row {
+  overflow: hidden;
+  display: block;
+  clear: both;
+  content: '';
+  & + & {margin-top: $grid-gap;}
+}
+.col {
+  margin-top: .5rem;
+  float: left;
+  margin-right: $grid-gap - 1%;
+  box-sizing: border-box;
+  &:last-child {margin-right: 0;}
+  @for $i from 1 through $grid-num {@include gen-cols(s, $i);}
+  @include media(m) {
+    @for $i from 1 through $grid-num {@include gen-cols(m, $i);}
+  }
+  @include media(l) {
+    @for $i from 1 through $grid-num {@include gen-cols(l, $i);}
+  }
+  @include media(xl) {
+    @for $i from 1 through $grid-num {@include gen-cols(xl, $i);}
+  }
+}
+
+// @ 감추기 & 보이기
+.show-only-s {
+  @include media(s){display: inherit}
+  @include media(m){display: none}
+}
+.hide-only-s {
+  @include media(s){display: none}
+  @include media(m){display: inherit}
+}
+
+// 정렬
+.right {
+  float: right;
+}
+#contact-box,
+#contact-form {
+  width: 100%;
+  overflow: hidden;
+}
+a.contact {margin-left: .5rem;}
+
+// 카드
+.card {
+  @extend .shadow-dp-2;
+  padding: .5rem;
+  border-radius: 2px;
+  .title {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .sub-title,
+  .major {
+    font-weight: lighter;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .logo {
+    display: block;
+    position: relative;
+    margin: .8rem auto;
+    margin-top: .8rem;
+    width: auto;
+    height: auto;
+    max-height: 4rem;
+    // filter: grayscale(1);
+  }
+  .links {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    a {margin: 0 .4rem;}
+  }
+}
+.desc {
+  font-size: .8rem;
+  @include media(m) {font-size: .9rem;}
+}

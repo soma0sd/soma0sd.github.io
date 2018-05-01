@@ -1,0 +1,12 @@
+---
+# 메인 스타일시트
+---
+// 기능모듈: 반응형 지원 믹스인 등
+@import "mixins";
+
+// 스타일 모듈: "/_sass/" 참조
+@import "fonts";
+@import "class";  // 상속요소가 있으므로 가능하면 위
+@import "color";
+@import "base_layouts";
+@import "common";

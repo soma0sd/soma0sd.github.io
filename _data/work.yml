@@ -1,0 +1,37 @@
+- name: 물리학을 위한 파이썬
+  published: 2016-2018
+  demo: https://python.soma0sd.com/
+  desc: |
+    물리 학부생을 위한 전산물리.
+    Python 배포판인 ANACONDA를 중심으로 작성
+
+- name: pyNuc
+  published: 2016-2017
+  image: img/pynuc.png
+  github: https://github.com/soma0sd/pyNuc
+  desc: |
+    python 3.5 환경에서 작성한 방사성 핵종 DB 열람 및 연산 패키지
+
+
+- name: Freethinker N-Values
+  published: 2017
+  image: img/freethinkerNval.png
+  demo: https://soma0sd.github.io/Freethinker-N-Values/
+  github: https://github.com/soma0sd/Freethinker-N-Values
+  desc: |
+    개인의 도그마를 설문을 통해 측정하여 결과를 N-값으로 보여주는
+    질문지&결과 출력 엔진
+
+- name: WP theme somad
+  published: 2017
+  github: https://github.com/soma0sd/wp-somad
+  desc: |
+    컨텐츠 중심의 meterial 디자인 테마 (워드프레스)
+
+- name: Code to Image
+  published: 2018
+  github: https://github.com/soma0sd/code-to-image
+  demo: https://soma0sd.github.io/code-to-image/
+  desc: |
+    `codeflask.js`와 `html2canvas.js`를 활용하여 만들었습니다.
+    Python 스크립트를 고정폭 이미지로 출력합니다.

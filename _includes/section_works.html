@@ -1,0 +1,28 @@
+<h1>Works</h1>
+<hr>
+<div class="row">
+  {% for data in site.data.work %}
+    <div class="card top-border col s12 m6">
+      <h1 class="title">{{ data.name }}</h1>
+      <h2 class="sub-title">{{ data.published }}</h2>
+      {% if data.image %}
+        <img class="logo" src={{data.image}}>
+      {% endif %}
+      <div class="desc">
+        {{ data.desc | markdownify }}
+      </div>
+      <div class="links">
+        {% if data.github %}
+          <a class="right" href={{data.github}}>
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        {% endif %}
+        {% if data.demo %}
+          <a class="right" href={{data.demo}}>
+            <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
