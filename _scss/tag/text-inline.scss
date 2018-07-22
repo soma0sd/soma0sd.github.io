@@ -1,0 +1,35 @@
+a {
+  background-color: transparent; // normalize: IE 10
+  text-decoration: none;
+}
+abbr[title] {
+  border-bottom: none; // normalize: Chrome
+  text-decoration: underline;  // normalize: All
+  text-decoration: underline dotted;  // normalize: All
+}
+b,
+strong {
+  font-weight: bolder;  // normalize: All
+}
+code,
+kbd,
+samp {
+  // font-family: monospace, monospace;  // normalize: All // custom/font.scss
+  font-size: 1em;  // normalize: All
+}
+small {
+  font-size: 80%;  // normalize: All
+}
+sub,
+sup {
+  font-size: 75%;  // normalize: All
+  line-height: 0;  // normalize: All
+  position: relative;  // normalize: All
+  vertical-align: baseline;  // normalize: All
+}
+sub {
+  bottom: -0.25em;  // normalize: All
+}
+sup {
+  top: -0.5em;  // normalize: All
+}

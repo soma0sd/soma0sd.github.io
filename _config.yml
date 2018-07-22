@@ -1,18 +1,17 @@
 title: soma0sd # 페이지 타이틀
-email: soma0sd@gmail.com
-description: >- # 설명이 여러줄일 때
-  soma0sd's CV
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # 홈페이지 주소
+baseurl: "" # 하위페이지일 경우 추가경로 E.g. "/blog"
 
 social:
+  email: soma0sd@gmail.com
   github: soma0sd
   facebook: soma0sd
-  twitter: soma0sd
-  instagram: soma0sd
   webpage: https://soma0sd.com
 
 # Build settings
 timezone: Asia/Seoul
 markdown: kramdown
 permalink: pretty
+
+sass:
+  sass_dir: _scss

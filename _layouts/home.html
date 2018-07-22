@@ -1,31 +1,37 @@
+<!Document html>
 <html lang="ko">
+
 <head>
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
-  <script src="/js/jquery-3.3.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ "css/style.css" | absolute_url }}">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
 </head>
-<body id="home">
-  {% include navbar.html %}
-  <div id="contents-wrap">
-    <header id="section-about">
-      {% include section_about.html %}
+
+<body>
+    <header>
+        <div id="github-user-profile"></div>
     </header>
-    <div id="section-works" class="section">
-      {% include section_works.html %}
-    </div>
-    <div id="section-education" class="section">
-      {% include section_education.html %}
-    </div>
-    <div id="section-skills" class="section">
-      {% include section_skills.html %}
-    </div>
-    <div id="section-contact" class="section">
-      {% include section_contact.html %}
-    </div>
-  </div>
-  <script src="/js/functions.js"></script>
+    <article>
+        <!-- <section id="section-education">
+            <h1>Education</h1>
+        </section> -->
+        <section id="section-github-repos">
+            <h1>GitHub Info</h1>
+            <div id="github-user-repo-list"></div>
+        </section>
+    </article>
+    <!-- <nav>nav</nav>
+    <aside>aside</aside> -->
+    <script src="{{ "js/jQuery.s0.github-view.js" | absolute_url }}"></script>
+    <script>
+        $('#github-user-profile').githubProfile();
+        $('#github-user-repo-list').githubRepos();
+    </script>
 </body>
+
 </html>

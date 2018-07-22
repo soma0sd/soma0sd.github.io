@@ -1,0 +1,14 @@
+body {
+    background: rgba(#002, 0.08);
+}
+
+article {
+    margin: auto;
+    @include media(s) {
+        max-width: 550px;
+    }
+}
+
+section {
+    padding: 1rem 0.5rem;
+}

@@ -1,0 +1,22 @@
+
+h1 {
+  font-size: 2em;  // normalize: all
+  // margin: 0.67em 0;  // normalize: all
+  margin: 0;
+  padding-bottom: 0.4rem;
+  border-bottom: getTextColor(Dividers, Light) 2px solid;
+}
+h2 {
+  margin: 0;
+}
+
+hr {
+  box-sizing: content-box; // normalize: Firefox
+  height: 0; // normalize: Firefox
+  overflow: visible;  // normalize: Edge and IE
+}
+
+pre {
+  // font-family: monospace, monospace;  // normalize: all // custom/font.scss
+  font-size: 1em;  // normalize: all
+}
