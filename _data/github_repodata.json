@@ -1,5 +1,41 @@
 [
     {
+        "created_at": "2017/11/19",
+        "description": null,
+        "full_name": "soma0sd/soma0sd.github.io",
+        "html_url": "https://github.com/soma0sd/soma0sd.github.io",
+        "language": "JavaScript",
+        "languages": [
+            [
+                "JavaScript",
+                2638
+            ],
+            [
+                "TypeScript",
+                2388
+            ],
+            [
+                "HTML",
+                2295
+            ],
+            [
+                "Python",
+                2057
+            ],
+            [
+                "CSS",
+                1321
+            ],
+            [
+                "Ruby",
+                1139
+            ]
+        ],
+        "name": "soma0sd.github.io",
+        "pages_url": "https://soma0sd.github.io/soma0sd.github.io",
+        "updated_at": "2020/02/24"
+    },
+    {
         "created_at": "2020/01/05",
         "description": "테라리아 한글화 지원 모드",
         "full_name": "soma0sd/tModKoreanTranslator",
@@ -62,30 +98,6 @@
         "name": "autowinpy",
         "pages_url": "https://soma0sd.github.io/autowinpy",
         "updated_at": "2019/12/27"
-    },
-    {
-        "created_at": "2017/11/19",
-        "description": null,
-        "full_name": "soma0sd/soma0sd.github.io",
-        "html_url": "https://github.com/soma0sd/soma0sd.github.io",
-        "language": "CSS",
-        "languages": [
-            [
-                "CSS",
-                25247
-            ],
-            [
-                "JavaScript",
-                6954
-            ],
-            [
-                "HTML",
-                1364
-            ]
-        ],
-        "name": "soma0sd.github.io",
-        "pages_url": "https://soma0sd.github.io/soma0sd.github.io",
-        "updated_at": "2019/12/26"
     },
     {
         "created_at": "2018/07/07",
