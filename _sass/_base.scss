@@ -1,0 +1,57 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #90CAF9;
+}
+
+section {
+    margin: auto;
+    max-width: 680px;
+    a {
+        text-decoration: none;
+        color: #9A9A9A;
+    }
+}
+section#github_repos {
+    .repos_item {
+        background: #FDFDFF;
+        margin-bottom: 0.2rem;
+        border: 2px #BBB solid;
+        border-radius: 5px;
+        padding: 0.3rem;
+    }
+    .title-box {
+        display: flex;
+        .name {
+            margin: 0;
+            flex-grow: 1;
+        }
+        .github_pages {
+            margin-left: 0.3rem;
+        }
+    }
+    .date_warpper {
+        display: flex;
+        margin: 0.1rem 0;
+        .updated_at {
+            flex-grow: 1;
+        }
+    }
+    .languages {
+        display: flex;
+        width: 100%;
+        .languages_item {
+            display: inline-block;
+            margin: 0.1rem;
+            padding: 1px 2px;
+        }
+    }
+    .description {
+        margin: 0;
+        padding: 0.3rem 0;
+        color: #555;
+    }
+}

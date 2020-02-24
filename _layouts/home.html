@@ -1,37 +1,35 @@
-<!Document html>
-<html lang="ko">
+---
+layout: default
+---
+<section id="github_repos">
+{%- assign lang_color = site.data.github_language_colors -%}
+{%- for repo in site.data.github_repodata -%}
+    <div class="repos_item">
+        <div class="title-box">
+            <h2 class="name">{{ repo.name }}</h2>
+            <a href="{{ repo.html_url }}" class="gitgub_home fas fa-file-code fa-2x" alt="Repository"></a>
+            {%- if repo.pages_url != "" -%}
+                <a href="{{ repo.pages_url }}" class="github_pages fas fa-book fa-2x" alt="Page"></a>
+            {%- endif -%}
+        </div>
+        <div class="date_warpper">
+            <span class="updated_at">updated: <b>{{ repo.updated_at }}</b></span>
+            <span class="created_at">created: <b>{{ repo.created_at }}</b></span>
+        </div>
+        <div class="languages">
+        {%- for lang in repo.languages -%}
+        {%- assign c = lang[0] -%}
+            <sapn class="languages_item"
+                data-lines="{{ lang[1] }}"
+                style="background-color: {{ lang_color[c].background-color }};
+                color: {{ lang_color[c].color }};
+                flex-grow: {{ lang[1] }};">
+                {{ lang[0] }}
+            </sapn>
+        {%- endfor -%}
+        </div>
+        <p class="description">{{ repo.description }}</p>
+    </div>
+{%- endfor -%}
+</section>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.title }}</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ "css/style.css" | absolute_url }}">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
-</head>
-
-<body>
-    <header>
-        <div id="github-user-profile"></div>
-    </header>
-    <article>
-        <!-- <section id="section-education">
-            <h1>Education</h1>
-        </section> -->
-        <section id="section-github-repos">
-            <h1>GitHub Info</h1>
-            <div id="github-user-repo-list"></div>
-        </section>
-    </article>
-    <!-- <nav>nav</nav>
-    <aside>aside</aside> -->
-    <script src="{{ "js/jQuery.s0.github-view.js" | absolute_url }}"></script>
-    <script>
-        $('#github-user-profile').githubProfile();
-        $('#github-user-repo-list').githubRepos();
-    </script>
-</body>
-
-</html>
