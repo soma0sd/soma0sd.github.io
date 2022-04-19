@@ -2,6 +2,45 @@
 <html lang="ko">
     {% include head.html %}
     <body class="layout-{{ page.layout | default: layout.layout}}">
-        {{ content }}
+        <aside>
+            {%- assign userdata = site.data.github_api_user.data.user -%}
+            <div id="user-avatar">
+                <img class="rounded" src="{{ userdata.avatarUrl }}" title="User Avatar">
+            </div>
+            <h1>{{ userdata.name }}</h1>
+            <p id="user-info">
+                <span class="material-icons">update</span>
+                <time class="local-time" datetime="{{ userdata.updatedAt }}"></time>
+                <br>
+                <span class="material-icons">create</span>
+                <time class="local-time" datetime="{{ userdata.createdAt }}"></time>
+                <br>
+                <span class="material-icons">location_on</span>
+                {{ userdata.location }}
+            </p>
+            <p id="user-bio" class="desc">{{ userdata.bio }}</p>
+        </aside>
+        <main>
+            {{ content }}
+        </main>
     </body>
+    <script defer>
+        function time2local(elem){
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            let datetime = new Date(elem.getAttribute("datetime"));
+            elem.innerText = datetime.toLocaleDateString(undefined, options);
+        }
+        function formatDelimiter(elem) {
+            let regexp = /\B(?=(\d{3})+(?!\d))/g;
+            let num = elem.getAttribute("data-delimiter");
+            elem.innerText = num.toString().replace(regexp, ',');
+        }
+        document.querySelectorAll("time.local-time").forEach((elem) => {
+            time2local(elem);
+        });
+        document.querySelectorAll("[data-delimiter]").forEach((elem) => {
+            formatDelimiter(elem);
+        });
+
+    </script>
 </html>

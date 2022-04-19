@@ -1,0 +1,53 @@
+{%- assign repo = include.repo -%}
+{%- assign repo_size = 0 -%}
+{%- for language in repo.languages.edges -%}
+    {%- assign repo_size = repo_size | plus: language.size -%}
+{%- endfor -%}
+<li class="repo-item">
+    <p class="repo-datetime">
+        <span>
+            <span class="material-icons">update</span>
+            <time class="local-time" datetime="{{ repo.pushedAt }}"></time>
+        </span>
+        <span>
+            <span class="material-icons">create</span>
+            <time class="local-time" datetime="{{ repo.createdAt }}"></time>
+        </span>
+    </p>
+    <h2>
+        <a href="{{ repo.url }}">
+            <span>{{ repo.owner.login }}/</span>
+            <span>{{ repo.name }}</span>
+        </a>
+    </h2>
+    <p class="repo-desc">{{ repo.description }}</p>
+    <p class="repo-size">
+        <span class="material-icons">code</span>
+        <span data-delimiter="{{ repo_size }}"></span>
+        bytes
+    </p>
+    <div class="repo-languages">
+        <div class="languages-progress">
+            {%- for language in repo.languages.edges -%}
+                {%- assign code_percent = language.size | times: 100.0 | divided_by: repo_size | round: 1 -%}
+                <span style="background-color: {{ language.node.color }}; width: {{ code_percent }}%;"></span>
+            {%- endfor -%}
+        </div>
+        <ul class="languages-list">
+            {%- for language in repo.languages.edges -%}
+                <li>
+                    <svg fill="{{ language.node.color }}" aria-hidden="true" height="16" width="16" viewbox="0 0 16 16" version="1.1" data-view-component="true">
+                        <path d="M8 4a4 4 0 100 8 4 4 0 000-8z" fill-rule="evenodd"></path>
+                    </svg>
+                    <span class="name">
+                        {{ language.node.name }}
+                    </span>
+                    <span class="size">
+                        {{ language.size | times: 100.0 | divided_by: repo_size | round: 1 }}
+                        %
+                    </span>
+                </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+</li>

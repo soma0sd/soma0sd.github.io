@@ -29,10 +29,25 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username: soma0sd
 
+repositories:
+  - CNU-Computer-Physics/CNU-Computer-Physics.github.io
+  - CNU-Computer-Physics/Example-and-Practice
+
 # Build settings
 # theme: minima
-# plugins:
-#   - jekyll-feed
+plugins:
+  - jekyll-github-metadata
+  - jekyll-readme-index
+  - jekyll-relative-links
+
+readme_index:
+  enabled: true
+  remove_originals: false
+  with_frontmatter: false
+
+relative_links:
+  enabled: true
+  collections: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
