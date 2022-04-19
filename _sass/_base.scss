@@ -2,25 +2,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+// Text Color
 $high-emphasis: rgba(255, 255, 255, 0.87);
 $medium-emphasis: rgba(255, 255, 255, 0.60);
 $disabled-text: rgba(255, 255, 255, 0.38);
 
-// font
+// Text font
 body {font-family: 'Noto Sans KR', sans-serif}
 code {font-family: 'Nanum Gothic Coding', monospace}
 
+
+$aside-width: 300px;
+$article-width: 600px;
+
 //layout
+@mixin small-screen {
+    @media (max-width: #{$aside-width + $article-width}) {
+        @content;
+    }
+}
+@mixin large-screen {
+    @media (min-width: #{$aside-width + $article-width + 100px}) {
+        @content;
+    }
+}
 body {
     background-color: #263238;
     display: grid;
-    grid-template-columns: 300px auto;
     color: $high-emphasis;
+    grid-template-columns: $aside-width auto;
+    @include small-screen {
+        display: block;
+    }
+    @include large-screen {
+        grid-template-columns: 1fr 2fr;
+    }
 }
 
 aside {
     padding: 1rem 0.5rem;
     min-height: 1vh;
+    max-width: $aside-width;
+    margin: 0 auto;
+    @include small-screen {
+        max-width: $article-width;
+    }
     h1 {
         padding-left: 1rem;
         margin-bottom: 0.5rem;
@@ -64,9 +90,14 @@ img {
 
 ul.repo-container {
     list-style: none;
+    margin: 0;
+    padding: 0;
     h2, p, ul { margin: 0; padding: 0; list-style: none;}
     .material-icons { vertical-align: middle }
     .repo-item {
+        max-width: $article-width;
+        margin: auto;
+        margin-top: 1rem;
         padding: 0.5rem 1rem 2rem 1rem;
         background-color: hsla(0, 100%, 100%, 0.05);
         box-shadow:
@@ -75,7 +106,6 @@ ul.repo-container {
             0px 2px 1px -1px hsla(0,0%,0%,0.12), 
             0px 1px 3px 0px hsla(0,0%,0%,0.2);
         border-radius: 2px;
-        margin-top: 1rem;
     }
     h2 a {
         overflow-wrap: break-word;
