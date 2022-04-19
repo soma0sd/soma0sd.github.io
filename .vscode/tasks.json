@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "tsc-watch",
+            "type": "typescript",
+            "tsconfig": "tsconfig.json",
+            "problemMatcher": ["$tsc-watch"],
+            "isBackground": true,
+            "option": "watch",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            }
+        },
+        {
+            "label": "jekyll",
+            "command": "bundle exec jekyll serve",
+            "type": "shell",
+            "dependsOn":["tsc-watch"]
+        }
+    ]
+}

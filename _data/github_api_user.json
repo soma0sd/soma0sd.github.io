@@ -12,6 +12,57 @@
       "repositories": {
         "nodes": [
           {
+            "name": "soma0sd.github.io",
+            "owner": {
+              "login": "soma0sd"
+            },
+            "nameWithOwner": "soma0sd/soma0sd.github.io",
+            "description": null,
+            "createdAt": "2017-11-19T10:29:29Z",
+            "updatedAt": "2022-04-19T20:17:08Z",
+            "pushedAt": "2022-04-19T20:17:04Z",
+            "url": "https://github.com/soma0sd/soma0sd.github.io",
+            "languages": {
+              "edges": [
+                {
+                  "size": 4985,
+                  "node": {
+                    "name": "HTML",
+                    "color": "#e34c26"
+                  }
+                },
+                {
+                  "size": 4502,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                },
+                {
+                  "size": 4287,
+                  "node": {
+                    "name": "SCSS",
+                    "color": "#c6538c"
+                  }
+                },
+                {
+                  "size": 2638,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
+                  }
+                },
+                {
+                  "size": 252,
+                  "node": {
+                    "name": "Ruby",
+                    "color": "#701516"
+                  }
+                }
+              ]
+            }
+          },
+          {
             "name": "Guild-Management",
             "owner": {
               "login": "soma0sd"
@@ -228,64 +279,6 @@
                   "node": {
                     "name": "CSS",
                     "color": "#563d7c"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "name": "soma0sd.github.io",
-            "owner": {
-              "login": "soma0sd"
-            },
-            "nameWithOwner": "soma0sd/soma0sd.github.io",
-            "description": null,
-            "createdAt": "2017-11-19T10:29:29Z",
-            "updatedAt": "2021-07-21T09:33:37Z",
-            "pushedAt": "2021-07-21T09:33:34Z",
-            "url": "https://github.com/soma0sd/soma0sd.github.io",
-            "languages": {
-              "edges": [
-                {
-                  "size": 2638,
-                  "node": {
-                    "name": "JavaScript",
-                    "color": "#f1e05a"
-                  }
-                },
-                {
-                  "size": 2388,
-                  "node": {
-                    "name": "TypeScript",
-                    "color": "#2b7489"
-                  }
-                },
-                {
-                  "size": 2295,
-                  "node": {
-                    "name": "HTML",
-                    "color": "#e34c26"
-                  }
-                },
-                {
-                  "size": 2057,
-                  "node": {
-                    "name": "Python",
-                    "color": "#3572A5"
-                  }
-                },
-                {
-                  "size": 1321,
-                  "node": {
-                    "name": "SCSS",
-                    "color": "#c6538c"
-                  }
-                },
-                {
-                  "size": 1139,
-                  "node": {
-                    "name": "Ruby",
-                    "color": "#701516"
                   }
                 }
               ]

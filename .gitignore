@@ -1,7 +1,12 @@
+# jekyll
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
 
+# Github API
 .token
+
+# node.js
+node_modules/

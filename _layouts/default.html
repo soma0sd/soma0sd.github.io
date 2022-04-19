@@ -24,20 +24,12 @@
             {{ content }}
         </main>
     </body>
-    <script defer>
-        function time2local(elem){
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            let datetime = new Date(elem.getAttribute("datetime"));
-            elem.innerText = datetime.toLocaleDateString(undefined, options);
-        }
+    <script defer src="./assets/script.js">
         function formatDelimiter(elem) {
             let regexp = /\B(?=(\d{3})+(?!\d))/g;
             let num = elem.getAttribute("data-delimiter");
             elem.innerText = num.toString().replace(regexp, ',');
         }
-        document.querySelectorAll("time.local-time").forEach((elem) => {
-            time2local(elem);
-        });
         document.querySelectorAll("[data-delimiter]").forEach((elem) => {
             formatDelimiter(elem);
         });
