@@ -35,7 +35,12 @@
         </div>
         <ul class="languages-list">
             {%- for language in repo.languages.edges -%}
-                <li>
+                <li
+                    class="language-data"
+                    language-name="{{ language.node.name }}"
+                    language-size="{{ language.size }}"
+                    language-color="{{ language.node.color }}"
+                >
                     <i devicon="{{ language.node.name }}" class="devicon" style="color: {{ language.node.color }}"></i>
                     <span class="name">
                         {{ language.node.name }}

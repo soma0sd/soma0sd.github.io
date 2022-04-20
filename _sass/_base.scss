@@ -155,23 +155,7 @@ ul.repo-container {
         font-size: 0.8em;
         }
     }
-    .languages-progress {
-        height: 1rem;
-        border-radius: 0.3rem;
-        display: flex;
-        overflow: hidden;
-    }
-    .languages-list {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .languages-list li {
-        vertical-align: middle;
-        margin-right: 1rem;
-    }
-    .languages-list svg {
-        vertical-align: middle;
-    }
+    
     .repo-desc,
     .repo-datetime,
     .languages-list .size {
@@ -197,62 +181,35 @@ ul.repo-container {
     }
 }
 
-
-div.repo-container {
-    max-width: 600px;
-    border-radius: 2px;
-    margin: auto;
-    margin-top: 1rem;
-    padding: 0.5rem;
-    background-color: hsla(0, 100%, 100%, 0.05);
-	box-shadow:
-		/* offset-x | offset-y | blur-radius | spread-radius | color */
-		0px 1px 1px 0px hsla(0,0%,0%,0.14), 
-		0px 2px 1px -1px hsla(0,0%,0%,0.12), 
-		0px 1px 3px 0px hsla(0,0%,0%,0.2);
-    h2, p, ul {
-        margin: 0;
-    }
-    p {
-        color: $medium-emphasis;
-        &.datetime, &.desc, .material-icons{
-            font-size: 0.9rem;
-            vertical-align: middle;
-        }
-        &.datetime, &.desc, &.code-size {
-            margin-top: 0.5rem;
-        }
-    }
-    div.progress, ul.languages {
-        margin-top: 0.5rem;
-    }
-}
-
-div.progress {
-    min-height: 1rem;
-    border-radius: 0.5rem;
+div.languages-progress {
+    height: 1rem;
+    border-radius: 0.3rem;
     display: flex;
     overflow: hidden;
 }
-ul.languages {
+ul.languages-list {
     list-style: none;
-    padding: 0.3rem;
+    margin-top: 0.5rem;
+    line-height: 1.5;
     display: flex;
     flex-wrap: wrap;
     li {
-        font-size: 0.8rem;
-        line-height: 1.5;
         vertical-align: middle;
-        padding-right: 1rem;
-    }
-    .name {
-        color: $high-emphasis;
-    }
-    .lines {
-        color: $medium-emphasis;
+        margin-right: 1rem;
     }
     svg {
-        display: inline-block;
         vertical-align: middle;
     }
+    .devicon {
+        margin-right: 0.3rem;
+    }
+    .lang-name {
+        color: $medium-emphasis;
+        margin-right: 0.3rem;
+    }
+    .lang-usage {
+        color: $disabled-text;
+    }
 }
+
+
