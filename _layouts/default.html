@@ -7,16 +7,19 @@
             <div id="user-avatar">
                 <img class="rounded" src="{{ userdata.avatarUrl }}" title="User Avatar">
             </div>
-            <h1>{{ userdata.name }}</h1>
+            <h1 id="user-name">{{ userdata.name }}</h1>
             <p id="user-info">
-                <span class="material-icons">update</span>
+                <!-- <span class="material-icons">update</span>
                 <time class="local-time" datetime="{{ userdata.updatedAt }}"></time>
-                <br>
-                <span class="material-icons">create</span>
-                <time class="local-time" datetime="{{ userdata.createdAt }}"></time>
-                <br>
-                <span class="material-icons">location_on</span>
-                {{ userdata.location }}
+                <br> -->
+                <span>
+                    <i class="devicon-github-original"></i>
+                    <time class="local-time" datetime="{{ userdata.createdAt }}"></time>
+                </span>
+                <span>
+                    <span class="material-icons">location_on</span>
+                    {{ userdata.location }}
+                </span>
             </p>
             <p id="user-bio" class="desc">{{ userdata.bio }}</p>
         </aside>

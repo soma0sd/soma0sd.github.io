@@ -1,6 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css');
 
 // Text Color
 $high-emphasis: rgba(255, 255, 255, 0.87);
@@ -8,14 +9,18 @@ $medium-emphasis: rgba(255, 255, 255, 0.60);
 $disabled-text: rgba(255, 255, 255, 0.38);
 
 // Text font
-body {font-family: 'Noto Sans KR', sans-serif}
-code {font-family: 'Nanum Gothic Coding', monospace}
-
+body { font-family: 'Noto Sans KR', sans-serif }
+code { font-family: 'Nanum Gothic Coding', monospace }
 
 $aside-width: 300px;
 $article-width: 600px;
 
 //layout
+@mixin xsmall-screen {
+    @media (max-width: 500px) {
+        @content;
+    }
+}
 @mixin small-screen {
     @media (max-width: #{$aside-width + $article-width}) {
         @content;
@@ -40,44 +45,76 @@ body {
 }
 
 aside {
-    padding: 1rem 0.5rem;
+    padding: 3rem 0.5rem 1rem 0.5rem;
     min-height: 1vh;
     max-width: $aside-width;
     margin: 0 auto;
+    display: block;
     @include small-screen {
         max-width: $article-width;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas:
+            "name avatar"
+            "info avatar"
+            "bio  avatar";
     }
-    h1 {
-        padding-left: 1rem;
-        margin-bottom: 0.5rem;
+    @include xsmall-screen {
+        grid-template-areas:
+            "name avatar"
+            "info avatar"
+            "bio  bio";
     }
-    div#user-avatar {
+    #user-avatar {
+        grid-area: avatar;
         max-width: 5rem;
         margin: auto;
+        @include small-screen {
+            padding: 0;
+            padding-left: 0.5rem;
+            max-width: 100%;
+            height: 100%;
+        }
     }
-    p {
-        padding-left: 1.5rem;
-        color: $medium-emphasis;
+    #user-name {
+        grid-area: name;
+        text-align: center;
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+        @include small-screen {
+            text-align: right;
+        }
     }
-    p#user-info {
+    #user-info {
+        grid-area: info;
+        text-align: center;
+        line-height: 1.5;
         font-size: 0.9rem;
-        .material-icons {font-size: 0.8rem}
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: $medium-emphasis;
+        .material-icons {font-size: 0.9rem}
+        @include small-screen {
+            text-align: right;
+            margin: 0.5rem 0;
+        }
     }
-    p#user-bio {
+    #user-bio {
+        grid-area: bio;
         text-align: left;
         background-color: #37474F;
         padding: 0.3rem 0.8rem;
         border-radius: 2px;
+        @include small-screen {
+            margin: 0;
+        }
     }
 }
 
 main {
     padding: 0.5rem;
-}
-
-p {
-    line-height: 1.5;
-    &.desc { color: $medium-emphasis; }
 }
 
 img {
@@ -107,12 +144,16 @@ ul.repo-container {
             0px 1px 3px 0px hsla(0,0%,0%,0.2);
         border-radius: 2px;
     }
-    h2 a {
+    h2.repo-name a {
+        font-size: 1.5rem;
         overflow-wrap: break-word;
         color: $high-emphasis;
         text-decoration: none;
         display: flex;
         flex-wrap: wrap;
+        @include small-screen {
+        font-size: 0.8em;
+        }
     }
     .languages-progress {
         height: 1rem;
