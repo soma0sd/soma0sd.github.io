@@ -36,15 +36,12 @@
         <ul class="languages-list">
             {%- for language in repo.languages.edges -%}
                 <li>
-                    <svg fill="{{ language.node.color }}" aria-hidden="true" height="16" width="16" viewbox="0 0 16 16" version="1.1" data-view-component="true">
-                        <path d="M8 4a4 4 0 100 8 4 4 0 000-8z" fill-rule="evenodd"></path>
-                    </svg>
+                    <i devicon="{{ language.node.name }}" class="devicon" style="color: {{ language.node.color }}"></i>
                     <span class="name">
                         {{ language.node.name }}
                     </span>
                     <span class="size">
-                        {{ language.size | times: 100.0 | divided_by: repo_size | round: 1 }}
-                        %
+                        {{ language.size | times: 100.0 | divided_by: repo_size | round: 1 }}%
                     </span>
                 </li>
             {%- endfor -%}
