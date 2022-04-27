@@ -2,37 +2,8 @@
 <html lang="ko">
     {% include head.html %}
     <body class="layout-{{ page.layout | default: layout.layout}}">
-        <aside>
-            {%- assign userdata = site.data.github_api_user.data.user -%}
-            <div id="user-avatar">
-                <img class="rounded" src="{{ userdata.avatarUrl }}" title="User Avatar">
-            </div>
-            <h1 id="user-name">{{ userdata.name }}</h1>
-            <p id="user-info">
-                <span>
-                    <i class="devicon-github-original"></i>
-                    <time class="local-time" datetime="{{ userdata.createdAt }}"></time>
-                </span>
-                <span>
-                    <span class="material-icons">location_on</span>
-                    {{ userdata.location }}
-                </span>
-            </p>
-            <p id="user-bio" class="desc">{{ userdata.bio }}</p>
-        </aside>
         <main>
             {{ content }}
         </main>
     </body>
-    <script defer src="./assets/script.js">
-        function formatDelimiter(elem) {
-            let regexp = /\B(?=(\d{3})+(?!\d))/g;
-            let num = elem.getAttribute("data-delimiter");
-            elem.innerText = num.toString().replace(regexp, ',');
-        }
-        document.querySelectorAll("[data-delimiter]").forEach((elem) => {
-            formatDelimiter(elem);
-        });
-
-    </script>
 </html>

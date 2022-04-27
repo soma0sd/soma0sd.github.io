@@ -1,0 +1,60 @@
+<h1>User Statistics</h1>
+{%- assign user = site.data.github_user -%}
+{%- assign lang = site.data.github_lang -%}
+{%- assign repo = site.data.github_repo -%}
+<div id="stats-info">
+    <i class="material-icons">code</i>
+    {%- assign count = 0 -%}
+    {%- for item in lang -%}
+        {%- assign count = count | plus: item[1].size -%}
+    {%- endfor -%}
+    <span class="value" number-delimiter>{{ count }}</span>
+    <span class="unit">Bytes Code</span>
+    {%- assign count = 0 -%}
+    {%- for item in repo -%}
+        {%- assign count = count | plus: 1 -%}
+    {%- endfor -%}
+    <i class="material-icons">storage</i>
+    <span class="value">{{ count }}</span>
+    <span class="unit">Repositories</span>
+    {%- assign count = 0 -%}
+    {%- for item in repo -%}
+        {%- assign count = count | plus: item.object.history.totalCount -%}
+    {%- endfor -%}
+    <i class="material-icons">commit</i>
+    <span class="value" number-delimiter>{{ count }}</span>
+    <span class="unit">Commits</span>
+    {%- assign count = 0 -%}
+    {%- for item in lang -%}
+        {%- assign count = count | plus: 1 -%}
+    {%- endfor -%}
+    <i class="devicon-devicon-plain"></i>
+    <span class="value">{{ count }}</span>
+    <span class="unit">Languages</span>
+</div>
+<div id="langs-info">
+    {%- assign count = 0 -%}
+    {%- assign size = 0 -%}
+    {%- for item in lang -%}
+        {%- assign count = count | plus: item[1].size -%}
+        {% if size < item[1].size %}
+            {%- assign size = item[1].size -%}
+        {% endif %}
+    {%- endfor -%}
+    {{ lang[0] }}
+    <div class="bar-warp">
+        {%- for item in lang -%}
+            {%- assign percent = item[1].size | times: 90.0 | divided_by: size | round: 2 -%}
+            {%- assign color = item[1].color -%}
+            {%- assign value = item[1].size | times: 100.0 | divided_by: count | round: 2 -%}
+            <div class="bar-item">
+                <span class="bar" style="width: {{ percent }}%;background-color: {{ color }};"></span>
+                <span class="info">
+                    <i devicon="{{ item[0] }}" class="devicon" style="color: {{ color }}"></i>
+                    <span class="name">{{ item[0] }}</span>
+                    <span class="value">{{ value }}%</span>
+                </span>
+            </div>
+        {%- endfor -%}
+    </div>
+</div>

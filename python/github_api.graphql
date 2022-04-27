@@ -1,0 +1,43 @@
+{
+  viewer {
+    name
+    email
+    bio
+    location
+    company
+    url
+    websiteUrl
+    avatarUrl
+    createdAt
+    updatedAt
+    repositories(first: 100, orderBy: { field: UPDATED_AT, direction: DESC }) {
+      nodes {
+        nameWithOwner
+        description
+        createdAt
+        updatedAt
+        pushedAt
+        url
+        homepageUrl
+        isArchived
+        isPrivate
+        object(expression: "HEAD") {
+          ... on Commit {
+            history {
+              totalCount
+            }
+          }
+        }
+        languages(first: 100, orderBy: { field: SIZE, direction: DESC }) {
+          edges {
+            size
+            node {
+              name
+              color
+            }
+          }
+        }
+      }
+    }
+  }
+}

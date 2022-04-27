@@ -18,10 +18,28 @@
             }
         },
         {
+            "label": "github",
+            "type": "shell",
+            "command": "/bin/python ${workspaceFolder}/python/github_api.py",
+            "isBackground": true,
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            }
+        },
+        {
             "label": "jekyll",
             "command": "bundle exec jekyll serve",
             "type": "shell",
-            "dependsOn":["tsc-watch"]
+            "dependsOn":["tsc-watch", "github"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }

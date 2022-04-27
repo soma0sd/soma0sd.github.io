@@ -5,7 +5,7 @@ function localTimeConvert(elem) {
 }
 function numberDelimiterFormat(elem) {
     const regex = /\B(?=(\d{3})+(?!\d))/g;
-    let num = elem.getAttribute("number-delimiter");
+    let num = Number(elem.innerText);
     elem.innerHTML = num.toString().replace(regex, ",");
 }
 const langDeviconDict = {

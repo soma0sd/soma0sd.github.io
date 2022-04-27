@@ -1,0 +1,36 @@
+{%- assign user = include.data -%}
+<div class="avatar">
+    <img class="rounded" src="{{ user.avatarUrl }}" title="User Avatar">
+</div>
+<h1 class="name">{{ userdata.name }}</h1>
+<p class="bio">{{ user.bio }}</p>
+<ul class="personal">
+    <li>
+        <i class="material-icons">start</i>
+        <time class="local-time" datetime="{{ user.createdAt }}"></time>
+    </li>
+    <li>
+        <i class="material-icons">location_on</i>
+        <span>{{ user.location }}</span>
+    </li>
+    {%- if userdata.company -%}
+        <li>
+            <i class="material-icons">business</i>
+            <span>{{ user.company }}</span>
+        </li>
+    {%- endif -%}
+    <li>
+        <i class="material-icons">email</i>
+        <a href="mailto: {{ user.email }}">{{ user.email }}</a>
+    </li>
+    <li>
+        <i class="devicon-github-original"></i>
+        <a href="{{ user.url }}">{{ user.url }}</a>
+    </li>
+    {%- if userdata.websiteUrl -%}
+        <li>
+            <i class="material-icons">launch</i>
+            <a href="{{ user.websiteUrl }}">{{ user.websiteUrl }}</a>
+        </li>
+    {%- endif -%}
+</ul>

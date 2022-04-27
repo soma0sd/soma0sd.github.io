@@ -3,9 +3,9 @@ function localTimeConvert(elem: Element) {
     elem.innerHTML = datetime.toLocaleDateString(undefined);
 }
 
-function numberDelimiterFormat(elem: Element) {
+function numberDelimiterFormat(elem: HTMLElement) {
     const regex = /\B(?=(\d{3})+(?!\d))/g;
-    let num = elem.getAttribute("number-delimiter");
+    let num = Number(elem.innerText);
     elem.innerHTML = num!.toString().replace(regex, ",");
 }
 
@@ -27,7 +27,7 @@ const langDeviconDict: { [name: string] : string} = {
     'cmake': 'devicon-cmake-plain',
     'shell': 'devicon-bash-plain',
     'dockerfile': 'devicon-docker-plain'
-};
+}
 function setupDevicons(elem: HTMLElement) {
     let langName = elem.getAttribute("devicon")!.toLowerCase();
     if(langDeviconDict.hasOwnProperty(langName)) {
@@ -75,7 +75,7 @@ function langStats() {
 
 document.querySelectorAll("time.local-time")
     .forEach((elem) => localTimeConvert(elem));
-document.querySelectorAll("[number-delimiter]")
+document.querySelectorAll<HTMLElement>("[number-delimiter]")
     .forEach((elem) => numberDelimiterFormat(elem));
 
 langStats();

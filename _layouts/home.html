@@ -1,15 +1,19 @@
 ---
 layout: default
 ---
-<h2>Language Usage Statistics</h2>
-<div class="languages-progress" id="user-lang-progress"></div>
-<ul class="languages-list" id="user-langs-list"></ul>
-<h2>Repository List</h2>
-<ul class="repo-container">
-    {%- for data in site.data.github_api_repo -%}
-        {% include repo_info.html repo=data.data.repository%}
-    {%- endfor -%}
-    {%- for repo in site.data.github_api_user.data.user.repositories.nodes -%}
-        {% include repo_info.html repo=repo%}
-    {%- endfor -%}
-</ul>
+<section id="meta-info">
+    {% include info.html data=site.data.github_user%}
+</section>
+<header>
+    <ul>
+        <li><a href="#meta-info">Info</a></li>
+        <li><a href="#statistics-info">Stats</a></li>
+        <li><a href="#repository-info">Repos</a></li>
+    </ul>
+</header>
+<section id="statistics-info">
+    {% include stats.html %}
+</section>
+<section id="repository-info">
+    {% include repos.html %}
+</section>

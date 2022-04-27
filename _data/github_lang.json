@@ -1,0 +1,70 @@
+{
+  "C++": {
+    "size": 2684714,
+    "color": "#f34b7d"
+  },
+  "C": {
+    "size": 824911,
+    "color": "#555555"
+  },
+  "Cuda": {
+    "size": 285727,
+    "color": "#3A4E3A"
+  },
+  "Python": {
+    "size": 267125,
+    "color": "#3572A5"
+  },
+  "Jupyter Notebook": {
+    "size": 169200,
+    "color": "#DA5B0B"
+  },
+  "CMake": {
+    "size": 137857,
+    "color": "#DA3434"
+  },
+  "AGS Script": {
+    "size": 110208,
+    "color": "#B9D9FF"
+  },
+  "Shell": {
+    "size": 84437,
+    "color": "#89e051"
+  },
+  "SCSS": {
+    "size": 64962,
+    "color": "#c6538c"
+  },
+  "C#": {
+    "size": 25107,
+    "color": "#178600"
+  },
+  "HTML": {
+    "size": 24005,
+    "color": "#e34c26"
+  },
+  "JavaScript": {
+    "size": 21878,
+    "color": "#f1e05a"
+  },
+  "Pug": {
+    "size": 19181,
+    "color": "#a86454"
+  },
+  "Dockerfile": {
+    "size": 3586,
+    "color": "#384d54"
+  },
+  "TypeScript": {
+    "size": 3539,
+    "color": "#2b7489"
+  },
+  "CSS": {
+    "size": 2727,
+    "color": "#563d7c"
+  },
+  "Ruby": {
+    "size": 1291,
+    "color": "#701516"
+  }
+}

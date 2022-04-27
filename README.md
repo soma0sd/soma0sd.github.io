@@ -16,7 +16,7 @@ wsl --install
 
 > 리눅스 하위 시스템은 윈도우즈 스토어를 통해 칼리, 데비안 등으로 변경할 수 있습니다.
 
-## Jekyll 테스팅 환경 구성
+## 개발 환경 구성
 
 WSL 원격 연결을 통해 Ubuntu Bash를 실행:
 
@@ -45,10 +45,16 @@ sudo apt install npm
 npm install --save-dev typescript
 ```
 
-## Jekyll 테스팅 시작
+## 로컬 테스트 시작
 
 Ubuntu Bash:
 
 ```bash
 bundle exec jekyll serve
+```
+
+## 종속성 업데이트
+
+```bash
+bundle update
 ```
