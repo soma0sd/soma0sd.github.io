@@ -3,14 +3,19 @@
     "nameWithOwner": "soma0sd/soma0sd.github.io",
     "description": null,
     "createdAt": "2017-11-19T10:29:29Z",
-    "updatedAt": "2022-05-01T13:03:03Z",
-    "pushedAt": "2022-05-01T13:03:00Z",
+    "updatedAt": "2022-05-01T23:14:15Z",
+    "pushedAt": "2022-05-01T23:14:11Z",
     "url": "https://github.com/soma0sd/soma0sd.github.io",
     "homepageUrl": "https://soma0sd.github.io/",
     "isArchived": false,
     "isPrivate": false,
-    "commits": 28,
+    "commits": 29,
     "commit": [
+      {
+        "message": "repos list layout uppdate",
+        "url": "https://github.com/soma0sd/soma0sd.github.io/commit/37d2702d0e3f7772d1d0cfea07c5499c4eb03f24",
+        "date": "2022-05-01T23:14:05Z"
+      },
       {
         "message": "new layout",
         "url": "https://github.com/soma0sd/soma0sd.github.io/commit/bdb2294602fe2493285c2c71ac670229100cebae",
@@ -154,14 +159,14 @@
     ],
     "languages": [
       {
-        "size": 7219,
-        "name": "HTML",
-        "color": "#e34c26"
-      },
-      {
-        "size": 7191,
+        "size": 7493,
         "name": "SCSS",
         "color": "#c6538c"
+      },
+      {
+        "size": 7307,
+        "name": "HTML",
+        "color": "#e34c26"
       },
       {
         "size": 4784,
