@@ -23,7 +23,7 @@ WSL 원격 연결을 통해 Ubuntu Bash를 실행:
 ```bash
 # 패키지 목록 업데이트
 sudo apt-get update
-sudo apt-get install ruby-full build-essential zlib1g-dev
+sudo apt-get install ruby-full build-essential zlib1g-dev python3
 
 # Ruby Gems 위치 재지정
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc

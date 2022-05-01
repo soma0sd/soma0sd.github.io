@@ -5,7 +5,9 @@
             "label": "tsc-watch",
             "type": "typescript",
             "tsconfig": "tsconfig.json",
-            "problemMatcher": ["$tsc-watch"],
+            "problemMatcher": [
+                "$tsc-watch"
+            ],
             "isBackground": true,
             "option": "watch",
             "presentation": {
@@ -14,13 +16,14 @@
                 "focus": false,
                 "panel": "shared",
                 "showReuseMessage": true,
-                "clear": true
+                "clear": true,
+                "group": "jekyll"
             }
         },
         {
-            "label": "github",
+            "label": "github_API",
             "type": "shell",
-            "command": "/bin/python ${workspaceFolder}/python/github_api.py",
+            "command": "/bin/python3 ${workspaceFolder}/python/get_github_api.py",
             "isBackground": true,
             "presentation": {
                 "echo": true,
@@ -28,14 +31,27 @@
                 "focus": false,
                 "panel": "shared",
                 "showReuseMessage": true,
-                "clear": true
+                "clear": true,
+                "group": "jekyll"
             }
         },
         {
-            "label": "jekyll",
-            "command": "bundle exec jekyll serve",
+            "label": "jekyll serve",
+            "command": "JEKYLL_GITHUB_TOKEN=$(cat .token) bundle exec jekyll serve -H 0.0.0.0 -P 8080 -l",
             "type": "shell",
-            "dependsOn":["tsc-watch", "github"],
+            "dependsOn": [
+                "github_API",
+                "tsc-watch",
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true,
+                "group": "jekyll"
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true

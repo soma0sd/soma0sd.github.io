@@ -1,23 +1,20 @@
-title: soma0sd Github Page
-email: soma0sd@gmail.com
-# baseurl: ""
-# url: ""
-github_username: soma0sd
+# title: soma0sd Github Page
+# author: soma0sd
+# email: soma0sd@gmail.com
 
-repositories:
-  - CNU-Computer-Physics/CNU-Computer-Physics.github.io
-  - CNU-Computer-Physics/Example-and-Practice
+title: soma0sd 깃허브 페이지
+author: soma0sd
+email: soma0sd@gmail.com
+url: "https://soma0sd.github.io/"
 
 plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
   - jekyll-github-metadata
-  - jekyll-readme-index
-  - jekyll-relative-links
 
-readme_index:
-  enabled: true
-  remove_originals: false
-  with_frontmatter: false
-
-relative_links:
-  enabled: true
-  collections: false
+# jekyll-seo-tag PLugin
+webmaster_verifications:
+  google: XyHLbga2Eq2JzK-hhFHlpl5XQHWqc8jDEZV5hczQ7J0
+  bing: 55B06ED5B745AF3AC11DE920FEC21E9D
+locale: ko_Kr

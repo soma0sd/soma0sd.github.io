@@ -1,9 +1,151 @@
 <!DOCTYPE html>
 <html lang="ko">
-    {% include head.html %}
-    <body class="layout-{{ page.layout | default: layout.layout}}">
-        <main>
-            {{ content }}
-        </main>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ site.github.owner.avatar_url }}">
+    {% seo %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+    <script src="{{ site.baseurl }}/assets/pre_script.js"></script>
+    <script defer src="{{ site.baseurl }}/assets/post_script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#user-profile">프로필</a>
+            <a href="#user-stats">통계</a>
+            <a href="#repos-info">저장소</a>
+        </nav>
+    </header>
+    <section id="user-profile">
+        <div>
+            <div class="avatar">
+                <img src="{{ site.github.owner.avatar_url }}">
+            </div>
+            <h1>
+                <span class="name">{{ site.github.owner.name  }}</span>
+                <span class="login">{{ site.github.owner.login }}</span>
+            </h1>
+            <div>
+                {{ site.github.owner.bio }}
+            </div>
+            <ul>
+                <li>
+                    <i class="material-icons-sharp">email</i>
+                    <a href="mailto: {{ site.github.owner.email }}">{{ site.github.owner.email }}</a>
+                </li>
+                <li>
+                    <i class="devicon-github-original"></i>
+                    <a href="{{ site.github.owner.html_url }}">{{ site.github.owner.html_url }}</a>
+                </li>
+                <li>
+                    <i class="material-icons-sharp">place</i>
+                    <a href="https://maps.google.com/?q={{ site.github.owner.location }}">{{ site.github.owner.location }}</a>
+                </li>
+                <li>
+                    <i class="material-icons-sharp">dns</i>
+                    {{ site.github.owner.public_repos }}개 저장소
+                </li>
+                <li>
+                    <i class="material-icons-sharp">data_object</i>
+                    {{ site.github.owner.public_gists }}개 Gist
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="user-stats">
+        <h1>언어 통계</h1>
+        {%- assign code_sum = 0 -%}
+        {%- assign max_code = 0 -%}
+        {%- for lang in site.data.github.lang_stat -%}
+            {%- assign code_sum = code_sum | plus: lang[1].size -%}
+            {% if lang[1].size > max_code %}
+                {%- assign max_code = lang[1].size -%}
+            {% endif %}
+        {%- endfor -%}
+        <h2>
+            <i class="material-icons-sharp">code</i>
+            <span number-delimiter>{{ code_sum }}</span> Bytes
+        </h2>
+        <div id="code-lang-stats">
+            {%- for lang in site.data.github.lang_stat -%}
+            {%- assign lang_value = lang[1].size | times: 100.0 -%}
+            {%- assign lang_value = lang_value | divided_by: code_sum | round: 2 -%}
+            {%- assign lang_width = lang[1].size | times: 100.0 | divided_by: max_code -%}
+            <div class="lang-stat-item">
+                <span class="lang-name"><i devicon="{{ lang[0] }}" style="color: {{ lang[1].color }};"></i> {{ lang[0] }}</span>
+                <span class="lang-usage">{{ lang_value }}%</span>
+                <span class="lang-size"><span number-delimiter>{{ lang[1].size }}</span> Bytes</span>
+                <div class="lang-usage-bar" style="background-color: {{ lang[1].color }}; width: {{ lang_width }}%;">
+                </div>
+            </div>
+            {%- endfor -%}
+        </div>
+    </section>
+    <section id="repos-info">
+        <h1>저장소 정보</h1>
+        <ul>
+            {%- assign repo_idx = 0 -%}
+            {% for repo in site.data.github.repo %}
+            <li class="repo-item dp-1">
+                <h2>
+                    {{repo.nameWithOwner}}
+                    <a class="devicon-github-original-wordmark" href="{{ repo.url }}"></a>
+                    {% if repo.homepageUrl %}
+                        <a class="material-icons-sharp" href="{{ repo.homepageUrl }}">home</a>
+                    {% endif %}
+                </h2>
+                <span>{{ repo.description }}</span>
+                <span>
+                    <i class="material-icons-sharp">start</i>
+                    <time>{{ repo.createdAt }}</time>
+                </span>
+                <span>
+                    <i class="material-icons-sharp">update</i>
+                    <time>{{ repo.pushedAt }}</time>
+                </span>
+                <div>
+                    {%- assign total = 0 -%}
+                    {% for language in repo.languages %}
+                    {%- assign total = total | plus: language.size -%}
+                    {% endfor %}
+                    <div class="langs-bar">
+                    {% for language in repo.languages %}
+                        <div class="langs-value" style="width: {{ language.size | times: 100.0 | divided_by: total }}%; background-color: {{ language.color }}" ></div>
+                    {% endfor %}
+                    </div>
+                    <ul class="langs-list">
+                        {% for language in repo.languages %}
+                        <li>
+                            <i devicon="{{ language.name }}" style="color: {{ language.color }}" ></i>
+                            <span class="name">{{ language.name }}</span>
+                            <span class="value">{{ language.size | times: 100.0 | divided_by: total | round: 2}}%</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="commit-list-warp">
+                    <button class="commit-list-btn dp-3" onclick="switchCommitList({{repo_idx}})">
+                        <i class="material-icons-sharp">expand_more</i>
+                        <span class="text">커밋</span>
+                        <i class="material-icons-sharp">commit</i>
+                        <span>{{ repo.commits }}</span>
+                    </button>
+                    <ul class="commit-list dp-1" commit-list-idx="{{repo_idx}}">
+                        {% for commit in repo.commit %}
+                            <li>
+                                <a class="message" href="{{ commit.url }}">{{ commit.message }}</a>
+                                <i class="material-icons-sharp">schedule</i>
+                                <time>{{ commit.date }}</time>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </li>
+            {%- assign repo_idx = repo_idx | plus: 1 -%}
+            {% endfor %}
+        </ul>
+    </section>
+    {{ content }}
+</body>
 </html>

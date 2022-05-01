@@ -1,0 +1,2673 @@
+{
+  "data": {
+    "viewer": {
+      "name": "Jin SeungWan",
+      "email": "soma0sd@gmail.com",
+      "bio": "master's degree in physics & education",
+      "location": "Daejeon, South Korea",
+      "company": null,
+      "url": "https://github.com/soma0sd",
+      "websiteUrl": null,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13076492?v=4",
+      "createdAt": "2015-06-27T11:46:41Z",
+      "updatedAt": "2022-04-19T14:09:28Z",
+      "repositories": {
+        "totalCount": 18,
+        "nodes": [
+          {
+            "nameWithOwner": "soma0sd/soma0sd.github.io",
+            "description": null,
+            "createdAt": "2017-11-19T10:29:29Z",
+            "updatedAt": "2022-04-20T18:36:20Z",
+            "pushedAt": "2022-04-27T12:14:27Z",
+            "url": "https://github.com/soma0sd/soma0sd.github.io",
+            "homepageUrl": "https://soma0sd.github.io/",
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "api layout update",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/a46a6d0156b2fa19909187201cfa290efb61fd22",
+                    "committedDate": "2022-04-27T12:14:18Z"
+                  },
+                  {
+                    "message": "add language usage stat",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/0e8b243bb81786548785ad10dfef84a63f2ede84",
+                    "committedDate": "2022-04-20T16:16:55Z"
+                  },
+                  {
+                    "message": "modify layout (mobile)",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/f3456b1230336f25dac829f66cb14655cc696098",
+                    "committedDate": "2022-04-20T14:56:18Z"
+                  },
+                  {
+                    "message": "add devicons",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/a58b35d70b6a53b19207fdfac7b30692f8c5b829",
+                    "committedDate": "2022-04-20T14:55:27Z"
+                  },
+                  {
+                    "message": "change layouts",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/fa6f8c72d6257d2fde3a4eb845e7310f613d4b0c",
+                    "committedDate": "2022-04-19T23:05:14Z"
+                  },
+                  {
+                    "message": "add typescript",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/06c56802209b0656b6c79ae4a7d863a1445eee10",
+                    "committedDate": "2022-04-19T23:05:00Z"
+                  },
+                  {
+                    "message": "new style",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/8bc0e759290349ec1c5c87ed5a1f4812ba40955d",
+                    "committedDate": "2022-04-19T20:16:50Z"
+                  },
+                  {
+                    "message": "append ads.txt",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/2ecfc2e96816958695b2f7dbf7ca16d5451e360c",
+                    "committedDate": "2021-07-21T09:33:34Z"
+                  },
+                  {
+                    "message": "repos update",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/6f67eba665b116d923498a8f0e1cae731a14ffc5",
+                    "committedDate": "2020-02-24T08:56:37Z"
+                  },
+                  {
+                    "message": "update 20200224",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/b4785b791198f0d2197c0dc9d537dc16df782a72",
+                    "committedDate": "2020-02-24T06:22:57Z"
+                  },
+                  {
+                    "message": "Add files via upload",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/021f35f0d506348b01f23da2014aaae267f3e1d8",
+                    "committedDate": "2019-12-26T16:17:54Z"
+                  },
+                  {
+                    "message": "Add files via upload",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/13b3bf7aea567045f7796fdc698bad00526d2dfd",
+                    "committedDate": "2019-12-16T04:39:09Z"
+                  },
+                  {
+                    "message": "새로 만든 기능 테스트",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/0f4825e601c912383146204d26dac68f46d9815d",
+                    "committedDate": "2018-07-22T19:27:15Z"
+                  },
+                  {
+                    "message": "-fix navbar font size",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/9bfa22d3cd6bed5780d47417e5912352efdbbb10",
+                    "committedDate": "2018-05-01T09:29:15Z"
+                  },
+                  {
+                    "message": "navbar fix (delete sidebar btn)",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/6592340366a2e38d37c63b72388c5dbb3ee57fbf",
+                    "committedDate": "2018-05-01T09:10:42Z"
+                  },
+                  {
+                    "message": "soma0sd CV reset",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/d9344fe031d3ea9082205f5e6d511c4b5aa8b2ba",
+                    "committedDate": "2018-05-01T06:48:23Z"
+                  },
+                  {
+                    "message": "파일 정리",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/70580166d6e041b8343163cba7458fcd0d0e7a1e",
+                    "committedDate": "2017-12-06T09:27:30Z"
+                  },
+                  {
+                    "message": "링크 수정",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/fad40b9b4a303574eec339269b48bb5bdf1e7f04",
+                    "committedDate": "2017-12-06T09:25:18Z"
+                  },
+                  {
+                    "message": "버그 수정",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/10d36ed1e302826639dae2423c8c854e51b7e9d2",
+                    "committedDate": "2017-12-06T06:30:00Z"
+                  },
+                  {
+                    "message": "세부 조정",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/9a3af77217e3a0d4169a101787a50ae41211433c",
+                    "committedDate": "2017-12-06T06:27:26Z"
+                  },
+                  {
+                    "message": "이미지 크기 조정",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/6a6eaf346f9a14ef5511568496698b35827ba2bc",
+                    "committedDate": "2017-12-06T06:15:47Z"
+                  },
+                  {
+                    "message": "추가 개인화 및 필드 테스트",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/24a4af8fa7ac8ff8546593d0d1427d291c44c61d",
+                    "committedDate": "2017-12-06T06:13:45Z"
+                  },
+                  {
+                    "message": "개인화",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/feed6db366d64804ddd6ebbec22c1576700c56ed",
+                    "committedDate": "2017-12-06T05:23:35Z"
+                  },
+                  {
+                    "message": "Theme 적용",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/e62dcc9f309e67ec5019db7e0b1413967cb81a1d",
+                    "committedDate": "2017-12-06T05:19:19Z"
+                  },
+                  {
+                    "message": "permalink test",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/467466b896403ad352a6c37f722f16e9a648bdf3",
+                    "committedDate": "2017-12-06T04:23:30Z"
+                  },
+                  {
+                    "message": "Set theme jekyll-theme-cayman",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/b0a9764562ebcb21bd4db4823ec98c7148864108",
+                    "committedDate": "2017-12-06T04:08:25Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/3c1afa24ff2784d733f30f5b35548264175270fb",
+                    "committedDate": "2017-11-19T10:29:30Z"
+                  }
+                ],
+                "totalCount": 27
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 7991,
+                  "node": {
+                    "name": "SCSS",
+                    "color": "#c6538c"
+                  }
+                },
+                {
+                  "size": 7251,
+                  "node": {
+                    "name": "HTML",
+                    "color": "#e34c26"
+                  }
+                },
+                {
+                  "size": 3540,
+                  "node": {
+                    "name": "TypeScript",
+                    "color": "#2b7489"
+                  }
+                },
+                {
+                  "size": 2569,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                },
+                {
+                  "size": 74,
+                  "node": {
+                    "name": "Ruby",
+                    "color": "#701516"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/Guild-Management",
+            "description": "Management Simulation Game",
+            "createdAt": "2022-01-22T18:45:07Z",
+            "updatedAt": "2022-01-22T19:26:28Z",
+            "pushedAt": "2022-01-24T09:34:51Z",
+            "url": "https://github.com/soma0sd/Guild-Management",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "fix readme",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/33cb8a5aeaab75f4367f0ae460e78ce647367698",
+                    "committedDate": "2022-01-24T09:32:00Z"
+                  },
+                  {
+                    "message": "append world class",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/bdf5c8b519c7fb07ed71d9c2ffbf5287032ec79f",
+                    "committedDate": "2022-01-24T09:32:00Z"
+                  },
+                  {
+                    "message": "update dev env",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/1b8e26469df83218289f99149239ae3f9bdd3cfd",
+                    "committedDate": "2022-01-24T09:32:00Z"
+                  },
+                  {
+                    "message": "update init v0.1.0",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/93f993e4b38a18749fa2d790f90597cd889d84e5",
+                    "committedDate": "2022-01-24T09:32:00Z"
+                  },
+                  {
+                    "message": "dev setttings",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/4d3fd49cd60f91141103b4247ef5abc9669f1619",
+                    "committedDate": "2022-01-24T09:32:00Z"
+                  },
+                  {
+                    "message": "remove numpy",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/bb3fd04e785eadabfc9e6514201797627a6036f6",
+                    "committedDate": "2022-01-24T09:32:00Z"
+                  },
+                  {
+                    "message": "update v0.0.1",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/0f89d5f78c8185b8516d5564cd01da7978eee5a3",
+                    "committedDate": "2022-01-22T19:26:25Z"
+                  },
+                  {
+                    "message": "개발환경 변수",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/a697e821b583481b6716eae39059ca3bd2b1ddbb",
+                    "committedDate": "2022-01-22T19:26:25Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/804303ab892d11cb4dcafaec270a54337502d55b",
+                    "committedDate": "2022-01-22T18:45:08Z"
+                  }
+                ],
+                "totalCount": 9
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 9019,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/jetson-inference",
+            "description": "Hello AI World guide to deploying deep-learning inference networks and deep vision primitives with TensorRT and NVIDIA Jetson.",
+            "createdAt": "2021-12-22T13:49:52Z",
+            "updatedAt": "2022-01-10T03:26:03Z",
+            "pushedAt": "2022-01-10T03:25:56Z",
+            "url": "https://github.com/soma0sd/jetson-inference",
+            "homepageUrl": "https://developer.nvidia.com/embedded/twodaystoademo",
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "update utils",
+                    "url": "https://github.com/soma0sd/jetson-inference/commit/7bc8f88bdac0fa6422acf70180b37bffd27c6c9e",
+                    "committedDate": "2022-01-10T03:25:48Z"
+                  },
+                  {
+                    "message": "append trt_pose module",
+                    "url": "https://github.com/soma0sd/jetson-inference/commit/3af0cc85194b3802882c7a4ec85552a300583009",
+                    "committedDate": "2021-12-30T01:39:48Z"
+                  },
+                  {
+                    "message": "add camera deps",
+                    "url": "https://github.com/soma0sd/jetson-inference/commit/e26f78cdd7650f98b96ea322ed46592b9d6760c6",
+                    "committedDate": "2021-12-22T17:21:56Z"
+                  },
+                  {
+                    "message": "remove submodules",
+                    "url": "https://github.com/soma0sd/jetson-inference/commit/466e3f5ca247d91401c58c38b4dea33d14695839",
+                    "committedDate": "2021-12-22T15:24:24Z"
+                  },
+                  {
+                    "message": "commit message",
+                    "url": "https://github.com/soma0sd/jetson-inference/commit/1c592b8eb7ee6382755d04a0539d2c5febefb5e0",
+                    "committedDate": "2021-12-22T14:51:02Z"
+                  }
+                ],
+                "totalCount": 5
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 833321,
+                  "node": {
+                    "name": "C++",
+                    "color": "#f34b7d"
+                  }
+                },
+                {
+                  "size": 84437,
+                  "node": {
+                    "name": "Shell",
+                    "color": "#89e051"
+                  }
+                },
+                {
+                  "size": 64218,
+                  "node": {
+                    "name": "Cuda",
+                    "color": "#3A4E3A"
+                  }
+                },
+                {
+                  "size": 40255,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                },
+                {
+                  "size": 13859,
+                  "node": {
+                    "name": "C",
+                    "color": "#555555"
+                  }
+                },
+                {
+                  "size": 13519,
+                  "node": {
+                    "name": "CMake",
+                    "color": "#DA3434"
+                  }
+                },
+                {
+                  "size": 3586,
+                  "node": {
+                    "name": "Dockerfile",
+                    "color": "#384d54"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/jetson-utils",
+            "description": "C++/Python Linux utility wrappers for NVIDIA Jetson - camera, codecs, CUDA, GStreamer, HID, OpenGL/XGL",
+            "createdAt": "2021-12-22T13:50:12Z",
+            "updatedAt": "2022-01-06T05:55:57Z",
+            "pushedAt": "2022-01-06T05:55:54Z",
+            "url": "https://github.com/soma0sd/jetson-utils",
+            "homepageUrl": "",
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "ignore videoOutput sleep",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/e4846c56a99fface1a352385af463d22926dcb6c",
+                    "committedDate": "2022-01-06T05:55:47Z"
+                  },
+                  {
+                    "message": "line width fix",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/cd19047d6ef858f9cbc87d1805921925a386039d",
+                    "committedDate": "2021-12-30T01:38:29Z"
+                  },
+                  {
+                    "message": "border box and border eclipse",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/2e8ff97873f0e8981277787b9b00dcffc77cf90c",
+                    "committedDate": "2021-12-23T21:42:34Z"
+                  },
+                  {
+                    "message": "add cudaDrawEclipse",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/691cf6c5257dc4c374ad6a0b44cef64500325477",
+                    "committedDate": "2021-12-23T20:36:50Z"
+                  },
+                  {
+                    "message": "add search flag: soma0sd modification:",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/20944b083caef94e126ee7e01f0f97853a2712e5",
+                    "committedDate": "2021-12-23T19:09:13Z"
+                  },
+                  {
+                    "message": "add intervideosink protocol",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/3ef170e181b1565e8413d90cd086ba4b286f3d6d",
+                    "committedDate": "2021-12-23T18:14:26Z"
+                  },
+                  {
+                    "message": "commit message",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/c67668d095381eeb448b6a4108de9e0e2db65965",
+                    "committedDate": "2021-12-22T14:59:20Z"
+                  }
+                ],
+                "totalCount": 7
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 1851393,
+                  "node": {
+                    "name": "C++",
+                    "color": "#f34b7d"
+                  }
+                },
+                {
+                  "size": 811052,
+                  "node": {
+                    "name": "C",
+                    "color": "#555555"
+                  }
+                },
+                {
+                  "size": 221509,
+                  "node": {
+                    "name": "Cuda",
+                    "color": "#3A4E3A"
+                  }
+                },
+                {
+                  "size": 124338,
+                  "node": {
+                    "name": "CMake",
+                    "color": "#DA3434"
+                  }
+                },
+                {
+                  "size": 20713,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/Tistory-Simple-Skin",
+            "description": null,
+            "createdAt": "2021-12-14T10:15:29Z",
+            "updatedAt": "2021-12-19T13:43:25Z",
+            "pushedAt": "2022-04-29T16:52:17Z",
+            "url": "https://github.com/soma0sd/Tistory-Simple-Skin",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "fix readme",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/01159f1859d43bca780c3bad2f2798fbfbc7738b",
+                    "committedDate": "2021-12-19T13:43:14Z"
+                  },
+                  {
+                    "message": "add new colorsets",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/0e7575997e5c87aaf30d3141661480375ea3de9c",
+                    "committedDate": "2021-12-19T13:26:39Z"
+                  },
+                  {
+                    "message": "comments add scripts",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/6d6ad042d24ebead598f8c3d5756f0091ab3d627",
+                    "committedDate": "2021-12-19T13:26:39Z"
+                  },
+                  {
+                    "message": "git flow fix",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/3e4f0efed0e8a56fea98ec16e5b67a4c981fe408",
+                    "committedDate": "2021-12-19T13:26:39Z"
+                  },
+                  {
+                    "message": "Merge pull request #1 from soma0sd/v1.0\n\nv1.0 version init",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/99945349b77cc39a6d4a99b0ceb0c0a68540268e",
+                    "committedDate": "2021-12-15T13:11:16Z"
+                  },
+                  {
+                    "message": "do not linting",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/bb0ac3d26f544daa9342ebebbd06094601b49c22",
+                    "committedDate": "2021-12-15T13:09:56Z"
+                  },
+                  {
+                    "message": "version init",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/f185d0bc758067dd840f4d21769019f901582032",
+                    "committedDate": "2021-12-15T13:05:29Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/ab5a7b2ec56772dcbd56d090275c291aa6fa78ec",
+                    "committedDate": "2021-12-14T10:15:32Z"
+                  }
+                ],
+                "totalCount": 8
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 19181,
+                  "node": {
+                    "name": "Pug",
+                    "color": "#a86454"
+                  }
+                },
+                {
+                  "size": 1951,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/tModKoreanTranslator",
+            "description": "테라리아 한글화 지원 모드",
+            "createdAt": "2020-01-05T07:30:44Z",
+            "updatedAt": "2021-10-26T08:37:28Z",
+            "pushedAt": "2020-01-14T13:03:11Z",
+            "url": "https://github.com/soma0sd/tModKoreanTranslator",
+            "homepageUrl": null,
+            "isArchived": true,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "0.4.3 메타만 있는 모드가 있었다고...?",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/61a293a9e24786350b05a5a8d584c47167a4f430",
+                    "committedDate": "2020-01-14T12:57:19Z"
+                  },
+                  {
+                    "message": "0.4.2 빼먹은 예외처리 추가",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/e9c75b23f1176fa596a7978043e28e0a0d170caa",
+                    "committedDate": "2020-01-14T12:12:40Z"
+                  },
+                  {
+                    "message": "0.4.1 오타 수정",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/3d41c725edd7ab958202d01fb629834cffd2c46a",
+                    "committedDate": "2020-01-13T21:10:39Z"
+                  },
+                  {
+                    "message": "0.4.1 번역자 모드 오작동 수정",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/edf237700b480173c84ea0a9d7d316796f3193b8",
+                    "committedDate": "2020-01-13T21:01:24Z"
+                  },
+                  {
+                    "message": "0.4.0",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/fe209de04ffd074b3a1d6bd44930a7ce8075a3c0",
+                    "committedDate": "2020-01-13T16:44:34Z"
+                  },
+                  {
+                    "message": "v0.3.0",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/f16347bd7e5e2c82fd72f5c446145e27aeb13081",
+                    "committedDate": "2020-01-10T05:52:55Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/ebc63412ff2b5ae3a7fd260d7cf067f9fa7a9137",
+                    "committedDate": "2020-01-05T07:30:45Z"
+                  }
+                ],
+                "totalCount": 7
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 25107,
+                  "node": {
+                    "name": "C#",
+                    "color": "#178600"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/autowinpy",
+            "description": "윈도우 자동화 패키지 (개발 중)",
+            "createdAt": "2019-12-14T15:23:20Z",
+            "updatedAt": "2021-10-23T14:23:33Z",
+            "pushedAt": "2022-03-12T00:09:52Z",
+            "url": "https://github.com/soma0sd/autowinpy",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "Bump babel from 2.7.0 to 2.9.1\n\nBumps [babel](https://github.com/python-babel/babel) from 2.7.0 to 2.9.1.\n- [Release notes](https://github.com/python-babel/babel/releases)\n- [Changelog](https://github.com/python-babel/babel/blob/master/CHANGES)\n- [Commits](https://github.com/python-babel/babel/compare/v2.7.0...v2.9.1)\n\n---\nupdated-dependencies:\n- dependency-name: babel\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/74673d424e40c26b6e1c7a4e920623c623a7cfb6",
+                    "committedDate": "2021-10-23T14:23:30Z"
+                  },
+                  {
+                    "message": "Merge pull request #12 from soma0sd/dependabot/pip/pillow-8.3.2\n\nBump pillow from 6.2.1 to 8.3.2",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/c1d7cada6a696e57d82bf2e27dedb5594cb16acf",
+                    "committedDate": "2021-09-15T18:37:40Z"
+                  },
+                  {
+                    "message": "Bump pillow from 6.2.1 to 8.3.2\n\nBumps [pillow](https://github.com/python-pillow/Pillow) from 6.2.1 to 8.3.2.\n- [Release notes](https://github.com/python-pillow/Pillow/releases)\n- [Changelog](https://github.com/python-pillow/Pillow/blob/master/CHANGES.rst)\n- [Commits](https://github.com/python-pillow/Pillow/compare/6.2.1...8.3.2)\n\n---\nupdated-dependencies:\n- dependency-name: pillow\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/d6dd06a2fd840bbaca2a367b4a078bb3d5cfb14f",
+                    "committedDate": "2021-09-08T01:32:57Z"
+                  },
+                  {
+                    "message": "bleach 보안경고 대응",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/e90008c90493a4bb6d74244037f5f1ea698880d6",
+                    "committedDate": "2020-02-25T03:53:10Z"
+                  },
+                  {
+                    "message": "bleach 보안경고 대응",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/679c5311b3d98bc8783d8dee6aa51372d2679d6e",
+                    "committedDate": "2020-02-25T03:52:06Z"
+                  },
+                  {
+                    "message": "업데이트 내역 변경",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/1086c6458f35b21ce4a55668afd9fdb51b7957ee",
+                    "committedDate": "2019-12-27T04:39:03Z"
+                  },
+                  {
+                    "message": "개발환경 종속성 관리",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/ece446f1a4bce21e330306017e455c6ecd990287",
+                    "committedDate": "2019-12-27T04:34:03Z"
+                  },
+                  {
+                    "message": "문서 업데이트",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/7d1cbc16e3933c1973324eaf938ecb8002991328",
+                    "committedDate": "2019-12-27T04:12:23Z"
+                  },
+                  {
+                    "message": "클릭, 드래그 기능 추가",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/ae54f6a7445756bc92f685b0d7c63f540e42cf7c",
+                    "committedDate": "2019-12-27T04:11:24Z"
+                  },
+                  {
+                    "message": "터미널 표시 방식 제작",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/2fb0d16a32142473b4f3ca1433d861640481c956",
+                    "committedDate": "2019-12-27T04:09:45Z"
+                  },
+                  {
+                    "message": "튜토리얼 및 문서화 업데이트",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/c1a61715f151041dbc4dc207cf70ee474ee9ad6d",
+                    "committedDate": "2019-12-26T16:12:43Z"
+                  },
+                  {
+                    "message": "0.4.1 + 재문서화",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/e1dcee3b8165470ec2c954ce144e9107e0311846",
+                    "committedDate": "2019-12-26T11:40:37Z"
+                  },
+                  {
+                    "message": "tk 지원기능 복구",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/97011db1e8980200389aa69851d743b161f70cd2",
+                    "committedDate": "2019-12-26T11:25:38Z"
+                  },
+                  {
+                    "message": "버그 수정",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/2b6b31b4f73aedcd4021800eebae5682d6fe2932",
+                    "committedDate": "2019-12-26T11:24:34Z"
+                  },
+                  {
+                    "message": "0.4.0 매뉴얼 업데이트",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/a16bb37be8b39a49898758c2035ef6e2dbfa4ab2",
+                    "committedDate": "2019-12-25T17:08:15Z"
+                  },
+                  {
+                    "message": "0.4.0 패키지 구조 대규모 변경, 기존 기능 복구",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/8ef44d0f93b3d4c7883cc9a0a3bc3eaba081c31e",
+                    "committedDate": "2019-12-25T16:58:15Z"
+                  },
+                  {
+                    "message": "컴파일된 파일 제거",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/0e84b8d1ef07a4fe93f953b3aeb60c4ff1685da9",
+                    "committedDate": "2019-12-25T16:56:15Z"
+                  },
+                  {
+                    "message": "find_window 버그 수정",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/df01711596eee7465c202beab5a571afa0fdbee9",
+                    "committedDate": "2019-12-19T08:05:28Z"
+                  },
+                  {
+                    "message": "파일 제외규칙 변경",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/c2d7a264f48441d7276e6013b8cf4dfb0ec45522",
+                    "committedDate": "2019-12-19T05:04:22Z"
+                  },
+                  {
+                    "message": "update 0.3.1",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/843b526f631b3c3d17c9f694d0d19a0e3c6d57e1",
+                    "committedDate": "2019-12-17T14:56:25Z"
+                  },
+                  {
+                    "message": "tk support bug fix",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/75bac19d91829b0b655a02e16448a8ef418bc17d",
+                    "committedDate": "2019-12-17T14:09:11Z"
+                  },
+                  {
+                    "message": "기본 함수 추가",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/567eb4cc18d28de3753a2fd6745e2ccfcbdc43b9",
+                    "committedDate": "2019-12-17T10:46:49Z"
+                  },
+                  {
+                    "message": "google Ans",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/3a08839e4de0e4224abd2c341cafd00093538b04",
+                    "committedDate": "2019-12-17T07:05:21Z"
+                  },
+                  {
+                    "message": "0.3.0 업데이트",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/0b988d3b3e37e8865e0edbaa5b290852b792ea7b",
+                    "committedDate": "2019-12-17T06:32:29Z"
+                  },
+                  {
+                    "message": "Template 클래스 추가",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/b4a0fdacd7a2ac694fb89af254a4d3957c2b00cf",
+                    "committedDate": "2019-12-17T06:03:20Z"
+                  },
+                  {
+                    "message": "Rename cls_gui.html to cls_Gui.html",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/c8ea04c0d6e3525a40d64a6e5c46480d2d9160ac",
+                    "committedDate": "2019-12-16T14:57:17Z"
+                  },
+                  {
+                    "message": "docs fix",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/8ca1729a5aa12cd635acfa307cb52d39fccd3668",
+                    "committedDate": "2019-12-16T14:56:37Z"
+                  },
+                  {
+                    "message": "v 0.2.0 update",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/5896f07f19bba1f59b95b1227633440263833547",
+                    "committedDate": "2019-12-16T13:22:28Z"
+                  },
+                  {
+                    "message": "google ans 추가",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/de6ae21b409549d153697f104c5fb3998ce40551",
+                    "committedDate": "2019-12-16T04:51:10Z"
+                  },
+                  {
+                    "message": "자동 광고 추가",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/45f5e4f8e0163c3a41e5d8b669b45b51bd32c02f",
+                    "committedDate": "2019-12-16T04:44:31Z"
+                  },
+                  {
+                    "message": "update for men & readme",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/31fe398b5bf37fabba724a03473f671854cfdc4d",
+                    "committedDate": "2019-12-16T04:36:50Z"
+                  },
+                  {
+                    "message": "clean",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/3fd02d3204efb6d2cf548c223be3e4a9a2d39158",
+                    "committedDate": "2019-12-16T02:11:03Z"
+                  },
+                  {
+                    "message": "PyPI support",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/141631e3876087ee02968fc6dbdc2f9c2c2e75ff",
+                    "committedDate": "2019-12-16T01:51:51Z"
+                  },
+                  {
+                    "message": "rel V0.1.0",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/5c732a04f82fc348fbc9efbdb60ca51a631197ad",
+                    "committedDate": "2019-12-15T12:57:07Z"
+                  },
+                  {
+                    "message": "tk 지원 추가",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/df8a88785fbd3b5cd3f54072876b71674d27256c",
+                    "committedDate": "2019-12-15T04:23:38Z"
+                  },
+                  {
+                    "message": "빌드 테스트",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/8a78b67e022209ee1fca0974ca239a81abfbe0d4",
+                    "committedDate": "2019-12-14T18:16:54Z"
+                  },
+                  {
+                    "message": "빌드 구성",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/350f86649aa98173102aeeef97c03e30f4587471",
+                    "committedDate": "2019-12-14T18:09:57Z"
+                  },
+                  {
+                    "message": "환경 추가",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/027d4503e24edbed3bb57dd32d2a423c7e035dcb",
+                    "committedDate": "2019-12-14T17:57:05Z"
+                  },
+                  {
+                    "message": "update travis",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/2d40090a3b4703f6bde1ebc5e5abe37a6c3f0923",
+                    "committedDate": "2019-12-14T17:47:59Z"
+                  },
+                  {
+                    "message": "Travis ci",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/0b6f9ab066fbd5e94efdeac867313c45ed37e042",
+                    "committedDate": "2019-12-14T17:33:07Z"
+                  },
+                  {
+                    "message": "Update readme.md",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/b44a2baff72a0c334b138cfea815a89151406906",
+                    "committedDate": "2019-12-14T16:32:53Z"
+                  },
+                  {
+                    "message": "readme 변경",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/627a516ff035de4d6e17bf23af5547b7c63118a8",
+                    "committedDate": "2019-12-14T16:31:50Z"
+                  },
+                  {
+                    "message": "readme 추가",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/589a0d2c73a0f86553ec65558ab7a1663605cb9f",
+                    "committedDate": "2019-12-14T16:27:23Z"
+                  },
+                  {
+                    "message": "문서화 파일 구조 변경",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/955199d77a223698d5d83da32f55ae255af84cbf",
+                    "committedDate": "2019-12-14T16:12:52Z"
+                  },
+                  {
+                    "message": "빌드 옵션 변경",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/7042ff27f6ed3f7d2ba9ad0ccbc11d25df52d8c2",
+                    "committedDate": "2019-12-14T16:05:06Z"
+                  },
+                  {
+                    "message": "문서 경로 변경",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/bdc9a5a98438534e6b082ebf480005bf3c2e9f15",
+                    "committedDate": "2019-12-14T15:54:02Z"
+                  },
+                  {
+                    "message": "초기화",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/cdda21769138d8a93a4f544af25256435e0e23e8",
+                    "committedDate": "2019-12-14T15:50:18Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/autowinpy/commit/cae264c1acc848f632b367fff83e299e0f5b1961",
+                    "committedDate": "2019-12-14T15:23:21Z"
+                  }
+                ],
+                "totalCount": 48
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 28040,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                },
+                {
+                  "size": 25,
+                  "node": {
+                    "name": "CSS",
+                    "color": "#563d7c"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/Jekyll.Webtextbook-note",
+            "description": "GitHub Pages를 위한 Jekyll용 테마를 제작하는 동안 배우고 느낀 것들을 정리한 문서입니다.",
+            "createdAt": "2018-06-19T18:35:43Z",
+            "updatedAt": "2021-07-21T09:24:39Z",
+            "pushedAt": "2021-07-21T09:25:21Z",
+            "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "remove lock",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/9fa58f5551b6966b980a54b8d72f45e9df602e89",
+                    "committedDate": "2021-07-21T09:24:22Z"
+                  },
+                  {
+                    "message": "컨텐츠 업데이트",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/0701059640062cd89b76e56b1f983a3085599f83",
+                    "committedDate": "2018-07-03T13:42:17Z"
+                  },
+                  {
+                    "message": "테마 스크롤바 기능 수정 / 버튼 플립 이벤트 적용",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/bb55f3540dc6149e16264167d431e3eb32b06944",
+                    "committedDate": "2018-07-03T13:42:00Z"
+                  },
+                  {
+                    "message": "버그수정 테스트",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/3e6a47fc7a6bb521f5eef437f07cc869d036396f",
+                    "committedDate": "2018-06-23T14:30:02Z"
+                  },
+                  {
+                    "message": "애드센스 실험",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/601cc9dee806c05ba7817e7cf654175d84c8aaed",
+                    "committedDate": "2018-06-23T14:06:34Z"
+                  },
+                  {
+                    "message": "스크롤 반응속도 개선",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/932df7840d9fc042519daeaac7fbcf2620a87797",
+                    "committedDate": "2018-06-23T13:42:34Z"
+                  },
+                  {
+                    "message": "하단 광고 삭제",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/4da0edbe9e2e23c78af6f253ae838f9de781297a",
+                    "committedDate": "2018-06-23T12:42:03Z"
+                  },
+                  {
+                    "message": "애드센스 디버그",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/e14ac2e3334c9c6104d2ce9bc13b42a98dcb3612",
+                    "committedDate": "2018-06-23T12:38:29Z"
+                  },
+                  {
+                    "message": "애드센스 위치 변경",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/6f2e295a1c4fcd84ace81a550d14e565d2b25dfd",
+                    "committedDate": "2018-06-23T12:31:10Z"
+                  },
+                  {
+                    "message": "컨텐츠 업데이트",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/9ad27377e8a544a853d4efd544a4dc68a4676f3c",
+                    "committedDate": "2018-06-23T12:30:53Z"
+                  },
+                  {
+                    "message": "상단바 글자 크기 변경",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/753a305fc08432d07b99936f55cf476ee2cc037e",
+                    "committedDate": "2018-06-23T11:53:05Z"
+                  },
+                  {
+                    "message": "애드센스 위치 변경",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/238f579e932133a378c33983496823d1f3843ce2",
+                    "committedDate": "2018-06-23T11:52:26Z"
+                  },
+                  {
+                    "message": "코드블록 표현 개선",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/cd40fed0f6a90ab0f000c1b8eca804bff278421d",
+                    "committedDate": "2018-06-23T10:29:10Z"
+                  },
+                  {
+                    "message": "컨텐츠 수정",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/7221a8c0b74cb7a65545b60245b2ff33a42ca1ac",
+                    "committedDate": "2018-06-23T06:57:48Z"
+                  },
+                  {
+                    "message": "코드블록 기능 업데이트",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/9dcd15e155787cbec546ef2f83a0ffe47386bc21",
+                    "committedDate": "2018-06-23T06:57:19Z"
+                  },
+                  {
+                    "message": "코드블록 스크롤 테스트",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/5c0715cf8953dff52c73341d4ed8a398564bcf42",
+                    "committedDate": "2018-06-22T18:42:15Z"
+                  },
+                  {
+                    "message": "오류 수정",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/9b7246ad8401f59213dc169749ce2aca1c43af34",
+                    "committedDate": "2018-06-22T16:51:42Z"
+                  },
+                  {
+                    "message": "js 모듈화",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/1f1de04b02950e1cd2da541f7ea70949922c36ab",
+                    "committedDate": "2018-06-22T16:48:31Z"
+                  },
+                  {
+                    "message": "제외항목 수정",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/b2a59d0c51b33598fd8d2f5e8b551f7fdc193387",
+                    "committedDate": "2018-06-22T16:45:59Z"
+                  },
+                  {
+                    "message": "스크롤바 라이브러리 제거 (직접 구현)",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/047c70d188e6230b93d21abb12db809a2604a50a",
+                    "committedDate": "2018-06-22T14:39:35Z"
+                  },
+                  {
+                    "message": "저장소에 링크 추가",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/4dda03018ca6224ea10d6eaf4f1b57547b75837d",
+                    "committedDate": "2018-06-22T14:36:50Z"
+                  },
+                  {
+                    "message": "J쿼리 비동기 해제",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/38b2743fbad97166f8100334a9c597b6d573b4fb",
+                    "committedDate": "2018-06-21T16:17:39Z"
+                  },
+                  {
+                    "message": "애드센스 설정 변경",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/bfe9106d2eef94a64b6461e2cd5bde146dbc8236",
+                    "committedDate": "2018-06-21T14:20:17Z"
+                  },
+                  {
+                    "message": "컨텐츠 업데이트",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/9ef9680b38476a037275a422bead71580ea13f1b",
+                    "committedDate": "2018-06-21T14:16:08Z"
+                  },
+                  {
+                    "message": "레이아웃 최적화 및 SEO 태그 추가",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/2229656b1b53b92494294939f63067cc9d379dec",
+                    "committedDate": "2018-06-21T14:15:26Z"
+                  },
+                  {
+                    "message": "서치콘솔 등록 변경",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/c6138650fa4215ae20843fb83c27add0ee23cdfc",
+                    "committedDate": "2018-06-21T07:35:32Z"
+                  },
+                  {
+                    "message": "서치콘솔 등록",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/eec8397665960c5d19cdcf4cb9347b03620a3e06",
+                    "committedDate": "2018-06-21T07:31:52Z"
+                  },
+                  {
+                    "message": "기능추가: 사이트맵",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/0509464be2b9669ea1e2b025c195f01de2c57add",
+                    "committedDate": "2018-06-21T07:29:36Z"
+                  },
+                  {
+                    "message": "컨텐츠 업데이트",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/fe01a00dd69ed57c71ecce6aa2f525cbd1aece76",
+                    "committedDate": "2018-06-21T07:28:40Z"
+                  },
+                  {
+                    "message": "애드센스 변경을 위한 시험",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/6628fd8abe665f6b12ee533f4ef472f999d3f316",
+                    "committedDate": "2018-06-21T05:34:10Z"
+                  },
+                  {
+                    "message": "속성에 설명 추가",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/0aecb9203a8052a35386547022d70a95dd1e4f5c",
+                    "committedDate": "2018-06-20T18:50:32Z"
+                  },
+                  {
+                    "message": "컨텐츠 업데이트",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/6ad64741609d84507ebb3c700b52c38f470d859b",
+                    "committedDate": "2018-06-20T18:50:00Z"
+                  },
+                  {
+                    "message": "컨텐츠 업데이트",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/1063b8046201c4552612f14ecfae87965ec9cc6f",
+                    "committedDate": "2018-06-20T17:14:46Z"
+                  },
+                  {
+                    "message": "추가 스타일",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/b0832799347623dce3be692a112a2bc5beca6448",
+                    "committedDate": "2018-06-20T17:14:23Z"
+                  },
+                  {
+                    "message": "레이아웃 수정",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/3f8301d735fcbbf1a8a7054ec8682bb30dd53fbb",
+                    "committedDate": "2018-06-20T17:13:55Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/39af7f87957d5e9588bb5c9576166c4d2cde67d4",
+                    "committedDate": "2018-06-19T19:04:24Z"
+                  },
+                  {
+                    "message": "Update _config.yml",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/56e53d5aa2e6be3407a95b2e0e99cc437bc1212d",
+                    "committedDate": "2018-06-19T18:49:48Z"
+                  },
+                  {
+                    "message": "Update _config.yml",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/aee6db8f6363a1f3424f2dda4dcf6f39400f42ef",
+                    "committedDate": "2018-06-19T18:47:40Z"
+                  },
+                  {
+                    "message": "fix url",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/c029ad015fddc56de89018915c230244f2f2cd04",
+                    "committedDate": "2018-06-19T18:44:15Z"
+                  },
+                  {
+                    "message": "pre-test",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/0bf7008a1dfb6d751402a0e72e02f106e71824bc",
+                    "committedDate": "2018-06-19T18:41:35Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/Jekyll.Webtextbook-note/commit/ff7c950154fa4ca2e64e3deb3d785ed553796237",
+                    "committedDate": "2018-06-19T18:35:44Z"
+                  }
+                ],
+                "totalCount": 41
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 59878,
+                  "node": {
+                    "name": "SCSS",
+                    "color": "#c6538c"
+                  }
+                },
+                {
+                  "size": 9381,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
+                  }
+                },
+                {
+                  "size": 8670,
+                  "node": {
+                    "name": "HTML",
+                    "color": "#e34c26"
+                  }
+                },
+                {
+                  "size": 1039,
+                  "node": {
+                    "name": "Ruby",
+                    "color": "#701516"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/code-to-image",
+            "description": "python script to image",
+            "createdAt": "2018-04-19T05:50:07Z",
+            "updatedAt": "2021-07-19T08:05:05Z",
+            "pushedAt": "2021-07-19T08:05:02Z",
+            "url": "https://github.com/soma0sd/code-to-image",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "다운로드 기능 추가",
+                    "url": "https://github.com/soma0sd/code-to-image/commit/37dddfa88256a282054328d32f1c2da39a2cd331",
+                    "committedDate": "2021-07-19T08:04:48Z"
+                  },
+                  {
+                    "message": "add demo link",
+                    "url": "https://github.com/soma0sd/code-to-image/commit/66b5fe6a738d908f359d035fabae66e3df2f7cc4",
+                    "committedDate": "2021-07-19T07:57:24Z"
+                  },
+                  {
+                    "message": "update readme",
+                    "url": "https://github.com/soma0sd/code-to-image/commit/1aa0ce2c29e90905d0cd29148db162a664151412",
+                    "committedDate": "2021-07-19T07:56:44Z"
+                  },
+                  {
+                    "message": "highlight.js를 이용한 방식으로 변경",
+                    "url": "https://github.com/soma0sd/code-to-image/commit/955e0904f762ac5c7c39e7c1423819fe15985e74",
+                    "committedDate": "2021-07-19T07:52:14Z"
+                  },
+                  {
+                    "message": "commit-zero\n\n서비스 시작",
+                    "url": "https://github.com/soma0sd/code-to-image/commit/2745d36e36141687b02d80646d02af0952d1a402",
+                    "committedDate": "2018-04-19T05:51:23Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/code-to-image/commit/c96992aaaabdfa0be4649aa5d7d52b9860849e66",
+                    "committedDate": "2018-04-19T05:50:08Z"
+                  }
+                ],
+                "totalCount": 6
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 3187,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
+                  }
+                },
+                {
+                  "size": 2214,
+                  "node": {
+                    "name": "HTML",
+                    "color": "#e34c26"
+                  }
+                },
+                {
+                  "size": 2173,
+                  "node": {
+                    "name": "CSS",
+                    "color": "#563d7c"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/soma0sd",
+            "description": "Config files for my GitHub profile.",
+            "createdAt": "2021-07-15T03:28:08Z",
+            "updatedAt": "2021-07-15T03:28:08Z",
+            "pushedAt": "2021-07-15T03:28:09Z",
+            "url": "https://github.com/soma0sd/soma0sd",
+            "homepageUrl": "https://github.com/soma0sd",
+            "isArchived": false,
+            "isPrivate": false,
+            "object": null,
+            "languages": {
+              "edges": []
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/python-hj",
+            "description": "효자고등학교 프로그래밍 기초 수업 최종과제",
+            "createdAt": "2018-05-23T20:21:48Z",
+            "updatedAt": "2018-05-24T09:00:05Z",
+            "pushedAt": "2018-05-24T09:00:04Z",
+            "url": "https://github.com/soma0sd/python-hj",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "bug fix (class)",
+                    "url": "https://github.com/soma0sd/python-hj/commit/2c3a0a380b8fe16809710ffab223461ccefc35a4",
+                    "committedDate": "2018-05-24T08:59:49Z"
+                  },
+                  {
+                    "message": "문제 1 업데이트",
+                    "url": "https://github.com/soma0sd/python-hj/commit/71d452ffb14055249b546e700100b7b2d086fd7d",
+                    "committedDate": "2018-05-23T20:38:37Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/python-hj/commit/f04724e71a40df51aa829472d66026148e1e4d67",
+                    "committedDate": "2018-05-23T20:21:49Z"
+                  }
+                ],
+                "totalCount": 3
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 5665,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/jekyll-textbook-theme",
+            "description": "GitHub Pages를 통해 교재를 제작하는 사람들을 위한 지킬 테마",
+            "createdAt": "2018-05-04T16:45:28Z",
+            "updatedAt": "2018-05-04T16:53:43Z",
+            "pushedAt": "2018-05-13T11:18:44Z",
+            "url": "https://github.com/soma0sd/jekyll-textbook-theme",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "Update README.md",
+                    "url": "https://github.com/soma0sd/jekyll-textbook-theme/commit/195c0240b95b1fa8792118206acfebd8465db688",
+                    "committedDate": "2018-05-04T16:53:42Z"
+                  },
+                  {
+                    "message": "Update issue templates",
+                    "url": "https://github.com/soma0sd/jekyll-textbook-theme/commit/93bc99a0230d3a6ee0bb0202596e3015869878b5",
+                    "committedDate": "2018-05-04T16:48:37Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/jekyll-textbook-theme/commit/74d9198687d4dc6b7624d6decff411ffddf94519",
+                    "committedDate": "2018-05-04T16:45:29Z"
+                  }
+                ],
+                "totalCount": 3
+              }
+            },
+            "languages": {
+              "edges": []
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/introduction-to-programing-with-python",
+            "description": null,
+            "createdAt": "2018-05-01T13:12:14Z",
+            "updatedAt": "2018-05-01T13:12:52Z",
+            "pushedAt": "2018-05-13T08:35:12Z",
+            "url": "https://github.com/soma0sd/introduction-to-programing-with-python",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/introduction-to-programing-with-python/commit/d8bf38042ca0a45227fcfec9690b09097319e274",
+                    "committedDate": "2018-05-01T13:12:15Z"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            "languages": {
+              "edges": []
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/Freethinker-N-Values",
+            "description": "대학연합 동아리 Freethinkers의 N-Value 프로젝트 저장소",
+            "createdAt": "2017-12-06T05:01:35Z",
+            "updatedAt": "2017-12-09T05:19:59Z",
+            "pushedAt": "2017-12-09T09:52:48Z",
+            "url": "https://github.com/soma0sd/Freethinker-N-Values",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "신규 기여자 안내 추가",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/fba07cf1c856a37f91a41785871b0261fed4ebd1",
+                    "committedDate": "2017-12-09T09:52:38Z"
+                  },
+                  {
+                    "message": "사용자 설정 변경 / 최종 릴리즈 준비",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/27cfa7820c3aa2a35e117359253155fb1977ee5f",
+                    "committedDate": "2017-12-09T08:36:03Z"
+                  },
+                  {
+                    "message": "지킬 빌드 테스트",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/4c03b85e35a77adcd351b1c6528600fdbe4e34be",
+                    "committedDate": "2017-12-09T08:28:22Z"
+                  },
+                  {
+                    "message": "원상복구",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/e428691835a184b7f7c9868429175805deb92d31",
+                    "committedDate": "2017-12-09T08:24:22Z"
+                  },
+                  {
+                    "message": "디버그",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/18f97180094cbb80df66e802f6cd205310a388fa",
+                    "committedDate": "2017-12-09T08:19:06Z"
+                  },
+                  {
+                    "message": "버그 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/162ce10f1697ed13e20ea10c597545ba155cab96",
+                    "committedDate": "2017-12-09T08:01:11Z"
+                  },
+                  {
+                    "message": "버그 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/3cb31b7061c476144ccffd544ba4b4244a7f237b",
+                    "committedDate": "2017-12-09T07:56:27Z"
+                  },
+                  {
+                    "message": "버그 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/e39f1a709c7904503d50fa83d4aa0bea55e72773",
+                    "committedDate": "2017-12-09T07:53:07Z"
+                  },
+                  {
+                    "message": "사용자 친화",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/77fb6ab346497481bffde8c3c831517cea1ac381",
+                    "committedDate": "2017-12-09T07:48:04Z"
+                  },
+                  {
+                    "message": "디버그",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/3ff708bc4015ffa918c60f8ce02b2fec4ebc18a2",
+                    "committedDate": "2017-12-09T05:19:46Z"
+                  },
+                  {
+                    "message": "J쿼리 위치 변경",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/ef0caea3f3159ecb0c4a56c4e48a2dcba4444246",
+                    "committedDate": "2017-12-08T23:17:16Z"
+                  },
+                  {
+                    "message": "레이아웃 조정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/13df88711c9556f43195febec36c25ae3cec143f",
+                    "committedDate": "2017-12-08T23:14:11Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/0906c21d75a142cbe66ac801a43c8e6998df4cce",
+                    "committedDate": "2017-12-08T23:04:32Z"
+                  },
+                  {
+                    "message": "코드 정리",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/0e7a1a211ddda9f27f638f0ee74d63e293f2c123",
+                    "committedDate": "2017-12-08T22:20:11Z"
+                  },
+                  {
+                    "message": "결과 숫자 자릿수 정리",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/48d1571f370bacdc091fb0e21af33ee7209636af",
+                    "committedDate": "2017-12-08T18:10:23Z"
+                  },
+                  {
+                    "message": "고지가 보인다",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/520e0e69746bef44f456d08b989319fa75f49ea3",
+                    "committedDate": "2017-12-08T18:04:35Z"
+                  },
+                  {
+                    "message": "정적 FB SDK 제거",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/fafb28acb8c3e387e3760706e1a618313d3afdf4",
+                    "committedDate": "2017-12-08T18:03:05Z"
+                  },
+                  {
+                    "message": "어째서 맘대로 되지 않는가",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/fc3f8e1e0d799e20adac96eb7ef65fad9e792fef",
+                    "committedDate": "2017-12-08T18:01:50Z"
+                  },
+                  {
+                    "message": "FB SDK 변경",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/a62b12f1f0fe10da1227cecb37fc4ea07fb35830",
+                    "committedDate": "2017-12-08T17:54:56Z"
+                  },
+                  {
+                    "message": "정적 API로 전환",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/2c05d31aa17135d4802b9d2867cb3652cefceff4",
+                    "committedDate": "2017-12-08T17:52:18Z"
+                  },
+                  {
+                    "message": "캔버스 공유는 포기",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/9791dbf443d48b81174089655cf02a2840c1800c",
+                    "committedDate": "2017-12-08T17:48:31Z"
+                  },
+                  {
+                    "message": "FB 4차 시도",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/546f62b064609afba2c37333553c2658d63ecfff",
+                    "committedDate": "2017-12-08T17:26:52Z"
+                  },
+                  {
+                    "message": "FB 3차 시도",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/3bf168b58ab81b59cb9ac41864373d2204017186",
+                    "committedDate": "2017-12-08T17:24:10Z"
+                  },
+                  {
+                    "message": "FB 2차 시도",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/ed8972d19dba5dca70c9aa91620c9b1d3d7e1a06",
+                    "committedDate": "2017-12-08T17:06:09Z"
+                  },
+                  {
+                    "message": "FB 공유 테스트",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/283c3dd82d39bce43b756c8c546d4efe3d8cc70c",
+                    "committedDate": "2017-12-08T16:58:55Z"
+                  },
+                  {
+                    "message": "페이스북 SDK 테스트",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/a7f993d60fbc7172fbd1a6fe78a23b6ff1dfdf71",
+                    "committedDate": "2017-12-08T16:27:42Z"
+                  },
+                  {
+                    "message": "디버그",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/7eb9b42a2f340301cfb3807a92d4b3886ad6266f",
+                    "committedDate": "2017-12-08T15:10:22Z"
+                  },
+                  {
+                    "message": "메타태그 변경",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/19e75bb8cebaff7b9303c5811a4424c94d1441f1",
+                    "committedDate": "2017-12-08T14:55:11Z"
+                  },
+                  {
+                    "message": "페이스북 공유 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/7e10a1de93f8fe1a3916d4fa2ae6d1dbdaefd351",
+                    "committedDate": "2017-12-08T14:48:28Z"
+                  },
+                  {
+                    "message": "디버깅",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/2200e64d3e3180859832b24c0d340e0880b49aa8",
+                    "committedDate": "2017-12-08T14:47:13Z"
+                  },
+                  {
+                    "message": "왜 적용이 안되는가",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/508f01294fb444d46742d714340fd4956492c7e2",
+                    "committedDate": "2017-12-08T14:41:46Z"
+                  },
+                  {
+                    "message": "페북 공유버튼 추가",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/aac42587e080ff6041351169c55e46e0de0d2580",
+                    "committedDate": "2017-12-08T14:37:02Z"
+                  },
+                  {
+                    "message": "그림자 조정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/5bbf637793aa0852d745744b668246af38e5db23",
+                    "committedDate": "2017-12-08T13:44:37Z"
+                  },
+                  {
+                    "message": "결과 바 라벨링 (크롬은 정말이지 최고야)",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/0d0fa80240d11cb9c02f0efefb3765c7017787a5",
+                    "committedDate": "2017-12-08T13:41:24Z"
+                  },
+                  {
+                    "message": "결과창 바 디버깅 완료",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/42f42cf58ab5c502ec2520d83aeac19c71f3e185",
+                    "committedDate": "2017-12-08T13:12:33Z"
+                  },
+                  {
+                    "message": "디버그",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/89c51d81adae23739d6e22e2d98da5fbcff53156",
+                    "committedDate": "2017-12-08T12:48:22Z"
+                  },
+                  {
+                    "message": "디버그",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/6b6ae9292ee92ebc38e1e8f88c66e4dd095de7c7",
+                    "committedDate": "2017-12-08T12:46:58Z"
+                  },
+                  {
+                    "message": "디버그",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/bdda9286c1c45eb1e32ec1b35ed7a7509004342d",
+                    "committedDate": "2017-12-08T12:45:43Z"
+                  },
+                  {
+                    "message": "소개 변경",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/fc5edeff8ab0f665085b66b6da0a2bf06645a5e6",
+                    "committedDate": "2017-12-08T12:42:00Z"
+                  },
+                  {
+                    "message": "디버그",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/f1fe12199a92d696705d33c9651aef326ab988ef",
+                    "committedDate": "2017-12-08T12:41:08Z"
+                  },
+                  {
+                    "message": "디버그",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/41f6b2a87ca419deada83869d54d4e81473cbd78",
+                    "committedDate": "2017-12-08T12:25:19Z"
+                  },
+                  {
+                    "message": "디버그",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/66076d180c63e0e5f11fcfc4074534f09a658cc4",
+                    "committedDate": "2017-12-08T12:24:29Z"
+                  },
+                  {
+                    "message": "함수 디버그",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/dd1831d58c153793bfec1d797cbe427cdcf361a4",
+                    "committedDate": "2017-12-08T12:23:02Z"
+                  },
+                  {
+                    "message": "결과창 함수 정리 및 데이터 규칙 변경",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/31b23fa48c98f1acf9c642ef895da7ecc17e201a",
+                    "committedDate": "2017-12-08T12:21:23Z"
+                  },
+                  {
+                    "message": "start 페이지 템플릿 적용",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/1b7fb3c34b5b3b0f79b785e9e2a62c6ddbe55b4a",
+                    "committedDate": "2017-12-08T09:20:32Z"
+                  },
+                  {
+                    "message": "결과 데이터 URL 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/f2f4d7ccd55a119bbdbaca3784f7e4184b578d55",
+                    "committedDate": "2017-12-08T07:50:36Z"
+                  },
+                  {
+                    "message": "오타 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/6dc99b68aa71a18f6c01e38399c930e8a2964ae8",
+                    "committedDate": "2017-12-08T07:48:58Z"
+                  },
+                  {
+                    "message": "파일 구조 변경 및 JS 코드 단순화",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/ab7302660dddc653d31e360ad21a01b81cce1228",
+                    "committedDate": "2017-12-08T07:47:47Z"
+                  },
+                  {
+                    "message": "퀴즈 템플릿 적용 테스트",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/b6eb29248062bf7e330f35493361ecd115b0be13",
+                    "committedDate": "2017-12-08T06:54:54Z"
+                  },
+                  {
+                    "message": "버튼 레이아웃 정리",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/413c7a0dc42df3bf2e496ff952bbc4b456a19be5",
+                    "committedDate": "2017-12-08T06:24:50Z"
+                  },
+                  {
+                    "message": "버튼 교체",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/e3d0410f5b3ead38cc37f38136c8640ba6a393d2",
+                    "committedDate": "2017-12-08T06:14:59Z"
+                  },
+                  {
+                    "message": "레이아웃 변경 실패",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/e5e211acbcbd2b286d04fd3498aa6838b860cc7c",
+                    "committedDate": "2017-12-08T06:04:02Z"
+                  },
+                  {
+                    "message": "버튼 위치 변경",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/e2ce31634854a28add2f782aaaba5429824b70ea",
+                    "committedDate": "2017-12-08T06:01:14Z"
+                  },
+                  {
+                    "message": "지킬 템플릿 테스트",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/f3440a76f804a64958bd690b59e7639555acaf3c",
+                    "committedDate": "2017-12-08T05:38:23Z"
+                  },
+                  {
+                    "message": "README 추가",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/f1d0957eb5c5c13cad4f11341c2ad25ecf368010",
+                    "committedDate": "2017-12-08T05:14:35Z"
+                  },
+                  {
+                    "message": "이미지 함수 제거",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/987856c5bf2edf9815bb3151a85dcc818c892988",
+                    "committedDate": "2017-12-07T13:37:55Z"
+                  },
+                  {
+                    "message": "공유버튼 제거",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/558bc87689b6244a8197f648f071e7bacb77d2bd",
+                    "committedDate": "2017-12-07T13:35:57Z"
+                  },
+                  {
+                    "message": "이미지 버그 해결",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/de8228eda248acdc9d186deb686b8141c27920b0",
+                    "committedDate": "2017-12-07T13:34:22Z"
+                  },
+                  {
+                    "message": "공유 문제 다음에 시도",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/02a68f94a783565352f11816377b9cb8314c68e8",
+                    "committedDate": "2017-12-07T12:52:07Z"
+                  },
+                  {
+                    "message": "함수 변경",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/0ab14bf14eb7d4de6b77c821606ab9dc6f754522",
+                    "committedDate": "2017-12-07T12:23:23Z"
+                  },
+                  {
+                    "message": "레이아웃 변경 및 페이스북 공유 함수 추가",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/e6a20d6f7141e34b9627c105655c27f84af97e31",
+                    "committedDate": "2017-12-07T12:09:50Z"
+                  },
+                  {
+                    "message": "오픈 그래프 태그 추가",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/39e6ae73198ee30c597e03994320bc555841e9c7",
+                    "committedDate": "2017-12-07T11:55:00Z"
+                  },
+                  {
+                    "message": "오타 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/a65b372df1aa1509cfd0a6db1998b3c548ec264b",
+                    "committedDate": "2017-12-07T11:43:59Z"
+                  },
+                  {
+                    "message": "라벨 위치 조정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/8306cd525af026acfa8b16e6fd835894144cce93",
+                    "committedDate": "2017-12-07T11:38:12Z"
+                  },
+                  {
+                    "message": "폰트 오타 조정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/3d1f758e73c29b715a9659e6a401b0d2cc9bfe65",
+                    "committedDate": "2017-12-07T11:36:33Z"
+                  },
+                  {
+                    "message": "라벨 위치 조정 (캔버스)",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/6e8a213c2d482a37725aa054c7752606821f896a",
+                    "committedDate": "2017-12-07T11:35:39Z"
+                  },
+                  {
+                    "message": "결과 캔버스 라벨 조정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/bb514041407735ac28f806551b8ed5ae9d3a458c",
+                    "committedDate": "2017-12-07T11:34:23Z"
+                  },
+                  {
+                    "message": "라벨 추가",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/b3d366be3db7ff1f0a687fe6488ececc1f81ed15",
+                    "committedDate": "2017-12-07T11:32:06Z"
+                  },
+                  {
+                    "message": "버그 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/7d899c31869c0f1b0b10c7e517a277f26f1b5390",
+                    "committedDate": "2017-12-07T11:08:58Z"
+                  },
+                  {
+                    "message": "변수 분실",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/c4b08e520dfa2b52bd021c760bde7ac30e20c737",
+                    "committedDate": "2017-12-07T11:04:00Z"
+                  },
+                  {
+                    "message": "레이아웃 수치 조정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/1c01a81834b84d96b4f4a81c32a06e63fe4103de",
+                    "committedDate": "2017-12-07T11:02:01Z"
+                  },
+                  {
+                    "message": "레이아웃 변경",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/efe6a82cd2d00e9c6dc20d58ef17908a116f85cb",
+                    "committedDate": "2017-12-07T11:00:26Z"
+                  },
+                  {
+                    "message": "결과창 글자크기 조정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/9089508f990cbe4b2ed336b980e577972212aff5",
+                    "committedDate": "2017-12-07T10:22:49Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/7eab0c458dbcb22de4b0c9abacac0af9c934126e",
+                    "committedDate": "2017-12-07T10:19:18Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/2cd34f2b132219b86cdc4aaf031e71e39a3b4654",
+                    "committedDate": "2017-12-07T10:13:29Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/69fc93f7e5a2f0c5230433033556a10322a3dd10",
+                    "committedDate": "2017-12-07T10:10:49Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/0bc9689e9be398931c9995954378f4bb2d9c2b88",
+                    "committedDate": "2017-12-07T10:08:22Z"
+                  },
+                  {
+                    "message": "테스트 2",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/5e0f3331cb0a25996d01a8446ba1511081c02c80",
+                    "committedDate": "2017-12-07T10:06:12Z"
+                  },
+                  {
+                    "message": "테스트용",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/614a54419fe67f6540002be5907eba1bef92ccde",
+                    "committedDate": "2017-12-07T10:04:48Z"
+                  },
+                  {
+                    "message": "세미콜론이..",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/22541f0f0d97562b023a4625dbfbb7c3ef8a6d94",
+                    "committedDate": "2017-12-07T10:00:11Z"
+                  },
+                  {
+                    "message": "트위터 공유버튼 추가",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/40f47575dd855d6495d1f56420960f72936432d7",
+                    "committedDate": "2017-12-07T09:58:32Z"
+                  },
+                  {
+                    "message": "결과 캔버스 문자 추가",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/22c1ab28701d7aac26810e6c3f4d8b20b67c6209",
+                    "committedDate": "2017-12-07T09:50:55Z"
+                  },
+                  {
+                    "message": "바 배경 설정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/cfee809c452a75aa69ca1cb0f6c21e7b6413e616",
+                    "committedDate": "2017-12-07T09:45:32Z"
+                  },
+                  {
+                    "message": "몇가지 오류 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/e37473cbc062052f6f653927316c9d175330552f",
+                    "committedDate": "2017-12-07T09:42:28Z"
+                  },
+                  {
+                    "message": "이전문제 함수 오류 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/2ef9bfa6974263d5c2508535deafdd6584f70af5",
+                    "committedDate": "2017-12-07T09:38:28Z"
+                  },
+                  {
+                    "message": "url 쿼리 오류 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/b4e7a645b39795c1b5b32d9586a2d3a413ddc8a2",
+                    "committedDate": "2017-12-07T09:37:07Z"
+                  },
+                  {
+                    "message": "왜 파이썬이 아니라 JS일까",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/b4e409bed0e9df735ec4d51b9e94c7ed37ed98db",
+                    "committedDate": "2017-12-07T09:30:54Z"
+                  },
+                  {
+                    "message": "오타 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/1e983f6bbde1b07fbab33f8c6131c91d46820ad4",
+                    "committedDate": "2017-12-07T09:27:11Z"
+                  },
+                  {
+                    "message": "설마 이것도?",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/1e19d27323d9aa9017f8a946af95efaa00db0b96",
+                    "committedDate": "2017-12-07T09:23:06Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/4d37147f72b34879caf7bf73a86918b4beb754f9",
+                    "committedDate": "2017-12-07T09:13:42Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/31216b5e3c0bef08202113c8f19c247e77eb937d",
+                    "committedDate": "2017-12-07T09:07:31Z"
+                  },
+                  {
+                    "message": "제발 고쳐졌길",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/e36ec7ead1d030f1cb51495cf5d5894371a4e113",
+                    "committedDate": "2017-12-07T09:04:38Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/6e9fe0706c2ec0e392a3fabd72c5d174bf0bbb3a",
+                    "committedDate": "2017-12-07T08:36:05Z"
+                  },
+                  {
+                    "message": "비율 바 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/2a8916c340711079f31f4ed024915261dc81c30d",
+                    "committedDate": "2017-12-07T08:33:59Z"
+                  },
+                  {
+                    "message": "퍼센티지 그림 표시",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/674e49a4195d2d91c036c9cfb46937666eadf7f3",
+                    "committedDate": "2017-12-07T08:32:59Z"
+                  },
+                  {
+                    "message": "버그 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/ecd28b81401cd1e20682913b74072e53bb4de044",
+                    "committedDate": "2017-12-07T08:29:21Z"
+                  },
+                  {
+                    "message": "결과 테스트용",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/c48f7b22a6aeebd9a5f9d53b5448da5cc6073357",
+                    "committedDate": "2017-12-07T08:27:36Z"
+                  },
+                  {
+                    "message": "결과 캔버스 테스트",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/c9fa0b5c7a48eece30b235db901002f065a86450",
+                    "committedDate": "2017-12-07T07:43:51Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/0803373000976cbbb04f446adb7fa26121cd87e1",
+                    "committedDate": "2017-12-07T05:54:50Z"
+                  },
+                  {
+                    "message": "버그 수정",
+                    "url": "https://github.com/soma0sd/Freethinker-N-Values/commit/e899b3d8fae1795924daa484c5fc9175e065c3de",
+                    "committedDate": "2017-12-07T05:51:06Z"
+                  }
+                ],
+                "totalCount": 147
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 8329,
+                  "node": {
+                    "name": "HTML",
+                    "color": "#e34c26"
+                  }
+                },
+                {
+                  "size": 7359,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
+                  }
+                },
+                {
+                  "size": 529,
+                  "node": {
+                    "name": "CSS",
+                    "color": "#563d7c"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/BookMakerMD",
+            "description": null,
+            "createdAt": "2017-09-27T13:51:33Z",
+            "updatedAt": "2017-09-27T14:09:00Z",
+            "pushedAt": "2017-09-27T16:35:58Z",
+            "url": "https://github.com/soma0sd/BookMakerMD",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "파일 다이얼로그 형태 변경",
+                    "url": "https://github.com/soma0sd/BookMakerMD/commit/67347646a0b551f7a6852758e8f89d6c2e05403f",
+                    "committedDate": "2017-09-27T16:35:36Z"
+                  },
+                  {
+                    "message": "0.0.1b 용 readme 업로드",
+                    "url": "https://github.com/soma0sd/BookMakerMD/commit/38e6dcddef8cdc815e16648e024418e476b27b2d",
+                    "committedDate": "2017-09-27T14:40:19Z"
+                  },
+                  {
+                    "message": "버전 0.0.1 베타 업로드",
+                    "url": "https://github.com/soma0sd/BookMakerMD/commit/2b9c3ac2728b8de46042f71962b12381d7b3a870",
+                    "committedDate": "2017-09-27T14:08:24Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/BookMakerMD/commit/0a86ebfcfb89cf7bd86e577ce828e7d6f0540ed6",
+                    "committedDate": "2017-09-27T13:51:33Z"
+                  }
+                ],
+                "totalCount": 4
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 6611,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/python-study",
+            "description": "파이썬  공부용",
+            "createdAt": "2016-07-13T07:33:12Z",
+            "updatedAt": "2017-09-08T02:02:54Z",
+            "pushedAt": "2017-08-31T12:22:00Z",
+            "url": "https://github.com/soma0sd/python-study",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "이전 프로젝트와 병합",
+                    "url": "https://github.com/soma0sd/python-study/commit/f884fe553db2d55dd92131dcf1abc7e794597f07",
+                    "committedDate": "2017-08-31T12:21:30Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/6522176a6c1bf4ecfa7b7162a10030e2eb62fb8e",
+                    "committedDate": "2016-12-20T16:08:52Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/0887cb6a37f083668228c817dbdd82d53f7d1d54",
+                    "committedDate": "2016-12-14T14:34:56Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/57efbfaf8483a0fe006fce4e8acce791a5b5253e",
+                    "committedDate": "2016-12-09T01:13:54Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/16e80a34be3cc00288e42015aa7cacf05fbf63fb",
+                    "committedDate": "2016-12-08T06:52:59Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/814a8da5b63d7eec443bbaba1376083b5c7bf26d",
+                    "committedDate": "2016-12-04T12:40:43Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/32dcaf71a0e778773b3551bbae76c8241447be72",
+                    "committedDate": "2016-12-01T06:54:40Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/6dccac1e345bfc5af14b75f960c6982c2f583a13",
+                    "committedDate": "2016-11-24T23:32:48Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/164228967db13d83fddcd413a26721b73f4be054",
+                    "committedDate": "2016-11-24T22:24:53Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/8e8cf911eca20cd8eb1d39f1d7be176642625178",
+                    "committedDate": "2016-11-20T18:38:11Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/11057042b1fad3ef420032bd4bf00d108f44216f",
+                    "committedDate": "2016-11-17T06:27:57Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/3afc3d5325000f5eb2070f239285267184ae77e2",
+                    "committedDate": "2016-11-16T12:36:32Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/9f8b9af086059669ff964e2ceb46eb68bc57a35f",
+                    "committedDate": "2016-11-16T12:29:18Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/f2a6659f91b4a6b9a48a20637246b75e8dce0466",
+                    "committedDate": "2016-11-10T16:10:02Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/d61e7121f932cacacdd0435850f09b317b632bd3",
+                    "committedDate": "2016-11-10T07:07:30Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/python-study/commit/9c214a154b2c99f7dcd832be4c1a5d8af3813f1a",
+                    "committedDate": "2016-11-10T05:35:36Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/python-study/commit/2e53ef901a6e3042b0004155ce67d40ad5519375",
+                    "committedDate": "2016-11-09T09:53:42Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/python-study/commit/22a21c6caf8835432823aeef632e41cded4679fe",
+                    "committedDate": "2016-10-30T12:57:56Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/python-study/commit/db9f7bc5015a82d4147a0ac900a0148a146b5956",
+                    "committedDate": "2016-10-26T22:23:06Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/python-study/commit/dea69b2f79d75bd29e404784cb764d9584e8d7f0",
+                    "committedDate": "2016-10-26T20:08:51Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/python-study/commit/f271b7f8f824ef8a5516bcd8bd1b1a5782c32b9f",
+                    "committedDate": "2016-10-21T02:27:57Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/python-study/commit/66923b5bb826e74f9e8ff62e276fb69145c05adc",
+                    "committedDate": "2016-10-21T02:00:30Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/python-study/commit/3da1bdae391f655a9324e6f57f5b066c89b2e409",
+                    "committedDate": "2016-10-21T01:21:20Z"
+                  },
+                  {
+                    "message": "bug fix",
+                    "url": "https://github.com/soma0sd/python-study/commit/2ae4b03c15da4bc52665e5afbd9a80dfbfc1f6ac",
+                    "committedDate": "2016-10-14T03:03:48Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/python-study/commit/f9975dad8011a6648754b9ef388cb84c2df4eee5",
+                    "committedDate": "2016-10-14T02:28:36Z"
+                  },
+                  {
+                    "message": "코멘트 추가",
+                    "url": "https://github.com/soma0sd/python-study/commit/71ecc2ab51dac89d6b48a68b78ce245d08877d45",
+                    "committedDate": "2016-10-12T19:36:37Z"
+                  },
+                  {
+                    "message": "미주석 버전",
+                    "url": "https://github.com/soma0sd/python-study/commit/dafb18726df994a0970553ac59a7e55dd8e38f28",
+                    "committedDate": "2016-10-12T19:05:45Z"
+                  },
+                  {
+                    "message": "comments append",
+                    "url": "https://github.com/soma0sd/python-study/commit/03e5996a484a612f15f90cfbeccc85f19a5b38eb",
+                    "committedDate": "2016-10-06T05:25:57Z"
+                  },
+                  {
+                    "message": "BUG FIX",
+                    "url": "https://github.com/soma0sd/python-study/commit/f5139bcc935fd6f6fcf8881ad62784b2c23ea5ed",
+                    "committedDate": "2016-10-06T04:56:47Z"
+                  },
+                  {
+                    "message": "week5 update",
+                    "url": "https://github.com/soma0sd/python-study/commit/0bfb8deaf346f901a9e348ef94bfd4760b66dc47",
+                    "committedDate": "2016-10-05T10:21:07Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/python-study/commit/5687ba6f5ccf4a0eab639fe3ba727990b2492193",
+                    "committedDate": "2016-10-04T06:15:57Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/8767cedf787b222fa134e8b059fbd2cfcbce6d79",
+                    "committedDate": "2016-09-30T09:57:30Z"
+                  },
+                  {
+                    "message": "주석 추가",
+                    "url": "https://github.com/soma0sd/python-study/commit/530ff2c71f760f2176406befa3d7a740753ea9eb",
+                    "committedDate": "2016-09-29T18:09:38Z"
+                  },
+                  {
+                    "message": "1차 완성본(미주석)",
+                    "url": "https://github.com/soma0sd/python-study/commit/b6b2e658c6912dc25343f8f7769d5cf185b41457",
+                    "committedDate": "2016-09-29T17:16:21Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/python-study/commit/3fc550efcb9d16842e52091b8be7650e66fcbe71",
+                    "committedDate": "2016-09-29T14:13:21Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/ce005ed6063b168a7595cd8768385843def17ba6",
+                    "committedDate": "2016-09-29T12:00:58Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/python-study/commit/e400bd542d7e90845588a1eb3409615bfeed150e",
+                    "committedDate": "2016-09-29T05:45:03Z"
+                  },
+                  {
+                    "message": "Add files via upload",
+                    "url": "https://github.com/soma0sd/python-study/commit/6bfd0362728b3c30fe61b036a08cde474e9c6715",
+                    "committedDate": "2016-09-23T02:25:10Z"
+                  },
+                  {
+                    "message": "Add files via upload",
+                    "url": "https://github.com/soma0sd/python-study/commit/a554b30f696d20b9eca6a710de430253e1312f99",
+                    "committedDate": "2016-09-18T20:18:39Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/27777e113606d2b29a44ad08cb2876a5d2826031",
+                    "committedDate": "2016-09-18T19:48:31Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/146d08a031f0179cb52af9b25e2453864905a582",
+                    "committedDate": "2016-09-18T19:33:27Z"
+                  },
+                  {
+                    "message": "pywiki지원",
+                    "url": "https://github.com/soma0sd/python-study/commit/5adbc839d141d7824f1d078b2f88c18d9d8ae9b3",
+                    "committedDate": "2016-09-18T19:08:16Z"
+                  },
+                  {
+                    "message": "오기 수정",
+                    "url": "https://github.com/soma0sd/python-study/commit/4fdf426edf4aafc9152863d038b430702227f548",
+                    "committedDate": "2016-09-12T10:02:21Z"
+                  },
+                  {
+                    "message": "plot 옵션 수정",
+                    "url": "https://github.com/soma0sd/python-study/commit/61f4b6651bfab15684867282fd68e756e283a008",
+                    "committedDate": "2016-09-12T09:49:29Z"
+                  },
+                  {
+                    "message": "잘못된 예제명 수정",
+                    "url": "https://github.com/soma0sd/python-study/commit/c5d0a8a360a33ccb1eec3903e0de5ce8947333ff",
+                    "committedDate": "2016-09-12T09:37:22Z"
+                  },
+                  {
+                    "message": "예제 추가",
+                    "url": "https://github.com/soma0sd/python-study/commit/ddc77c4f642f9bee2e5e8bc80be4dc0cac0ab60d",
+                    "committedDate": "2016-09-12T09:34:54Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/python-study/commit/c1668f940c4d1357e3a85bf869f31f3146fb7b70",
+                    "committedDate": "2016-09-12T07:01:30Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/python-study/commit/a80284940845ec349f84be494899e9c288a1cb60",
+                    "committedDate": "2016-09-11T13:36:31Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/python-study/commit/2f28e388758b41c03a77c5138dc1c76fa4c7e66d",
+                    "committedDate": "2016-09-11T07:07:04Z"
+                  },
+                  {
+                    "message": "오타 수정",
+                    "url": "https://github.com/soma0sd/python-study/commit/f23e5533dac97d6c5bb5cf4cd79952a0d7c8721d",
+                    "committedDate": "2016-09-10T07:02:25Z"
+                  },
+                  {
+                    "message": "readme 업데이트",
+                    "url": "https://github.com/soma0sd/python-study/commit/544478bcd6a846bc73168e9fea76f1995cefd843",
+                    "committedDate": "2016-09-10T06:59:52Z"
+                  },
+                  {
+                    "message": "예제파일 구조 변경",
+                    "url": "https://github.com/soma0sd/python-study/commit/a621f135785d49501e2e73230341ea419d6bf4c9",
+                    "committedDate": "2016-09-10T05:33:31Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/python-study/commit/3781d0afd40c126dc7104f268fa9be7ec0bd392b",
+                    "committedDate": "2016-09-10T05:07:32Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/python-study/commit/1da92f4c222bd54b1a489f4d7199b800ccee51ae",
+                    "committedDate": "2016-09-09T10:59:19Z"
+                  },
+                  {
+                    "message": "폴더 변경",
+                    "url": "https://github.com/soma0sd/python-study/commit/4de13a29e574468864599e114b980392ac672c20",
+                    "committedDate": "2016-09-09T09:40:14Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/python-study/commit/ea22de73f1a8ffd983942b2f2c164688b9266b61",
+                    "committedDate": "2016-09-09T08:18:26Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/961b8d8293c7aa9d8d7d00f8e61df19b81b659ad",
+                    "committedDate": "2016-09-09T05:54:59Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/35358a1f3d995dd1a7bc2fa56c23c193c1f51751",
+                    "committedDate": "2016-09-09T04:33:55Z"
+                  },
+                  {
+                    "message": "수업 중 예제 수정",
+                    "url": "https://github.com/soma0sd/python-study/commit/dcb8a8e871d63702f531676a332fe44aabdbd741",
+                    "committedDate": "2016-09-09T04:15:22Z"
+                  },
+                  {
+                    "message": "예비 예제 업로드 (추후 다른 예제로 교체)",
+                    "url": "https://github.com/soma0sd/python-study/commit/f161dfd221fdfd0b66768020b9540a71475f3760",
+                    "committedDate": "2016-09-08T14:42:54Z"
+                  },
+                  {
+                    "message": "readme 변경",
+                    "url": "https://github.com/soma0sd/python-study/commit/50b89244f8f4f9c36f03559cefe4d0d2ce5acddc",
+                    "committedDate": "2016-09-08T13:45:53Z"
+                  },
+                  {
+                    "message": "readme 변경",
+                    "url": "https://github.com/soma0sd/python-study/commit/39143f5d4de50efb7c4e6fd8397fd40d889382a0",
+                    "committedDate": "2016-09-08T12:39:19Z"
+                  },
+                  {
+                    "message": "몬테 카를로 예제 추가",
+                    "url": "https://github.com/soma0sd/python-study/commit/20c5491d67dd45511f388aecf0c0752eba7bc7e7",
+                    "committedDate": "2016-09-08T12:30:32Z"
+                  },
+                  {
+                    "message": "삭제",
+                    "url": "https://github.com/soma0sd/python-study/commit/c2b83a4eb8648bcbd6013986fffe3d99127826c6",
+                    "committedDate": "2016-09-08T10:26:18Z"
+                  },
+                  {
+                    "message": "수정(일부)",
+                    "url": "https://github.com/soma0sd/python-study/commit/ff189548b8ff479c7422a5eafb34798eba5c761c",
+                    "committedDate": "2016-09-08T08:48:10Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/python-study/commit/b27d86d5ad5df45a3390b38517ec052ef9a83469",
+                    "committedDate": "2016-09-08T06:30:18Z"
+                  },
+                  {
+                    "message": "오타수정",
+                    "url": "https://github.com/soma0sd/python-study/commit/4c293c8ce451cdf14aeb6da36ba94462dfc7a1de",
+                    "committedDate": "2016-09-08T06:04:12Z"
+                  },
+                  {
+                    "message": "coments update",
+                    "url": "https://github.com/soma0sd/python-study/commit/019179e18f95352e43c72603739482bf8cda9954",
+                    "committedDate": "2016-09-07T06:17:58Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/python-study/commit/a940c5474051dbdc025110d30b478f617e89b90a",
+                    "committedDate": "2016-09-07T04:11:05Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/python-study/commit/a55e0a91f7b02062da1bd3990d245fa8dcafef26",
+                    "committedDate": "2016-09-06T17:25:59Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/python-study/commit/c0515a5d7127b0911f1cf7b92cefc49a77dc5020",
+                    "committedDate": "2016-09-06T17:00:54Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/python-study/commit/f16b7e52b09fa9c82363362c37c485d8d09c7810",
+                    "committedDate": "2016-09-06T15:13:10Z"
+                  },
+                  {
+                    "message": "서식 변경",
+                    "url": "https://github.com/soma0sd/python-study/commit/b803633919ed33cf140d88a03d000d7918d9e27a",
+                    "committedDate": "2016-09-06T14:17:16Z"
+                  },
+                  {
+                    "message": "Merge branch 'master' of https://github.com/soma0sd/python-study",
+                    "url": "https://github.com/soma0sd/python-study/commit/388c80dae1f20831b3933052adef8d7e72fd48c3",
+                    "committedDate": "2016-09-06T14:15:30Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/python-study/commit/e45d2eb45fecbf39e26e9e1b6e80957fa13f69f4",
+                    "committedDate": "2016-09-06T14:12:37Z"
+                  },
+                  {
+                    "message": "Create README.md",
+                    "url": "https://github.com/soma0sd/python-study/commit/c6ecb03ad5afb8234893c011a5dcccc9cdc39ca0",
+                    "committedDate": "2016-09-06T10:33:26Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/python-study/commit/f27139aa1321329063cd8185f6a97a2270004a32",
+                    "committedDate": "2016-09-06T10:31:00Z"
+                  },
+                  {
+                    "message": "예제 테스트",
+                    "url": "https://github.com/soma0sd/python-study/commit/9b6c49afbda98a1febdebbf194b683f60688e51c",
+                    "committedDate": "2016-07-14T15:47:52Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/python-study/commit/abafe70924cd0ecf46d5572cadf5bfc7cd70f3a4",
+                    "committedDate": "2016-07-13T07:33:12Z"
+                  }
+                ],
+                "totalCount": 79
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 124937,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/computer_physics",
+            "description": "전산물리학 교재 프로젝트를 위한 코드/실행결과 모음 ",
+            "createdAt": "2016-12-03T10:10:37Z",
+            "updatedAt": "2017-08-31T12:52:15Z",
+            "pushedAt": "2017-09-16T02:43:34Z",
+            "url": "https://github.com/soma0sd/computer_physics",
+            "homepageUrl": "http://www.soma0sd.com/",
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "업데이트(일반)",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/cf8077ff46ec37c435ffe85b7cc6e4323a22c4b0",
+                    "committedDate": "2017-09-16T02:40:13Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/3e03bd9f248afd5e6eb49a22f07af905f8216ed6",
+                    "committedDate": "2017-08-31T12:51:32Z"
+                  },
+                  {
+                    "message": "리뉴얼",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/c694950070ef2b7fe413d6831d2f8ea2ac0e5b52",
+                    "committedDate": "2017-08-31T12:22:56Z"
+                  },
+                  {
+                    "message": "5월 4주차(13주차)업데이트 1",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/eb063c99438b1cff8396cd9f34f99e6897b14684",
+                    "committedDate": "2017-05-26T00:13:39Z"
+                  },
+                  {
+                    "message": "13주차 업데이트",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/cd37dd1a92af99c4c78bef1467b73038a998ac38",
+                    "committedDate": "2017-05-22T09:25:36Z"
+                  },
+                  {
+                    "message": "readme 추가",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/62d7c170506b01b63543c2834bb665138e5c2cdb",
+                    "committedDate": "2017-05-22T05:50:20Z"
+                  },
+                  {
+                    "message": "리뉴얼",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/2e42a04f5ff3c0f8eb54c70b0638e4cc4f723f94",
+                    "committedDate": "2017-05-22T05:44:50Z"
+                  },
+                  {
+                    "message": "Add files via upload",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/33835598b4e832f7b954199b64b27a1ec58adba3",
+                    "committedDate": "2017-04-13T13:29:31Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/db6bf103d45110149c76173ac14e714072e68470",
+                    "committedDate": "2016-12-21T16:03:04Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/0759b85a1229b2f0b49c77256dfd21c27b5264d1",
+                    "committedDate": "2016-12-08T06:52:32Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/70247247aab3a01d11fb6efdb77b6f8feedc1976",
+                    "committedDate": "2016-12-05T01:29:24Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/36595ef5586a2b208a820b189654553b037c71f2",
+                    "committedDate": "2016-12-05T00:58:27Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/99d7fe8908794125623c75076551d4d1be9a0b23",
+                    "committedDate": "2016-12-04T12:40:20Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/ee81e87e5f438a4e8cab91af18f127b88452fbf3",
+                    "committedDate": "2016-12-03T16:06:57Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/ea6d41b544b79bc6949def499ef059a5e0089128",
+                    "committedDate": "2016-12-03T13:21:37Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/dc358ef791477b8036b6916ce15e2ed823f8499e",
+                    "committedDate": "2016-12-03T13:09:02Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/3abee75e1f32e611d161bdf7eafb61e79ac9d902",
+                    "committedDate": "2016-12-03T10:55:36Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/2b531d5eaaab435639ff097d580808cba0bf78cd",
+                    "committedDate": "2016-12-03T10:45:48Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/f7bb2b72ec211fb2ff02542c97f88302ac219d96",
+                    "committedDate": "2016-12-03T10:15:53Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/aa938d9e51c2745ce43123cb5c6e88e40a5f70dc",
+                    "committedDate": "2016-12-03T10:10:38Z"
+                  }
+                ],
+                "totalCount": 20
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 169200,
+                  "node": {
+                    "name": "Jupyter Notebook",
+                    "color": "#DA5B0B"
+                  }
+                },
+                {
+                  "size": 4240,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/pyNuc",
+            "description": null,
+            "createdAt": "2016-10-11T10:44:02Z",
+            "updatedAt": "2016-12-25T17:47:43Z",
+            "pushedAt": "2017-01-13T07:17:17Z",
+            "url": "https://github.com/soma0sd/pyNuc",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/bc7a82a61f02fd86faa8bf4ae2526bc2e34cb353",
+                    "committedDate": "2017-01-13T07:17:12Z"
+                  },
+                  {
+                    "message": "ref data update",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/c13f01b864adc9e59427206d80b7007ba135fead",
+                    "committedDate": "2017-01-02T07:38:04Z"
+                  },
+                  {
+                    "message": "hot fix",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/f33afd99ff9cf445eee1cac0b73bf9369673933a",
+                    "committedDate": "2017-01-01T17:51:26Z"
+                  },
+                  {
+                    "message": "hot fix",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/7fc4cfe80aadca3808cefd47a56e75f911f04d1f",
+                    "committedDate": "2017-01-01T17:50:59Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/06cbba8d84c6629284a7018b8e5aab0424221b6a",
+                    "committedDate": "2017-01-01T17:48:36Z"
+                  },
+                  {
+                    "message": "data generate program",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/6649b1e6a6b383bfc6809dcc2443da1664d13359",
+                    "committedDate": "2017-01-01T17:48:04Z"
+                  },
+                  {
+                    "message": "라이센스 문제 해결",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/6996e3dfd62e60c462c0a93edfaea6e08579f41c",
+                    "committedDate": "2016-12-31T12:42:15Z"
+                  },
+                  {
+                    "message": "Update README.md",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/7da7fc277e18cbcee22875d817ca3e02adff7544",
+                    "committedDate": "2016-12-25T17:47:25Z"
+                  },
+                  {
+                    "message": "Set theme jekyll-theme-leap-day",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/89f5666b36ea2af52537cf2d725cc5ebf81b4da3",
+                    "committedDate": "2016-12-25T17:45:24Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/7a8ad93c2d43275531eacbce33a103328e0fcf8e",
+                    "committedDate": "2016-12-25T17:36:06Z"
+                  },
+                  {
+                    "message": "mixture update",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/48e63fa7446befa59151a5fa8d37c883fbbd2419",
+                    "committedDate": "2016-12-25T12:12:08Z"
+                  },
+                  {
+                    "message": "packege import update",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/759ac10d4a46a8e7c3b920d6f89ebb10d20f8d11",
+                    "committedDate": "2016-12-21T22:34:53Z"
+                  },
+                  {
+                    "message": "chain decay update",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/443e63fc2d2dd6c2f3ac4084f99212fec82555a0",
+                    "committedDate": "2016-12-21T22:34:06Z"
+                  },
+                  {
+                    "message": "activity calc update",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/3bcf264fb02c41c13e065a7b0ea0749f6dd9a5d7",
+                    "committedDate": "2016-12-21T14:51:38Z"
+                  },
+                  {
+                    "message": "207TL Decay Bug fix",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/c5b26e6282407a7eb6bfb64b869772cb4cb35f8e",
+                    "committedDate": "2016-12-21T14:22:16Z"
+                  },
+                  {
+                    "message": "bug fix",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/6283a3381036ccc898858bb39199c9205446a65e",
+                    "committedDate": "2016-12-21T13:33:43Z"
+                  },
+                  {
+                    "message": "chain test version",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/feb2a0a5e909aed33b24d4f259828c23fa7aa32c",
+                    "committedDate": "2016-12-21T11:51:54Z"
+                  },
+                  {
+                    "message": "DB update",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/2b0cd6df26e2935c0035f8edead7d906cf4f178a",
+                    "committedDate": "2016-12-21T11:51:21Z"
+                  },
+                  {
+                    "message": "ex update",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/be9a9884cfb39ff1a777acbe5eda7c4c192038ab",
+                    "committedDate": "2016-12-21T08:42:14Z"
+                  },
+                  {
+                    "message": "nuclide class import",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/65c3543a41f9fae5da116524ed40173b641d1e3d",
+                    "committedDate": "2016-12-21T06:10:45Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/7c275fea81227efb146d949fe298ef1bb35d283c",
+                    "committedDate": "2016-12-20T16:08:15Z"
+                  },
+                  {
+                    "message": "reset",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/1c604a9b50c586df9bbcc5943524370396ad37d6",
+                    "committedDate": "2016-12-14T14:46:10Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/3084a9098b504320be05ce866cb0a903dae8ddd3",
+                    "committedDate": "2016-11-16T12:31:34Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/015e67152148f7c2a5ea2b1203b63599c4e19e42",
+                    "committedDate": "2016-11-13T15:32:12Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/34c722b323790e87a1cdef99132d3ebb6d9d7699",
+                    "committedDate": "2016-11-13T14:11:44Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/a961bc7ba0821826e259003eed3ed210420f4f54",
+                    "committedDate": "2016-11-09T09:54:47Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/6568e222bdc9409608d4a433b8bf5be48ce43fdf",
+                    "committedDate": "2016-10-19T10:33:42Z"
+                  },
+                  {
+                    "message": "test upload",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/5725c7d601c36023f7abe705d1a3058b9351ae5c",
+                    "committedDate": "2016-10-12T07:31:30Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/pyNuc/commit/7deb23c0c329b352827d0bd715fe37ad038e9ba4",
+                    "committedDate": "2016-10-11T10:44:03Z"
+                  }
+                ],
+                "totalCount": 29
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 110208,
+                  "node": {
+                    "name": "AGS Script",
+                    "color": "#B9D9FF"
+                  }
+                },
+                {
+                  "size": 23143,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

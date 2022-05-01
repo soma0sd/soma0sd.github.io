@@ -3,11 +3,7 @@
     "html.validate.styles": false,
     "html.validate.scripts": false,
     "liquid.format": true,
-    "[liquid]": {
-        "editor.tabSize": 4,
-    },
     "[html]": {
-        "editor.tabSize": 4,
         "editor.defaultFormatter": "sissel.shopify-liquid"
     },
     "liquid.rules": {
@@ -63,5 +59,6 @@
             "brace_block": true,
             "no_semicolon": true
         }
-    }
+    },
+    "python.formatting.provider": "black"
 }

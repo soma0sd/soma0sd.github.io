@@ -1,9 +1,0 @@
-{%- assign repo = site.data.github_repo -%}
-<h1>Repository List</h1>
-<ul id="repos-list">
-    {% for item in repo %}
-    <li>
-        <h2><a href="{{ item.url }}">{{ item.nameWithOwner }}</a></h2>
-    </li>
-    {% endfor %}
-</ul>

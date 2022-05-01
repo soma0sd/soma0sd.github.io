@@ -1,0 +1,263 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Gothic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css');
+
+
+// 변수
+$background-color: #121212;
+$nav-bacground-color: #263238;
+
+$text-high: rgba($color: #FFF, $alpha: 0.87);
+$text-medium: rgba($color: #FFF, $alpha: 0.60);
+$text-disabled: rgba($color: #FFF, $alpha: 0.38);
+
+$text-medium-emphasis: rgba($color: #009688, $alpha: 1.00);
+
+
+
+$nav-height: 2rem;
+
+//  폰트
+body { font-family: 'Nanum Gothic', sans-serif; }
+code { font-family: 'Fira Code', 'Nanum Gothic Coding', monospace; }
+
+// 기본 태그 속성
+body {
+    background-color: $background-color;
+    color: $text-medium;
+}
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: $nav-height;
+    z-index: 99;
+    background-color: $nav-bacground-color;
+}
+section {
+    padding-top: $nav-height;
+    min-height: 100vh;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+h1 {
+    color: $text-high;
+    padding-left: 1rem;
+}
+a {
+    text-decoration: none;
+    color: $text-medium-emphasis;
+}
+
+// 기본 클래스 속성
+.dp-1 { background-color: rgba($color: #FFF, $alpha: 0.05); }
+.dp-2 { background-color: rgba($color: #FFF, $alpha: 0.07); }
+.dp-3 { background-color: rgba($color: #FFF, $alpha: 0.08); }
+.dp-4 { background-color: rgba($color: #FFF, $alpha: 0.09); }
+.dp-6 { background-color: rgba($color: #FFF, $alpha: 0.11); }
+.dp-8 { background-color: rgba($color: #FFF, $alpha: 0.12); }
+.dp-12 { background-color: rgba($color: #FFF, $alpha: 0.14); }
+.dp-16 { background-color: rgba($color: #FFF, $alpha: 0.15); }
+.dp-24 { background-color: rgba($color: #FFF, $alpha: 0.16); }
+
+.material-icons-sharp {font-size: inherit;}
+
+// 특성
+header {
+    nav {
+        width: 700px;
+        margin: auto;
+        display: flex;
+        a {
+            display: block;
+            min-width: 3em;
+            text-align: center;
+            align-self: center;
+            padding: 0.3rem 0.5rem;
+            color: $text-high;
+            font-weight: bold;
+            font-size: 1.2em;
+            border-right: $text-disabled 1px solid;
+        }
+        a:last-child {
+            border-right: none;
+        }
+    }
+}
+#user-profile {
+    position: relative;
+    &>div {
+        margin: 0;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        &>.avatar {
+            margin: 1rem auto;
+            max-width: 200px;
+            &>img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &>h1 {
+            &>span { display: block; }
+            &>.login { font-size: 0.8em; color: $text-medium}
+        }
+        &>ul{
+            width: fit-content;
+            margin: 1rem auto;
+            text-align: left;
+            font-size: 1em;
+            line-height: 1.5;
+            &>li {
+                line-height: 1.8;
+                vertical-align: middle;
+            }
+            i {
+                top: 2px;
+                position: relative;
+            }
+        }
+    }
+}
+
+#user-stats {
+    h2 { text-align: center; }
+    #code-lang-stats {
+        max-width: 80%;
+        margin: auto;
+        .lang-stat-item {
+            display: grid;
+            grid-template-columns: auto auto 1fr;
+            grid-template-areas: 
+                "name usage bar"
+                "size size bar";
+            gap: 0.2rem;
+            margin-top: 0.3rem;
+        }
+        .lang-name { grid-area: name; }
+        .lang-usage { grid-area: usage; }
+        .lang-size { grid-area: size; }
+        .lang-usage-bar { grid-area: bar; }
+        .lang-name {
+            width: 8em;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            color: $text-high;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .lang-size {
+            text-align: right;
+            font-size: 0.8em;
+            white-space:nowrap;
+            align-self: start;
+            padding-right: 0.4rem;
+        }
+        .lang-usage {
+            width: 4em;
+            font-size: 0.8em;
+            text-align: right;
+            align-self: end;
+            padding-right: 0.4rem;
+        }
+        .lang-usage-bar {
+            margin: 0.4rem 0;
+            border-radius: 2px;
+        }
+    }
+}
+
+#repos-info {
+    &>ul {
+        width: 700px;
+        margin: auto;
+    }
+    .repo-item {
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+        margin-top: 0.5rem;
+        border-radius: 2px;
+        h2 {
+            margin: 0;
+            line-height: 1.6;
+            vertical-align: middle;
+            color: $text-high;
+            a {
+                display: inline-block;
+            }
+        }
+        .langs-bar {
+            display: flex;
+            gap: 2px;
+            overflow: hidden;
+            height: 1em;
+            margin-top: 0.5rem;
+            .langs-value {
+                border-radius: 2px;
+                height: 100%;
+                display: inline-block;
+            }
+        }
+        .langs-list {
+            margin: 0.5rem 0;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            .name {
+                font-weight: bold;
+            }
+            .value {
+                font-size: 0.7em;
+                color: $text-disabled;
+            }
+        }
+        .commit-list-warp {
+            .material-icons-sharp {
+                line-height: 1.5;
+                vertical-align: middle;
+            }
+            .commit-list-btn {
+                width: 100%;
+                text-align: left;
+                font-size: 1em;
+                line-height: 1.5;
+                vertical-align: middle;
+                border-radius: 2px;
+                color: $text-medium;
+                outline: unset;
+                border: none;
+                .text {
+                    margin-right: 0.5rem;
+                }
+            }
+            .commit-list {
+                list-style: disc;
+                padding: 0 0.5rem 0 0.5rem;
+                overflow: hidden;
+                max-height: 0;
+                transition: max-height 0.5s ease-in-out, padding 0.1s ease-in-out;
+                li {
+                    margin-bottom: 0.5rem;
+                    line-height: 1.5;
+                    vertical-align: middle;
+                }
+                .message {
+                    margin-right: 0.5rem;
+                }
+                time, .material-icons-sharp {
+                    color: $text-disabled;
+                    font-size: 0.8em;
+                }
+                &.active {
+                    max-height: 100vh;
+                    padding: 0.5rem 0.5rem 0.5rem 1.3rem;
+            }
+            }
+        }
+    }
+}
