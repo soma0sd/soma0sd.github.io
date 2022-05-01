@@ -12,7 +12,7 @@
     "color": "#3A4E3A"
   },
   "Python": {
-    "size": 265192,
+    "size": 267407,
     "color": "#3572A5"
   },
   "Jupyter Notebook": {
@@ -32,11 +32,11 @@
     "color": "#89e051"
   },
   "SCSS": {
-    "size": 67869,
+    "size": 67069,
     "color": "#c6538c"
   },
   "HTML": {
-    "size": 26464,
+    "size": 26432,
     "color": "#e34c26"
   },
   "C#": {
@@ -55,13 +55,13 @@
     "size": 3586,
     "color": "#384d54"
   },
-  "TypeScript": {
-    "size": 3540,
-    "color": "#2b7489"
-  },
   "CSS": {
     "size": 2727,
     "color": "#563d7c"
+  },
+  "TypeScript": {
+    "size": 1915,
+    "color": "#2b7489"
   },
   "Ruby": {
     "size": 1113,

@@ -3,14 +3,19 @@
     "nameWithOwner": "soma0sd/soma0sd.github.io",
     "description": null,
     "createdAt": "2017-11-19T10:29:29Z",
-    "updatedAt": "2022-04-20T18:36:20Z",
-    "pushedAt": "2022-04-27T12:14:27Z",
+    "updatedAt": "2022-05-01T13:03:03Z",
+    "pushedAt": "2022-05-01T13:03:00Z",
     "url": "https://github.com/soma0sd/soma0sd.github.io",
     "homepageUrl": "https://soma0sd.github.io/",
     "isArchived": false,
     "isPrivate": false,
-    "commits": 27,
+    "commits": 28,
     "commit": [
+      {
+        "message": "new layout",
+        "url": "https://github.com/soma0sd/soma0sd.github.io/commit/bdb2294602fe2493285c2c71ac670229100cebae",
+        "date": "2022-05-01T13:02:53Z"
+      },
       {
         "message": "api layout update",
         "url": "https://github.com/soma0sd/soma0sd.github.io/commit/a46a6d0156b2fa19909187201cfa290efb61fd22",
@@ -149,24 +154,24 @@
     ],
     "languages": [
       {
-        "size": 7991,
-        "name": "SCSS",
-        "color": "#c6538c"
-      },
-      {
-        "size": 7251,
+        "size": 7219,
         "name": "HTML",
         "color": "#e34c26"
       },
       {
-        "size": 3540,
-        "name": "TypeScript",
-        "color": "#2b7489"
+        "size": 7191,
+        "name": "SCSS",
+        "color": "#c6538c"
       },
       {
-        "size": 2569,
+        "size": 4784,
         "name": "Python",
         "color": "#3572A5"
+      },
+      {
+        "size": 1915,
+        "name": "TypeScript",
+        "color": "#2b7489"
       },
       {
         "size": 74,

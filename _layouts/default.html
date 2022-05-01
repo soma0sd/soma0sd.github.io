@@ -95,15 +95,17 @@
                         <a class="material-icons-sharp" href="{{ repo.homepageUrl }}">home</a>
                     {% endif %}
                 </h2>
-                <span>{{ repo.description }}</span>
-                <span>
-                    <i class="material-icons-sharp">start</i>
-                    <time>{{ repo.createdAt }}</time>
-                </span>
-                <span>
-                    <i class="material-icons-sharp">update</i>
-                    <time>{{ repo.pushedAt }}</time>
-                </span>
+                <p>{{ repo.description }}</p>
+                <div class="datetime">
+                    <span>
+                        <i class="material-icons-sharp">update</i>
+                        <time>{{ repo.pushedAt }}</time>
+                    </span>
+                    <span>
+                        <i class="material-icons-sharp">start</i>
+                        <time>{{ repo.createdAt }}</time>
+                    </span>
+                </div>
                 <div>
                     {%- assign total = 0 -%}
                     {% for language in repo.languages %}

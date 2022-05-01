@@ -18,8 +18,8 @@
             "nameWithOwner": "soma0sd/soma0sd.github.io",
             "description": null,
             "createdAt": "2017-11-19T10:29:29Z",
-            "updatedAt": "2022-04-20T18:36:20Z",
-            "pushedAt": "2022-04-27T12:14:27Z",
+            "updatedAt": "2022-05-01T13:03:03Z",
+            "pushedAt": "2022-05-01T13:03:00Z",
             "url": "https://github.com/soma0sd/soma0sd.github.io",
             "homepageUrl": "https://soma0sd.github.io/",
             "isArchived": false,
@@ -27,6 +27,11 @@
             "object": {
               "history": {
                 "nodes": [
+                  {
+                    "message": "new layout",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/bdb2294602fe2493285c2c71ac670229100cebae",
+                    "committedDate": "2022-05-01T13:02:53Z"
+                  },
                   {
                     "message": "api layout update",
                     "url": "https://github.com/soma0sd/soma0sd.github.io/commit/a46a6d0156b2fa19909187201cfa290efb61fd22",
@@ -163,37 +168,37 @@
                     "committedDate": "2017-11-19T10:29:30Z"
                   }
                 ],
-                "totalCount": 27
+                "totalCount": 28
               }
             },
             "languages": {
               "edges": [
                 {
-                  "size": 7991,
-                  "node": {
-                    "name": "SCSS",
-                    "color": "#c6538c"
-                  }
-                },
-                {
-                  "size": 7251,
+                  "size": 7219,
                   "node": {
                     "name": "HTML",
                     "color": "#e34c26"
                   }
                 },
                 {
-                  "size": 3540,
+                  "size": 7191,
                   "node": {
-                    "name": "TypeScript",
-                    "color": "#2b7489"
+                    "name": "SCSS",
+                    "color": "#c6538c"
                   }
                 },
                 {
-                  "size": 2569,
+                  "size": 4784,
                   "node": {
                     "name": "Python",
                     "color": "#3572A5"
+                  }
+                },
+                {
+                  "size": 1915,
+                  "node": {
+                    "name": "TypeScript",
+                    "color": "#2b7489"
                   }
                 },
                 {
