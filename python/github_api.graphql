@@ -10,7 +10,7 @@
     avatarUrl
     createdAt
     updatedAt
-    repositories(first: 100, orderBy: { field: UPDATED_AT, direction: DESC }) {
+    repositories(first: 100, orderBy: { field: PUSHED_AT, direction: DESC }) {
       totalCount
       nodes {
         nameWithOwner
