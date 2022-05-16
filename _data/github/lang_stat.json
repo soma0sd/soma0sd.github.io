@@ -32,24 +32,28 @@
     "color": "#89e051"
   },
   "SCSS": {
-    "size": 67371,
+    "size": 75444,
     "color": "#c6538c"
   },
   "HTML": {
     "size": 26520,
     "color": "#e34c26"
   },
+  "JavaScript": {
+    "size": 25487,
+    "color": "#f1e05a"
+  },
   "C#": {
     "size": 25107,
     "color": "#178600"
   },
-  "JavaScript": {
-    "size": 21878,
-    "color": "#f1e05a"
-  },
   "Pug": {
-    "size": 19181,
+    "size": 10342,
     "color": "#a86454"
+  },
+  "TypeScript": {
+    "size": 5510,
+    "color": "#2b7489"
   },
   "Dockerfile": {
     "size": 3586,
@@ -58,10 +62,6 @@
   "CSS": {
     "size": 2727,
     "color": "#563d7c"
-  },
-  "TypeScript": {
-    "size": 1915,
-    "color": "#2b7489"
   },
   "Ruby": {
     "size": 1113,

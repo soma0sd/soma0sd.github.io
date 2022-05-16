@@ -15,11 +15,136 @@
         "totalCount": 18,
         "nodes": [
           {
-            "nameWithOwner": "soma0sd/soma0sd.github.io",
+            "nameWithOwner": "soma0sd/Tistory-Simple-Skin",
             "description": null,
+            "createdAt": "2021-12-14T10:15:29Z",
+            "updatedAt": "2021-12-19T13:43:25Z",
+            "pushedAt": "2022-05-16T01:09:14Z",
+            "url": "https://github.com/soma0sd/Tistory-Simple-Skin",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "change styles and tag page",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/932dd49af7325062f994c8ebbb526ed3b718baa7",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "mod) dev console",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/c2ba2f1f7a8dc7720747215f04a280fe43e56f5c",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "script update",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/5654532fd306a84aa9365d960901143039355d39",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "script update",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/02fa00f1cc5bdaaba0ad25c975899d6247cab9dc",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "change styles",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/3ce61214574b12b39d5c43c92ebfc111e493b481",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "change Structure",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/27659c2e69ad58c0e516db59c1cfb02554f3c1dc",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "add sass and typescript",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/0d2db192fd90ce6e1960d78719c6ffbb70b00d11",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "fix readme",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/01159f1859d43bca780c3bad2f2798fbfbc7738b",
+                    "committedDate": "2021-12-19T13:43:14Z"
+                  },
+                  {
+                    "message": "add new colorsets",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/0e7575997e5c87aaf30d3141661480375ea3de9c",
+                    "committedDate": "2021-12-19T13:26:39Z"
+                  },
+                  {
+                    "message": "comments add scripts",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/6d6ad042d24ebead598f8c3d5756f0091ab3d627",
+                    "committedDate": "2021-12-19T13:26:39Z"
+                  },
+                  {
+                    "message": "git flow fix",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/3e4f0efed0e8a56fea98ec16e5b67a4c981fe408",
+                    "committedDate": "2021-12-19T13:26:39Z"
+                  },
+                  {
+                    "message": "Merge pull request #1 from soma0sd/v1.0\n\nv1.0 version init",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/99945349b77cc39a6d4a99b0ceb0c0a68540268e",
+                    "committedDate": "2021-12-15T13:11:16Z"
+                  },
+                  {
+                    "message": "do not linting",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/bb0ac3d26f544daa9342ebebbd06094601b49c22",
+                    "committedDate": "2021-12-15T13:09:56Z"
+                  },
+                  {
+                    "message": "version init",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/f185d0bc758067dd840f4d21769019f901582032",
+                    "committedDate": "2021-12-15T13:05:29Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/ab5a7b2ec56772dcbd56d090275c291aa6fa78ec",
+                    "committedDate": "2021-12-14T10:15:32Z"
+                  }
+                ],
+                "totalCount": 15
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 10342,
+                  "node": {
+                    "name": "Pug",
+                    "color": "#a86454"
+                  }
+                },
+                {
+                  "size": 7932,
+                  "node": {
+                    "name": "SCSS",
+                    "color": "#c6538c"
+                  }
+                },
+                {
+                  "size": 5560,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
+                  }
+                },
+                {
+                  "size": 3595,
+                  "node": {
+                    "name": "TypeScript",
+                    "color": "#2b7489"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/soma0sd.github.io",
+            "description": "GitHub Pages using GitHub GraphQL API",
             "createdAt": "2017-11-19T10:29:29Z",
-            "updatedAt": "2022-05-01T23:14:15Z",
-            "pushedAt": "2022-05-01T23:14:11Z",
+            "updatedAt": "2022-05-02T12:53:09Z",
+            "pushedAt": "2022-05-01T23:21:34Z",
             "url": "https://github.com/soma0sd/soma0sd.github.io",
             "homepageUrl": "https://soma0sd.github.io/",
             "isArchived": false,
@@ -27,6 +152,11 @@
             "object": {
               "history": {
                 "nodes": [
+                  {
+                    "message": "mobile layout",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/276f66aad4cf910fc3e15c344ba7808ff8f18c63",
+                    "committedDate": "2022-05-01T23:21:28Z"
+                  },
                   {
                     "message": "repos list layout uppdate",
                     "url": "https://github.com/soma0sd/soma0sd.github.io/commit/37d2702d0e3f7772d1d0cfea07c5499c4eb03f24",
@@ -173,13 +303,13 @@
                     "committedDate": "2017-11-19T10:29:30Z"
                   }
                 ],
-                "totalCount": 29
+                "totalCount": 30
               }
             },
             "languages": {
               "edges": [
                 {
-                  "size": 7493,
+                  "size": 7634,
                   "node": {
                     "name": "SCSS",
                     "color": "#c6538c"
@@ -211,408 +341,6 @@
                   "node": {
                     "name": "Ruby",
                     "color": "#701516"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/Guild-Management",
-            "description": "Management Simulation Game",
-            "createdAt": "2022-01-22T18:45:07Z",
-            "updatedAt": "2022-01-22T19:26:28Z",
-            "pushedAt": "2022-01-24T09:34:51Z",
-            "url": "https://github.com/soma0sd/Guild-Management",
-            "homepageUrl": null,
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "fix readme",
-                    "url": "https://github.com/soma0sd/Guild-Management/commit/33cb8a5aeaab75f4367f0ae460e78ce647367698",
-                    "committedDate": "2022-01-24T09:32:00Z"
-                  },
-                  {
-                    "message": "append world class",
-                    "url": "https://github.com/soma0sd/Guild-Management/commit/bdf5c8b519c7fb07ed71d9c2ffbf5287032ec79f",
-                    "committedDate": "2022-01-24T09:32:00Z"
-                  },
-                  {
-                    "message": "update dev env",
-                    "url": "https://github.com/soma0sd/Guild-Management/commit/1b8e26469df83218289f99149239ae3f9bdd3cfd",
-                    "committedDate": "2022-01-24T09:32:00Z"
-                  },
-                  {
-                    "message": "update init v0.1.0",
-                    "url": "https://github.com/soma0sd/Guild-Management/commit/93f993e4b38a18749fa2d790f90597cd889d84e5",
-                    "committedDate": "2022-01-24T09:32:00Z"
-                  },
-                  {
-                    "message": "dev setttings",
-                    "url": "https://github.com/soma0sd/Guild-Management/commit/4d3fd49cd60f91141103b4247ef5abc9669f1619",
-                    "committedDate": "2022-01-24T09:32:00Z"
-                  },
-                  {
-                    "message": "remove numpy",
-                    "url": "https://github.com/soma0sd/Guild-Management/commit/bb3fd04e785eadabfc9e6514201797627a6036f6",
-                    "committedDate": "2022-01-24T09:32:00Z"
-                  },
-                  {
-                    "message": "update v0.0.1",
-                    "url": "https://github.com/soma0sd/Guild-Management/commit/0f89d5f78c8185b8516d5564cd01da7978eee5a3",
-                    "committedDate": "2022-01-22T19:26:25Z"
-                  },
-                  {
-                    "message": "개발환경 변수",
-                    "url": "https://github.com/soma0sd/Guild-Management/commit/a697e821b583481b6716eae39059ca3bd2b1ddbb",
-                    "committedDate": "2022-01-22T19:26:25Z"
-                  },
-                  {
-                    "message": "Initial commit",
-                    "url": "https://github.com/soma0sd/Guild-Management/commit/804303ab892d11cb4dcafaec270a54337502d55b",
-                    "committedDate": "2022-01-22T18:45:08Z"
-                  }
-                ],
-                "totalCount": 9
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 9019,
-                  "node": {
-                    "name": "Python",
-                    "color": "#3572A5"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/jetson-inference",
-            "description": "Hello AI World guide to deploying deep-learning inference networks and deep vision primitives with TensorRT and NVIDIA Jetson.",
-            "createdAt": "2021-12-22T13:49:52Z",
-            "updatedAt": "2022-01-10T03:26:03Z",
-            "pushedAt": "2022-01-10T03:25:56Z",
-            "url": "https://github.com/soma0sd/jetson-inference",
-            "homepageUrl": "https://developer.nvidia.com/embedded/twodaystoademo",
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "update utils",
-                    "url": "https://github.com/soma0sd/jetson-inference/commit/7bc8f88bdac0fa6422acf70180b37bffd27c6c9e",
-                    "committedDate": "2022-01-10T03:25:48Z"
-                  },
-                  {
-                    "message": "append trt_pose module",
-                    "url": "https://github.com/soma0sd/jetson-inference/commit/3af0cc85194b3802882c7a4ec85552a300583009",
-                    "committedDate": "2021-12-30T01:39:48Z"
-                  },
-                  {
-                    "message": "add camera deps",
-                    "url": "https://github.com/soma0sd/jetson-inference/commit/e26f78cdd7650f98b96ea322ed46592b9d6760c6",
-                    "committedDate": "2021-12-22T17:21:56Z"
-                  },
-                  {
-                    "message": "remove submodules",
-                    "url": "https://github.com/soma0sd/jetson-inference/commit/466e3f5ca247d91401c58c38b4dea33d14695839",
-                    "committedDate": "2021-12-22T15:24:24Z"
-                  },
-                  {
-                    "message": "commit message",
-                    "url": "https://github.com/soma0sd/jetson-inference/commit/1c592b8eb7ee6382755d04a0539d2c5febefb5e0",
-                    "committedDate": "2021-12-22T14:51:02Z"
-                  }
-                ],
-                "totalCount": 5
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 833321,
-                  "node": {
-                    "name": "C++",
-                    "color": "#f34b7d"
-                  }
-                },
-                {
-                  "size": 84437,
-                  "node": {
-                    "name": "Shell",
-                    "color": "#89e051"
-                  }
-                },
-                {
-                  "size": 64218,
-                  "node": {
-                    "name": "Cuda",
-                    "color": "#3A4E3A"
-                  }
-                },
-                {
-                  "size": 40255,
-                  "node": {
-                    "name": "Python",
-                    "color": "#3572A5"
-                  }
-                },
-                {
-                  "size": 13859,
-                  "node": {
-                    "name": "C",
-                    "color": "#555555"
-                  }
-                },
-                {
-                  "size": 13519,
-                  "node": {
-                    "name": "CMake",
-                    "color": "#DA3434"
-                  }
-                },
-                {
-                  "size": 3586,
-                  "node": {
-                    "name": "Dockerfile",
-                    "color": "#384d54"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/jetson-utils",
-            "description": "C++/Python Linux utility wrappers for NVIDIA Jetson - camera, codecs, CUDA, GStreamer, HID, OpenGL/XGL",
-            "createdAt": "2021-12-22T13:50:12Z",
-            "updatedAt": "2022-01-06T05:55:57Z",
-            "pushedAt": "2022-01-06T05:55:54Z",
-            "url": "https://github.com/soma0sd/jetson-utils",
-            "homepageUrl": "",
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "ignore videoOutput sleep",
-                    "url": "https://github.com/soma0sd/jetson-utils/commit/e4846c56a99fface1a352385af463d22926dcb6c",
-                    "committedDate": "2022-01-06T05:55:47Z"
-                  },
-                  {
-                    "message": "line width fix",
-                    "url": "https://github.com/soma0sd/jetson-utils/commit/cd19047d6ef858f9cbc87d1805921925a386039d",
-                    "committedDate": "2021-12-30T01:38:29Z"
-                  },
-                  {
-                    "message": "border box and border eclipse",
-                    "url": "https://github.com/soma0sd/jetson-utils/commit/2e8ff97873f0e8981277787b9b00dcffc77cf90c",
-                    "committedDate": "2021-12-23T21:42:34Z"
-                  },
-                  {
-                    "message": "add cudaDrawEclipse",
-                    "url": "https://github.com/soma0sd/jetson-utils/commit/691cf6c5257dc4c374ad6a0b44cef64500325477",
-                    "committedDate": "2021-12-23T20:36:50Z"
-                  },
-                  {
-                    "message": "add search flag: soma0sd modification:",
-                    "url": "https://github.com/soma0sd/jetson-utils/commit/20944b083caef94e126ee7e01f0f97853a2712e5",
-                    "committedDate": "2021-12-23T19:09:13Z"
-                  },
-                  {
-                    "message": "add intervideosink protocol",
-                    "url": "https://github.com/soma0sd/jetson-utils/commit/3ef170e181b1565e8413d90cd086ba4b286f3d6d",
-                    "committedDate": "2021-12-23T18:14:26Z"
-                  },
-                  {
-                    "message": "commit message",
-                    "url": "https://github.com/soma0sd/jetson-utils/commit/c67668d095381eeb448b6a4108de9e0e2db65965",
-                    "committedDate": "2021-12-22T14:59:20Z"
-                  }
-                ],
-                "totalCount": 7
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 1851393,
-                  "node": {
-                    "name": "C++",
-                    "color": "#f34b7d"
-                  }
-                },
-                {
-                  "size": 811052,
-                  "node": {
-                    "name": "C",
-                    "color": "#555555"
-                  }
-                },
-                {
-                  "size": 221509,
-                  "node": {
-                    "name": "Cuda",
-                    "color": "#3A4E3A"
-                  }
-                },
-                {
-                  "size": 124338,
-                  "node": {
-                    "name": "CMake",
-                    "color": "#DA3434"
-                  }
-                },
-                {
-                  "size": 20713,
-                  "node": {
-                    "name": "Python",
-                    "color": "#3572A5"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/Tistory-Simple-Skin",
-            "description": null,
-            "createdAt": "2021-12-14T10:15:29Z",
-            "updatedAt": "2021-12-19T13:43:25Z",
-            "pushedAt": "2022-04-29T16:52:17Z",
-            "url": "https://github.com/soma0sd/Tistory-Simple-Skin",
-            "homepageUrl": null,
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "fix readme",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/01159f1859d43bca780c3bad2f2798fbfbc7738b",
-                    "committedDate": "2021-12-19T13:43:14Z"
-                  },
-                  {
-                    "message": "add new colorsets",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/0e7575997e5c87aaf30d3141661480375ea3de9c",
-                    "committedDate": "2021-12-19T13:26:39Z"
-                  },
-                  {
-                    "message": "comments add scripts",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/6d6ad042d24ebead598f8c3d5756f0091ab3d627",
-                    "committedDate": "2021-12-19T13:26:39Z"
-                  },
-                  {
-                    "message": "git flow fix",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/3e4f0efed0e8a56fea98ec16e5b67a4c981fe408",
-                    "committedDate": "2021-12-19T13:26:39Z"
-                  },
-                  {
-                    "message": "Merge pull request #1 from soma0sd/v1.0\n\nv1.0 version init",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/99945349b77cc39a6d4a99b0ceb0c0a68540268e",
-                    "committedDate": "2021-12-15T13:11:16Z"
-                  },
-                  {
-                    "message": "do not linting",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/bb0ac3d26f544daa9342ebebbd06094601b49c22",
-                    "committedDate": "2021-12-15T13:09:56Z"
-                  },
-                  {
-                    "message": "version init",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/f185d0bc758067dd840f4d21769019f901582032",
-                    "committedDate": "2021-12-15T13:05:29Z"
-                  },
-                  {
-                    "message": "Initial commit",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/ab5a7b2ec56772dcbd56d090275c291aa6fa78ec",
-                    "committedDate": "2021-12-14T10:15:32Z"
-                  }
-                ],
-                "totalCount": 8
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 19181,
-                  "node": {
-                    "name": "Pug",
-                    "color": "#a86454"
-                  }
-                },
-                {
-                  "size": 1951,
-                  "node": {
-                    "name": "JavaScript",
-                    "color": "#f1e05a"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/tModKoreanTranslator",
-            "description": "테라리아 한글화 지원 모드",
-            "createdAt": "2020-01-05T07:30:44Z",
-            "updatedAt": "2021-10-26T08:37:28Z",
-            "pushedAt": "2020-01-14T13:03:11Z",
-            "url": "https://github.com/soma0sd/tModKoreanTranslator",
-            "homepageUrl": null,
-            "isArchived": true,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "0.4.3 메타만 있는 모드가 있었다고...?",
-                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/61a293a9e24786350b05a5a8d584c47167a4f430",
-                    "committedDate": "2020-01-14T12:57:19Z"
-                  },
-                  {
-                    "message": "0.4.2 빼먹은 예외처리 추가",
-                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/e9c75b23f1176fa596a7978043e28e0a0d170caa",
-                    "committedDate": "2020-01-14T12:12:40Z"
-                  },
-                  {
-                    "message": "0.4.1 오타 수정",
-                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/3d41c725edd7ab958202d01fb629834cffd2c46a",
-                    "committedDate": "2020-01-13T21:10:39Z"
-                  },
-                  {
-                    "message": "0.4.1 번역자 모드 오작동 수정",
-                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/edf237700b480173c84ea0a9d7d316796f3193b8",
-                    "committedDate": "2020-01-13T21:01:24Z"
-                  },
-                  {
-                    "message": "0.4.0",
-                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/fe209de04ffd074b3a1d6bd44930a7ce8075a3c0",
-                    "committedDate": "2020-01-13T16:44:34Z"
-                  },
-                  {
-                    "message": "v0.3.0",
-                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/f16347bd7e5e2c82fd72f5c446145e27aeb13081",
-                    "committedDate": "2020-01-10T05:52:55Z"
-                  },
-                  {
-                    "message": "Initial commit",
-                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/ebc63412ff2b5ae3a7fd260d7cf067f9fa7a9137",
-                    "committedDate": "2020-01-05T07:30:45Z"
-                  }
-                ],
-                "totalCount": 7
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 25107,
-                  "node": {
-                    "name": "C#",
-                    "color": "#178600"
                   }
                 }
               ]
@@ -889,6 +617,268 @@
                   "node": {
                     "name": "CSS",
                     "color": "#563d7c"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/Guild-Management",
+            "description": "Management Simulation Game",
+            "createdAt": "2022-01-22T18:45:07Z",
+            "updatedAt": "2022-01-22T19:26:28Z",
+            "pushedAt": "2022-01-24T09:34:51Z",
+            "url": "https://github.com/soma0sd/Guild-Management",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "fix readme",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/33cb8a5aeaab75f4367f0ae460e78ce647367698",
+                    "committedDate": "2022-01-24T09:32:00Z"
+                  },
+                  {
+                    "message": "append world class",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/bdf5c8b519c7fb07ed71d9c2ffbf5287032ec79f",
+                    "committedDate": "2022-01-24T09:32:00Z"
+                  },
+                  {
+                    "message": "update dev env",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/1b8e26469df83218289f99149239ae3f9bdd3cfd",
+                    "committedDate": "2022-01-24T09:32:00Z"
+                  },
+                  {
+                    "message": "update init v0.1.0",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/93f993e4b38a18749fa2d790f90597cd889d84e5",
+                    "committedDate": "2022-01-24T09:32:00Z"
+                  },
+                  {
+                    "message": "dev setttings",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/4d3fd49cd60f91141103b4247ef5abc9669f1619",
+                    "committedDate": "2022-01-24T09:32:00Z"
+                  },
+                  {
+                    "message": "remove numpy",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/bb3fd04e785eadabfc9e6514201797627a6036f6",
+                    "committedDate": "2022-01-24T09:32:00Z"
+                  },
+                  {
+                    "message": "update v0.0.1",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/0f89d5f78c8185b8516d5564cd01da7978eee5a3",
+                    "committedDate": "2022-01-22T19:26:25Z"
+                  },
+                  {
+                    "message": "개발환경 변수",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/a697e821b583481b6716eae39059ca3bd2b1ddbb",
+                    "committedDate": "2022-01-22T19:26:25Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/Guild-Management/commit/804303ab892d11cb4dcafaec270a54337502d55b",
+                    "committedDate": "2022-01-22T18:45:08Z"
+                  }
+                ],
+                "totalCount": 9
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 9019,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/jetson-inference",
+            "description": "Hello AI World guide to deploying deep-learning inference networks and deep vision primitives with TensorRT and NVIDIA Jetson.",
+            "createdAt": "2021-12-22T13:49:52Z",
+            "updatedAt": "2022-01-10T03:26:03Z",
+            "pushedAt": "2022-01-10T03:25:56Z",
+            "url": "https://github.com/soma0sd/jetson-inference",
+            "homepageUrl": "https://developer.nvidia.com/embedded/twodaystoademo",
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "update utils",
+                    "url": "https://github.com/soma0sd/jetson-inference/commit/7bc8f88bdac0fa6422acf70180b37bffd27c6c9e",
+                    "committedDate": "2022-01-10T03:25:48Z"
+                  },
+                  {
+                    "message": "append trt_pose module",
+                    "url": "https://github.com/soma0sd/jetson-inference/commit/3af0cc85194b3802882c7a4ec85552a300583009",
+                    "committedDate": "2021-12-30T01:39:48Z"
+                  },
+                  {
+                    "message": "add camera deps",
+                    "url": "https://github.com/soma0sd/jetson-inference/commit/e26f78cdd7650f98b96ea322ed46592b9d6760c6",
+                    "committedDate": "2021-12-22T17:21:56Z"
+                  },
+                  {
+                    "message": "remove submodules",
+                    "url": "https://github.com/soma0sd/jetson-inference/commit/466e3f5ca247d91401c58c38b4dea33d14695839",
+                    "committedDate": "2021-12-22T15:24:24Z"
+                  },
+                  {
+                    "message": "commit message",
+                    "url": "https://github.com/soma0sd/jetson-inference/commit/1c592b8eb7ee6382755d04a0539d2c5febefb5e0",
+                    "committedDate": "2021-12-22T14:51:02Z"
+                  }
+                ],
+                "totalCount": 5
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 833321,
+                  "node": {
+                    "name": "C++",
+                    "color": "#f34b7d"
+                  }
+                },
+                {
+                  "size": 84437,
+                  "node": {
+                    "name": "Shell",
+                    "color": "#89e051"
+                  }
+                },
+                {
+                  "size": 64218,
+                  "node": {
+                    "name": "Cuda",
+                    "color": "#3A4E3A"
+                  }
+                },
+                {
+                  "size": 40255,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                },
+                {
+                  "size": 13859,
+                  "node": {
+                    "name": "C",
+                    "color": "#555555"
+                  }
+                },
+                {
+                  "size": 13519,
+                  "node": {
+                    "name": "CMake",
+                    "color": "#DA3434"
+                  }
+                },
+                {
+                  "size": 3586,
+                  "node": {
+                    "name": "Dockerfile",
+                    "color": "#384d54"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/jetson-utils",
+            "description": "C++/Python Linux utility wrappers for NVIDIA Jetson - camera, codecs, CUDA, GStreamer, HID, OpenGL/XGL",
+            "createdAt": "2021-12-22T13:50:12Z",
+            "updatedAt": "2022-01-06T05:55:57Z",
+            "pushedAt": "2022-01-06T05:55:54Z",
+            "url": "https://github.com/soma0sd/jetson-utils",
+            "homepageUrl": "",
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "ignore videoOutput sleep",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/e4846c56a99fface1a352385af463d22926dcb6c",
+                    "committedDate": "2022-01-06T05:55:47Z"
+                  },
+                  {
+                    "message": "line width fix",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/cd19047d6ef858f9cbc87d1805921925a386039d",
+                    "committedDate": "2021-12-30T01:38:29Z"
+                  },
+                  {
+                    "message": "border box and border eclipse",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/2e8ff97873f0e8981277787b9b00dcffc77cf90c",
+                    "committedDate": "2021-12-23T21:42:34Z"
+                  },
+                  {
+                    "message": "add cudaDrawEclipse",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/691cf6c5257dc4c374ad6a0b44cef64500325477",
+                    "committedDate": "2021-12-23T20:36:50Z"
+                  },
+                  {
+                    "message": "add search flag: soma0sd modification:",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/20944b083caef94e126ee7e01f0f97853a2712e5",
+                    "committedDate": "2021-12-23T19:09:13Z"
+                  },
+                  {
+                    "message": "add intervideosink protocol",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/3ef170e181b1565e8413d90cd086ba4b286f3d6d",
+                    "committedDate": "2021-12-23T18:14:26Z"
+                  },
+                  {
+                    "message": "commit message",
+                    "url": "https://github.com/soma0sd/jetson-utils/commit/c67668d095381eeb448b6a4108de9e0e2db65965",
+                    "committedDate": "2021-12-22T14:59:20Z"
+                  }
+                ],
+                "totalCount": 7
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 1851393,
+                  "node": {
+                    "name": "C++",
+                    "color": "#f34b7d"
+                  }
+                },
+                {
+                  "size": 811052,
+                  "node": {
+                    "name": "C",
+                    "color": "#555555"
+                  }
+                },
+                {
+                  "size": 221509,
+                  "node": {
+                    "name": "Cuda",
+                    "color": "#3A4E3A"
+                  }
+                },
+                {
+                  "size": 124338,
+                  "node": {
+                    "name": "CMake",
+                    "color": "#DA3434"
+                  }
+                },
+                {
+                  "size": 20713,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
                   }
                 }
               ]
@@ -1235,6 +1225,70 @@
             "object": null,
             "languages": {
               "edges": []
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/tModKoreanTranslator",
+            "description": "테라리아 한글화 지원 모드",
+            "createdAt": "2020-01-05T07:30:44Z",
+            "updatedAt": "2021-10-26T08:37:28Z",
+            "pushedAt": "2020-01-14T13:03:11Z",
+            "url": "https://github.com/soma0sd/tModKoreanTranslator",
+            "homepageUrl": null,
+            "isArchived": true,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "0.4.3 메타만 있는 모드가 있었다고...?",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/61a293a9e24786350b05a5a8d584c47167a4f430",
+                    "committedDate": "2020-01-14T12:57:19Z"
+                  },
+                  {
+                    "message": "0.4.2 빼먹은 예외처리 추가",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/e9c75b23f1176fa596a7978043e28e0a0d170caa",
+                    "committedDate": "2020-01-14T12:12:40Z"
+                  },
+                  {
+                    "message": "0.4.1 오타 수정",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/3d41c725edd7ab958202d01fb629834cffd2c46a",
+                    "committedDate": "2020-01-13T21:10:39Z"
+                  },
+                  {
+                    "message": "0.4.1 번역자 모드 오작동 수정",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/edf237700b480173c84ea0a9d7d316796f3193b8",
+                    "committedDate": "2020-01-13T21:01:24Z"
+                  },
+                  {
+                    "message": "0.4.0",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/fe209de04ffd074b3a1d6bd44930a7ce8075a3c0",
+                    "committedDate": "2020-01-13T16:44:34Z"
+                  },
+                  {
+                    "message": "v0.3.0",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/f16347bd7e5e2c82fd72f5c446145e27aeb13081",
+                    "committedDate": "2020-01-10T05:52:55Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/tModKoreanTranslator/commit/ebc63412ff2b5ae3a7fd260d7cf067f9fa7a9137",
+                    "committedDate": "2020-01-05T07:30:45Z"
+                  }
+                ],
+                "totalCount": 7
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 25107,
+                  "node": {
+                    "name": "C#",
+                    "color": "#178600"
+                  }
+                }
+              ]
             }
           },
           {
@@ -1936,6 +1990,142 @@
             }
           },
           {
+            "nameWithOwner": "soma0sd/computer_physics",
+            "description": "전산물리학 교재 프로젝트를 위한 코드/실행결과 모음 ",
+            "createdAt": "2016-12-03T10:10:37Z",
+            "updatedAt": "2017-08-31T12:52:15Z",
+            "pushedAt": "2017-09-16T02:43:34Z",
+            "url": "https://github.com/soma0sd/computer_physics",
+            "homepageUrl": "http://www.soma0sd.com/",
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "업데이트(일반)",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/cf8077ff46ec37c435ffe85b7cc6e4323a22c4b0",
+                    "committedDate": "2017-09-16T02:40:13Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/3e03bd9f248afd5e6eb49a22f07af905f8216ed6",
+                    "committedDate": "2017-08-31T12:51:32Z"
+                  },
+                  {
+                    "message": "리뉴얼",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/c694950070ef2b7fe413d6831d2f8ea2ac0e5b52",
+                    "committedDate": "2017-08-31T12:22:56Z"
+                  },
+                  {
+                    "message": "5월 4주차(13주차)업데이트 1",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/eb063c99438b1cff8396cd9f34f99e6897b14684",
+                    "committedDate": "2017-05-26T00:13:39Z"
+                  },
+                  {
+                    "message": "13주차 업데이트",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/cd37dd1a92af99c4c78bef1467b73038a998ac38",
+                    "committedDate": "2017-05-22T09:25:36Z"
+                  },
+                  {
+                    "message": "readme 추가",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/62d7c170506b01b63543c2834bb665138e5c2cdb",
+                    "committedDate": "2017-05-22T05:50:20Z"
+                  },
+                  {
+                    "message": "리뉴얼",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/2e42a04f5ff3c0f8eb54c70b0638e4cc4f723f94",
+                    "committedDate": "2017-05-22T05:44:50Z"
+                  },
+                  {
+                    "message": "Add files via upload",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/33835598b4e832f7b954199b64b27a1ec58adba3",
+                    "committedDate": "2017-04-13T13:29:31Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/db6bf103d45110149c76173ac14e714072e68470",
+                    "committedDate": "2016-12-21T16:03:04Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/0759b85a1229b2f0b49c77256dfd21c27b5264d1",
+                    "committedDate": "2016-12-08T06:52:32Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/70247247aab3a01d11fb6efdb77b6f8feedc1976",
+                    "committedDate": "2016-12-05T01:29:24Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/36595ef5586a2b208a820b189654553b037c71f2",
+                    "committedDate": "2016-12-05T00:58:27Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/99d7fe8908794125623c75076551d4d1be9a0b23",
+                    "committedDate": "2016-12-04T12:40:20Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/ee81e87e5f438a4e8cab91af18f127b88452fbf3",
+                    "committedDate": "2016-12-03T16:06:57Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/ea6d41b544b79bc6949def499ef059a5e0089128",
+                    "committedDate": "2016-12-03T13:21:37Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/dc358ef791477b8036b6916ce15e2ed823f8499e",
+                    "committedDate": "2016-12-03T13:09:02Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/3abee75e1f32e611d161bdf7eafb61e79ac9d902",
+                    "committedDate": "2016-12-03T10:55:36Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/2b531d5eaaab435639ff097d580808cba0bf78cd",
+                    "committedDate": "2016-12-03T10:45:48Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/f7bb2b72ec211fb2ff02542c97f88302ac219d96",
+                    "committedDate": "2016-12-03T10:15:53Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/computer_physics/commit/aa938d9e51c2745ce43123cb5c6e88e40a5f70dc",
+                    "committedDate": "2016-12-03T10:10:38Z"
+                  }
+                ],
+                "totalCount": 20
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 169200,
+                  "node": {
+                    "name": "Jupyter Notebook",
+                    "color": "#DA5B0B"
+                  }
+                },
+                {
+                  "size": 4240,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                }
+              ]
+            }
+          },
+          {
             "nameWithOwner": "soma0sd/python-study",
             "description": "파이썬  공부용",
             "createdAt": "2016-07-13T07:33:12Z",
@@ -2351,142 +2541,6 @@
               "edges": [
                 {
                   "size": 124937,
-                  "node": {
-                    "name": "Python",
-                    "color": "#3572A5"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/computer_physics",
-            "description": "전산물리학 교재 프로젝트를 위한 코드/실행결과 모음 ",
-            "createdAt": "2016-12-03T10:10:37Z",
-            "updatedAt": "2017-08-31T12:52:15Z",
-            "pushedAt": "2017-09-16T02:43:34Z",
-            "url": "https://github.com/soma0sd/computer_physics",
-            "homepageUrl": "http://www.soma0sd.com/",
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "업데이트(일반)",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/cf8077ff46ec37c435ffe85b7cc6e4323a22c4b0",
-                    "committedDate": "2017-09-16T02:40:13Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/3e03bd9f248afd5e6eb49a22f07af905f8216ed6",
-                    "committedDate": "2017-08-31T12:51:32Z"
-                  },
-                  {
-                    "message": "리뉴얼",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/c694950070ef2b7fe413d6831d2f8ea2ac0e5b52",
-                    "committedDate": "2017-08-31T12:22:56Z"
-                  },
-                  {
-                    "message": "5월 4주차(13주차)업데이트 1",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/eb063c99438b1cff8396cd9f34f99e6897b14684",
-                    "committedDate": "2017-05-26T00:13:39Z"
-                  },
-                  {
-                    "message": "13주차 업데이트",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/cd37dd1a92af99c4c78bef1467b73038a998ac38",
-                    "committedDate": "2017-05-22T09:25:36Z"
-                  },
-                  {
-                    "message": "readme 추가",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/62d7c170506b01b63543c2834bb665138e5c2cdb",
-                    "committedDate": "2017-05-22T05:50:20Z"
-                  },
-                  {
-                    "message": "리뉴얼",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/2e42a04f5ff3c0f8eb54c70b0638e4cc4f723f94",
-                    "committedDate": "2017-05-22T05:44:50Z"
-                  },
-                  {
-                    "message": "Add files via upload",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/33835598b4e832f7b954199b64b27a1ec58adba3",
-                    "committedDate": "2017-04-13T13:29:31Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/db6bf103d45110149c76173ac14e714072e68470",
-                    "committedDate": "2016-12-21T16:03:04Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/0759b85a1229b2f0b49c77256dfd21c27b5264d1",
-                    "committedDate": "2016-12-08T06:52:32Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/70247247aab3a01d11fb6efdb77b6f8feedc1976",
-                    "committedDate": "2016-12-05T01:29:24Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/36595ef5586a2b208a820b189654553b037c71f2",
-                    "committedDate": "2016-12-05T00:58:27Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/99d7fe8908794125623c75076551d4d1be9a0b23",
-                    "committedDate": "2016-12-04T12:40:20Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/ee81e87e5f438a4e8cab91af18f127b88452fbf3",
-                    "committedDate": "2016-12-03T16:06:57Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/ea6d41b544b79bc6949def499ef059a5e0089128",
-                    "committedDate": "2016-12-03T13:21:37Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/dc358ef791477b8036b6916ce15e2ed823f8499e",
-                    "committedDate": "2016-12-03T13:09:02Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/3abee75e1f32e611d161bdf7eafb61e79ac9d902",
-                    "committedDate": "2016-12-03T10:55:36Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/2b531d5eaaab435639ff097d580808cba0bf78cd",
-                    "committedDate": "2016-12-03T10:45:48Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/f7bb2b72ec211fb2ff02542c97f88302ac219d96",
-                    "committedDate": "2016-12-03T10:15:53Z"
-                  },
-                  {
-                    "message": "Initial commit",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/aa938d9e51c2745ce43123cb5c6e88e40a5f70dc",
-                    "committedDate": "2016-12-03T10:10:38Z"
-                  }
-                ],
-                "totalCount": 20
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 169200,
-                  "node": {
-                    "name": "Jupyter Notebook",
-                    "color": "#DA5B0B"
-                  }
-                },
-                {
-                  "size": 4240,
                   "node": {
                     "name": "Python",
                     "color": "#3572A5"
