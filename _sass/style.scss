@@ -14,9 +14,8 @@ $text-disabled: rgba($color: #FFF, $alpha: 0.38);
 
 $text-medium-emphasis: rgba($color: #009688, $alpha: 1.00);
 
-
-
 $nav-height: 2rem;
+$nav-width: 700px;
 
 //  폰트
 body { font-family: 'Nanum Gothic', sans-serif; }
@@ -45,6 +44,9 @@ ul {
 h1 {
     color: $text-high;
     padding-left: 1rem;
+    max-width: $nav-width;
+    margin: auto;
+
 }
 a {
     text-decoration: none;
@@ -67,7 +69,7 @@ a {
 // 특성
 header {
     nav {
-        width: 700px;
+        max-width: $nav-width;
         margin: auto;
         display: flex;
         a {
@@ -129,7 +131,7 @@ header {
 #user-stats {
     h2 { text-align: center; }
     #code-lang-stats {
-        max-width: 80%;
+        max-width: $nav-width;
         margin: auto;
         .lang-stat-item {
             display: grid;
