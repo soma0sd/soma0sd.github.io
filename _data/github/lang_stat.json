@@ -7,13 +7,13 @@
     "size": 824911,
     "color": "#555555"
   },
+  "Python": {
+    "size": 289770,
+    "color": "#3572A5"
+  },
   "Cuda": {
     "size": 285727,
     "color": "#3A4E3A"
-  },
-  "Python": {
-    "size": 267407,
-    "color": "#3572A5"
   },
   "Jupyter Notebook": {
     "size": 169200,
@@ -32,11 +32,11 @@
     "color": "#89e051"
   },
   "SCSS": {
-    "size": 75444,
+    "size": 75523,
     "color": "#c6538c"
   },
   "HTML": {
-    "size": 26520,
+    "size": 27182,
     "color": "#e34c26"
   },
   "JavaScript": {
@@ -55,16 +55,24 @@
     "size": 5510,
     "color": "#2b7489"
   },
+  "CSS": {
+    "size": 3948,
+    "color": "#563d7c"
+  },
   "Dockerfile": {
     "size": 3586,
     "color": "#384d54"
   },
-  "CSS": {
-    "size": 2727,
-    "color": "#563d7c"
+  "PowerShell": {
+    "size": 1453,
+    "color": "#012456"
   },
   "Ruby": {
     "size": 1113,
     "color": "#701516"
+  },
+  "Makefile": {
+    "size": 840,
+    "color": "#427819"
   }
 }

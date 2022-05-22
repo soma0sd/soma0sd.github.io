@@ -12,128 +12,567 @@
       "createdAt": "2015-06-27T11:46:41Z",
       "updatedAt": "2022-04-19T14:09:28Z",
       "repositories": {
-        "totalCount": 18,
+        "totalCount": 15,
         "nodes": [
           {
-            "nameWithOwner": "soma0sd/Tistory-Simple-Skin",
-            "description": null,
-            "createdAt": "2021-12-14T10:15:29Z",
-            "updatedAt": "2021-12-19T13:43:25Z",
-            "pushedAt": "2022-05-16T01:09:14Z",
-            "url": "https://github.com/soma0sd/Tistory-Simple-Skin",
-            "homepageUrl": null,
+            "nameWithOwner": "soma0sd/Python-Learning",
+            "description": "한국어 파이썬  학습자료",
+            "createdAt": "2016-07-13T07:33:12Z",
+            "updatedAt": "2022-05-16T05:03:20Z",
+            "pushedAt": "2022-05-21T05:13:40Z",
+            "url": "https://github.com/soma0sd/Python-Learning",
+            "homepageUrl": "https://soma0sd.github.io/Python-Learning/",
             "isArchived": false,
             "isPrivate": false,
             "object": {
               "history": {
                 "nodes": [
                   {
-                    "message": "change styles and tag page",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/932dd49af7325062f994c8ebbb526ed3b718baa7",
-                    "committedDate": "2022-05-16T01:05:58Z"
+                    "message": "문서 업데이트",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/b547054eb59592a14d9ca63fba5b91176723c7c4",
+                    "committedDate": "2022-05-21T05:13:28Z"
                   },
                   {
-                    "message": "mod) dev console",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/c2ba2f1f7a8dc7720747215f04a280fe43e56f5c",
-                    "committedDate": "2022-05-16T01:05:58Z"
+                    "message": "sphinx 폰트 변경",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/f1f4ad7057b16821b69e8f7afab772bf44608526",
+                    "committedDate": "2022-05-21T05:12:56Z"
                   },
                   {
-                    "message": "script update",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/5654532fd306a84aa9365d960901143039355d39",
-                    "committedDate": "2022-05-16T01:05:58Z"
+                    "message": "문서 구조 변경",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/61f9f3bf8693468c8bfe2b6a2213f949cd4ee953",
+                    "committedDate": "2022-05-21T03:42:03Z"
                   },
                   {
-                    "message": "script update",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/02fa00f1cc5bdaaba0ad25c975899d6247cab9dc",
-                    "committedDate": "2022-05-16T01:05:58Z"
+                    "message": "sphinx 구성 변경",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/89840fd519d74050c22857b6c9b82c3d8bd90244",
+                    "committedDate": "2022-05-21T03:40:45Z"
                   },
                   {
-                    "message": "change styles",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/3ce61214574b12b39d5c43c92ebfc111e493b481",
-                    "committedDate": "2022-05-16T01:05:58Z"
+                    "message": "웹페이지 업데이트",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/3455cce6b73f8fca523c3ce35001f74fb0336b59",
+                    "committedDate": "2022-05-19T07:05:12Z"
                   },
                   {
-                    "message": "change Structure",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/27659c2e69ad58c0e516db59c1cfb02554f3c1dc",
-                    "committedDate": "2022-05-16T01:05:58Z"
+                    "message": "챕터 업데이트",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/c87e99592064924218f88e46acab19eab08562c2",
+                    "committedDate": "2022-05-19T06:58:58Z"
                   },
                   {
-                    "message": "add sass and typescript",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/0d2db192fd90ce6e1960d78719c6ffbb70b00d11",
-                    "committedDate": "2022-05-16T01:05:58Z"
+                    "message": "remove doctrees",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/494a1d3ad0eaa02ca1b417064b1dd81a64cf09f9",
+                    "committedDate": "2022-05-19T04:32:18Z"
                   },
                   {
-                    "message": "fix readme",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/01159f1859d43bca780c3bad2f2798fbfbc7738b",
-                    "committedDate": "2021-12-19T13:43:14Z"
+                    "message": "스핑크스 업데이트",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/2eb7ee9fc65f87e00ebd19071401d98d9c51455d",
+                    "committedDate": "2022-05-19T02:28:52Z"
                   },
                   {
-                    "message": "add new colorsets",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/0e7575997e5c87aaf30d3141661480375ea3de9c",
-                    "committedDate": "2021-12-19T13:26:39Z"
+                    "message": "파일 다시 정리",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/369cbc3b77e3837f0467f1a9577e266edd824198",
+                    "committedDate": "2022-05-19T02:26:28Z"
                   },
                   {
-                    "message": "comments add scripts",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/6d6ad042d24ebead598f8c3d5756f0091ab3d627",
-                    "committedDate": "2021-12-19T13:26:39Z"
+                    "message": "setup sphinx page",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/8a622105cfe6900c99b599034c455880ce0ac05a",
+                    "committedDate": "2022-05-17T20:49:03Z"
                   },
                   {
-                    "message": "git flow fix",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/3e4f0efed0e8a56fea98ec16e5b67a4c981fe408",
-                    "committedDate": "2021-12-19T13:26:39Z"
+                    "message": "Add 'computer_physics/' from commit 'cf8077ff46ec37c435ffe85b7cc6e4323a22c4b0'\n\ngit-subtree-dir: computer_physics\ngit-subtree-mainline: b1d69ba9786b9ce3e6a2988e00434348920465d0\ngit-subtree-split: cf8077ff46ec37c435ffe85b7cc6e4323a22c4b0",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/480c58f329181e08232819d5204eb4c3c9061ad5",
+                    "committedDate": "2022-05-16T05:02:06Z"
                   },
                   {
-                    "message": "Merge pull request #1 from soma0sd/v1.0\n\nv1.0 version init",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/99945349b77cc39a6d4a99b0ceb0c0a68540268e",
-                    "committedDate": "2021-12-15T13:11:16Z"
+                    "message": "Add 'python-hj/' from commit '87b4f910542a2c27a05a4b887ab234945dc9a9bd'\n\ngit-subtree-dir: python-hj\ngit-subtree-mainline: f884fe553db2d55dd92131dcf1abc7e794597f07\ngit-subtree-split: 87b4f910542a2c27a05a4b887ab234945dc9a9bd",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/b1d69ba9786b9ce3e6a2988e00434348920465d0",
+                    "committedDate": "2022-05-16T05:00:37Z"
                   },
                   {
-                    "message": "do not linting",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/bb0ac3d26f544daa9342ebebbd06094601b49c22",
-                    "committedDate": "2021-12-15T13:09:56Z"
+                    "message": "Ready for subtree",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/87b4f910542a2c27a05a4b887ab234945dc9a9bd",
+                    "committedDate": "2022-05-16T04:57:54Z"
                   },
                   {
-                    "message": "version init",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/f185d0bc758067dd840f4d21769019f901582032",
-                    "committedDate": "2021-12-15T13:05:29Z"
+                    "message": "bug fix (class)",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/2c3a0a380b8fe16809710ffab223461ccefc35a4",
+                    "committedDate": "2018-05-24T08:59:49Z"
+                  },
+                  {
+                    "message": "문제 1 업데이트",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/71d452ffb14055249b546e700100b7b2d086fd7d",
+                    "committedDate": "2018-05-23T20:38:37Z"
                   },
                   {
                     "message": "Initial commit",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/ab5a7b2ec56772dcbd56d090275c291aa6fa78ec",
-                    "committedDate": "2021-12-14T10:15:32Z"
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/f04724e71a40df51aa829472d66026148e1e4d67",
+                    "committedDate": "2018-05-23T20:21:49Z"
+                  },
+                  {
+                    "message": "업데이트(일반)",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/cf8077ff46ec37c435ffe85b7cc6e4323a22c4b0",
+                    "committedDate": "2017-09-16T02:40:13Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/3e03bd9f248afd5e6eb49a22f07af905f8216ed6",
+                    "committedDate": "2017-08-31T12:51:32Z"
+                  },
+                  {
+                    "message": "리뉴얼",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/c694950070ef2b7fe413d6831d2f8ea2ac0e5b52",
+                    "committedDate": "2017-08-31T12:22:56Z"
+                  },
+                  {
+                    "message": "이전 프로젝트와 병합",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/f884fe553db2d55dd92131dcf1abc7e794597f07",
+                    "committedDate": "2017-08-31T12:21:30Z"
+                  },
+                  {
+                    "message": "5월 4주차(13주차)업데이트 1",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/eb063c99438b1cff8396cd9f34f99e6897b14684",
+                    "committedDate": "2017-05-26T00:13:39Z"
+                  },
+                  {
+                    "message": "13주차 업데이트",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/cd37dd1a92af99c4c78bef1467b73038a998ac38",
+                    "committedDate": "2017-05-22T09:25:36Z"
+                  },
+                  {
+                    "message": "readme 추가",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/62d7c170506b01b63543c2834bb665138e5c2cdb",
+                    "committedDate": "2017-05-22T05:50:20Z"
+                  },
+                  {
+                    "message": "리뉴얼",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/2e42a04f5ff3c0f8eb54c70b0638e4cc4f723f94",
+                    "committedDate": "2017-05-22T05:44:50Z"
+                  },
+                  {
+                    "message": "Add files via upload",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/33835598b4e832f7b954199b64b27a1ec58adba3",
+                    "committedDate": "2017-04-13T13:29:31Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/db6bf103d45110149c76173ac14e714072e68470",
+                    "committedDate": "2016-12-21T16:03:04Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/6522176a6c1bf4ecfa7b7162a10030e2eb62fb8e",
+                    "committedDate": "2016-12-20T16:08:52Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/0887cb6a37f083668228c817dbdd82d53f7d1d54",
+                    "committedDate": "2016-12-14T14:34:56Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/57efbfaf8483a0fe006fce4e8acce791a5b5253e",
+                    "committedDate": "2016-12-09T01:13:54Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/16e80a34be3cc00288e42015aa7cacf05fbf63fb",
+                    "committedDate": "2016-12-08T06:52:59Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/0759b85a1229b2f0b49c77256dfd21c27b5264d1",
+                    "committedDate": "2016-12-08T06:52:32Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/70247247aab3a01d11fb6efdb77b6f8feedc1976",
+                    "committedDate": "2016-12-05T01:29:24Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/36595ef5586a2b208a820b189654553b037c71f2",
+                    "committedDate": "2016-12-05T00:58:27Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/814a8da5b63d7eec443bbaba1376083b5c7bf26d",
+                    "committedDate": "2016-12-04T12:40:43Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/99d7fe8908794125623c75076551d4d1be9a0b23",
+                    "committedDate": "2016-12-04T12:40:20Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/ee81e87e5f438a4e8cab91af18f127b88452fbf3",
+                    "committedDate": "2016-12-03T16:06:57Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/ea6d41b544b79bc6949def499ef059a5e0089128",
+                    "committedDate": "2016-12-03T13:21:37Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/dc358ef791477b8036b6916ce15e2ed823f8499e",
+                    "committedDate": "2016-12-03T13:09:02Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/3abee75e1f32e611d161bdf7eafb61e79ac9d902",
+                    "committedDate": "2016-12-03T10:55:36Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/2b531d5eaaab435639ff097d580808cba0bf78cd",
+                    "committedDate": "2016-12-03T10:45:48Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/f7bb2b72ec211fb2ff02542c97f88302ac219d96",
+                    "committedDate": "2016-12-03T10:15:53Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/aa938d9e51c2745ce43123cb5c6e88e40a5f70dc",
+                    "committedDate": "2016-12-03T10:10:38Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/32dcaf71a0e778773b3551bbae76c8241447be72",
+                    "committedDate": "2016-12-01T06:54:40Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/6dccac1e345bfc5af14b75f960c6982c2f583a13",
+                    "committedDate": "2016-11-24T23:32:48Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/164228967db13d83fddcd413a26721b73f4be054",
+                    "committedDate": "2016-11-24T22:24:53Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/8e8cf911eca20cd8eb1d39f1d7be176642625178",
+                    "committedDate": "2016-11-20T18:38:11Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/11057042b1fad3ef420032bd4bf00d108f44216f",
+                    "committedDate": "2016-11-17T06:27:57Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/3afc3d5325000f5eb2070f239285267184ae77e2",
+                    "committedDate": "2016-11-16T12:36:32Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/9f8b9af086059669ff964e2ceb46eb68bc57a35f",
+                    "committedDate": "2016-11-16T12:29:18Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/f2a6659f91b4a6b9a48a20637246b75e8dce0466",
+                    "committedDate": "2016-11-10T16:10:02Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/d61e7121f932cacacdd0435850f09b317b632bd3",
+                    "committedDate": "2016-11-10T07:07:30Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/9c214a154b2c99f7dcd832be4c1a5d8af3813f1a",
+                    "committedDate": "2016-11-10T05:35:36Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/2e53ef901a6e3042b0004155ce67d40ad5519375",
+                    "committedDate": "2016-11-09T09:53:42Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/22a21c6caf8835432823aeef632e41cded4679fe",
+                    "committedDate": "2016-10-30T12:57:56Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/db9f7bc5015a82d4147a0ac900a0148a146b5956",
+                    "committedDate": "2016-10-26T22:23:06Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/dea69b2f79d75bd29e404784cb764d9584e8d7f0",
+                    "committedDate": "2016-10-26T20:08:51Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/f271b7f8f824ef8a5516bcd8bd1b1a5782c32b9f",
+                    "committedDate": "2016-10-21T02:27:57Z"
+                  },
+                  {
+                    "message": "r",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/66923b5bb826e74f9e8ff62e276fb69145c05adc",
+                    "committedDate": "2016-10-21T02:00:30Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/3da1bdae391f655a9324e6f57f5b066c89b2e409",
+                    "committedDate": "2016-10-21T01:21:20Z"
+                  },
+                  {
+                    "message": "bug fix",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/2ae4b03c15da4bc52665e5afbd9a80dfbfc1f6ac",
+                    "committedDate": "2016-10-14T03:03:48Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/f9975dad8011a6648754b9ef388cb84c2df4eee5",
+                    "committedDate": "2016-10-14T02:28:36Z"
+                  },
+                  {
+                    "message": "코멘트 추가",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/71ecc2ab51dac89d6b48a68b78ce245d08877d45",
+                    "committedDate": "2016-10-12T19:36:37Z"
+                  },
+                  {
+                    "message": "미주석 버전",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/dafb18726df994a0970553ac59a7e55dd8e38f28",
+                    "committedDate": "2016-10-12T19:05:45Z"
+                  },
+                  {
+                    "message": "comments append",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/03e5996a484a612f15f90cfbeccc85f19a5b38eb",
+                    "committedDate": "2016-10-06T05:25:57Z"
+                  },
+                  {
+                    "message": "BUG FIX",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/f5139bcc935fd6f6fcf8881ad62784b2c23ea5ed",
+                    "committedDate": "2016-10-06T04:56:47Z"
+                  },
+                  {
+                    "message": "week5 update",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/0bfb8deaf346f901a9e348ef94bfd4760b66dc47",
+                    "committedDate": "2016-10-05T10:21:07Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/5687ba6f5ccf4a0eab639fe3ba727990b2492193",
+                    "committedDate": "2016-10-04T06:15:57Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/8767cedf787b222fa134e8b059fbd2cfcbce6d79",
+                    "committedDate": "2016-09-30T09:57:30Z"
+                  },
+                  {
+                    "message": "주석 추가",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/530ff2c71f760f2176406befa3d7a740753ea9eb",
+                    "committedDate": "2016-09-29T18:09:38Z"
+                  },
+                  {
+                    "message": "1차 완성본(미주석)",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/b6b2e658c6912dc25343f8f7769d5cf185b41457",
+                    "committedDate": "2016-09-29T17:16:21Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/3fc550efcb9d16842e52091b8be7650e66fcbe71",
+                    "committedDate": "2016-09-29T14:13:21Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/ce005ed6063b168a7595cd8768385843def17ba6",
+                    "committedDate": "2016-09-29T12:00:58Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/e400bd542d7e90845588a1eb3409615bfeed150e",
+                    "committedDate": "2016-09-29T05:45:03Z"
+                  },
+                  {
+                    "message": "Add files via upload",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/6bfd0362728b3c30fe61b036a08cde474e9c6715",
+                    "committedDate": "2016-09-23T02:25:10Z"
+                  },
+                  {
+                    "message": "Add files via upload",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/a554b30f696d20b9eca6a710de430253e1312f99",
+                    "committedDate": "2016-09-18T20:18:39Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/27777e113606d2b29a44ad08cb2876a5d2826031",
+                    "committedDate": "2016-09-18T19:48:31Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/146d08a031f0179cb52af9b25e2453864905a582",
+                    "committedDate": "2016-09-18T19:33:27Z"
+                  },
+                  {
+                    "message": "pywiki지원",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/5adbc839d141d7824f1d078b2f88c18d9d8ae9b3",
+                    "committedDate": "2016-09-18T19:08:16Z"
+                  },
+                  {
+                    "message": "오기 수정",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/4fdf426edf4aafc9152863d038b430702227f548",
+                    "committedDate": "2016-09-12T10:02:21Z"
+                  },
+                  {
+                    "message": "plot 옵션 수정",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/61f4b6651bfab15684867282fd68e756e283a008",
+                    "committedDate": "2016-09-12T09:49:29Z"
+                  },
+                  {
+                    "message": "잘못된 예제명 수정",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/c5d0a8a360a33ccb1eec3903e0de5ce8947333ff",
+                    "committedDate": "2016-09-12T09:37:22Z"
+                  },
+                  {
+                    "message": "예제 추가",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/ddc77c4f642f9bee2e5e8bc80be4dc0cac0ab60d",
+                    "committedDate": "2016-09-12T09:34:54Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/c1668f940c4d1357e3a85bf869f31f3146fb7b70",
+                    "committedDate": "2016-09-12T07:01:30Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/a80284940845ec349f84be494899e9c288a1cb60",
+                    "committedDate": "2016-09-11T13:36:31Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/2f28e388758b41c03a77c5138dc1c76fa4c7e66d",
+                    "committedDate": "2016-09-11T07:07:04Z"
+                  },
+                  {
+                    "message": "오타 수정",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/f23e5533dac97d6c5bb5cf4cd79952a0d7c8721d",
+                    "committedDate": "2016-09-10T07:02:25Z"
+                  },
+                  {
+                    "message": "readme 업데이트",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/544478bcd6a846bc73168e9fea76f1995cefd843",
+                    "committedDate": "2016-09-10T06:59:52Z"
+                  },
+                  {
+                    "message": "예제파일 구조 변경",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/a621f135785d49501e2e73230341ea419d6bf4c9",
+                    "committedDate": "2016-09-10T05:33:31Z"
+                  },
+                  {
+                    "message": "예제 업로드",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/3781d0afd40c126dc7104f268fa9be7ec0bd392b",
+                    "committedDate": "2016-09-10T05:07:32Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/1da92f4c222bd54b1a489f4d7199b800ccee51ae",
+                    "committedDate": "2016-09-09T10:59:19Z"
+                  },
+                  {
+                    "message": "폴더 변경",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/4de13a29e574468864599e114b980392ac672c20",
+                    "committedDate": "2016-09-09T09:40:14Z"
+                  },
+                  {
+                    "message": "update",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/ea22de73f1a8ffd983942b2f2c164688b9266b61",
+                    "committedDate": "2016-09-09T08:18:26Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/961b8d8293c7aa9d8d7d00f8e61df19b81b659ad",
+                    "committedDate": "2016-09-09T05:54:59Z"
+                  },
+                  {
+                    "message": "no message",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/35358a1f3d995dd1a7bc2fa56c23c193c1f51751",
+                    "committedDate": "2016-09-09T04:33:55Z"
+                  },
+                  {
+                    "message": "수업 중 예제 수정",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/dcb8a8e871d63702f531676a332fe44aabdbd741",
+                    "committedDate": "2016-09-09T04:15:22Z"
+                  },
+                  {
+                    "message": "예비 예제 업로드 (추후 다른 예제로 교체)",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/f161dfd221fdfd0b66768020b9540a71475f3760",
+                    "committedDate": "2016-09-08T14:42:54Z"
+                  },
+                  {
+                    "message": "readme 변경",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/50b89244f8f4f9c36f03559cefe4d0d2ce5acddc",
+                    "committedDate": "2016-09-08T13:45:53Z"
+                  },
+                  {
+                    "message": "readme 변경",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/39143f5d4de50efb7c4e6fd8397fd40d889382a0",
+                    "committedDate": "2016-09-08T12:39:19Z"
+                  },
+                  {
+                    "message": "몬테 카를로 예제 추가",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/20c5491d67dd45511f388aecf0c0752eba7bc7e7",
+                    "committedDate": "2016-09-08T12:30:32Z"
+                  },
+                  {
+                    "message": "삭제",
+                    "url": "https://github.com/soma0sd/Python-Learning/commit/c2b83a4eb8648bcbd6013986fffe3d99127826c6",
+                    "committedDate": "2016-09-08T10:26:18Z"
                   }
                 ],
-                "totalCount": 15
+                "totalCount": 115
               }
             },
             "languages": {
               "edges": [
                 {
-                  "size": 10342,
+                  "size": 169200,
                   "node": {
-                    "name": "Pug",
-                    "color": "#a86454"
+                    "name": "Jupyter Notebook",
+                    "color": "#DA5B0B"
                   }
                 },
                 {
-                  "size": 7932,
+                  "size": 157205,
                   "node": {
-                    "name": "SCSS",
-                    "color": "#c6538c"
+                    "name": "Python",
+                    "color": "#3572A5"
                   }
                 },
                 {
-                  "size": 5560,
+                  "size": 1453,
                   "node": {
-                    "name": "JavaScript",
-                    "color": "#f1e05a"
+                    "name": "PowerShell",
+                    "color": "#012456"
                   }
                 },
                 {
-                  "size": 3595,
+                  "size": 1221,
                   "node": {
-                    "name": "TypeScript",
-                    "color": "#2b7489"
+                    "name": "CSS",
+                    "color": "#563d7c"
+                  }
+                },
+                {
+                  "size": 840,
+                  "node": {
+                    "name": "Makefile",
+                    "color": "#427819"
+                  }
+                },
+                {
+                  "size": 414,
+                  "node": {
+                    "name": "HTML",
+                    "color": "#e34c26"
                   }
                 }
               ]
@@ -144,7 +583,7 @@
             "description": "GitHub Pages using GitHub GraphQL API",
             "createdAt": "2017-11-19T10:29:29Z",
             "updatedAt": "2022-05-02T12:53:09Z",
-            "pushedAt": "2022-05-01T23:21:34Z",
+            "pushedAt": "2022-05-19T03:45:24Z",
             "url": "https://github.com/soma0sd/soma0sd.github.io",
             "homepageUrl": "https://soma0sd.github.io/",
             "isArchived": false,
@@ -152,6 +591,26 @@
             "object": {
               "history": {
                 "nodes": [
+                  {
+                    "message": "피드 업데이트 -> 20220516",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/8a0863ee4007b6d25f2b1295d838873131ae6815",
+                    "committedDate": "2022-05-16T01:25:04Z"
+                  },
+                  {
+                    "message": "제목과 통계 너비 변경",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/47d73563ce25ea4b53f11f0836db66a4966e0631",
+                    "committedDate": "2022-05-16T01:24:24Z"
+                  },
+                  {
+                    "message": "저장소 순서를 푸시순으로 변경",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/2fc08ffeb3d3c669d29722a92216eca3ae0eb9fc",
+                    "committedDate": "2022-05-16T01:24:07Z"
+                  },
+                  {
+                    "message": "최근 커밋 내역을 10개까지만 표시",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/87d6f1903703143dda8f4b090537d5e9ae429616",
+                    "committedDate": "2022-05-16T01:23:47Z"
+                  },
                   {
                     "message": "mobile layout",
                     "url": "https://github.com/soma0sd/soma0sd.github.io/commit/276f66aad4cf910fc3e15c344ba7808ff8f18c63",
@@ -303,20 +762,20 @@
                     "committedDate": "2017-11-19T10:29:30Z"
                   }
                 ],
-                "totalCount": 30
+                "totalCount": 34
               }
             },
             "languages": {
               "edges": [
                 {
-                  "size": 7634,
+                  "size": 7713,
                   "node": {
                     "name": "SCSS",
                     "color": "#c6538c"
                   }
                 },
                 {
-                  "size": 7307,
+                  "size": 7555,
                   "node": {
                     "name": "HTML",
                     "color": "#e34c26"
@@ -341,6 +800,136 @@
                   "node": {
                     "name": "Ruby",
                     "color": "#701516"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/Tistory-Simple-Skin",
+            "description": null,
+            "createdAt": "2021-12-14T10:15:29Z",
+            "updatedAt": "2021-12-19T13:43:25Z",
+            "pushedAt": "2022-05-16T01:39:46Z",
+            "url": "https://github.com/soma0sd/Tistory-Simple-Skin",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "Bump shelljs from 0.8.4 to 0.8.5\n\nBumps [shelljs](https://github.com/shelljs/shelljs) from 0.8.4 to 0.8.5.\n- [Release notes](https://github.com/shelljs/shelljs/releases)\n- [Changelog](https://github.com/shelljs/shelljs/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/shelljs/shelljs/compare/v0.8.4...v0.8.5)\n\n---\nupdated-dependencies:\n- dependency-name: shelljs\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/bd72167e0cc7c5877bb3267c1040514dfe05aa99",
+                    "committedDate": "2022-05-16T01:39:43Z"
+                  },
+                  {
+                    "message": "change styles and tag page",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/932dd49af7325062f994c8ebbb526ed3b718baa7",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "mod) dev console",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/c2ba2f1f7a8dc7720747215f04a280fe43e56f5c",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "script update",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/5654532fd306a84aa9365d960901143039355d39",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "script update",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/02fa00f1cc5bdaaba0ad25c975899d6247cab9dc",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "change styles",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/3ce61214574b12b39d5c43c92ebfc111e493b481",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "change Structure",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/27659c2e69ad58c0e516db59c1cfb02554f3c1dc",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "add sass and typescript",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/0d2db192fd90ce6e1960d78719c6ffbb70b00d11",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "fix readme",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/01159f1859d43bca780c3bad2f2798fbfbc7738b",
+                    "committedDate": "2021-12-19T13:43:14Z"
+                  },
+                  {
+                    "message": "add new colorsets",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/0e7575997e5c87aaf30d3141661480375ea3de9c",
+                    "committedDate": "2021-12-19T13:26:39Z"
+                  },
+                  {
+                    "message": "comments add scripts",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/6d6ad042d24ebead598f8c3d5756f0091ab3d627",
+                    "committedDate": "2021-12-19T13:26:39Z"
+                  },
+                  {
+                    "message": "git flow fix",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/3e4f0efed0e8a56fea98ec16e5b67a4c981fe408",
+                    "committedDate": "2021-12-19T13:26:39Z"
+                  },
+                  {
+                    "message": "Merge pull request #1 from soma0sd/v1.0\n\nv1.0 version init",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/99945349b77cc39a6d4a99b0ceb0c0a68540268e",
+                    "committedDate": "2021-12-15T13:11:16Z"
+                  },
+                  {
+                    "message": "do not linting",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/bb0ac3d26f544daa9342ebebbd06094601b49c22",
+                    "committedDate": "2021-12-15T13:09:56Z"
+                  },
+                  {
+                    "message": "version init",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/f185d0bc758067dd840f4d21769019f901582032",
+                    "committedDate": "2021-12-15T13:05:29Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/ab5a7b2ec56772dcbd56d090275c291aa6fa78ec",
+                    "committedDate": "2021-12-14T10:15:32Z"
+                  }
+                ],
+                "totalCount": 16
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 10342,
+                  "node": {
+                    "name": "Pug",
+                    "color": "#a86454"
+                  }
+                },
+                {
+                  "size": 7932,
+                  "node": {
+                    "name": "SCSS",
+                    "color": "#c6538c"
+                  }
+                },
+                {
+                  "size": 5560,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
+                  }
+                },
+                {
+                  "size": 3595,
+                  "node": {
+                    "name": "TypeScript",
+                    "color": "#2b7489"
                   }
                 }
               ]
@@ -1292,50 +1881,6 @@
             }
           },
           {
-            "nameWithOwner": "soma0sd/python-hj",
-            "description": "효자고등학교 프로그래밍 기초 수업 최종과제",
-            "createdAt": "2018-05-23T20:21:48Z",
-            "updatedAt": "2018-05-24T09:00:05Z",
-            "pushedAt": "2018-05-24T09:00:04Z",
-            "url": "https://github.com/soma0sd/python-hj",
-            "homepageUrl": null,
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "bug fix (class)",
-                    "url": "https://github.com/soma0sd/python-hj/commit/2c3a0a380b8fe16809710ffab223461ccefc35a4",
-                    "committedDate": "2018-05-24T08:59:49Z"
-                  },
-                  {
-                    "message": "문제 1 업데이트",
-                    "url": "https://github.com/soma0sd/python-hj/commit/71d452ffb14055249b546e700100b7b2d086fd7d",
-                    "committedDate": "2018-05-23T20:38:37Z"
-                  },
-                  {
-                    "message": "Initial commit",
-                    "url": "https://github.com/soma0sd/python-hj/commit/f04724e71a40df51aa829472d66026148e1e4d67",
-                    "committedDate": "2018-05-23T20:21:49Z"
-                  }
-                ],
-                "totalCount": 3
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 5665,
-                  "node": {
-                    "name": "Python",
-                    "color": "#3572A5"
-                  }
-                }
-              ]
-            }
-          },
-          {
             "nameWithOwner": "soma0sd/jekyll-textbook-theme",
             "description": "GitHub Pages를 통해 교재를 제작하는 사람들을 위한 지킬 테마",
             "createdAt": "2018-05-04T16:45:28Z",
@@ -1365,32 +1910,6 @@
                   }
                 ],
                 "totalCount": 3
-              }
-            },
-            "languages": {
-              "edges": []
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/introduction-to-programing-with-python",
-            "description": null,
-            "createdAt": "2018-05-01T13:12:14Z",
-            "updatedAt": "2018-05-01T13:12:52Z",
-            "pushedAt": "2018-05-13T08:35:12Z",
-            "url": "https://github.com/soma0sd/introduction-to-programing-with-python",
-            "homepageUrl": null,
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "Initial commit",
-                    "url": "https://github.com/soma0sd/introduction-to-programing-with-python/commit/d8bf38042ca0a45227fcfec9690b09097319e274",
-                    "committedDate": "2018-05-01T13:12:15Z"
-                  }
-                ],
-                "totalCount": 1
               }
             },
             "languages": {
@@ -1981,566 +2500,6 @@
               "edges": [
                 {
                   "size": 6611,
-                  "node": {
-                    "name": "Python",
-                    "color": "#3572A5"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/computer_physics",
-            "description": "전산물리학 교재 프로젝트를 위한 코드/실행결과 모음 ",
-            "createdAt": "2016-12-03T10:10:37Z",
-            "updatedAt": "2017-08-31T12:52:15Z",
-            "pushedAt": "2017-09-16T02:43:34Z",
-            "url": "https://github.com/soma0sd/computer_physics",
-            "homepageUrl": "http://www.soma0sd.com/",
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "업데이트(일반)",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/cf8077ff46ec37c435ffe85b7cc6e4323a22c4b0",
-                    "committedDate": "2017-09-16T02:40:13Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/3e03bd9f248afd5e6eb49a22f07af905f8216ed6",
-                    "committedDate": "2017-08-31T12:51:32Z"
-                  },
-                  {
-                    "message": "리뉴얼",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/c694950070ef2b7fe413d6831d2f8ea2ac0e5b52",
-                    "committedDate": "2017-08-31T12:22:56Z"
-                  },
-                  {
-                    "message": "5월 4주차(13주차)업데이트 1",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/eb063c99438b1cff8396cd9f34f99e6897b14684",
-                    "committedDate": "2017-05-26T00:13:39Z"
-                  },
-                  {
-                    "message": "13주차 업데이트",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/cd37dd1a92af99c4c78bef1467b73038a998ac38",
-                    "committedDate": "2017-05-22T09:25:36Z"
-                  },
-                  {
-                    "message": "readme 추가",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/62d7c170506b01b63543c2834bb665138e5c2cdb",
-                    "committedDate": "2017-05-22T05:50:20Z"
-                  },
-                  {
-                    "message": "리뉴얼",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/2e42a04f5ff3c0f8eb54c70b0638e4cc4f723f94",
-                    "committedDate": "2017-05-22T05:44:50Z"
-                  },
-                  {
-                    "message": "Add files via upload",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/33835598b4e832f7b954199b64b27a1ec58adba3",
-                    "committedDate": "2017-04-13T13:29:31Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/db6bf103d45110149c76173ac14e714072e68470",
-                    "committedDate": "2016-12-21T16:03:04Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/0759b85a1229b2f0b49c77256dfd21c27b5264d1",
-                    "committedDate": "2016-12-08T06:52:32Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/70247247aab3a01d11fb6efdb77b6f8feedc1976",
-                    "committedDate": "2016-12-05T01:29:24Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/36595ef5586a2b208a820b189654553b037c71f2",
-                    "committedDate": "2016-12-05T00:58:27Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/99d7fe8908794125623c75076551d4d1be9a0b23",
-                    "committedDate": "2016-12-04T12:40:20Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/ee81e87e5f438a4e8cab91af18f127b88452fbf3",
-                    "committedDate": "2016-12-03T16:06:57Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/ea6d41b544b79bc6949def499ef059a5e0089128",
-                    "committedDate": "2016-12-03T13:21:37Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/dc358ef791477b8036b6916ce15e2ed823f8499e",
-                    "committedDate": "2016-12-03T13:09:02Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/3abee75e1f32e611d161bdf7eafb61e79ac9d902",
-                    "committedDate": "2016-12-03T10:55:36Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/2b531d5eaaab435639ff097d580808cba0bf78cd",
-                    "committedDate": "2016-12-03T10:45:48Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/f7bb2b72ec211fb2ff02542c97f88302ac219d96",
-                    "committedDate": "2016-12-03T10:15:53Z"
-                  },
-                  {
-                    "message": "Initial commit",
-                    "url": "https://github.com/soma0sd/computer_physics/commit/aa938d9e51c2745ce43123cb5c6e88e40a5f70dc",
-                    "committedDate": "2016-12-03T10:10:38Z"
-                  }
-                ],
-                "totalCount": 20
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 169200,
-                  "node": {
-                    "name": "Jupyter Notebook",
-                    "color": "#DA5B0B"
-                  }
-                },
-                {
-                  "size": 4240,
-                  "node": {
-                    "name": "Python",
-                    "color": "#3572A5"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/python-study",
-            "description": "파이썬  공부용",
-            "createdAt": "2016-07-13T07:33:12Z",
-            "updatedAt": "2017-09-08T02:02:54Z",
-            "pushedAt": "2017-08-31T12:22:00Z",
-            "url": "https://github.com/soma0sd/python-study",
-            "homepageUrl": null,
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "이전 프로젝트와 병합",
-                    "url": "https://github.com/soma0sd/python-study/commit/f884fe553db2d55dd92131dcf1abc7e794597f07",
-                    "committedDate": "2017-08-31T12:21:30Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/6522176a6c1bf4ecfa7b7162a10030e2eb62fb8e",
-                    "committedDate": "2016-12-20T16:08:52Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/0887cb6a37f083668228c817dbdd82d53f7d1d54",
-                    "committedDate": "2016-12-14T14:34:56Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/57efbfaf8483a0fe006fce4e8acce791a5b5253e",
-                    "committedDate": "2016-12-09T01:13:54Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/16e80a34be3cc00288e42015aa7cacf05fbf63fb",
-                    "committedDate": "2016-12-08T06:52:59Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/814a8da5b63d7eec443bbaba1376083b5c7bf26d",
-                    "committedDate": "2016-12-04T12:40:43Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/32dcaf71a0e778773b3551bbae76c8241447be72",
-                    "committedDate": "2016-12-01T06:54:40Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/6dccac1e345bfc5af14b75f960c6982c2f583a13",
-                    "committedDate": "2016-11-24T23:32:48Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/164228967db13d83fddcd413a26721b73f4be054",
-                    "committedDate": "2016-11-24T22:24:53Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/8e8cf911eca20cd8eb1d39f1d7be176642625178",
-                    "committedDate": "2016-11-20T18:38:11Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/11057042b1fad3ef420032bd4bf00d108f44216f",
-                    "committedDate": "2016-11-17T06:27:57Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/3afc3d5325000f5eb2070f239285267184ae77e2",
-                    "committedDate": "2016-11-16T12:36:32Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/9f8b9af086059669ff964e2ceb46eb68bc57a35f",
-                    "committedDate": "2016-11-16T12:29:18Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/f2a6659f91b4a6b9a48a20637246b75e8dce0466",
-                    "committedDate": "2016-11-10T16:10:02Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/d61e7121f932cacacdd0435850f09b317b632bd3",
-                    "committedDate": "2016-11-10T07:07:30Z"
-                  },
-                  {
-                    "message": "r",
-                    "url": "https://github.com/soma0sd/python-study/commit/9c214a154b2c99f7dcd832be4c1a5d8af3813f1a",
-                    "committedDate": "2016-11-10T05:35:36Z"
-                  },
-                  {
-                    "message": "r",
-                    "url": "https://github.com/soma0sd/python-study/commit/2e53ef901a6e3042b0004155ce67d40ad5519375",
-                    "committedDate": "2016-11-09T09:53:42Z"
-                  },
-                  {
-                    "message": "r",
-                    "url": "https://github.com/soma0sd/python-study/commit/22a21c6caf8835432823aeef632e41cded4679fe",
-                    "committedDate": "2016-10-30T12:57:56Z"
-                  },
-                  {
-                    "message": "r",
-                    "url": "https://github.com/soma0sd/python-study/commit/db9f7bc5015a82d4147a0ac900a0148a146b5956",
-                    "committedDate": "2016-10-26T22:23:06Z"
-                  },
-                  {
-                    "message": "r",
-                    "url": "https://github.com/soma0sd/python-study/commit/dea69b2f79d75bd29e404784cb764d9584e8d7f0",
-                    "committedDate": "2016-10-26T20:08:51Z"
-                  },
-                  {
-                    "message": "r",
-                    "url": "https://github.com/soma0sd/python-study/commit/f271b7f8f824ef8a5516bcd8bd1b1a5782c32b9f",
-                    "committedDate": "2016-10-21T02:27:57Z"
-                  },
-                  {
-                    "message": "r",
-                    "url": "https://github.com/soma0sd/python-study/commit/66923b5bb826e74f9e8ff62e276fb69145c05adc",
-                    "committedDate": "2016-10-21T02:00:30Z"
-                  },
-                  {
-                    "message": "update",
-                    "url": "https://github.com/soma0sd/python-study/commit/3da1bdae391f655a9324e6f57f5b066c89b2e409",
-                    "committedDate": "2016-10-21T01:21:20Z"
-                  },
-                  {
-                    "message": "bug fix",
-                    "url": "https://github.com/soma0sd/python-study/commit/2ae4b03c15da4bc52665e5afbd9a80dfbfc1f6ac",
-                    "committedDate": "2016-10-14T03:03:48Z"
-                  },
-                  {
-                    "message": "update",
-                    "url": "https://github.com/soma0sd/python-study/commit/f9975dad8011a6648754b9ef388cb84c2df4eee5",
-                    "committedDate": "2016-10-14T02:28:36Z"
-                  },
-                  {
-                    "message": "코멘트 추가",
-                    "url": "https://github.com/soma0sd/python-study/commit/71ecc2ab51dac89d6b48a68b78ce245d08877d45",
-                    "committedDate": "2016-10-12T19:36:37Z"
-                  },
-                  {
-                    "message": "미주석 버전",
-                    "url": "https://github.com/soma0sd/python-study/commit/dafb18726df994a0970553ac59a7e55dd8e38f28",
-                    "committedDate": "2016-10-12T19:05:45Z"
-                  },
-                  {
-                    "message": "comments append",
-                    "url": "https://github.com/soma0sd/python-study/commit/03e5996a484a612f15f90cfbeccc85f19a5b38eb",
-                    "committedDate": "2016-10-06T05:25:57Z"
-                  },
-                  {
-                    "message": "BUG FIX",
-                    "url": "https://github.com/soma0sd/python-study/commit/f5139bcc935fd6f6fcf8881ad62784b2c23ea5ed",
-                    "committedDate": "2016-10-06T04:56:47Z"
-                  },
-                  {
-                    "message": "week5 update",
-                    "url": "https://github.com/soma0sd/python-study/commit/0bfb8deaf346f901a9e348ef94bfd4760b66dc47",
-                    "committedDate": "2016-10-05T10:21:07Z"
-                  },
-                  {
-                    "message": "update",
-                    "url": "https://github.com/soma0sd/python-study/commit/5687ba6f5ccf4a0eab639fe3ba727990b2492193",
-                    "committedDate": "2016-10-04T06:15:57Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/8767cedf787b222fa134e8b059fbd2cfcbce6d79",
-                    "committedDate": "2016-09-30T09:57:30Z"
-                  },
-                  {
-                    "message": "주석 추가",
-                    "url": "https://github.com/soma0sd/python-study/commit/530ff2c71f760f2176406befa3d7a740753ea9eb",
-                    "committedDate": "2016-09-29T18:09:38Z"
-                  },
-                  {
-                    "message": "1차 완성본(미주석)",
-                    "url": "https://github.com/soma0sd/python-study/commit/b6b2e658c6912dc25343f8f7769d5cf185b41457",
-                    "committedDate": "2016-09-29T17:16:21Z"
-                  },
-                  {
-                    "message": "update",
-                    "url": "https://github.com/soma0sd/python-study/commit/3fc550efcb9d16842e52091b8be7650e66fcbe71",
-                    "committedDate": "2016-09-29T14:13:21Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/ce005ed6063b168a7595cd8768385843def17ba6",
-                    "committedDate": "2016-09-29T12:00:58Z"
-                  },
-                  {
-                    "message": "update",
-                    "url": "https://github.com/soma0sd/python-study/commit/e400bd542d7e90845588a1eb3409615bfeed150e",
-                    "committedDate": "2016-09-29T05:45:03Z"
-                  },
-                  {
-                    "message": "Add files via upload",
-                    "url": "https://github.com/soma0sd/python-study/commit/6bfd0362728b3c30fe61b036a08cde474e9c6715",
-                    "committedDate": "2016-09-23T02:25:10Z"
-                  },
-                  {
-                    "message": "Add files via upload",
-                    "url": "https://github.com/soma0sd/python-study/commit/a554b30f696d20b9eca6a710de430253e1312f99",
-                    "committedDate": "2016-09-18T20:18:39Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/27777e113606d2b29a44ad08cb2876a5d2826031",
-                    "committedDate": "2016-09-18T19:48:31Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/146d08a031f0179cb52af9b25e2453864905a582",
-                    "committedDate": "2016-09-18T19:33:27Z"
-                  },
-                  {
-                    "message": "pywiki지원",
-                    "url": "https://github.com/soma0sd/python-study/commit/5adbc839d141d7824f1d078b2f88c18d9d8ae9b3",
-                    "committedDate": "2016-09-18T19:08:16Z"
-                  },
-                  {
-                    "message": "오기 수정",
-                    "url": "https://github.com/soma0sd/python-study/commit/4fdf426edf4aafc9152863d038b430702227f548",
-                    "committedDate": "2016-09-12T10:02:21Z"
-                  },
-                  {
-                    "message": "plot 옵션 수정",
-                    "url": "https://github.com/soma0sd/python-study/commit/61f4b6651bfab15684867282fd68e756e283a008",
-                    "committedDate": "2016-09-12T09:49:29Z"
-                  },
-                  {
-                    "message": "잘못된 예제명 수정",
-                    "url": "https://github.com/soma0sd/python-study/commit/c5d0a8a360a33ccb1eec3903e0de5ce8947333ff",
-                    "committedDate": "2016-09-12T09:37:22Z"
-                  },
-                  {
-                    "message": "예제 추가",
-                    "url": "https://github.com/soma0sd/python-study/commit/ddc77c4f642f9bee2e5e8bc80be4dc0cac0ab60d",
-                    "committedDate": "2016-09-12T09:34:54Z"
-                  },
-                  {
-                    "message": "예제 업로드",
-                    "url": "https://github.com/soma0sd/python-study/commit/c1668f940c4d1357e3a85bf869f31f3146fb7b70",
-                    "committedDate": "2016-09-12T07:01:30Z"
-                  },
-                  {
-                    "message": "예제 업로드",
-                    "url": "https://github.com/soma0sd/python-study/commit/a80284940845ec349f84be494899e9c288a1cb60",
-                    "committedDate": "2016-09-11T13:36:31Z"
-                  },
-                  {
-                    "message": "예제 업로드",
-                    "url": "https://github.com/soma0sd/python-study/commit/2f28e388758b41c03a77c5138dc1c76fa4c7e66d",
-                    "committedDate": "2016-09-11T07:07:04Z"
-                  },
-                  {
-                    "message": "오타 수정",
-                    "url": "https://github.com/soma0sd/python-study/commit/f23e5533dac97d6c5bb5cf4cd79952a0d7c8721d",
-                    "committedDate": "2016-09-10T07:02:25Z"
-                  },
-                  {
-                    "message": "readme 업데이트",
-                    "url": "https://github.com/soma0sd/python-study/commit/544478bcd6a846bc73168e9fea76f1995cefd843",
-                    "committedDate": "2016-09-10T06:59:52Z"
-                  },
-                  {
-                    "message": "예제파일 구조 변경",
-                    "url": "https://github.com/soma0sd/python-study/commit/a621f135785d49501e2e73230341ea419d6bf4c9",
-                    "committedDate": "2016-09-10T05:33:31Z"
-                  },
-                  {
-                    "message": "예제 업로드",
-                    "url": "https://github.com/soma0sd/python-study/commit/3781d0afd40c126dc7104f268fa9be7ec0bd392b",
-                    "committedDate": "2016-09-10T05:07:32Z"
-                  },
-                  {
-                    "message": "update",
-                    "url": "https://github.com/soma0sd/python-study/commit/1da92f4c222bd54b1a489f4d7199b800ccee51ae",
-                    "committedDate": "2016-09-09T10:59:19Z"
-                  },
-                  {
-                    "message": "폴더 변경",
-                    "url": "https://github.com/soma0sd/python-study/commit/4de13a29e574468864599e114b980392ac672c20",
-                    "committedDate": "2016-09-09T09:40:14Z"
-                  },
-                  {
-                    "message": "update",
-                    "url": "https://github.com/soma0sd/python-study/commit/ea22de73f1a8ffd983942b2f2c164688b9266b61",
-                    "committedDate": "2016-09-09T08:18:26Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/961b8d8293c7aa9d8d7d00f8e61df19b81b659ad",
-                    "committedDate": "2016-09-09T05:54:59Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/35358a1f3d995dd1a7bc2fa56c23c193c1f51751",
-                    "committedDate": "2016-09-09T04:33:55Z"
-                  },
-                  {
-                    "message": "수업 중 예제 수정",
-                    "url": "https://github.com/soma0sd/python-study/commit/dcb8a8e871d63702f531676a332fe44aabdbd741",
-                    "committedDate": "2016-09-09T04:15:22Z"
-                  },
-                  {
-                    "message": "예비 예제 업로드 (추후 다른 예제로 교체)",
-                    "url": "https://github.com/soma0sd/python-study/commit/f161dfd221fdfd0b66768020b9540a71475f3760",
-                    "committedDate": "2016-09-08T14:42:54Z"
-                  },
-                  {
-                    "message": "readme 변경",
-                    "url": "https://github.com/soma0sd/python-study/commit/50b89244f8f4f9c36f03559cefe4d0d2ce5acddc",
-                    "committedDate": "2016-09-08T13:45:53Z"
-                  },
-                  {
-                    "message": "readme 변경",
-                    "url": "https://github.com/soma0sd/python-study/commit/39143f5d4de50efb7c4e6fd8397fd40d889382a0",
-                    "committedDate": "2016-09-08T12:39:19Z"
-                  },
-                  {
-                    "message": "몬테 카를로 예제 추가",
-                    "url": "https://github.com/soma0sd/python-study/commit/20c5491d67dd45511f388aecf0c0752eba7bc7e7",
-                    "committedDate": "2016-09-08T12:30:32Z"
-                  },
-                  {
-                    "message": "삭제",
-                    "url": "https://github.com/soma0sd/python-study/commit/c2b83a4eb8648bcbd6013986fffe3d99127826c6",
-                    "committedDate": "2016-09-08T10:26:18Z"
-                  },
-                  {
-                    "message": "수정(일부)",
-                    "url": "https://github.com/soma0sd/python-study/commit/ff189548b8ff479c7422a5eafb34798eba5c761c",
-                    "committedDate": "2016-09-08T08:48:10Z"
-                  },
-                  {
-                    "message": "예제 업로드",
-                    "url": "https://github.com/soma0sd/python-study/commit/b27d86d5ad5df45a3390b38517ec052ef9a83469",
-                    "committedDate": "2016-09-08T06:30:18Z"
-                  },
-                  {
-                    "message": "오타수정",
-                    "url": "https://github.com/soma0sd/python-study/commit/4c293c8ce451cdf14aeb6da36ba94462dfc7a1de",
-                    "committedDate": "2016-09-08T06:04:12Z"
-                  },
-                  {
-                    "message": "coments update",
-                    "url": "https://github.com/soma0sd/python-study/commit/019179e18f95352e43c72603739482bf8cda9954",
-                    "committedDate": "2016-09-07T06:17:58Z"
-                  },
-                  {
-                    "message": "예제 업로드",
-                    "url": "https://github.com/soma0sd/python-study/commit/a940c5474051dbdc025110d30b478f617e89b90a",
-                    "committedDate": "2016-09-07T04:11:05Z"
-                  },
-                  {
-                    "message": "no message",
-                    "url": "https://github.com/soma0sd/python-study/commit/a55e0a91f7b02062da1bd3990d245fa8dcafef26",
-                    "committedDate": "2016-09-06T17:25:59Z"
-                  },
-                  {
-                    "message": "예제 업로드",
-                    "url": "https://github.com/soma0sd/python-study/commit/c0515a5d7127b0911f1cf7b92cefc49a77dc5020",
-                    "committedDate": "2016-09-06T17:00:54Z"
-                  },
-                  {
-                    "message": "예제 업로드",
-                    "url": "https://github.com/soma0sd/python-study/commit/f16b7e52b09fa9c82363362c37c485d8d09c7810",
-                    "committedDate": "2016-09-06T15:13:10Z"
-                  },
-                  {
-                    "message": "서식 변경",
-                    "url": "https://github.com/soma0sd/python-study/commit/b803633919ed33cf140d88a03d000d7918d9e27a",
-                    "committedDate": "2016-09-06T14:17:16Z"
-                  },
-                  {
-                    "message": "Merge branch 'master' of https://github.com/soma0sd/python-study",
-                    "url": "https://github.com/soma0sd/python-study/commit/388c80dae1f20831b3933052adef8d7e72fd48c3",
-                    "committedDate": "2016-09-06T14:15:30Z"
-                  },
-                  {
-                    "message": "예제 업로드",
-                    "url": "https://github.com/soma0sd/python-study/commit/e45d2eb45fecbf39e26e9e1b6e80957fa13f69f4",
-                    "committedDate": "2016-09-06T14:12:37Z"
-                  },
-                  {
-                    "message": "Create README.md",
-                    "url": "https://github.com/soma0sd/python-study/commit/c6ecb03ad5afb8234893c011a5dcccc9cdc39ca0",
-                    "committedDate": "2016-09-06T10:33:26Z"
-                  },
-                  {
-                    "message": "예제 업로드",
-                    "url": "https://github.com/soma0sd/python-study/commit/f27139aa1321329063cd8185f6a97a2270004a32",
-                    "committedDate": "2016-09-06T10:31:00Z"
-                  },
-                  {
-                    "message": "예제 테스트",
-                    "url": "https://github.com/soma0sd/python-study/commit/9b6c49afbda98a1febdebbf194b683f60688e51c",
-                    "committedDate": "2016-07-14T15:47:52Z"
-                  },
-                  {
-                    "message": "Initial commit",
-                    "url": "https://github.com/soma0sd/python-study/commit/abafe70924cd0ecf46d5572cadf5bfc7cd70f3a4",
-                    "committedDate": "2016-07-13T07:33:12Z"
-                  }
-                ],
-                "totalCount": 79
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 124937,
                   "node": {
                     "name": "Python",
                     "color": "#3572A5"
