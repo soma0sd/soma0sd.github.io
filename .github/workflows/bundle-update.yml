@@ -2,8 +2,6 @@ name: Bundle security update
 
 on:
   workflow_dispatch:
-  push:
-    branches: [chore/security-deps-update]
 
 permissions:
   contents: write
