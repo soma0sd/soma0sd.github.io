@@ -1,0 +1,12 @@
+{
+  "name": "soma0sd-github-io",
+  "private": true,
+  "description": "soma0sd.github.io 정적 사이트의 TypeScript 빌드 설정",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

@@ -9,6 +9,7 @@ All Rights Reserved.
 
 import inspect
 import json
+import os
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -24,29 +25,40 @@ OUTPUT_DATA_DIR = Path(__file__).parent.parent / "_data" / "github"
 
 
 API_URL = "https://api.github.com/graphql"
+REQUEST_TIMEOUT = 30
 
 
 def get_query() -> str:
     """쿼리 파일 `github_api.graphql`을 읽어들여 반환"""
-    with open(QUERY_PATH) as f:
+    with open(QUERY_PATH, encoding="utf-8") as f:
         query = f.read()
     return query
 
 
 def get_token() -> str:
-    """토큰 파일 읽기"""
+    """토큰 읽기.
+
+    환경변수 `GITHUB_TOKEN` 이 있으면 그 값을, 없으면 `.token` 파일을 쓴다.
+    CI 나 임시 셸에서 토큰을 디스크에 남기지 않고 쓸 수 있게 하기 위한 것이다.
+    """
+    env_token = os.environ.get("GITHUB_TOKEN", "").strip()
+    if env_token:
+        return env_token
     if not TOKEN_PATH.exists():
         msg = inspect.cleandoc(
             """
         https://github.com/settings/tokens
 
-        엑세스 토큰을 생성하여 `.token`에 저장한 뒤
-        스크립트를 다시 실행하세요.
+        액세스 토큰을 생성하여 `.token`에 저장하거나 환경변수 `GITHUB_TOKEN`에
+        넣은 뒤 스크립트를 다시 실행하세요.
+
+        `.token`은 .gitignore에 등재되어 있습니다. 토큰 값을 커밋하거나
+        문서·커밋 메시지에 남기지 마세요.
         """
         )
         raise Exception(msg)
     else:
-        with open(TOKEN_PATH) as f:
+        with open(TOKEN_PATH, encoding="utf-8") as f:
             token = f.read().strip(" \n")
     return token
 
@@ -136,26 +148,31 @@ def main():
 
     # Graph QL 응답을 `_data/github_raw.json`에 저장
     header = {"Authorization": f"token {token}"}
-    response: requests.Response = session.post(url=API_URL, json=query, headers=header)
+    response: requests.Response = session.post(
+        url=API_URL, json=query, headers=header, timeout=REQUEST_TIMEOUT
+    )
     if response.status_code != 200:
         raise Exception(f"[STATUS: {response.status_code}] {response.text}")
     raw_data = json.loads(response.text)
-    with open(OUTPUT_RAW_PATH, "w") as f:
+    if "errors" in raw_data:
+        errors = json.dumps(raw_data["errors"], ensure_ascii=False)
+        raise Exception(f"[GraphQL] {errors}")
+    with open(OUTPUT_RAW_PATH, "w", encoding="utf-8") as f:
         f.write(json.dumps(raw_data, ensure_ascii=False, indent=2))
     session.close()
 
     # 사용자 데이터
     user_data = convert_user(raw_data["data"]["viewer"])
-    with open(OUTPUT_DATA_DIR / "user.json", "w") as f:
+    with open(OUTPUT_DATA_DIR / "user.json", "w", encoding="utf-8") as f:
         f.write(json.dumps(user_data, ensure_ascii=False, indent=2))
 
     # 저장소 데이터
     repo_data = convert_repos(raw_data["data"]["viewer"]["repositories"])
-    with open(OUTPUT_DATA_DIR / "repo.json", "w") as f:
+    with open(OUTPUT_DATA_DIR / "repo.json", "w", encoding="utf-8") as f:
         f.write(json.dumps(repo_data, ensure_ascii=False, indent=2))
 
     lang_stat_data = convert_lang_stat(repo_data)
-    with open(OUTPUT_DATA_DIR / "lang_stat.json", "w") as f:
+    with open(OUTPUT_DATA_DIR / "lang_stat.json", "w", encoding="utf-8") as f:
         f.write(json.dumps(lang_stat_data, ensure_ascii=False, indent=2))
     return
 

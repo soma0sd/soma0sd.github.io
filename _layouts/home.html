@@ -1,0 +1,246 @@
+---
+layout: default
+---
+
+<section id="user-profile" class="profile" aria-labelledby="profile-heading">
+  <div class="profile__card">
+    <img class="profile__avatar" src="{{ site.github.owner.avatar_url | escape }}" width="176" height="176"
+      decoding="async" fetchpriority="high" alt="{{ site.github.owner.login | escape }} 프로필 이미지">
+    {%- comment -%}
+      GitHub 계정에는 한국어 이름 필드가 없으므로 `_config.yml` 의 `profile.name_ko` 를 쓴다.
+      값이 비어 있으면 기존처럼 GitHub 의 영문 이름만 표시한다.
+    {%- endcomment -%}
+    {%- assign name_ko = site.profile.name_ko | default: '' | strip -%}
+    {%- assign name_en = site.github.owner.name | default: '' | strip -%}
+    <h1 id="profile-heading" class="profile__name">
+      {%- if name_ko != '' -%}
+      {{ name_ko | escape }}
+      {%- if name_en != '' %}<span class="profile__name-en">{{ name_en | escape }}</span>{% endif -%}
+      {%- else -%}
+      {{ name_en | escape }}
+      {%- endif %}
+      <span class="profile__login">{{ site.github.owner.login | escape }}</span>
+    </h1>
+    {%- comment -%}
+      한 줄 소개 규칙. Liquid 에서 빈 문자열은 참이므로 세 상태를 구분할 수 있다.
+        - `profile.bio` 키가 없음  -> GitHub 계정의 bio 를 쓴다
+        - `profile.bio: ""`        -> 소개 줄을 아예 표시하지 않는다
+        - `profile.bio: "문구"`     -> 그 문구를 쓴다
+    {%- endcomment -%}
+    {%- if site.profile.bio -%}
+    {%- assign bio = site.profile.bio | strip -%}
+    {%- else -%}
+    {%- assign bio = site.github.owner.bio | default: '' | strip -%}
+    {%- endif -%}
+    {%- if bio != '' -%}
+    <p class="profile__bio">{{ bio | escape }}</p>
+    {%- endif -%}
+    <ul class="profile__meta">
+      {%- comment -%}
+        소속은 `_config.yml` 의 `profile.company` 를 우선 쓰고, 없으면 GitHub 계정의 company 를 쓴다.
+        `profile.position`(직급)이 있으면 회사명 뒤에 덧붙인다. 둘 중 하나만 있어도 줄을 렌더한다.
+        `profile.company_url` 이 http/https 로 시작할 때만 회사명에 링크를 건다.
+      {%- endcomment -%}
+      {%- assign company = site.profile.company | default: site.github.owner.company | default: '' | strip -%}
+      {%- assign position = site.profile.position | default: '' | strip -%}
+      {%- if company != '' or position != '' -%}
+      {%- assign company_url = site.profile.company_url | default: '' | strip -%}
+      {%- assign cu_https = company_url | slice: 0, 8 -%}
+      {%- assign cu_http = company_url | slice: 0, 7 -%}
+      <li>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-building"></use></svg>
+        <span class="visually-hidden">소속</span>
+        <span class="profile__org">
+          {%- if company != '' -%}
+          {%- if cu_https == 'https://' or cu_http == 'http://' -%}
+          <a href="{{ company_url | escape }}" rel="noopener noreferrer">{{ company | escape }}</a>
+          {%- else -%}
+          {{ company | escape }}
+          {%- endif -%}
+          {%- endif -%}
+          {%- if position != '' %} <span class="profile__position">{{ position | escape }}</span>{% endif -%}
+        </span>
+      </li>
+      {%- endif -%}
+      {%- assign owner_email = site.github.owner.email | default: '' | strip -%}
+      {%- if owner_email != '' -%}
+      <li>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"></use></svg>
+        <a href="mailto:{{ owner_email | escape }}">{{ owner_email | escape }}</a>
+      </li>
+      {%- endif -%}
+      <li>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-github"></use></svg>
+        <a href="{{ site.github.owner.html_url | escape }}" rel="noopener noreferrer">{{ site.github.owner.html_url | escape }}</a>
+      </li>
+      {%- assign owner_loc = site.github.owner.location | default: '' | strip -%}
+      {%- if owner_loc != '' -%}
+      <li>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"></use></svg>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query={{ owner_loc | uri_escape | escape }}"
+          rel="noopener noreferrer">{{ owner_loc | escape }}</a>
+      </li>
+      {%- endif -%}
+      <li>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-stack"></use></svg>
+        <span><span data-number="{{ site.github.owner.public_repos | escape }}">{{ site.github.owner.public_repos | escape }}</span>개 저장소</span>
+      </li>
+      <li>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-braces"></use></svg>
+        <span><span data-number="{{ site.github.owner.public_gists | escape }}">{{ site.github.owner.public_gists | escape }}</span>개 Gist</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="user-stats" class="stats" aria-labelledby="stats-heading">
+  <div class="section-head">
+    <h2 id="stats-heading">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chart"></use></svg>
+      언어 통계
+    </h2>
+    {%- assign code_sum = 0 -%}
+    {%- assign max_code = 0 -%}
+    {%- for lang in site.data.github.lang_stat -%}
+      {%- assign code_sum = code_sum | plus: lang[1].size -%}
+      {%- if lang[1].size > max_code -%}{%- assign max_code = lang[1].size -%}{%- endif -%}
+    {%- endfor -%}
+    <p class="section-head__sub">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"></use></svg>
+      <span>전체 <span data-number="{{ code_sum }}">{{ code_sum }}</span> Bytes</span>
+    </p>
+  </div>
+
+  <ol class="lang-stats">
+    {%- for lang in site.data.github.lang_stat -%}
+    {%- assign lang_name = lang[0] -%}
+    {%- assign lang_size = lang[1].size -%}
+    {%- assign lang_color = lang[1].color | default: '#8892b0' -%}
+    {%- assign lang_pct = lang_size | times: 100.0 | divided_by: code_sum | round: 2 -%}
+    {%- assign lang_width = lang_size | times: 100.0 | divided_by: max_code -%}
+    <li class="lang-stats__row">
+      <span class="lang-stats__name">
+        <svg class="icon lang-swatch" style="color: {{ lang_color | escape }}" aria-hidden="true" focusable="false"><use href="#i-lang"></use></svg>
+        <span>{{ lang_name | escape }}</span>
+      </span>
+      <span class="lang-stats__pct">{{ lang_pct }}%</span>
+      <span class="lang-stats__size"><span data-number="{{ lang_size | escape }}">{{ lang_size | escape }}</span> Bytes</span>
+      <span class="lang-stats__track" aria-hidden="true">
+        <span class="lang-stats__bar" style="width: {{ lang_width }}%; background-color: {{ lang_color | escape }}"></span>
+      </span>
+    </li>
+    {%- endfor -%}
+  </ol>
+</section>
+
+<section id="repos-info" class="repos" aria-labelledby="repos-heading">
+  <div class="section-head">
+    <h2 id="repos-heading">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-stack"></use></svg>
+      저장소 정보
+    </h2>
+    <p class="section-head__sub">최근 푸시 순 {{ site.data.github.repo | size }}개</p>
+  </div>
+
+  <ul class="repo-grid">
+    {%- for repo in site.data.github.repo -%}
+    <li class="repo-card">
+      <h3 class="repo-card__title">
+        <a href="{{ repo.url | escape }}" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-github"></use></svg>
+          <span>{{ repo.nameWithOwner | escape }}</span>
+        </a>
+        {%- if repo.isArchived %}
+        <span class="badge badge--archive">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-archive"></use></svg>보관됨
+        </span>
+        {%- endif -%}
+      </h3>
+
+      {%- comment -%}
+        homepageUrl 은 저장소마다 자유롭게 넣는 값이라 http/https 로 시작할 때만 링크로 만든다.
+        (빈 문자열은 Liquid 에서 참으로 취급돼 예전에는 href="" 인 죽은 링크가 나왔다.)
+      {%- endcomment -%}
+      {%- assign home_url = repo.homepageUrl | default: '' | strip -%}
+      {%- assign home_https = home_url | slice: 0, 8 -%}
+      {%- assign home_http = home_url | slice: 0, 7 -%}
+      {%- if home_https == 'https://' or home_http == 'http://' %}
+      <p class="repo-card__links">
+        <a class="repo-card__link" href="{{ home_url | escape }}" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-home"></use></svg>홈페이지
+        </a>
+      </p>
+      {%- endif -%}
+
+      {%- assign desc = repo.description | default: '' | strip -%}
+      <p class="repo-card__desc{% if desc == '' %} repo-card__desc--empty{% endif %}">
+        {%- if desc != '' -%}{{ desc | escape }}{%- else -%}설명이 등록되지 않은 저장소입니다.{%- endif -%}
+      </p>
+
+      <p class="repo-card__dates">
+        <span>
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-update"></use></svg>
+          <span class="visually-hidden">마지막 푸시</span>
+          <time datetime="{{ repo.pushedAt | escape }}">{{ repo.pushedAt | date: "%Y-%m-%d" | escape }}</time>
+        </span>
+        <span>
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-calendar"></use></svg>
+          <span class="visually-hidden">생성</span>
+          <time datetime="{{ repo.createdAt | escape }}">{{ repo.createdAt | date: "%Y-%m-%d" | escape }}</time>
+        </span>
+      </p>
+
+      {%- assign total = 0 -%}
+      {%- for language in repo.languages -%}{%- assign total = total | plus: language.size -%}{%- endfor -%}
+      {%- if total > 0 %}
+      <div class="langs">
+        <div class="langs__track" aria-hidden="true">
+          {%- for language in repo.languages -%}
+          <span class="langs__seg"
+            style="width: {{ language.size | times: 100.0 | divided_by: total }}%; background-color: {{ language.color | default: '#8892b0' | escape }}"></span>
+          {%- endfor -%}
+        </div>
+        <ul class="langs__list">
+          {%- for language in repo.languages limit: 6 -%}
+          <li>
+            <svg class="icon lang-swatch" style="color: {{ language.color | default: '#8892b0' | escape }}" aria-hidden="true" focusable="false"><use href="#i-lang"></use></svg>
+            <span class="langs__name">{{ language.name | escape }}</span>
+            <span class="langs__pct">{{ language.size | times: 100.0 | divided_by: total | round: 1 }}%</span>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+      {%- endif -%}
+
+      {%- if repo.commit and repo.commit.size > 0 %}
+      <details class="commits">
+        <summary class="commits__toggle">
+          <svg class="icon commits__chevron" aria-hidden="true" focusable="false"><use href="#i-chevron"></use></svg>
+          <span class="commits__label">최근 커밋</span>
+          <span class="commits__count">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-commit"></use></svg>
+            <span data-number="{{ repo.commits | escape }}">{{ repo.commits | escape }}</span>
+          </span>
+        </summary>
+        <div class="commits__panel">
+          <ul class="commits__list">
+            {%- for commit in repo.commit limit: 10 -%}
+            {%- assign msg_full = commit.message | strip -%}
+            {%- assign msg_head = msg_full | newline_to_br | split: '<br />' | first | strip -%}
+            <li>
+              <a class="commits__msg" href="{{ commit.url | escape }}" rel="noopener noreferrer"
+                title="{{ msg_full | escape }}">{{ msg_head | escape | truncate: 88 }}</a>
+              <span class="commits__when">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"></use></svg>
+                <time datetime="{{ commit.date | escape }}">{{ commit.date | date: "%Y-%m-%d" | escape }}</time>
+              </span>
+            </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      </details>
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
