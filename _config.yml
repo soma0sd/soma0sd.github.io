@@ -25,6 +25,11 @@ profile:
   position: "차장"
   company_url: ""
 
+# github-pages gem 은 기본 테마로 jekyll-theme-primer 를 끼워 넣는다. 이 사이트는 자체 레이아웃과
+# SCSS 만 쓰므로, 아무도 참조하지 않는 76KB 짜리 `assets/css/style.css` 가 배포되지 않도록 테마를 끈다.
+# (gem 이 `theme` 키를 명시하면 그 값을 그대로 존중한다. 빈 값 = 테마 없음.)
+theme:
+
 sass:
   style: compressed
 
@@ -44,6 +49,7 @@ exclude:
   - python/
   - README.md
   - CLAUDE.md
+  - AGENTS.md
   - task.md
 
 # jekyll-seo-tag 플러그인
