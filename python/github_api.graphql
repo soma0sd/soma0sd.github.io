@@ -1,5 +1,6 @@
-{
-  viewer {
+query($login: String!) {
+  user(login: $login) {
+    login
     name
     email
     bio
@@ -29,7 +30,7 @@
         isPrivate
         object(expression: "HEAD") {
           ... on Commit {
-            history {
+            history(first: 100) {
               nodes {
                 message
                 url
