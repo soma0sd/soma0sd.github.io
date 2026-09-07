@@ -1,0 +1,54 @@
+name: GitHub data update
+
+# `_data/github/*.json` 은 python/get_github_api.py 가 GitHub GraphQL API 에서 만들어 내는 산출물이다.
+# 손으로 고치지 말고 이 워크플로(또는 로컬 실행)로만 갱신한다.
+
+on:
+  schedule:
+    # 매주 월요일 06:00 KST (일요일 21:00 UTC)
+    - cron: '0 21 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r python/requirements.txt
+
+      - name: Collect GitHub data
+        env:
+          # 공개 데이터만 조회하므로 자동 발급되는 GITHUB_TOKEN 으로 충분하다.
+          # 별도 PAT 를 쓰려면 저장소 시크릿 `GH_DATA_TOKEN` 을 만들면 그쪽이 우선한다.
+          GITHUB_TOKEN: ${{ secrets.GH_DATA_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_LOGIN: soma0sd
+        run: python python/get_github_api.py
+
+      - name: Report collected data
+        run: |
+          echo "### Collected data" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          python -c "import json;r=json.load(open('_data/github/repo.json',encoding='utf-8'));l=json.load(open('_data/github/lang_stat.json',encoding='utf-8'));print(f'repositories: {len(r)}');print(f'languages:    {len(l)}');print(f'latest push:  {r[0][\"nameWithOwner\"]} ({r[0][\"pushedAt\"]})') if r else None" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/github _data/github_raw.json
+          git diff --cached --quiet && echo "No data change" && exit 0
+          git commit -m "chore(data): refresh GitHub API data"
+          git push
