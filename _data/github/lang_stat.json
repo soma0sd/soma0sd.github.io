@@ -12,20 +12,20 @@
     "color": "#f34b7d"
   },
   "JavaScript": {
-    "size": 1738027,
+    "size": 1740504,
     "color": "#f1e05a"
   },
   "C": {
     "size": 824911,
     "color": "#555555"
   },
+  "TypeScript": {
+    "size": 501729,
+    "color": "#3178c6"
+  },
   "SCSS": {
     "size": 406611,
     "color": "#c6538c"
-  },
-  "TypeScript": {
-    "size": 347641,
-    "color": "#3178c6"
   },
   "Rust": {
     "size": 324029,
@@ -60,7 +60,7 @@
     "color": "#663399"
   },
   "HTML": {
-    "size": 82315,
+    "size": 95369,
     "color": "#e34c26"
   },
   "Dockerfile": {

@@ -13,14 +13,243 @@
       "createdAt": "2015-06-27T11:46:41Z",
       "updatedAt": "2026-08-19T02:19:53Z",
       "repositories": {
-        "totalCount": 19,
+        "totalCount": 20,
         "nodes": [
+          {
+            "nameWithOwner": "soma0sd/docexporter-for-notion",
+            "description": "Notion 페이지를 DOCX·HWPX 문서로 내보내는 브라우저 확장 (Chrome·Edge·웨일, Manifest V3, TypeScript + Vite)",
+            "createdAt": "2026-09-04T07:55:03Z",
+            "updatedAt": "2026-09-07T13:54:59Z",
+            "pushedAt": "2026-09-07T13:54:24Z",
+            "url": "https://github.com/soma0sd/docexporter-for-notion",
+            "homepageUrl": "https://soma0sd.github.io/docexporter-for-notion/",
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "docs: README 사용 설명서 링크 노출 강화\n\n배지 줄과 요약 표 사이에 주소 원문이 그대로 놓여 있어 무슨 링크인지 즉시\n읽히지 않았다. 배지 줄에 설명서 배지를 넣고, 본문 링크를 제목 수준의\n앵커 텍스트로 바꿔 상단에서 바로 눈에 들어오게 한다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/9edd3c59bb3610ca0e5c3a507c264ea92d877b71",
+                    "committedDate": "2026-09-07T13:54:02Z"
+                  },
+                  {
+                    "message": "fix(security): 백그라운드 메시지 발신자 검증 추가\n\nexternally_connectable 미선언 상태에서도 다른 설치 확장은 runtime.onMessage 로\n메시지를 보낼 수 있다. 그 통로로 FETCH_IMAGE 를 보내면 이 확장의 host permission\n을 빌려 임의 URL 본문을 읽어 갈 수 있었다.\n\n- sender.id 가 이 확장 ID 가 아니면 응답 없이 무시\n- DOWNLOAD_FILE 은 data: URL 만 수락, 원격 URL 다운로드 유발 차단\n- FETCH_IMAGE 는 http/https 만 수락, file: 와 확장 내부 주소 차단\n\nFETCH_IMAGE 대상을 노션·AWS 호스트로 좁히지는 않았다. 노션 페이지는 임의 외부\n주소의 이미지 블록을 허용해서 호스트를 제한하면 외부 이미지가 빠진다. 발신자\n검증이 이미 통로를 닫으므로 스킴만 막는다.\n\nchrome·fetch 를 스텁한 하네스로 빌드 산출물의 리스너를 직접 호출해 7건 확인.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/e56fbdaf063d33fb2e1d29e75b64ece9241adcaa",
+                    "committedDate": "2026-09-07T13:02:34Z"
+                  },
+                  {
+                    "message": "docs: 사용 설명서 페이지·스토어 링크·배지 정리\n\n- docs/index.html 에 한국어·영어 전환형 사용 설명서 추가(설치, 사용법, 옵션\n  페이지, 지원 블록, 문제 해결, 개인정보, 라이선스). main 브랜치의 /docs 를\n  GitHub Pages 소스로 쓴다. docs/images 는 store 캡처 사본.\n- README 에 크롬·엣지·웨일 스토어 링크와 확장 ID 를 담은 설치 표 추가.\n- 지원 브라우저·버전·Manifest·TypeScript·라이선스 배지 추가.\n- 게시 상태를 세 스토어 게시 완료로 갱신하고 설명서 링크 연결.\n- README 가 명시한 MIT 조건에 맞춰 LICENSE 파일 추가.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/73612183ad8ba042a01fb2d46599394577db9b34",
+                    "committedDate": "2026-09-07T12:46:27Z"
+                  },
+                  {
+                    "message": "chore: 에이전트 지침·작업 보드 파일 추적 제외\n\nAGENTS.md, task.md 를 .gitignore 에 추가. 두 파일은 로컬 전용 문서라\n공유 저장소에 남기지 않는다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/49a9343b55a9877af04358491e5eb563f338a04e",
+                    "committedDate": "2026-09-07T08:54:44Z"
+                  },
+                  {
+                    "message": "docs: Edge 애드온 v2.0.1 게시 완료 반영\n\nGmail 로 심사 결과 확인. Edge 는 제출 당일(2026-09-04) 승인되어 스토어에 노출 중.\nChrome·Whale 은 알림 메일이 아직 없어 심사 중으로 유지.\n\n- task.md: Edge 심사 확인 완료 처리, 배포본 공개 항목 추가\n- store/listing_v2.0.1.md: 진행 상황 표를 게시 완료로 갱신, 스토어 링크 기재\n- README: 게시 상태 갱신 및 Edge 설치 링크 추가\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/e580587d0a44bbf40d2fc619c995e04f4970e29b",
+                    "committedDate": "2026-09-04T10:58:12Z"
+                  },
+                  {
+                    "message": "docs: 기술 스택 번들러 표기를 Vite 6 로 정정\n\n의존성 점검에서 vite 6 로 올린 결과를 README 기술 스택 표에 반영.\nv2.0.0 릴리스 기록의 \"Vite 5 도입\" 문장은 당시 사실이므로 유지.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/5e5a28b371f819ff6f48dd6b6110bd17c07d1f00",
+                    "committedDate": "2026-09-04T09:22:51Z"
+                  },
+                  {
+                    "message": "docs: README 에 한국어 스토어 설명 전문 수록\n\n영문 전문에 이어 한국어 전문도 코드블록으로 추가.\nlisting 참조 문구는 단일 목적·권한 정당화·심사 노트 안내로 조정.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/dcb4218c01f23e981a8c7fc65ab022a1b41044f6",
+                    "committedDate": "2026-09-04T09:21:11Z"
+                  },
+                  {
+                    "message": "docs: README 에 영문 스토어 설명 전문 복원\n\n확장 세부정보 절에 영문 설명 전문을 코드블록으로 다시 수록.\n한국어 전문은 store/listing_v2.0.1.md 참조로 유지.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/514ff4a479904384dd2c7eadc6ba5694592b2a61",
+                    "committedDate": "2026-09-04T09:12:37Z"
+                  },
+                  {
+                    "message": "docs: README 를 v2.0.1 기준으로 갱신\n\n- 머리말에 현재 버전·스토어 등록명·지원 브라우저·게시 상태 표 추가\n- v2.0.1 절에 동작 검증 결과와 스크린샷 교체 사실 기재\n- 설정(옵션 페이지) 절 신설: 글꼴·색상 8슬롯, 표지 디자이너, 좌표 변환 모듈 설명\n- 확장 세부정보를 store/listing_v2.0.1.md 참조 + 요약 표로 정리(문구 중복 제거)\n- 업로드 파일·빌드 명령(build:options, build:ext)·기술 스택(설정 저장) 보완\n- 긴 대시 24곳을 콜론으로 교체\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/a203f6ce717efa704a527dc6bff7373e5aa4af9b",
+                    "committedDate": "2026-09-04T09:04:40Z"
+                  },
+                  {
+                    "message": "chore(deps): 빌드 도구 취약점 해소 (vite 6, sharp 0.35, archiver 8)\n\nDependabot 빌드 전용 경고 17건을 해소한다. npm audit 결과 0건.\n\n- vite 5.4.21 -> 6.4.3: server.fs.deny 우회(high), 경로 순회(medium), launch-editor NTLM 해시 노출(medium).\n  전이 의존인 esbuild 0.24 -> 0.25.12, postcss 8.5.8 -> 8.5.28 도 함께 해소\n- sharp 0.33.5 -> 0.35.4: libvips 상속 취약점(high)\n- archiver 7.0.1 -> 8.0.0: lodash 4.17.23 의존이 사라져 code injection(high)·프로토타입 오염(medium) 해소\n- brace-expansion 2.x -> 5.0.9: DoS 3건(high)\n\n코드 변경\n\n- scripts/zip.mjs: archiver 8 이 ESM 전용으로 바뀌며 default export 가 사라졌다.\n  archiver(\"zip\", opts) -> new ZipArchive(opts). glob/pipe/finalize/pointer 는 그대로다\n- vite.config.ts: vite 6 의 네이티브 설정 로더가 __dirname 을 주입하지 않아 import.meta.dirname 으로 교체\n- icons/*.png: sharp 의 PNG 인코더가 바뀌어 128px 이 41바이트 늘었다. 픽셀 렌더는 동일함을 확인\n\n산출물 검증 (기준: Edge 에 제출한 v2.0.1 빌드)\n\n- background.js·options.js·popup.js: 바이트 단위 동일\n- content.js: 925,724 -> 930,483 (+4,759). rollup 출력 포맷 차이이며 줄 수는 6줄 증가\n- zip: 201,863 -> 202,153\n\nvite 8 도 검토했으나 번들러가 Rolldown 으로 교체되어 content.js 가 +24KB 늘어 보류했다.\n심사 중인 v2.0.1 패키지는 vite 5 로 빌드된 것이라 이 변경의 영향을 받지 않는다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/e3f546f1eeaf05c3eb220d03b907f7d9169c8233",
+                    "committedDate": "2026-09-04T08:58:41Z"
+                  },
+                  {
+                    "message": "docs: 크롬·웨일 스토어 v2.0.1 제출 완료 반영\n\n- task.md: 스크린샷 1번 교체, 크롬 게시, Whale 등록 확인 항목을 완료 처리\n- task.md: 스토어 3곳 심사 결과 확인 항목 추가(제출일 2026-09-04)\n- store/listing_v2.0.1.md: 스토어별 진행 상황 표를 세 곳 모두 심사 중으로 갱신\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/f57cc8813d99bb519e5d7550d882b0d8ba2ddadf",
+                    "committedDate": "2026-09-04T08:47:59Z"
+                  },
+                  {
+                    "message": "fix(deps): 런타임 nanoid 를 5.1.16 으로 갱신\n\nDependabot 경고 19건 중 확장 번들에 실제로 들어가는 것은 docx 가 끌어오는\nnanoid 하나뿐이었다(high 2건: 정수 오버플로, 음수 size 무한 루프).\n\n- docx@8.5.0 -> nanoid 5.1.7 -> 5.1.16 (런타임)\n- vite -> postcss -> nanoid 3.3.11 -> 3.3.18 (빌드 전용, npm update 시 함께 갱신)\n- package.json 변경 없음. lockfile 의 프로젝트 version 필드가 1.0.0 에서 2.0.1 로 동기화됨\n\n검증: npm run build 통과. 생성된 zip 내부 13개 파일이 Edge 에 제출한\nstore/DocExporter_for_Notion_v2.0.1.zip 과 바이트 단위로 동일하다.\ndocx 는 nanoid() 를 인자 없이 호출하고 번들에는 기본 생성기만 포함되어,\n취약 경로(customAlphabet 의 size 처리, non-secure 생성기)는 애초에 들어가지 않았다.\n심사 중인 패키지를 다시 올릴 필요는 없다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/b832205a8c9dd1dbb042019e370b15a03aa16be6",
+                    "committedDate": "2026-09-04T08:47:11Z"
+                  },
+                  {
+                    "message": "docs: v2.0.1 스토어 등록 문구 정리 및 작업 현황 반영\n\n- store/listing_v2.0.1.md 추가: 설명(한/영), 단일 목적, 권한 정당화, 심사 노트, 스토어별 진행 상황\n- Edge 애드온에 v2.0.1 제출 완료(심사 중). 설명 문구는 실제 동작 기준으로 다시 씀\n  (기존 문구의 \"DOM 분석\" 서술은 내부 페이지 API 호출이라는 실제 구현과 달라 수정)\n- task.md: git 도입·Edge 제출 완료 처리, Whale 확인·Edge 심사 확인 항목 추가\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/a06775478555bd8cbcab7c233a89650245716d68",
+                    "committedDate": "2026-09-04T08:28:24Z"
+                  },
+                  {
+                    "message": "chore: 저장소 초기화 - DocExporter for Notion v2.0.1\n\nNotion 페이지를 DOCX·HWPX 문서로 변환하는 Chrome 확장(Manifest V3).\n로컬 전용으로 관리하던 프로젝트를 git 으로 이관. 현재 상태는 v2.0.1(노션 도메인 이전 대응 반영).\n\n- 소스: TypeScript + Vite 5, 엔트리 4종(content/background/popup/options)\n- 스토어 자산: store/ 에 게시 zip(v2.0.0·v2.0.1)과 스크린샷 4종 보관\n- 추적 제외: node_modules, dist, .claude, CLAUDE.md\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/287ba2045f862f147bca0947e9e1e7cb62f7d3e6",
+                    "committedDate": "2026-09-04T07:54:41Z"
+                  }
+                ],
+                "totalCount": 14
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 154088,
+                  "node": {
+                    "name": "TypeScript",
+                    "color": "#3178c6"
+                  }
+                },
+                {
+                  "size": 13054,
+                  "node": {
+                    "name": "HTML",
+                    "color": "#e34c26"
+                  }
+                },
+                {
+                  "size": 2477,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/rpi-calendar-kiosk",
+            "description": "라즈베리파이 4 + Waveshare HDMI 패널용 키오스크. 구글 캘린더 일정·할 일을 D-Day 목록과 월간 달력으로 띄우고, Windows PC 의 CPU·GPU·드라이브 사용량을 육각 링으로 함께 표시합니다. (Rust 서버 + Chromium 키오스크)",
+            "createdAt": "2026-06-13T15:30:16Z",
+            "updatedAt": "2026-09-07T12:45:58Z",
+            "pushedAt": "2026-09-07T12:45:41Z",
+            "url": "https://github.com/soma0sd/rpi-calendar-kiosk",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "docs: MIT 라이선스 적용\n\n- 루트 LICENSE 추가 (MIT, Copyright (c) 2026 soma0sd)\n- pyproject.toml 에 PEP 639 라이선스 메타데이터 추가 (Cargo.toml 은 이미 MIT)\n- README·사용 설명서에 라이선스 절 추가\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/30b75b9d41e092f2388ff7de553338ce2452ae88",
+                    "committedDate": "2026-09-07T12:45:12Z"
+                  },
+                  {
+                    "message": "docs: 사용 설명서를 GitHub Pages 로 추가\n\n준비물·설치 순서·화면 조작·운영 명령·문제 해결·접근 범위를 사용자 관점으로 정리했습니다.\ndocs/ 를 Pages 소스로 쓰고 내부 회의록(docs/meetings)은 공개 문서에서 제외합니다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/5cb9960906827d364aa578a54d1269767e561a6d",
+                    "committedDate": "2026-09-07T07:00:33Z"
+                  },
+                  {
+                    "message": "fix: 셸 스크립트 CRLF 배포 실패 방지 + 미사용 import 제거\n\n- .gitattributes 로 *.sh, *.service, *.timer 를 LF 로 고정한다.\n  core.autocrlf=true 인 Windows 작업 트리에서는 이 파일들이 CRLF 로\n  체크아웃되는데, deploy.ps1 이 작업 트리를 그대로 scp 하므로 원격 bash 가\n  bootstrap_rust.sh 의 `set -euo pipefail` 을 `pipefail\\r` 로 읽고 배포가\n  중단됐다. setup_service.sh 도 같은 경로로 깨진다.\n- google.rs: tokio 의 OpenOptions 는 mode() 를 자체 제공하므로 std 의\n  OpenOptionsExt import 를 제거한다 (unix 빌드에서 unused_imports 경고).\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/cff0c01bcca23e34be46f2378b2b4145c7a3480e",
+                    "committedDate": "2026-09-06T13:40:48Z"
+                  },
+                  {
+                    "message": "feat: Rust 런타임 전환 + PC 시스템 모니터 + 보안 강화 (v0.4.0)\n\n운영 서버와 Windows 지표 송신기를 Rust 로 다시 작성하고, 키오스크 화면에 PC\n시스템 지표 표시를 추가한다. Python 구현은 최초 OAuth 인증과 로컬 회귀 검증용\n호환 계층으로 남긴다.\n\n기능\n- rust/: axum 기반 HTTP 서버(kiosk) + sysinfo 기반 지표 송신기(monitor)\n- web/: 육각링 시스템 모니터, 일정 상세 오버레이, 일정·달력 슬라이드 전환\n- 다중 장비 지표 수집 + 하단 버튼으로 순환 표시\n- monitor.py: Python 호환 계층의 지표 수집·푸시\n\n보안\n- 지표 푸시 인증을 공유 토큰 헤더에서 HMAC-SHA256 서명으로 전환.\n  X-Monitor-Timestamp + X-Monitor-Signature, 허용 시각 오차 120초.\n  평문 HTTP 스니핑만으로 토큰이 넘어가던 경로를 없앤다.\n- 루프백이 아닌 접속에는 POST /api/system 만 허용. 개인 일정·할일이 담긴\n  /api/state 와 UI 는 키오스크 본체 전용으로 제한.\n- Host 헤더가 도메인이면 400 으로 거절해 DNS 리바인딩 우회를 막는다.\n- bootstrap_rust.sh 를 curl | sh 에서 rustup-init 버전 고정 + SHA-256 대조\n  방식으로 교체.\n- 토큰 파일을 생성 시점부터 0600 으로 연다. 쓰고 나서 chmod 하던 노출 창 제거.\n- 배포 스테이징을 mktemp -d 와 난수 이름으로 바꾸고, 정리 실패는 경고가 아니라\n  오류로 중단한다.\n- 모니터 토큰을 작업 트리 밖에 설치하고 ACL 을 현재 계정으로 제한.\n- Google Tasks due 값의 바이트 슬라이싱 패닉, 비 ASCII 서명 헤더의 TypeError 제거.\n\n저장소 위생\n- 배포 대상 호스트·주소를 _ssh_config.ps1 이 환경 변수로 해석하도록 변경.\n  실제 별칭과 사설 IP 는 저장소에 두지 않는다.\n- 스크린샷을 더미 데이터로 재촬영하고 참조가 끊긴 이미지를 제거.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/e78f2bb565353c5f7dc8b3cefeb75480529a88d4",
+                    "committedDate": "2026-09-06T12:51:33Z"
+                  },
+                  {
+                    "message": "docs: 프로젝트 아카이빙 배너 및 회의록 관리 템플릿 추가",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/65b2ecac1b85692c1575f76d52c113c9cb939b55",
+                    "committedDate": "2026-09-06T12:51:33Z"
+                  },
+                  {
+                    "message": "chore(deps): refresh uv.lock for security advisories (#6)\n\nThree high-severity Dependabot alerts were open against uv.lock:\n\n- cryptography  -> 50.0.1  (needed >= 50.0.0)\n- httplib2      -> 0.32.0  (needed >= 0.32.0)\n- pyasn1        -> 0.6.4   (needed >= 0.6.4, three advisories)\n\nRan `uv lock --upgrade`; the rest of the churn is the transitive\ngoogle-api / protobuf stack moving with it. Declared ranges in\npyproject.toml are unchanged.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/18096c07050dd2c7fecc36ac2489c33724a0aa0b",
+                    "committedDate": "2026-09-04T13:51:20Z"
+                  },
+                  {
+                    "message": "Bump cryptography from 48.0.0 to 48.0.1 (#2)\n\nBumps [cryptography](https://github.com/pyca/cryptography) from 48.0.0 to 48.0.1.\n- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)\n- [Commits](https://github.com/pyca/cryptography/compare/48.0.0...48.0.1)\n\n---\nupdated-dependencies:\n- dependency-name: cryptography\n  dependency-version: 48.0.1\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/430737b9f4369735c8094cad26d284041f9f3037",
+                    "committedDate": "2026-07-16T16:31:14Z"
+                  },
+                  {
+                    "message": "Bump idna from 3.14 to 3.15 (#1)\n\nBumps [idna](https://github.com/kjd/idna) from 3.14 to 3.15.\n- [Release notes](https://github.com/kjd/idna/releases)\n- [Changelog](https://github.com/kjd/idna/blob/master/HISTORY.md)\n- [Commits](https://github.com/kjd/idna/compare/v3.14...v3.15)\n\n---\nupdated-dependencies:\n- dependency-name: idna\n  dependency-version: '3.15'\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/6fda156cd32cd79045707502ab34cb08f5d5d793",
+                    "committedDate": "2026-07-16T16:30:34Z"
+                  },
+                  {
+                    "message": "초기 커밋: rpi-calendar-kiosk — 라즈베리파이 구글 캘린더/할일 키오스크 (Python HTTP 서버 + chromium --kiosk)\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/fa8b872ea037e9a73b603fd084f9102a8c1bd3f3",
+                    "committedDate": "2026-06-13T15:22:22Z"
+                  }
+                ],
+                "totalCount": 9
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 102239,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                },
+                {
+                  "size": 74581,
+                  "node": {
+                    "name": "Rust",
+                    "color": "#dea584"
+                  }
+                },
+                {
+                  "size": 31737,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
+                  }
+                },
+                {
+                  "size": 17212,
+                  "node": {
+                    "name": "PowerShell",
+                    "color": "#012456"
+                  }
+                },
+                {
+                  "size": 14419,
+                  "node": {
+                    "name": "CSS",
+                    "color": "#663399"
+                  }
+                },
+                {
+                  "size": 5711,
+                  "node": {
+                    "name": "Shell",
+                    "color": "#89e051"
+                  }
+                },
+                {
+                  "size": 3292,
+                  "node": {
+                    "name": "HTML",
+                    "color": "#e34c26"
+                  }
+                }
+              ]
+            }
+          },
           {
             "nameWithOwner": "soma0sd/soma0sd.github.io",
             "description": "GitHub Pages using GitHub GraphQL API",
             "createdAt": "2017-11-19T10:29:29Z",
-            "updatedAt": "2026-09-07T01:25:06Z",
-            "pushedAt": "2026-09-07T01:25:01Z",
+            "updatedAt": "2026-09-07T01:39:33Z",
+            "pushedAt": "2026-09-07T01:39:29Z",
             "url": "https://github.com/soma0sd/soma0sd.github.io",
             "homepageUrl": "https://soma0sd.github.io/",
             "isArchived": false,
@@ -28,6 +257,11 @@
             "object": {
               "history": {
                 "nodes": [
+                  {
+                    "message": "chore(data): refresh GitHub API data",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/3265063057fb57fd9499204d02650bdba6065276",
+                    "committedDate": "2026-09-07T01:39:28Z"
+                  },
                   {
                     "message": "build: primer 테마 비활성화 및 Gemfile.lock 재생성\n\n`github-pages` gem 이 `jekyll-theme-primer` 를 기본 테마로 끼워 넣어, 어느\n페이지도 참조하지 않는 `assets/css/style.css`(76KB)가 매 빌드 배포됐다. 자체\n레이아웃만 쓰므로 빈 `theme:` 키로 테마를 껐다(gem 이 공식 지원하는 경로다).\n\n빌드 산출물을 점검하다 루트의 `AGENTS.md` 가 페이지로 렌더돼 배포 대상에\n들어가는 것을 확인해 `exclude` 에 추가했다.\n\n`Gemfile.lock` 은 통째로 재생성했다. gem 버전 변동은 없고(github-pages 232),\n로컬·CI 양쪽 플랫폼과 bundler 4.x 의 CHECKSUMS 절이 들어갔다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
                     "url": "https://github.com/soma0sd/soma0sd.github.io/commit/922888a4440d1eaeef7e75af9ee2e0d6d6b7d8ce",
@@ -249,7 +483,7 @@
                     "committedDate": "2017-11-19T10:29:30Z"
                   }
                 ],
-                "totalCount": 44
+                "totalCount": 45
               }
             },
             "languages": {
@@ -287,112 +521,6 @@
                   "node": {
                     "name": "Ruby",
                     "color": "#701516"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/rpi-calendar-kiosk",
-            "description": "라즈베리파이 4 + Waveshare HDMI 패널 키오스크: 구글 캘린더/할일 동기화 D-Day·월간 일정 (Python HTTP 서버 + chromium --kiosk)",
-            "createdAt": "2026-06-13T15:30:16Z",
-            "updatedAt": "2026-09-06T13:41:11Z",
-            "pushedAt": "2026-09-06T13:41:07Z",
-            "url": "https://github.com/soma0sd/rpi-calendar-kiosk",
-            "homepageUrl": null,
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "fix: 셸 스크립트 CRLF 배포 실패 방지 + 미사용 import 제거\n\n- .gitattributes 로 *.sh, *.service, *.timer 를 LF 로 고정한다.\n  core.autocrlf=true 인 Windows 작업 트리에서는 이 파일들이 CRLF 로\n  체크아웃되는데, deploy.ps1 이 작업 트리를 그대로 scp 하므로 원격 bash 가\n  bootstrap_rust.sh 의 `set -euo pipefail` 을 `pipefail\\r` 로 읽고 배포가\n  중단됐다. setup_service.sh 도 같은 경로로 깨진다.\n- google.rs: tokio 의 OpenOptions 는 mode() 를 자체 제공하므로 std 의\n  OpenOptionsExt import 를 제거한다 (unix 빌드에서 unused_imports 경고).\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/cff0c01bcca23e34be46f2378b2b4145c7a3480e",
-                    "committedDate": "2026-09-06T13:40:48Z"
-                  },
-                  {
-                    "message": "feat: Rust 런타임 전환 + PC 시스템 모니터 + 보안 강화 (v0.4.0)\n\n운영 서버와 Windows 지표 송신기를 Rust 로 다시 작성하고, 키오스크 화면에 PC\n시스템 지표 표시를 추가한다. Python 구현은 최초 OAuth 인증과 로컬 회귀 검증용\n호환 계층으로 남긴다.\n\n기능\n- rust/: axum 기반 HTTP 서버(kiosk) + sysinfo 기반 지표 송신기(monitor)\n- web/: 육각링 시스템 모니터, 일정 상세 오버레이, 일정·달력 슬라이드 전환\n- 다중 장비 지표 수집 + 하단 버튼으로 순환 표시\n- monitor.py: Python 호환 계층의 지표 수집·푸시\n\n보안\n- 지표 푸시 인증을 공유 토큰 헤더에서 HMAC-SHA256 서명으로 전환.\n  X-Monitor-Timestamp + X-Monitor-Signature, 허용 시각 오차 120초.\n  평문 HTTP 스니핑만으로 토큰이 넘어가던 경로를 없앤다.\n- 루프백이 아닌 접속에는 POST /api/system 만 허용. 개인 일정·할일이 담긴\n  /api/state 와 UI 는 키오스크 본체 전용으로 제한.\n- Host 헤더가 도메인이면 400 으로 거절해 DNS 리바인딩 우회를 막는다.\n- bootstrap_rust.sh 를 curl | sh 에서 rustup-init 버전 고정 + SHA-256 대조\n  방식으로 교체.\n- 토큰 파일을 생성 시점부터 0600 으로 연다. 쓰고 나서 chmod 하던 노출 창 제거.\n- 배포 스테이징을 mktemp -d 와 난수 이름으로 바꾸고, 정리 실패는 경고가 아니라\n  오류로 중단한다.\n- 모니터 토큰을 작업 트리 밖에 설치하고 ACL 을 현재 계정으로 제한.\n- Google Tasks due 값의 바이트 슬라이싱 패닉, 비 ASCII 서명 헤더의 TypeError 제거.\n\n저장소 위생\n- 배포 대상 호스트·주소를 _ssh_config.ps1 이 환경 변수로 해석하도록 변경.\n  실제 별칭과 사설 IP 는 저장소에 두지 않는다.\n- 스크린샷을 더미 데이터로 재촬영하고 참조가 끊긴 이미지를 제거.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/e78f2bb565353c5f7dc8b3cefeb75480529a88d4",
-                    "committedDate": "2026-09-06T12:51:33Z"
-                  },
-                  {
-                    "message": "docs: 프로젝트 아카이빙 배너 및 회의록 관리 템플릿 추가",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/65b2ecac1b85692c1575f76d52c113c9cb939b55",
-                    "committedDate": "2026-09-06T12:51:33Z"
-                  },
-                  {
-                    "message": "chore(deps): refresh uv.lock for security advisories (#6)\n\nThree high-severity Dependabot alerts were open against uv.lock:\n\n- cryptography  -> 50.0.1  (needed >= 50.0.0)\n- httplib2      -> 0.32.0  (needed >= 0.32.0)\n- pyasn1        -> 0.6.4   (needed >= 0.6.4, three advisories)\n\nRan `uv lock --upgrade`; the rest of the churn is the transitive\ngoogle-api / protobuf stack moving with it. Declared ranges in\npyproject.toml are unchanged.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/18096c07050dd2c7fecc36ac2489c33724a0aa0b",
-                    "committedDate": "2026-09-04T13:51:20Z"
-                  },
-                  {
-                    "message": "Bump cryptography from 48.0.0 to 48.0.1 (#2)\n\nBumps [cryptography](https://github.com/pyca/cryptography) from 48.0.0 to 48.0.1.\n- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)\n- [Commits](https://github.com/pyca/cryptography/compare/48.0.0...48.0.1)\n\n---\nupdated-dependencies:\n- dependency-name: cryptography\n  dependency-version: 48.0.1\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/430737b9f4369735c8094cad26d284041f9f3037",
-                    "committedDate": "2026-07-16T16:31:14Z"
-                  },
-                  {
-                    "message": "Bump idna from 3.14 to 3.15 (#1)\n\nBumps [idna](https://github.com/kjd/idna) from 3.14 to 3.15.\n- [Release notes](https://github.com/kjd/idna/releases)\n- [Changelog](https://github.com/kjd/idna/blob/master/HISTORY.md)\n- [Commits](https://github.com/kjd/idna/compare/v3.14...v3.15)\n\n---\nupdated-dependencies:\n- dependency-name: idna\n  dependency-version: '3.15'\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/6fda156cd32cd79045707502ab34cb08f5d5d793",
-                    "committedDate": "2026-07-16T16:30:34Z"
-                  },
-                  {
-                    "message": "초기 커밋: rpi-calendar-kiosk — 라즈베리파이 구글 캘린더/할일 키오스크 (Python HTTP 서버 + chromium --kiosk)\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/fa8b872ea037e9a73b603fd084f9102a8c1bd3f3",
-                    "committedDate": "2026-06-13T15:22:22Z"
-                  }
-                ],
-                "totalCount": 7
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 102239,
-                  "node": {
-                    "name": "Python",
-                    "color": "#3572A5"
-                  }
-                },
-                {
-                  "size": 74581,
-                  "node": {
-                    "name": "Rust",
-                    "color": "#dea584"
-                  }
-                },
-                {
-                  "size": 31737,
-                  "node": {
-                    "name": "JavaScript",
-                    "color": "#f1e05a"
-                  }
-                },
-                {
-                  "size": 17212,
-                  "node": {
-                    "name": "PowerShell",
-                    "color": "#012456"
-                  }
-                },
-                {
-                  "size": 14419,
-                  "node": {
-                    "name": "CSS",
-                    "color": "#663399"
-                  }
-                },
-                {
-                  "size": 5711,
-                  "node": {
-                    "name": "Shell",
-                    "color": "#89e051"
-                  }
-                },
-                {
-                  "size": 3292,
-                  "node": {
-                    "name": "HTML",
-                    "color": "#e34c26"
                   }
                 }
               ]
@@ -1160,9 +1288,9 @@
           },
           {
             "nameWithOwner": "soma0sd/Session-Meter",
-            "description": "Claude subscription usage (5-hour / weekly) tray, widget, and stats for the desktop. Tauri v2.",
+            "description": "Claude·Codex·Gemini·Antigravity IDE 구독 사용량을 트레이 아이콘·데스크톱 위젯·통계 창으로 한눈에 보여 주는 Windows 데스크톱 앱. 5시간·주간 한도와 초기화까지 남은 시간, 소진 예측, 임계치 알림을 제공합니다. (Tauri v2 + Svelte)",
             "createdAt": "2026-07-18T13:18:06Z",
-            "updatedAt": "2026-08-26T04:44:06Z",
+            "updatedAt": "2026-09-07T06:59:27Z",
             "pushedAt": "2026-08-26T04:43:48Z",
             "url": "https://github.com/soma0sd/Session-Meter",
             "homepageUrl": null,
