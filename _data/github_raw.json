@@ -16,125 +16,12 @@
         "totalCount": 20,
         "nodes": [
           {
-            "nameWithOwner": "soma0sd/docexporter-for-notion",
-            "description": "Notion 페이지를 DOCX·HWPX 문서로 내보내는 브라우저 확장 (Chrome·Edge·웨일, Manifest V3, TypeScript + Vite)",
-            "createdAt": "2026-09-04T07:55:03Z",
-            "updatedAt": "2026-09-07T13:54:59Z",
-            "pushedAt": "2026-09-07T13:54:24Z",
-            "url": "https://github.com/soma0sd/docexporter-for-notion",
-            "homepageUrl": "https://soma0sd.github.io/docexporter-for-notion/",
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "docs: README 사용 설명서 링크 노출 강화\n\n배지 줄과 요약 표 사이에 주소 원문이 그대로 놓여 있어 무슨 링크인지 즉시\n읽히지 않았다. 배지 줄에 설명서 배지를 넣고, 본문 링크를 제목 수준의\n앵커 텍스트로 바꿔 상단에서 바로 눈에 들어오게 한다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/9edd3c59bb3610ca0e5c3a507c264ea92d877b71",
-                    "committedDate": "2026-09-07T13:54:02Z"
-                  },
-                  {
-                    "message": "fix(security): 백그라운드 메시지 발신자 검증 추가\n\nexternally_connectable 미선언 상태에서도 다른 설치 확장은 runtime.onMessage 로\n메시지를 보낼 수 있다. 그 통로로 FETCH_IMAGE 를 보내면 이 확장의 host permission\n을 빌려 임의 URL 본문을 읽어 갈 수 있었다.\n\n- sender.id 가 이 확장 ID 가 아니면 응답 없이 무시\n- DOWNLOAD_FILE 은 data: URL 만 수락, 원격 URL 다운로드 유발 차단\n- FETCH_IMAGE 는 http/https 만 수락, file: 와 확장 내부 주소 차단\n\nFETCH_IMAGE 대상을 노션·AWS 호스트로 좁히지는 않았다. 노션 페이지는 임의 외부\n주소의 이미지 블록을 허용해서 호스트를 제한하면 외부 이미지가 빠진다. 발신자\n검증이 이미 통로를 닫으므로 스킴만 막는다.\n\nchrome·fetch 를 스텁한 하네스로 빌드 산출물의 리스너를 직접 호출해 7건 확인.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/e56fbdaf063d33fb2e1d29e75b64ece9241adcaa",
-                    "committedDate": "2026-09-07T13:02:34Z"
-                  },
-                  {
-                    "message": "docs: 사용 설명서 페이지·스토어 링크·배지 정리\n\n- docs/index.html 에 한국어·영어 전환형 사용 설명서 추가(설치, 사용법, 옵션\n  페이지, 지원 블록, 문제 해결, 개인정보, 라이선스). main 브랜치의 /docs 를\n  GitHub Pages 소스로 쓴다. docs/images 는 store 캡처 사본.\n- README 에 크롬·엣지·웨일 스토어 링크와 확장 ID 를 담은 설치 표 추가.\n- 지원 브라우저·버전·Manifest·TypeScript·라이선스 배지 추가.\n- 게시 상태를 세 스토어 게시 완료로 갱신하고 설명서 링크 연결.\n- README 가 명시한 MIT 조건에 맞춰 LICENSE 파일 추가.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/73612183ad8ba042a01fb2d46599394577db9b34",
-                    "committedDate": "2026-09-07T12:46:27Z"
-                  },
-                  {
-                    "message": "chore: 에이전트 지침·작업 보드 파일 추적 제외\n\nAGENTS.md, task.md 를 .gitignore 에 추가. 두 파일은 로컬 전용 문서라\n공유 저장소에 남기지 않는다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/49a9343b55a9877af04358491e5eb563f338a04e",
-                    "committedDate": "2026-09-07T08:54:44Z"
-                  },
-                  {
-                    "message": "docs: Edge 애드온 v2.0.1 게시 완료 반영\n\nGmail 로 심사 결과 확인. Edge 는 제출 당일(2026-09-04) 승인되어 스토어에 노출 중.\nChrome·Whale 은 알림 메일이 아직 없어 심사 중으로 유지.\n\n- task.md: Edge 심사 확인 완료 처리, 배포본 공개 항목 추가\n- store/listing_v2.0.1.md: 진행 상황 표를 게시 완료로 갱신, 스토어 링크 기재\n- README: 게시 상태 갱신 및 Edge 설치 링크 추가\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/e580587d0a44bbf40d2fc619c995e04f4970e29b",
-                    "committedDate": "2026-09-04T10:58:12Z"
-                  },
-                  {
-                    "message": "docs: 기술 스택 번들러 표기를 Vite 6 로 정정\n\n의존성 점검에서 vite 6 로 올린 결과를 README 기술 스택 표에 반영.\nv2.0.0 릴리스 기록의 \"Vite 5 도입\" 문장은 당시 사실이므로 유지.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/5e5a28b371f819ff6f48dd6b6110bd17c07d1f00",
-                    "committedDate": "2026-09-04T09:22:51Z"
-                  },
-                  {
-                    "message": "docs: README 에 한국어 스토어 설명 전문 수록\n\n영문 전문에 이어 한국어 전문도 코드블록으로 추가.\nlisting 참조 문구는 단일 목적·권한 정당화·심사 노트 안내로 조정.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/dcb4218c01f23e981a8c7fc65ab022a1b41044f6",
-                    "committedDate": "2026-09-04T09:21:11Z"
-                  },
-                  {
-                    "message": "docs: README 에 영문 스토어 설명 전문 복원\n\n확장 세부정보 절에 영문 설명 전문을 코드블록으로 다시 수록.\n한국어 전문은 store/listing_v2.0.1.md 참조로 유지.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/514ff4a479904384dd2c7eadc6ba5694592b2a61",
-                    "committedDate": "2026-09-04T09:12:37Z"
-                  },
-                  {
-                    "message": "docs: README 를 v2.0.1 기준으로 갱신\n\n- 머리말에 현재 버전·스토어 등록명·지원 브라우저·게시 상태 표 추가\n- v2.0.1 절에 동작 검증 결과와 스크린샷 교체 사실 기재\n- 설정(옵션 페이지) 절 신설: 글꼴·색상 8슬롯, 표지 디자이너, 좌표 변환 모듈 설명\n- 확장 세부정보를 store/listing_v2.0.1.md 참조 + 요약 표로 정리(문구 중복 제거)\n- 업로드 파일·빌드 명령(build:options, build:ext)·기술 스택(설정 저장) 보완\n- 긴 대시 24곳을 콜론으로 교체\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/a203f6ce717efa704a527dc6bff7373e5aa4af9b",
-                    "committedDate": "2026-09-04T09:04:40Z"
-                  },
-                  {
-                    "message": "chore(deps): 빌드 도구 취약점 해소 (vite 6, sharp 0.35, archiver 8)\n\nDependabot 빌드 전용 경고 17건을 해소한다. npm audit 결과 0건.\n\n- vite 5.4.21 -> 6.4.3: server.fs.deny 우회(high), 경로 순회(medium), launch-editor NTLM 해시 노출(medium).\n  전이 의존인 esbuild 0.24 -> 0.25.12, postcss 8.5.8 -> 8.5.28 도 함께 해소\n- sharp 0.33.5 -> 0.35.4: libvips 상속 취약점(high)\n- archiver 7.0.1 -> 8.0.0: lodash 4.17.23 의존이 사라져 code injection(high)·프로토타입 오염(medium) 해소\n- brace-expansion 2.x -> 5.0.9: DoS 3건(high)\n\n코드 변경\n\n- scripts/zip.mjs: archiver 8 이 ESM 전용으로 바뀌며 default export 가 사라졌다.\n  archiver(\"zip\", opts) -> new ZipArchive(opts). glob/pipe/finalize/pointer 는 그대로다\n- vite.config.ts: vite 6 의 네이티브 설정 로더가 __dirname 을 주입하지 않아 import.meta.dirname 으로 교체\n- icons/*.png: sharp 의 PNG 인코더가 바뀌어 128px 이 41바이트 늘었다. 픽셀 렌더는 동일함을 확인\n\n산출물 검증 (기준: Edge 에 제출한 v2.0.1 빌드)\n\n- background.js·options.js·popup.js: 바이트 단위 동일\n- content.js: 925,724 -> 930,483 (+4,759). rollup 출력 포맷 차이이며 줄 수는 6줄 증가\n- zip: 201,863 -> 202,153\n\nvite 8 도 검토했으나 번들러가 Rolldown 으로 교체되어 content.js 가 +24KB 늘어 보류했다.\n심사 중인 v2.0.1 패키지는 vite 5 로 빌드된 것이라 이 변경의 영향을 받지 않는다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/e3f546f1eeaf05c3eb220d03b907f7d9169c8233",
-                    "committedDate": "2026-09-04T08:58:41Z"
-                  },
-                  {
-                    "message": "docs: 크롬·웨일 스토어 v2.0.1 제출 완료 반영\n\n- task.md: 스크린샷 1번 교체, 크롬 게시, Whale 등록 확인 항목을 완료 처리\n- task.md: 스토어 3곳 심사 결과 확인 항목 추가(제출일 2026-09-04)\n- store/listing_v2.0.1.md: 스토어별 진행 상황 표를 세 곳 모두 심사 중으로 갱신\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/f57cc8813d99bb519e5d7550d882b0d8ba2ddadf",
-                    "committedDate": "2026-09-04T08:47:59Z"
-                  },
-                  {
-                    "message": "fix(deps): 런타임 nanoid 를 5.1.16 으로 갱신\n\nDependabot 경고 19건 중 확장 번들에 실제로 들어가는 것은 docx 가 끌어오는\nnanoid 하나뿐이었다(high 2건: 정수 오버플로, 음수 size 무한 루프).\n\n- docx@8.5.0 -> nanoid 5.1.7 -> 5.1.16 (런타임)\n- vite -> postcss -> nanoid 3.3.11 -> 3.3.18 (빌드 전용, npm update 시 함께 갱신)\n- package.json 변경 없음. lockfile 의 프로젝트 version 필드가 1.0.0 에서 2.0.1 로 동기화됨\n\n검증: npm run build 통과. 생성된 zip 내부 13개 파일이 Edge 에 제출한\nstore/DocExporter_for_Notion_v2.0.1.zip 과 바이트 단위로 동일하다.\ndocx 는 nanoid() 를 인자 없이 호출하고 번들에는 기본 생성기만 포함되어,\n취약 경로(customAlphabet 의 size 처리, non-secure 생성기)는 애초에 들어가지 않았다.\n심사 중인 패키지를 다시 올릴 필요는 없다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/b832205a8c9dd1dbb042019e370b15a03aa16be6",
-                    "committedDate": "2026-09-04T08:47:11Z"
-                  },
-                  {
-                    "message": "docs: v2.0.1 스토어 등록 문구 정리 및 작업 현황 반영\n\n- store/listing_v2.0.1.md 추가: 설명(한/영), 단일 목적, 권한 정당화, 심사 노트, 스토어별 진행 상황\n- Edge 애드온에 v2.0.1 제출 완료(심사 중). 설명 문구는 실제 동작 기준으로 다시 씀\n  (기존 문구의 \"DOM 분석\" 서술은 내부 페이지 API 호출이라는 실제 구현과 달라 수정)\n- task.md: git 도입·Edge 제출 완료 처리, Whale 확인·Edge 심사 확인 항목 추가\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/a06775478555bd8cbcab7c233a89650245716d68",
-                    "committedDate": "2026-09-04T08:28:24Z"
-                  },
-                  {
-                    "message": "chore: 저장소 초기화 - DocExporter for Notion v2.0.1\n\nNotion 페이지를 DOCX·HWPX 문서로 변환하는 Chrome 확장(Manifest V3).\n로컬 전용으로 관리하던 프로젝트를 git 으로 이관. 현재 상태는 v2.0.1(노션 도메인 이전 대응 반영).\n\n- 소스: TypeScript + Vite 5, 엔트리 4종(content/background/popup/options)\n- 스토어 자산: store/ 에 게시 zip(v2.0.0·v2.0.1)과 스크린샷 4종 보관\n- 추적 제외: node_modules, dist, .claude, CLAUDE.md\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/287ba2045f862f147bca0947e9e1e7cb62f7d3e6",
-                    "committedDate": "2026-09-04T07:54:41Z"
-                  }
-                ],
-                "totalCount": 14
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 154088,
-                  "node": {
-                    "name": "TypeScript",
-                    "color": "#3178c6"
-                  }
-                },
-                {
-                  "size": 13054,
-                  "node": {
-                    "name": "HTML",
-                    "color": "#e34c26"
-                  }
-                },
-                {
-                  "size": 2477,
-                  "node": {
-                    "name": "JavaScript",
-                    "color": "#f1e05a"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/rpi-calendar-kiosk",
-            "description": "라즈베리파이 4 + Waveshare HDMI 패널용 키오스크. 구글 캘린더 일정·할 일을 D-Day 목록과 월간 달력으로 띄우고, Windows PC 의 CPU·GPU·드라이브 사용량을 육각 링으로 함께 표시합니다. (Rust 서버 + Chromium 키오스크)",
-            "createdAt": "2026-06-13T15:30:16Z",
-            "updatedAt": "2026-09-07T12:45:58Z",
-            "pushedAt": "2026-09-07T12:45:41Z",
-            "url": "https://github.com/soma0sd/rpi-calendar-kiosk",
+            "nameWithOwner": "soma0sd/Session-Meter",
+            "description": "Claude·Codex·Gemini·Antigravity IDE 구독 사용량을 트레이 아이콘·데스크톱 위젯·통계 창으로 한눈에 보여 주는 Windows 데스크톱 앱. 5시간·주간 한도와 초기화까지 남은 시간, 소진 예측, 임계치 알림을 제공합니다. (Tauri v2 + Svelte)",
+            "createdAt": "2026-07-18T13:18:06Z",
+            "updatedAt": "2026-09-15T04:39:19Z",
+            "pushedAt": "2026-09-15T04:39:25Z",
+            "url": "https://github.com/soma0sd/Session-Meter",
             "homepageUrl": null,
             "isArchived": false,
             "isPrivate": false,
@@ -142,103 +29,193 @@
               "history": {
                 "nodes": [
                   {
-                    "message": "docs: MIT 라이선스 적용\n\n- 루트 LICENSE 추가 (MIT, Copyright (c) 2026 soma0sd)\n- pyproject.toml 에 PEP 639 라이선스 메타데이터 추가 (Cargo.toml 은 이미 MIT)\n- README·사용 설명서에 라이선스 절 추가\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/30b75b9d41e092f2388ff7de553338ce2452ae88",
-                    "committedDate": "2026-09-07T12:45:12Z"
+                    "message": "feat: switch Antigravity model groups from the widget in v1.2.0 (#9)\n\nAntigravity reports quota for two model groups - Gemini and Claude/GPT - but the\nonly way to choose which pair the widget headline showed was the Widget Style\nwindow. The widget now carries a two-segment switch below its readout, reusing\nthe existing `headline_group` setting so the widget and the Style window stay in\nsync in both directions. History and the tray stay pinned to the Gemini group,\npreserving the invariant that one history series never mixes two quota groups.\n\nWith the switch naming the group, the widget's readout no longer repeats it and\nsimply reads \"5-hour\" and \"Weekly\". The stats window and notifications keep the\nfull names, where both groups appear side by side.\n\nDocked widgets now also match each other in size: with grid docking on, every\ndocked widget grows to the largest natural panel among them. Widgets report a\nnatural size measured with that minimum lifted, so the maximum can fall again\nwhen the widest widget is hidden rather than becoming a floor.\n\nTwo adjacent fixes: the `3p-5h` bucket was judged against the weekly alert\nthreshold because Antigravity's `primary_key` is pinned to the Gemini group, and\ndesktop notifications were the one place Antigravity's quota names still showed\nuntranslated.\n\nVerified against real accounts in the dev build (three docked widgets identical\nat 215x201 physical, switch correct in the compact style), with a security\nreview finding no HIGH or MEDIUM issues.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/bd53248fa574b0bad0db957f83961dfb45816bab",
+                    "committedDate": "2026-09-15T04:39:14Z"
                   },
                   {
-                    "message": "docs: 사용 설명서를 GitHub Pages 로 추가\n\n준비물·설치 순서·화면 조작·운영 명령·문제 해결·접근 범위를 사용자 관점으로 정리했습니다.\ndocs/ 를 Pages 소스로 쓰고 내부 회의록(docs/meetings)은 공개 문서에서 제외합니다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/5cb9960906827d364aa578a54d1269767e561a6d",
-                    "committedDate": "2026-09-07T07:00:33Z"
+                    "message": "chore: build release notes from the changelog and refresh the security policy (#8)\n\nThe release workflow published a fixed \"See the changelog for details.\" body.\nExtract the tag's section from CHANGELOG.md and CHANGELOG.en.md instead and\ncompose the release body from both, falling back to the old line for a manual\nrun or a version with no changelog section.\n\nSECURITY.md still described the single-service Claude app: widen the scope and\nthreat model to the four monitored services and document the per-service\nsession files (Antigravity IDE stores no credential at all).\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/1535bcfca6e3ff91ea727f5cd586085bd1b0176a",
+                    "committedDate": "2026-08-26T04:43:45Z"
                   },
                   {
-                    "message": "fix: 셸 스크립트 CRLF 배포 실패 방지 + 미사용 import 제거\n\n- .gitattributes 로 *.sh, *.service, *.timer 를 LF 로 고정한다.\n  core.autocrlf=true 인 Windows 작업 트리에서는 이 파일들이 CRLF 로\n  체크아웃되는데, deploy.ps1 이 작업 트리를 그대로 scp 하므로 원격 bash 가\n  bootstrap_rust.sh 의 `set -euo pipefail` 을 `pipefail\\r` 로 읽고 배포가\n  중단됐다. setup_service.sh 도 같은 경로로 깨진다.\n- google.rs: tokio 의 OpenOptions 는 mode() 를 자체 제공하므로 std 의\n  OpenOptionsExt import 를 제거한다 (unix 빌드에서 unused_imports 경고).\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/cff0c01bcca23e34be46f2378b2b4145c7a3480e",
-                    "committedDate": "2026-09-06T13:40:48Z"
+                    "message": "feat: track the Codex 5-hour session window in v1.1.0 (#7)\n\nChatGPT reports the Codex 5-hour session limit again. Parse both windows by\ntheir declared duration and make the session window the headline one, with the\nweekly quota as the secondary window. Plans without a session window (Pro) keep\nthe weekly quota as their headline, so nothing regresses there.\n\nExisting Codex history stored the weekly quota in the primary slot; migrate\nthose points to the secondary series the first time a session window is seen so\nthe weekly trend stays a single continuous series.\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/38e4ff91b3e602607ef2bdfa70c3d4552254c52d",
+                    "committedDate": "2026-08-26T04:04:34Z"
                   },
                   {
-                    "message": "feat: Rust 런타임 전환 + PC 시스템 모니터 + 보안 강화 (v0.4.0)\n\n운영 서버와 Windows 지표 송신기를 Rust 로 다시 작성하고, 키오스크 화면에 PC\n시스템 지표 표시를 추가한다. Python 구현은 최초 OAuth 인증과 로컬 회귀 검증용\n호환 계층으로 남긴다.\n\n기능\n- rust/: axum 기반 HTTP 서버(kiosk) + sysinfo 기반 지표 송신기(monitor)\n- web/: 육각링 시스템 모니터, 일정 상세 오버레이, 일정·달력 슬라이드 전환\n- 다중 장비 지표 수집 + 하단 버튼으로 순환 표시\n- monitor.py: Python 호환 계층의 지표 수집·푸시\n\n보안\n- 지표 푸시 인증을 공유 토큰 헤더에서 HMAC-SHA256 서명으로 전환.\n  X-Monitor-Timestamp + X-Monitor-Signature, 허용 시각 오차 120초.\n  평문 HTTP 스니핑만으로 토큰이 넘어가던 경로를 없앤다.\n- 루프백이 아닌 접속에는 POST /api/system 만 허용. 개인 일정·할일이 담긴\n  /api/state 와 UI 는 키오스크 본체 전용으로 제한.\n- Host 헤더가 도메인이면 400 으로 거절해 DNS 리바인딩 우회를 막는다.\n- bootstrap_rust.sh 를 curl | sh 에서 rustup-init 버전 고정 + SHA-256 대조\n  방식으로 교체.\n- 토큰 파일을 생성 시점부터 0600 으로 연다. 쓰고 나서 chmod 하던 노출 창 제거.\n- 배포 스테이징을 mktemp -d 와 난수 이름으로 바꾸고, 정리 실패는 경고가 아니라\n  오류로 중단한다.\n- 모니터 토큰을 작업 트리 밖에 설치하고 ACL 을 현재 계정으로 제한.\n- Google Tasks due 값의 바이트 슬라이싱 패닉, 비 ASCII 서명 헤더의 TypeError 제거.\n\n저장소 위생\n- 배포 대상 호스트·주소를 _ssh_config.ps1 이 환경 변수로 해석하도록 변경.\n  실제 별칭과 사설 IP 는 저장소에 두지 않는다.\n- 스크린샷을 더미 데이터로 재촬영하고 참조가 끊긴 이미지를 제거.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/e78f2bb565353c5f7dc8b3cefeb75480529a88d4",
-                    "committedDate": "2026-09-06T12:51:33Z"
+                    "message": "fix: anchor the widget kebab menu and dock Codex in v1.0.3 (#6)\n\nThe compact widget's more-menu popover was positioned against the window\ninstead of the panel (`.panel` was `position: static`), so the transparent\ntop inset added for an upward menu moved the panel and left the popover\nbehind: everything but its last \"Settings\" row was clipped off the top of\nthe window and the usage body went with it. Anchor it to the panel, open it\njust outside the panel edge in either direction, and widen the window to its\nlabels so nothing is cut off. A docked widget showing a popover is now left\nin place by `apply_layout` instead of being snapped back mid-popover.\n\nA service signed into while the app was already running only ever reached\n`reconcile_widget_visibility`, which never offered it to the dock, so the\nCodex widget stayed outside the docked group until the next restart. Offer\nmembership there too and broadcast the resulting settings, and list any\nlogged-in service missing from the saved order in the Placement tab.\n\nCompact countdowns now show `D:HH:MM` past 24 hours, so Codex's weekly\nwindow reads `6:19:53` instead of `163:53`.\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/655939ecac0fcfa9019039895419dabf6d11e081",
+                    "committedDate": "2026-08-20T10:29:16Z"
                   },
                   {
-                    "message": "docs: 프로젝트 아카이빙 배너 및 회의록 관리 템플릿 추가",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/65b2ecac1b85692c1575f76d52c113c9cb939b55",
-                    "committedDate": "2026-09-06T12:51:33Z"
+                    "message": "fix: complete Codex login in v1.0.2\n\nCodex 로그인 완료·창 종료·세션 경합 수정과 문서 갱신",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/fcd503db4e36d1f86f744338f6842846b0e097b8",
+                    "committedDate": "2026-08-20T09:59:43Z"
                   },
                   {
-                    "message": "chore(deps): refresh uv.lock for security advisories (#6)\n\nThree high-severity Dependabot alerts were open against uv.lock:\n\n- cryptography  -> 50.0.1  (needed >= 50.0.0)\n- httplib2      -> 0.32.0  (needed >= 0.32.0)\n- pyasn1        -> 0.6.4   (needed >= 0.6.4, three advisories)\n\nRan `uv lock --upgrade`; the rest of the churn is the transitive\ngoogle-api / protobuf stack moving with it. Declared ranges in\npyproject.toml are unchanged.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/18096c07050dd2c7fecc36ac2489c33724a0aa0b",
-                    "committedDate": "2026-09-04T13:51:20Z"
+                    "message": "Merge pull request #4 from soma0sd/codex/1.0.1-codex-login-fix\n\nfix: isolate Codex login in v1.0.1",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/c96f4b1ae790be156ff73c82da2b04dd5c06dc06",
+                    "committedDate": "2026-08-20T08:36:00Z"
                   },
                   {
-                    "message": "Bump cryptography from 48.0.0 to 48.0.1 (#2)\n\nBumps [cryptography](https://github.com/pyca/cryptography) from 48.0.0 to 48.0.1.\n- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)\n- [Commits](https://github.com/pyca/cryptography/compare/48.0.0...48.0.1)\n\n---\nupdated-dependencies:\n- dependency-name: cryptography\n  dependency-version: 48.0.1\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/430737b9f4369735c8094cad26d284041f9f3037",
-                    "committedDate": "2026-07-16T16:31:14Z"
+                    "message": "fix: isolate Codex login in v1.0.1",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/6188cf8b86ecb0d2777d31b1b158b9db795c5ce1",
+                    "committedDate": "2026-08-20T08:34:01Z"
                   },
                   {
-                    "message": "Bump idna from 3.14 to 3.15 (#1)\n\nBumps [idna](https://github.com/kjd/idna) from 3.14 to 3.15.\n- [Release notes](https://github.com/kjd/idna/releases)\n- [Changelog](https://github.com/kjd/idna/blob/master/HISTORY.md)\n- [Commits](https://github.com/kjd/idna/compare/v3.14...v3.15)\n\n---\nupdated-dependencies:\n- dependency-name: idna\n  dependency-version: '3.15'\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/6fda156cd32cd79045707502ab34cb08f5d5d793",
-                    "committedDate": "2026-07-16T16:30:34Z"
+                    "message": "Merge pull request #3 from soma0sd/codex/1.0.0-codex-pages\n\nfeat: release 1.0.0 with Codex weekly quota",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/1850840609621240a74c2a7ef89bfdce96461fd8",
+                    "committedDate": "2026-08-20T07:45:25Z"
                   },
                   {
-                    "message": "초기 커밋: rpi-calendar-kiosk — 라즈베리파이 구글 캘린더/할일 키오스크 (Python HTTP 서버 + chromium --kiosk)\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/fa8b872ea037e9a73b603fd084f9102a8c1bd3f3",
-                    "committedDate": "2026-06-13T15:22:22Z"
+                    "message": "feat: release 1.0.0 with Codex weekly quota",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/78309232458c75543b01f2e223726e9cbd1a510c",
+                    "committedDate": "2026-08-20T07:44:20Z"
+                  },
+                  {
+                    "message": "docs: cover Antigravity IDE in the user guide, link it from README (#2)\n\n* chore: track .claudeignore for Claude Code context scoping\n\nExcludes build output, lockfiles, and binary assets from Claude's\nfile-reading context (separate from .gitignore, which controls what\ngets committed).\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n* docs: cover Antigravity IDE throughout the user guide\n\nThe guide predated the Antigravity IDE integration and only mentioned\nClaude/Gemini. Brings it up to date and adds illustrative mockups\n(hand-drawn HTML/CSS placeholders, not real screenshots or captured\naccount data) for sections that were text-only:\n\n- Title, header, intro, and license text now cover all 3 services;\n  intro warn box distinguishes Antigravity's local-loopback access\n  from Claude/Gemini's web session scraping\n- New \"Antigravity IDE\" subsection under 서비스 로그인 (no login,\n  detected via running IDE), with a settings-account mockup\n- Tray icon color table gets swatches; tray right-click menu gets a\n  mockup\n- New \"위젯 그리드 도킹\" (widget grid docking, v0.5) subsection with\n  a 3-service docking mockup\n- 통계 창 (stats window) gets its first mockup - tabs, trend chart,\n  exhaustion prediction\n- 설정 (settings) gets a general/update panel mockup; account bullet\n  now explains Antigravity's running-status-only display\n- 문제 해결 gets an Antigravity connectivity bullet\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n* docs: link the published GitHub Pages user guide from README\n\nThe docs/ section only linked the in-repo folder even though it's\nbeen live on GitHub Pages. Adds the actual https://soma0sd.github.io/Session-Meter/\nlink, verified reachable (200) before committing.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/6dfee45a780853e5be8aee334d1468233cd32c75",
+                    "committedDate": "2026-08-14T10:02:42Z"
+                  },
+                  {
+                    "message": "Bump postcss from 8.5.19 to 8.5.26 (#1)\n\nBumps [postcss](https://github.com/postcss/postcss) from 8.5.19 to 8.5.26.\n- [Release notes](https://github.com/postcss/postcss/releases)\n- [Changelog](https://github.com/postcss/postcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/postcss/postcss/compare/8.5.19...8.5.26)\n\n---\nupdated-dependencies:\n- dependency-name: postcss\n  dependency-version: 8.5.26\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/7a302905ad0c40f4ff1dbcce65beebe84e82b2c5",
+                    "committedDate": "2026-08-14T08:50:33Z"
+                  },
+                  {
+                    "message": "docs: add Antigravity IDE monitoring details to README",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/5a79aa928ece6ca05d54fa743fcbc775384e39a5",
+                    "committedDate": "2026-07-23T10:57:07Z"
+                  },
+                  {
+                    "message": "release: v0.5.1 - Simplify tray popup & add automatic widget screen clamping",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/32288e94bcc1050821d3eb54c6a565ab36b1992f",
+                    "committedDate": "2026-07-23T10:40:38Z"
+                  },
+                  {
+                    "message": "Clean up CHANGELOG 0.5 wording\n\nRemove em dashes (project-wide style rule) and clarify that Antigravity\nmonitoring starts automatically, with no manual action needed.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/2d375927caa55f510a3cead2eb7bb84035e36334",
+                    "committedDate": "2026-07-22T22:56:55Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.5.0\n\nAdd widget grid docking:\n- New \"Placement\" tab in the Widget Style window: dock widgets into a grid (configurable\n  column count), drag-and-drop to reorder the group, and drag any docked widget to move the\n  whole group together\n- Docked widgets recover automatically if minimized, and re-flow around hidden/shown members\n\nAdd Antigravity IDE quota widget (new third monitored service):\n- Tracks Antigravity IDE's (Windsurf/Codeium-based) local coding quota via its\n  language_server process - no login required, fully automatic detection (mirrors how the\n  Claude widget behaves before sign-in)\n- Shows both the Gemini model group and the Claude/GPT model group (5-hour + weekly each),\n  with a toggle for which one headlines the widget/tray\n  - Settings' account list shows a monitoring status badge (running/not running) plus\n  best-effort account identity instead of a sign-in/out control\n\nFixes found during testing:\n- Group-drag pointer capture race that could lose mouse tracking and miss the end of a drag\n- Group-drag stutter from writing the dock anchor to disk on every drag frame\n- Placement tab's drag-and-drop reorder not working (Tauri's native file drag-drop handling\n  was intercepting the page's own HTML5 drag events)\n- A widget's icon row getting stuck unable to collapse into the kebab menu (a CSS flex\n  stretch feedback loop, not a timing issue)\n- A widget occasionally showing its default style instead of the saved one right after\n  launch (the static Claude window's webview can start before Rust finishes loading settings)\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/f546d39dcee0547b75aafb7ab89d80fd4e85eb76",
+                    "committedDate": "2026-07-22T22:54:37Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.4.5\n\nFix the what's-new window only showing versions up to 0.3:\n- The news window fetches the changelog from GitHub and falls back to a bundled copy when\n  that fails; the fallback was a hand-maintained src/lib/changelog.ts that had gone stale\n  (only up to 0.3), so a fetch failure showed an outdated list\n- Bundle the actual CHANGELOG.md / CHANGELOG.en.md at build time via ?raw so the fallback\n  always matches the shipped version; remove the hand-maintained changelog.ts\n- Join wrapped continuation lines when parsing so multi-line entries are not truncated\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/5f31bf1e5b428cfe6f4afaed33934258f8cc9836",
+                    "committedDate": "2026-07-22T08:10:01Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.4.4\n\nFix the widget style resetting to default after an update:\n- set_settings replaced the whole per-service widgets map with the frontend payload,\n  which is the only place widget config is written wholesale from the UI\n- The Settings window starts from an empty widgets map and fills it via an async\n  getSettings(); when it saved before that resolved (e.g. as windows are re-created\n  during the update relaunch), the empty map wiped the user's widget styles\n- set_settings now merges: services present in the payload win, services absent keep\n  their stored widget config, so an empty/partial map can no longer wipe styles\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/a802bb4071dd2927eac7e96187bb1cc89b42f737",
+                    "committedDate": "2026-07-22T07:52:53Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.4.3\n\nFix the app reverting to an older version after an update followed by a reboot:\n- tauri-plugin-autostart records the launch path from current_exe() when\n  autostart is first enabled and never revalidates it; a stale path (observed:\n  autostart enabled while an earlier build ran under a virtualized/sandboxed exe\n  path) keeps launching the old binary on boot even after the real install updates\n- On startup, if autostart is enabled, re-register it against the current exe\n  (release-only) so the stored Run-key path self-heals to the real install path\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/321c4f4208b2365e0ba63e250de0022a4ca51af5",
+                    "committedDate": "2026-07-22T06:51:09Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.4.2\n\nFix settings (widget style, refresh interval) resetting after an update:\n- Persist a migrated pre-0.4 settings file to the current format on load, instead of\n  re-deriving the widget config from the legacy flat fields on every launch\n- Re-read the latest settings when the settings/widget-style windows gain focus, so a change\n  in one window can't be reverted by a stale save in another\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/653416bf36c5a709167b222834fb61a5b44a636e",
+                    "committedDate": "2026-07-20T09:38:09Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.4.1\n\n- Move widget show/hide from the tray menu to the Widget Style window (per-service toggle)\n- Compact widget styles show remaining time as a clock (H:MM / M:SS)\n- Check for updates on startup and every 10 minutes\n- Rename the Antigravity service to Gemini, migrating existing session/settings/history/position\n- Settings account list shows account + subscription; Gemini email captured best-effort\n- Fix the statistics window not showing other services' tabs\n- Publish releases as a tagged prerelease so the updater URL stays reachable\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/f7ae669b0e917d6cbea6f1589ad864387a306366",
+                    "committedDate": "2026-07-20T08:13:11Z"
+                  },
+                  {
+                    "message": "docs: rewrite user manual for 0.4.0 with in-engine widget style renders\n\nUpdate the GitHub Pages manual for multi-service (Claude + Antigravity),\nper-service widgets, the widget style window, statistics tabs, and the tray\nmenu changes. The widget style gallery now embeds the app's own widget\ncomponents rendered to self-contained HTML (computed styles inlined) instead\nof screenshots, so the 10 styles stay crisp at any zoom. Drop the orphaned\nscreenshot assets.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/3395ddbbf5697dca232e48b0602206881dd30abd",
+                    "committedDate": "2026-07-20T03:06:24Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.4.0\n\nMulti-service usage monitoring: Antigravity (Gemini subscription) joins\nClaude, with per-service widgets, statistics tabs, and a new Widget style\nwindow (10 styles across 5 concepts). Antigravity sign-in runs in an\nisolated helper process so a Google page issue can't freeze the app.\n\nAlso fixes widget position resetting after an update and the tray menu's\nQuit item being clipped off-screen, and turns the widget show/hide row\ninto a toggle switch.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/584b89836aadc72c8243854ad406d9a6ea0aaa10",
+                    "committedDate": "2026-07-20T00:53:51Z"
+                  },
+                  {
+                    "message": "Share settings between debug and release builds\n\nRemove the per-build \"dev\" data subfolder so a dev run reads and keeps the same settings as\nthe installed app - options no longer appear to reset when switching between a dev build and\nthe installed one. Safe now that debug builds no longer clear settings on startup.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/54206c2b5cc126d4b5cb6960ed8d1f2674ce5173",
+                    "committedDate": "2026-07-19T04:01:44Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.3.1\n\nStatistics fixes:\n- History chart now plots points by real timestamp within a [now-range, now] window, so\n  24h / 7d / 30d render at their true time scale instead of the same stretched shape\n- Add a 30-day (1-month) history view\n- Fix \"NaN\" remaining time in the reset schedule when a bucket has no reset time yet\n  (formatCountdown returns \"-\" for a non-finite value)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/4fbf9e3099cebb4e119e6da5fca27e5352f08bbe",
+                    "committedDate": "2026-07-19T03:54:04Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.3.0\n\nFeatures:\n- Compact widget layout (donut charts), selectable in settings (detailed by default)\n- Subscription plan and a time axis in the statistics window\n- Per-window (session/weekly) usage-alert thresholds; settings grouped into cards\n- Widget visibility watchdog that recovers an off-screen widget\n\nFixes:\n- Settings/session no longer reset on update: atomic file writes, separate widget-position\n  file, corrupt-file backup+recovery, legacy-format migration\n- Widget no longer returns off-screen: minimized-sentinel guard and on-screen validation\n- Shortcut custom icon: install a standalone icon.ico and point the Start Menu and Desktop\n  shortcuts at it, and refresh the shell icon cache on install\n- Adversarial code-review fixes (widget-toggle event, notify per-bucket, subscription parse)\n\nAlso: remove the unused tray-window option and tauri-plugin-store, drop unused mobile/UWP\nicon assets, and fix lingering old-name strings.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/b82e4a61f67648e73941d4cf0d1e65b2035ae85e",
+                    "committedDate": "2026-07-18T19:20:30Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.2.2: group changelog by minor version\n\nGroup the changelog by minor version and parse two-part version headers in the\nwhat's-new window.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/8272e6a8b3e48aa6b115fa1e733e7661f679b96a",
+                    "committedDate": "2026-07-18T13:28:37Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.2.1\n\nClaude usage tray, widget, and stats desktop app (Tauri v2, MIT).\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/e0f0acae25eeb60346bf3a539d31ca1490075ed4",
+                    "committedDate": "2026-07-18T13:17:48Z"
                   }
                 ],
-                "totalCount": 9
+                "totalCount": 27
               }
             },
             "languages": {
               "edges": [
                 {
-                  "size": 102239,
-                  "node": {
-                    "name": "Python",
-                    "color": "#3572A5"
-                  }
-                },
-                {
-                  "size": 74581,
+                  "size": 261020,
                   "node": {
                     "name": "Rust",
                     "color": "#dea584"
                   }
                 },
                 {
-                  "size": 31737,
+                  "size": 127128,
                   "node": {
-                    "name": "JavaScript",
-                    "color": "#f1e05a"
+                    "name": "Svelte",
+                    "color": "#ff3e00"
                   }
                 },
                 {
-                  "size": 17212,
+                  "size": 44461,
                   "node": {
-                    "name": "PowerShell",
-                    "color": "#012456"
+                    "name": "TypeScript",
+                    "color": "#3178c6"
                   }
                 },
                 {
-                  "size": 14419,
+                  "size": 3054,
                   "node": {
                     "name": "CSS",
                     "color": "#663399"
                   }
                 },
                 {
-                  "size": 5711,
-                  "node": {
-                    "name": "Shell",
-                    "color": "#89e051"
-                  }
-                },
-                {
-                  "size": 3292,
+                  "size": 2230,
                   "node": {
                     "name": "HTML",
                     "color": "#e34c26"
+                  }
+                },
+                {
+                  "size": 1067,
+                  "node": {
+                    "name": "NSIS",
+                    "color": null
+                  }
+                },
+                {
+                  "size": 177,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
                   }
                 }
               ]
@@ -248,8 +225,8 @@
             "nameWithOwner": "soma0sd/soma0sd.github.io",
             "description": "GitHub Pages using GitHub GraphQL API",
             "createdAt": "2017-11-19T10:29:29Z",
-            "updatedAt": "2026-09-07T01:39:33Z",
-            "pushedAt": "2026-09-07T01:39:29Z",
+            "updatedAt": "2026-09-13T21:11:52Z",
+            "pushedAt": "2026-09-13T21:11:48Z",
             "url": "https://github.com/soma0sd/soma0sd.github.io",
             "homepageUrl": "https://soma0sd.github.io/",
             "isArchived": false,
@@ -257,6 +234,11 @@
             "object": {
               "history": {
                 "nodes": [
+                  {
+                    "message": "chore(data): refresh GitHub API data",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/805516fad86df46701b19c64f032092cf9ac4fd5",
+                    "committedDate": "2026-09-13T21:11:47Z"
+                  },
                   {
                     "message": "chore(data): refresh GitHub API data",
                     "url": "https://github.com/soma0sd/soma0sd.github.io/commit/3265063057fb57fd9499204d02650bdba6065276",
@@ -483,7 +465,7 @@
                     "committedDate": "2017-11-19T10:29:30Z"
                   }
                 ],
-                "totalCount": 45
+                "totalCount": 46
               }
             },
             "languages": {
@@ -521,6 +503,235 @@
                   "node": {
                     "name": "Ruby",
                     "color": "#701516"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/docexporter-for-notion",
+            "description": "Notion 페이지를 DOCX·HWPX 문서로 내보내는 브라우저 확장 (Chrome·Edge·웨일, Manifest V3, TypeScript + Vite)",
+            "createdAt": "2026-09-04T07:55:03Z",
+            "updatedAt": "2026-09-07T13:54:59Z",
+            "pushedAt": "2026-09-07T13:54:24Z",
+            "url": "https://github.com/soma0sd/docexporter-for-notion",
+            "homepageUrl": "https://soma0sd.github.io/docexporter-for-notion/",
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "docs: README 사용 설명서 링크 노출 강화\n\n배지 줄과 요약 표 사이에 주소 원문이 그대로 놓여 있어 무슨 링크인지 즉시\n읽히지 않았다. 배지 줄에 설명서 배지를 넣고, 본문 링크를 제목 수준의\n앵커 텍스트로 바꿔 상단에서 바로 눈에 들어오게 한다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/9edd3c59bb3610ca0e5c3a507c264ea92d877b71",
+                    "committedDate": "2026-09-07T13:54:02Z"
+                  },
+                  {
+                    "message": "fix(security): 백그라운드 메시지 발신자 검증 추가\n\nexternally_connectable 미선언 상태에서도 다른 설치 확장은 runtime.onMessage 로\n메시지를 보낼 수 있다. 그 통로로 FETCH_IMAGE 를 보내면 이 확장의 host permission\n을 빌려 임의 URL 본문을 읽어 갈 수 있었다.\n\n- sender.id 가 이 확장 ID 가 아니면 응답 없이 무시\n- DOWNLOAD_FILE 은 data: URL 만 수락, 원격 URL 다운로드 유발 차단\n- FETCH_IMAGE 는 http/https 만 수락, file: 와 확장 내부 주소 차단\n\nFETCH_IMAGE 대상을 노션·AWS 호스트로 좁히지는 않았다. 노션 페이지는 임의 외부\n주소의 이미지 블록을 허용해서 호스트를 제한하면 외부 이미지가 빠진다. 발신자\n검증이 이미 통로를 닫으므로 스킴만 막는다.\n\nchrome·fetch 를 스텁한 하네스로 빌드 산출물의 리스너를 직접 호출해 7건 확인.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/e56fbdaf063d33fb2e1d29e75b64ece9241adcaa",
+                    "committedDate": "2026-09-07T13:02:34Z"
+                  },
+                  {
+                    "message": "docs: 사용 설명서 페이지·스토어 링크·배지 정리\n\n- docs/index.html 에 한국어·영어 전환형 사용 설명서 추가(설치, 사용법, 옵션\n  페이지, 지원 블록, 문제 해결, 개인정보, 라이선스). main 브랜치의 /docs 를\n  GitHub Pages 소스로 쓴다. docs/images 는 store 캡처 사본.\n- README 에 크롬·엣지·웨일 스토어 링크와 확장 ID 를 담은 설치 표 추가.\n- 지원 브라우저·버전·Manifest·TypeScript·라이선스 배지 추가.\n- 게시 상태를 세 스토어 게시 완료로 갱신하고 설명서 링크 연결.\n- README 가 명시한 MIT 조건에 맞춰 LICENSE 파일 추가.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/73612183ad8ba042a01fb2d46599394577db9b34",
+                    "committedDate": "2026-09-07T12:46:27Z"
+                  },
+                  {
+                    "message": "chore: 에이전트 지침·작업 보드 파일 추적 제외\n\nAGENTS.md, task.md 를 .gitignore 에 추가. 두 파일은 로컬 전용 문서라\n공유 저장소에 남기지 않는다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/49a9343b55a9877af04358491e5eb563f338a04e",
+                    "committedDate": "2026-09-07T08:54:44Z"
+                  },
+                  {
+                    "message": "docs: Edge 애드온 v2.0.1 게시 완료 반영\n\nGmail 로 심사 결과 확인. Edge 는 제출 당일(2026-09-04) 승인되어 스토어에 노출 중.\nChrome·Whale 은 알림 메일이 아직 없어 심사 중으로 유지.\n\n- task.md: Edge 심사 확인 완료 처리, 배포본 공개 항목 추가\n- store/listing_v2.0.1.md: 진행 상황 표를 게시 완료로 갱신, 스토어 링크 기재\n- README: 게시 상태 갱신 및 Edge 설치 링크 추가\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/e580587d0a44bbf40d2fc619c995e04f4970e29b",
+                    "committedDate": "2026-09-04T10:58:12Z"
+                  },
+                  {
+                    "message": "docs: 기술 스택 번들러 표기를 Vite 6 로 정정\n\n의존성 점검에서 vite 6 로 올린 결과를 README 기술 스택 표에 반영.\nv2.0.0 릴리스 기록의 \"Vite 5 도입\" 문장은 당시 사실이므로 유지.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/5e5a28b371f819ff6f48dd6b6110bd17c07d1f00",
+                    "committedDate": "2026-09-04T09:22:51Z"
+                  },
+                  {
+                    "message": "docs: README 에 한국어 스토어 설명 전문 수록\n\n영문 전문에 이어 한국어 전문도 코드블록으로 추가.\nlisting 참조 문구는 단일 목적·권한 정당화·심사 노트 안내로 조정.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/dcb4218c01f23e981a8c7fc65ab022a1b41044f6",
+                    "committedDate": "2026-09-04T09:21:11Z"
+                  },
+                  {
+                    "message": "docs: README 에 영문 스토어 설명 전문 복원\n\n확장 세부정보 절에 영문 설명 전문을 코드블록으로 다시 수록.\n한국어 전문은 store/listing_v2.0.1.md 참조로 유지.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/514ff4a479904384dd2c7eadc6ba5694592b2a61",
+                    "committedDate": "2026-09-04T09:12:37Z"
+                  },
+                  {
+                    "message": "docs: README 를 v2.0.1 기준으로 갱신\n\n- 머리말에 현재 버전·스토어 등록명·지원 브라우저·게시 상태 표 추가\n- v2.0.1 절에 동작 검증 결과와 스크린샷 교체 사실 기재\n- 설정(옵션 페이지) 절 신설: 글꼴·색상 8슬롯, 표지 디자이너, 좌표 변환 모듈 설명\n- 확장 세부정보를 store/listing_v2.0.1.md 참조 + 요약 표로 정리(문구 중복 제거)\n- 업로드 파일·빌드 명령(build:options, build:ext)·기술 스택(설정 저장) 보완\n- 긴 대시 24곳을 콜론으로 교체\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/a203f6ce717efa704a527dc6bff7373e5aa4af9b",
+                    "committedDate": "2026-09-04T09:04:40Z"
+                  },
+                  {
+                    "message": "chore(deps): 빌드 도구 취약점 해소 (vite 6, sharp 0.35, archiver 8)\n\nDependabot 빌드 전용 경고 17건을 해소한다. npm audit 결과 0건.\n\n- vite 5.4.21 -> 6.4.3: server.fs.deny 우회(high), 경로 순회(medium), launch-editor NTLM 해시 노출(medium).\n  전이 의존인 esbuild 0.24 -> 0.25.12, postcss 8.5.8 -> 8.5.28 도 함께 해소\n- sharp 0.33.5 -> 0.35.4: libvips 상속 취약점(high)\n- archiver 7.0.1 -> 8.0.0: lodash 4.17.23 의존이 사라져 code injection(high)·프로토타입 오염(medium) 해소\n- brace-expansion 2.x -> 5.0.9: DoS 3건(high)\n\n코드 변경\n\n- scripts/zip.mjs: archiver 8 이 ESM 전용으로 바뀌며 default export 가 사라졌다.\n  archiver(\"zip\", opts) -> new ZipArchive(opts). glob/pipe/finalize/pointer 는 그대로다\n- vite.config.ts: vite 6 의 네이티브 설정 로더가 __dirname 을 주입하지 않아 import.meta.dirname 으로 교체\n- icons/*.png: sharp 의 PNG 인코더가 바뀌어 128px 이 41바이트 늘었다. 픽셀 렌더는 동일함을 확인\n\n산출물 검증 (기준: Edge 에 제출한 v2.0.1 빌드)\n\n- background.js·options.js·popup.js: 바이트 단위 동일\n- content.js: 925,724 -> 930,483 (+4,759). rollup 출력 포맷 차이이며 줄 수는 6줄 증가\n- zip: 201,863 -> 202,153\n\nvite 8 도 검토했으나 번들러가 Rolldown 으로 교체되어 content.js 가 +24KB 늘어 보류했다.\n심사 중인 v2.0.1 패키지는 vite 5 로 빌드된 것이라 이 변경의 영향을 받지 않는다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/e3f546f1eeaf05c3eb220d03b907f7d9169c8233",
+                    "committedDate": "2026-09-04T08:58:41Z"
+                  },
+                  {
+                    "message": "docs: 크롬·웨일 스토어 v2.0.1 제출 완료 반영\n\n- task.md: 스크린샷 1번 교체, 크롬 게시, Whale 등록 확인 항목을 완료 처리\n- task.md: 스토어 3곳 심사 결과 확인 항목 추가(제출일 2026-09-04)\n- store/listing_v2.0.1.md: 스토어별 진행 상황 표를 세 곳 모두 심사 중으로 갱신\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/f57cc8813d99bb519e5d7550d882b0d8ba2ddadf",
+                    "committedDate": "2026-09-04T08:47:59Z"
+                  },
+                  {
+                    "message": "fix(deps): 런타임 nanoid 를 5.1.16 으로 갱신\n\nDependabot 경고 19건 중 확장 번들에 실제로 들어가는 것은 docx 가 끌어오는\nnanoid 하나뿐이었다(high 2건: 정수 오버플로, 음수 size 무한 루프).\n\n- docx@8.5.0 -> nanoid 5.1.7 -> 5.1.16 (런타임)\n- vite -> postcss -> nanoid 3.3.11 -> 3.3.18 (빌드 전용, npm update 시 함께 갱신)\n- package.json 변경 없음. lockfile 의 프로젝트 version 필드가 1.0.0 에서 2.0.1 로 동기화됨\n\n검증: npm run build 통과. 생성된 zip 내부 13개 파일이 Edge 에 제출한\nstore/DocExporter_for_Notion_v2.0.1.zip 과 바이트 단위로 동일하다.\ndocx 는 nanoid() 를 인자 없이 호출하고 번들에는 기본 생성기만 포함되어,\n취약 경로(customAlphabet 의 size 처리, non-secure 생성기)는 애초에 들어가지 않았다.\n심사 중인 패키지를 다시 올릴 필요는 없다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/b832205a8c9dd1dbb042019e370b15a03aa16be6",
+                    "committedDate": "2026-09-04T08:47:11Z"
+                  },
+                  {
+                    "message": "docs: v2.0.1 스토어 등록 문구 정리 및 작업 현황 반영\n\n- store/listing_v2.0.1.md 추가: 설명(한/영), 단일 목적, 권한 정당화, 심사 노트, 스토어별 진행 상황\n- Edge 애드온에 v2.0.1 제출 완료(심사 중). 설명 문구는 실제 동작 기준으로 다시 씀\n  (기존 문구의 \"DOM 분석\" 서술은 내부 페이지 API 호출이라는 실제 구현과 달라 수정)\n- task.md: git 도입·Edge 제출 완료 처리, Whale 확인·Edge 심사 확인 항목 추가\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/a06775478555bd8cbcab7c233a89650245716d68",
+                    "committedDate": "2026-09-04T08:28:24Z"
+                  },
+                  {
+                    "message": "chore: 저장소 초기화 - DocExporter for Notion v2.0.1\n\nNotion 페이지를 DOCX·HWPX 문서로 변환하는 Chrome 확장(Manifest V3).\n로컬 전용으로 관리하던 프로젝트를 git 으로 이관. 현재 상태는 v2.0.1(노션 도메인 이전 대응 반영).\n\n- 소스: TypeScript + Vite 5, 엔트리 4종(content/background/popup/options)\n- 스토어 자산: store/ 에 게시 zip(v2.0.0·v2.0.1)과 스크린샷 4종 보관\n- 추적 제외: node_modules, dist, .claude, CLAUDE.md\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/docexporter-for-notion/commit/287ba2045f862f147bca0947e9e1e7cb62f7d3e6",
+                    "committedDate": "2026-09-04T07:54:41Z"
+                  }
+                ],
+                "totalCount": 14
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 154088,
+                  "node": {
+                    "name": "TypeScript",
+                    "color": "#3178c6"
+                  }
+                },
+                {
+                  "size": 13054,
+                  "node": {
+                    "name": "HTML",
+                    "color": "#e34c26"
+                  }
+                },
+                {
+                  "size": 2477,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/rpi-calendar-kiosk",
+            "description": "라즈베리파이 4 + Waveshare HDMI 패널용 키오스크. 구글 캘린더 일정·할 일을 D-Day 목록과 월간 달력으로 띄우고, Windows PC 의 CPU·GPU·드라이브 사용량을 육각 링으로 함께 표시합니다. (Rust 서버 + Chromium 키오스크)",
+            "createdAt": "2026-06-13T15:30:16Z",
+            "updatedAt": "2026-09-07T12:45:58Z",
+            "pushedAt": "2026-09-07T12:45:41Z",
+            "url": "https://github.com/soma0sd/rpi-calendar-kiosk",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "docs: MIT 라이선스 적용\n\n- 루트 LICENSE 추가 (MIT, Copyright (c) 2026 soma0sd)\n- pyproject.toml 에 PEP 639 라이선스 메타데이터 추가 (Cargo.toml 은 이미 MIT)\n- README·사용 설명서에 라이선스 절 추가\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/30b75b9d41e092f2388ff7de553338ce2452ae88",
+                    "committedDate": "2026-09-07T12:45:12Z"
+                  },
+                  {
+                    "message": "docs: 사용 설명서를 GitHub Pages 로 추가\n\n준비물·설치 순서·화면 조작·운영 명령·문제 해결·접근 범위를 사용자 관점으로 정리했습니다.\ndocs/ 를 Pages 소스로 쓰고 내부 회의록(docs/meetings)은 공개 문서에서 제외합니다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/5cb9960906827d364aa578a54d1269767e561a6d",
+                    "committedDate": "2026-09-07T07:00:33Z"
+                  },
+                  {
+                    "message": "fix: 셸 스크립트 CRLF 배포 실패 방지 + 미사용 import 제거\n\n- .gitattributes 로 *.sh, *.service, *.timer 를 LF 로 고정한다.\n  core.autocrlf=true 인 Windows 작업 트리에서는 이 파일들이 CRLF 로\n  체크아웃되는데, deploy.ps1 이 작업 트리를 그대로 scp 하므로 원격 bash 가\n  bootstrap_rust.sh 의 `set -euo pipefail` 을 `pipefail\\r` 로 읽고 배포가\n  중단됐다. setup_service.sh 도 같은 경로로 깨진다.\n- google.rs: tokio 의 OpenOptions 는 mode() 를 자체 제공하므로 std 의\n  OpenOptionsExt import 를 제거한다 (unix 빌드에서 unused_imports 경고).\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/cff0c01bcca23e34be46f2378b2b4145c7a3480e",
+                    "committedDate": "2026-09-06T13:40:48Z"
+                  },
+                  {
+                    "message": "feat: Rust 런타임 전환 + PC 시스템 모니터 + 보안 강화 (v0.4.0)\n\n운영 서버와 Windows 지표 송신기를 Rust 로 다시 작성하고, 키오스크 화면에 PC\n시스템 지표 표시를 추가한다. Python 구현은 최초 OAuth 인증과 로컬 회귀 검증용\n호환 계층으로 남긴다.\n\n기능\n- rust/: axum 기반 HTTP 서버(kiosk) + sysinfo 기반 지표 송신기(monitor)\n- web/: 육각링 시스템 모니터, 일정 상세 오버레이, 일정·달력 슬라이드 전환\n- 다중 장비 지표 수집 + 하단 버튼으로 순환 표시\n- monitor.py: Python 호환 계층의 지표 수집·푸시\n\n보안\n- 지표 푸시 인증을 공유 토큰 헤더에서 HMAC-SHA256 서명으로 전환.\n  X-Monitor-Timestamp + X-Monitor-Signature, 허용 시각 오차 120초.\n  평문 HTTP 스니핑만으로 토큰이 넘어가던 경로를 없앤다.\n- 루프백이 아닌 접속에는 POST /api/system 만 허용. 개인 일정·할일이 담긴\n  /api/state 와 UI 는 키오스크 본체 전용으로 제한.\n- Host 헤더가 도메인이면 400 으로 거절해 DNS 리바인딩 우회를 막는다.\n- bootstrap_rust.sh 를 curl | sh 에서 rustup-init 버전 고정 + SHA-256 대조\n  방식으로 교체.\n- 토큰 파일을 생성 시점부터 0600 으로 연다. 쓰고 나서 chmod 하던 노출 창 제거.\n- 배포 스테이징을 mktemp -d 와 난수 이름으로 바꾸고, 정리 실패는 경고가 아니라\n  오류로 중단한다.\n- 모니터 토큰을 작업 트리 밖에 설치하고 ACL 을 현재 계정으로 제한.\n- Google Tasks due 값의 바이트 슬라이싱 패닉, 비 ASCII 서명 헤더의 TypeError 제거.\n\n저장소 위생\n- 배포 대상 호스트·주소를 _ssh_config.ps1 이 환경 변수로 해석하도록 변경.\n  실제 별칭과 사설 IP 는 저장소에 두지 않는다.\n- 스크린샷을 더미 데이터로 재촬영하고 참조가 끊긴 이미지를 제거.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/e78f2bb565353c5f7dc8b3cefeb75480529a88d4",
+                    "committedDate": "2026-09-06T12:51:33Z"
+                  },
+                  {
+                    "message": "docs: 프로젝트 아카이빙 배너 및 회의록 관리 템플릿 추가",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/65b2ecac1b85692c1575f76d52c113c9cb939b55",
+                    "committedDate": "2026-09-06T12:51:33Z"
+                  },
+                  {
+                    "message": "chore(deps): refresh uv.lock for security advisories (#6)\n\nThree high-severity Dependabot alerts were open against uv.lock:\n\n- cryptography  -> 50.0.1  (needed >= 50.0.0)\n- httplib2      -> 0.32.0  (needed >= 0.32.0)\n- pyasn1        -> 0.6.4   (needed >= 0.6.4, three advisories)\n\nRan `uv lock --upgrade`; the rest of the churn is the transitive\ngoogle-api / protobuf stack moving with it. Declared ranges in\npyproject.toml are unchanged.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/18096c07050dd2c7fecc36ac2489c33724a0aa0b",
+                    "committedDate": "2026-09-04T13:51:20Z"
+                  },
+                  {
+                    "message": "Bump cryptography from 48.0.0 to 48.0.1 (#2)\n\nBumps [cryptography](https://github.com/pyca/cryptography) from 48.0.0 to 48.0.1.\n- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)\n- [Commits](https://github.com/pyca/cryptography/compare/48.0.0...48.0.1)\n\n---\nupdated-dependencies:\n- dependency-name: cryptography\n  dependency-version: 48.0.1\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/430737b9f4369735c8094cad26d284041f9f3037",
+                    "committedDate": "2026-07-16T16:31:14Z"
+                  },
+                  {
+                    "message": "Bump idna from 3.14 to 3.15 (#1)\n\nBumps [idna](https://github.com/kjd/idna) from 3.14 to 3.15.\n- [Release notes](https://github.com/kjd/idna/releases)\n- [Changelog](https://github.com/kjd/idna/blob/master/HISTORY.md)\n- [Commits](https://github.com/kjd/idna/compare/v3.14...v3.15)\n\n---\nupdated-dependencies:\n- dependency-name: idna\n  dependency-version: '3.15'\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/6fda156cd32cd79045707502ab34cb08f5d5d793",
+                    "committedDate": "2026-07-16T16:30:34Z"
+                  },
+                  {
+                    "message": "초기 커밋: rpi-calendar-kiosk — 라즈베리파이 구글 캘린더/할일 키오스크 (Python HTTP 서버 + chromium --kiosk)\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/fa8b872ea037e9a73b603fd084f9102a8c1bd3f3",
+                    "committedDate": "2026-06-13T15:22:22Z"
+                  }
+                ],
+                "totalCount": 9
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 102239,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                },
+                {
+                  "size": 74581,
+                  "node": {
+                    "name": "Rust",
+                    "color": "#dea584"
+                  }
+                },
+                {
+                  "size": 31737,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
+                  }
+                },
+                {
+                  "size": 17212,
+                  "node": {
+                    "name": "PowerShell",
+                    "color": "#012456"
+                  }
+                },
+                {
+                  "size": 14419,
+                  "node": {
+                    "name": "CSS",
+                    "color": "#663399"
+                  }
+                },
+                {
+                  "size": 5711,
+                  "node": {
+                    "name": "Shell",
+                    "color": "#89e051"
+                  }
+                },
+                {
+                  "size": 3292,
+                  "node": {
+                    "name": "HTML",
+                    "color": "#e34c26"
                   }
                 }
               ]
@@ -1281,207 +1492,6 @@
                   "node": {
                     "name": "Ruby",
                     "color": "#701516"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/Session-Meter",
-            "description": "Claude·Codex·Gemini·Antigravity IDE 구독 사용량을 트레이 아이콘·데스크톱 위젯·통계 창으로 한눈에 보여 주는 Windows 데스크톱 앱. 5시간·주간 한도와 초기화까지 남은 시간, 소진 예측, 임계치 알림을 제공합니다. (Tauri v2 + Svelte)",
-            "createdAt": "2026-07-18T13:18:06Z",
-            "updatedAt": "2026-09-07T06:59:27Z",
-            "pushedAt": "2026-08-26T04:43:48Z",
-            "url": "https://github.com/soma0sd/Session-Meter",
-            "homepageUrl": null,
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "chore: build release notes from the changelog and refresh the security policy (#8)\n\nThe release workflow published a fixed \"See the changelog for details.\" body.\nExtract the tag's section from CHANGELOG.md and CHANGELOG.en.md instead and\ncompose the release body from both, falling back to the old line for a manual\nrun or a version with no changelog section.\n\nSECURITY.md still described the single-service Claude app: widen the scope and\nthreat model to the four monitored services and document the per-service\nsession files (Antigravity IDE stores no credential at all).\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/1535bcfca6e3ff91ea727f5cd586085bd1b0176a",
-                    "committedDate": "2026-08-26T04:43:45Z"
-                  },
-                  {
-                    "message": "feat: track the Codex 5-hour session window in v1.1.0 (#7)\n\nChatGPT reports the Codex 5-hour session limit again. Parse both windows by\ntheir declared duration and make the session window the headline one, with the\nweekly quota as the secondary window. Plans without a session window (Pro) keep\nthe weekly quota as their headline, so nothing regresses there.\n\nExisting Codex history stored the weekly quota in the primary slot; migrate\nthose points to the secondary series the first time a session window is seen so\nthe weekly trend stays a single continuous series.\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/38e4ff91b3e602607ef2bdfa70c3d4552254c52d",
-                    "committedDate": "2026-08-26T04:04:34Z"
-                  },
-                  {
-                    "message": "fix: anchor the widget kebab menu and dock Codex in v1.0.3 (#6)\n\nThe compact widget's more-menu popover was positioned against the window\ninstead of the panel (`.panel` was `position: static`), so the transparent\ntop inset added for an upward menu moved the panel and left the popover\nbehind: everything but its last \"Settings\" row was clipped off the top of\nthe window and the usage body went with it. Anchor it to the panel, open it\njust outside the panel edge in either direction, and widen the window to its\nlabels so nothing is cut off. A docked widget showing a popover is now left\nin place by `apply_layout` instead of being snapped back mid-popover.\n\nA service signed into while the app was already running only ever reached\n`reconcile_widget_visibility`, which never offered it to the dock, so the\nCodex widget stayed outside the docked group until the next restart. Offer\nmembership there too and broadcast the resulting settings, and list any\nlogged-in service missing from the saved order in the Placement tab.\n\nCompact countdowns now show `D:HH:MM` past 24 hours, so Codex's weekly\nwindow reads `6:19:53` instead of `163:53`.\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/655939ecac0fcfa9019039895419dabf6d11e081",
-                    "committedDate": "2026-08-20T10:29:16Z"
-                  },
-                  {
-                    "message": "fix: complete Codex login in v1.0.2\n\nCodex 로그인 완료·창 종료·세션 경합 수정과 문서 갱신",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/fcd503db4e36d1f86f744338f6842846b0e097b8",
-                    "committedDate": "2026-08-20T09:59:43Z"
-                  },
-                  {
-                    "message": "Merge pull request #4 from soma0sd/codex/1.0.1-codex-login-fix\n\nfix: isolate Codex login in v1.0.1",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/c96f4b1ae790be156ff73c82da2b04dd5c06dc06",
-                    "committedDate": "2026-08-20T08:36:00Z"
-                  },
-                  {
-                    "message": "fix: isolate Codex login in v1.0.1",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/6188cf8b86ecb0d2777d31b1b158b9db795c5ce1",
-                    "committedDate": "2026-08-20T08:34:01Z"
-                  },
-                  {
-                    "message": "Merge pull request #3 from soma0sd/codex/1.0.0-codex-pages\n\nfeat: release 1.0.0 with Codex weekly quota",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/1850840609621240a74c2a7ef89bfdce96461fd8",
-                    "committedDate": "2026-08-20T07:45:25Z"
-                  },
-                  {
-                    "message": "feat: release 1.0.0 with Codex weekly quota",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/78309232458c75543b01f2e223726e9cbd1a510c",
-                    "committedDate": "2026-08-20T07:44:20Z"
-                  },
-                  {
-                    "message": "docs: cover Antigravity IDE in the user guide, link it from README (#2)\n\n* chore: track .claudeignore for Claude Code context scoping\n\nExcludes build output, lockfiles, and binary assets from Claude's\nfile-reading context (separate from .gitignore, which controls what\ngets committed).\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n* docs: cover Antigravity IDE throughout the user guide\n\nThe guide predated the Antigravity IDE integration and only mentioned\nClaude/Gemini. Brings it up to date and adds illustrative mockups\n(hand-drawn HTML/CSS placeholders, not real screenshots or captured\naccount data) for sections that were text-only:\n\n- Title, header, intro, and license text now cover all 3 services;\n  intro warn box distinguishes Antigravity's local-loopback access\n  from Claude/Gemini's web session scraping\n- New \"Antigravity IDE\" subsection under 서비스 로그인 (no login,\n  detected via running IDE), with a settings-account mockup\n- Tray icon color table gets swatches; tray right-click menu gets a\n  mockup\n- New \"위젯 그리드 도킹\" (widget grid docking, v0.5) subsection with\n  a 3-service docking mockup\n- 통계 창 (stats window) gets its first mockup - tabs, trend chart,\n  exhaustion prediction\n- 설정 (settings) gets a general/update panel mockup; account bullet\n  now explains Antigravity's running-status-only display\n- 문제 해결 gets an Antigravity connectivity bullet\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n* docs: link the published GitHub Pages user guide from README\n\nThe docs/ section only linked the in-repo folder even though it's\nbeen live on GitHub Pages. Adds the actual https://soma0sd.github.io/Session-Meter/\nlink, verified reachable (200) before committing.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/6dfee45a780853e5be8aee334d1468233cd32c75",
-                    "committedDate": "2026-08-14T10:02:42Z"
-                  },
-                  {
-                    "message": "Bump postcss from 8.5.19 to 8.5.26 (#1)\n\nBumps [postcss](https://github.com/postcss/postcss) from 8.5.19 to 8.5.26.\n- [Release notes](https://github.com/postcss/postcss/releases)\n- [Changelog](https://github.com/postcss/postcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/postcss/postcss/compare/8.5.19...8.5.26)\n\n---\nupdated-dependencies:\n- dependency-name: postcss\n  dependency-version: 8.5.26\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/7a302905ad0c40f4ff1dbcce65beebe84e82b2c5",
-                    "committedDate": "2026-08-14T08:50:33Z"
-                  },
-                  {
-                    "message": "docs: add Antigravity IDE monitoring details to README",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/5a79aa928ece6ca05d54fa743fcbc775384e39a5",
-                    "committedDate": "2026-07-23T10:57:07Z"
-                  },
-                  {
-                    "message": "release: v0.5.1 - Simplify tray popup & add automatic widget screen clamping",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/32288e94bcc1050821d3eb54c6a565ab36b1992f",
-                    "committedDate": "2026-07-23T10:40:38Z"
-                  },
-                  {
-                    "message": "Clean up CHANGELOG 0.5 wording\n\nRemove em dashes (project-wide style rule) and clarify that Antigravity\nmonitoring starts automatically, with no manual action needed.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/2d375927caa55f510a3cead2eb7bb84035e36334",
-                    "committedDate": "2026-07-22T22:56:55Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.5.0\n\nAdd widget grid docking:\n- New \"Placement\" tab in the Widget Style window: dock widgets into a grid (configurable\n  column count), drag-and-drop to reorder the group, and drag any docked widget to move the\n  whole group together\n- Docked widgets recover automatically if minimized, and re-flow around hidden/shown members\n\nAdd Antigravity IDE quota widget (new third monitored service):\n- Tracks Antigravity IDE's (Windsurf/Codeium-based) local coding quota via its\n  language_server process - no login required, fully automatic detection (mirrors how the\n  Claude widget behaves before sign-in)\n- Shows both the Gemini model group and the Claude/GPT model group (5-hour + weekly each),\n  with a toggle for which one headlines the widget/tray\n  - Settings' account list shows a monitoring status badge (running/not running) plus\n  best-effort account identity instead of a sign-in/out control\n\nFixes found during testing:\n- Group-drag pointer capture race that could lose mouse tracking and miss the end of a drag\n- Group-drag stutter from writing the dock anchor to disk on every drag frame\n- Placement tab's drag-and-drop reorder not working (Tauri's native file drag-drop handling\n  was intercepting the page's own HTML5 drag events)\n- A widget's icon row getting stuck unable to collapse into the kebab menu (a CSS flex\n  stretch feedback loop, not a timing issue)\n- A widget occasionally showing its default style instead of the saved one right after\n  launch (the static Claude window's webview can start before Rust finishes loading settings)\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/f546d39dcee0547b75aafb7ab89d80fd4e85eb76",
-                    "committedDate": "2026-07-22T22:54:37Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.4.5\n\nFix the what's-new window only showing versions up to 0.3:\n- The news window fetches the changelog from GitHub and falls back to a bundled copy when\n  that fails; the fallback was a hand-maintained src/lib/changelog.ts that had gone stale\n  (only up to 0.3), so a fetch failure showed an outdated list\n- Bundle the actual CHANGELOG.md / CHANGELOG.en.md at build time via ?raw so the fallback\n  always matches the shipped version; remove the hand-maintained changelog.ts\n- Join wrapped continuation lines when parsing so multi-line entries are not truncated\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/5f31bf1e5b428cfe6f4afaed33934258f8cc9836",
-                    "committedDate": "2026-07-22T08:10:01Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.4.4\n\nFix the widget style resetting to default after an update:\n- set_settings replaced the whole per-service widgets map with the frontend payload,\n  which is the only place widget config is written wholesale from the UI\n- The Settings window starts from an empty widgets map and fills it via an async\n  getSettings(); when it saved before that resolved (e.g. as windows are re-created\n  during the update relaunch), the empty map wiped the user's widget styles\n- set_settings now merges: services present in the payload win, services absent keep\n  their stored widget config, so an empty/partial map can no longer wipe styles\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/a802bb4071dd2927eac7e96187bb1cc89b42f737",
-                    "committedDate": "2026-07-22T07:52:53Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.4.3\n\nFix the app reverting to an older version after an update followed by a reboot:\n- tauri-plugin-autostart records the launch path from current_exe() when\n  autostart is first enabled and never revalidates it; a stale path (observed:\n  autostart enabled while an earlier build ran under a virtualized/sandboxed exe\n  path) keeps launching the old binary on boot even after the real install updates\n- On startup, if autostart is enabled, re-register it against the current exe\n  (release-only) so the stored Run-key path self-heals to the real install path\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/321c4f4208b2365e0ba63e250de0022a4ca51af5",
-                    "committedDate": "2026-07-22T06:51:09Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.4.2\n\nFix settings (widget style, refresh interval) resetting after an update:\n- Persist a migrated pre-0.4 settings file to the current format on load, instead of\n  re-deriving the widget config from the legacy flat fields on every launch\n- Re-read the latest settings when the settings/widget-style windows gain focus, so a change\n  in one window can't be reverted by a stale save in another\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/653416bf36c5a709167b222834fb61a5b44a636e",
-                    "committedDate": "2026-07-20T09:38:09Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.4.1\n\n- Move widget show/hide from the tray menu to the Widget Style window (per-service toggle)\n- Compact widget styles show remaining time as a clock (H:MM / M:SS)\n- Check for updates on startup and every 10 minutes\n- Rename the Antigravity service to Gemini, migrating existing session/settings/history/position\n- Settings account list shows account + subscription; Gemini email captured best-effort\n- Fix the statistics window not showing other services' tabs\n- Publish releases as a tagged prerelease so the updater URL stays reachable\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/f7ae669b0e917d6cbea6f1589ad864387a306366",
-                    "committedDate": "2026-07-20T08:13:11Z"
-                  },
-                  {
-                    "message": "docs: rewrite user manual for 0.4.0 with in-engine widget style renders\n\nUpdate the GitHub Pages manual for multi-service (Claude + Antigravity),\nper-service widgets, the widget style window, statistics tabs, and the tray\nmenu changes. The widget style gallery now embeds the app's own widget\ncomponents rendered to self-contained HTML (computed styles inlined) instead\nof screenshots, so the 10 styles stay crisp at any zoom. Drop the orphaned\nscreenshot assets.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/3395ddbbf5697dca232e48b0602206881dd30abd",
-                    "committedDate": "2026-07-20T03:06:24Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.4.0\n\nMulti-service usage monitoring: Antigravity (Gemini subscription) joins\nClaude, with per-service widgets, statistics tabs, and a new Widget style\nwindow (10 styles across 5 concepts). Antigravity sign-in runs in an\nisolated helper process so a Google page issue can't freeze the app.\n\nAlso fixes widget position resetting after an update and the tray menu's\nQuit item being clipped off-screen, and turns the widget show/hide row\ninto a toggle switch.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/584b89836aadc72c8243854ad406d9a6ea0aaa10",
-                    "committedDate": "2026-07-20T00:53:51Z"
-                  },
-                  {
-                    "message": "Share settings between debug and release builds\n\nRemove the per-build \"dev\" data subfolder so a dev run reads and keeps the same settings as\nthe installed app - options no longer appear to reset when switching between a dev build and\nthe installed one. Safe now that debug builds no longer clear settings on startup.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/54206c2b5cc126d4b5cb6960ed8d1f2674ce5173",
-                    "committedDate": "2026-07-19T04:01:44Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.3.1\n\nStatistics fixes:\n- History chart now plots points by real timestamp within a [now-range, now] window, so\n  24h / 7d / 30d render at their true time scale instead of the same stretched shape\n- Add a 30-day (1-month) history view\n- Fix \"NaN\" remaining time in the reset schedule when a bucket has no reset time yet\n  (formatCountdown returns \"-\" for a non-finite value)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/4fbf9e3099cebb4e119e6da5fca27e5352f08bbe",
-                    "committedDate": "2026-07-19T03:54:04Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.3.0\n\nFeatures:\n- Compact widget layout (donut charts), selectable in settings (detailed by default)\n- Subscription plan and a time axis in the statistics window\n- Per-window (session/weekly) usage-alert thresholds; settings grouped into cards\n- Widget visibility watchdog that recovers an off-screen widget\n\nFixes:\n- Settings/session no longer reset on update: atomic file writes, separate widget-position\n  file, corrupt-file backup+recovery, legacy-format migration\n- Widget no longer returns off-screen: minimized-sentinel guard and on-screen validation\n- Shortcut custom icon: install a standalone icon.ico and point the Start Menu and Desktop\n  shortcuts at it, and refresh the shell icon cache on install\n- Adversarial code-review fixes (widget-toggle event, notify per-bucket, subscription parse)\n\nAlso: remove the unused tray-window option and tauri-plugin-store, drop unused mobile/UWP\nicon assets, and fix lingering old-name strings.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/b82e4a61f67648e73941d4cf0d1e65b2035ae85e",
-                    "committedDate": "2026-07-18T19:20:30Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.2.2: group changelog by minor version\n\nGroup the changelog by minor version and parse two-part version headers in the\nwhat's-new window.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/8272e6a8b3e48aa6b115fa1e733e7661f679b96a",
-                    "committedDate": "2026-07-18T13:28:37Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.2.1\n\nClaude usage tray, widget, and stats desktop app (Tauri v2, MIT).\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/e0f0acae25eeb60346bf3a539d31ca1490075ed4",
-                    "committedDate": "2026-07-18T13:17:48Z"
-                  }
-                ],
-                "totalCount": 26
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 249448,
-                  "node": {
-                    "name": "Rust",
-                    "color": "#dea584"
-                  }
-                },
-                {
-                  "size": 117400,
-                  "node": {
-                    "name": "Svelte",
-                    "color": "#ff3e00"
-                  }
-                },
-                {
-                  "size": 43089,
-                  "node": {
-                    "name": "TypeScript",
-                    "color": "#3178c6"
-                  }
-                },
-                {
-                  "size": 3054,
-                  "node": {
-                    "name": "CSS",
-                    "color": "#663399"
-                  }
-                },
-                {
-                  "size": 2230,
-                  "node": {
-                    "name": "HTML",
-                    "color": "#e34c26"
-                  }
-                },
-                {
-                  "size": 1067,
-                  "node": {
-                    "name": "NSIS",
-                    "color": null
-                  }
-                },
-                {
-                  "size": 177,
-                  "node": {
-                    "name": "JavaScript",
-                    "color": "#f1e05a"
                   }
                 }
               ]
