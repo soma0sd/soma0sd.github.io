@@ -3,14 +3,19 @@
     "nameWithOwner": "soma0sd/Session-Meter",
     "description": "Claude·Codex·Gemini·Antigravity IDE 구독 사용량을 트레이 아이콘·데스크톱 위젯·통계 창으로 한눈에 보여 주는 Windows 데스크톱 앱. 5시간·주간 한도와 초기화까지 남은 시간, 소진 예측, 임계치 알림을 제공합니다. (Tauri v2 + Svelte)",
     "createdAt": "2026-07-18T13:18:06Z",
-    "updatedAt": "2026-09-15T04:39:19Z",
-    "pushedAt": "2026-09-15T04:39:25Z",
+    "updatedAt": "2026-09-21T02:42:32Z",
+    "pushedAt": "2026-09-21T02:42:33Z",
     "url": "https://github.com/soma0sd/Session-Meter",
     "homepageUrl": null,
     "isArchived": false,
     "isPrivate": false,
-    "commits": 27,
+    "commits": 28,
     "commit": [
+      {
+        "message": "feat: dock widgets in one window and surface them in the taskbar in v1.3.0 (#10)\n\n- Redesign widget docking: docked services render as CSS grid cells of a single\n  runtime window (widget-dock) instead of per-service windows snapped together.\n  Drop the multi-window layout engine and size unification (widget_size.rs and\n  the dock_move_to / set_widget_*_size / set_widget_menu_open IPC).\n- Give the docked window its own opacity, always-on-top and move-lock settings\n  (Placement tab and widget header) and disable the per-service window controls\n  for docked members.\n- Show a widget window in the taskbar and Alt+Tab whenever always-on-top is off\n  (set_skip_taskbar follows always_on_top) and apply the saved layering when a\n  window is shown, which also fixes the Claude widget ignoring it at startup.\n- Clamp widget windows to the monitor work area (taskbar excluded) and re-clamp\n  right after a content-driven resize.\n- Compact styles render the Antigravity model-group switch as icon buttons under\n  the percentage readout; detailed styles keep the labelled row.\n- Bump the version to 1.3.0 and update the changelog, README and docs site.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+        "url": "https://github.com/soma0sd/Session-Meter/commit/a42c2f8939f524e909906f44ba02cc5dfb01d96e",
+        "date": "2026-09-21T02:42:27Z"
+      },
       {
         "message": "feat: switch Antigravity model groups from the widget in v1.2.0 (#9)\n\nAntigravity reports quota for two model groups - Gemini and Claude/GPT - but the\nonly way to choose which pair the widget headline showed was the Widget Style\nwindow. The widget now carries a two-segment switch below its readout, reusing\nthe existing `headline_group` setting so the widget and the Style window stay in\nsync in both directions. History and the tray stay pinned to the Gemini group,\npreserving the invariant that one history series never mixes two quota groups.\n\nWith the switch naming the group, the widget's readout no longer repeats it and\nsimply reads \"5-hour\" and \"Weekly\". The stats window and notifications keep the\nfull names, where both groups appear side by side.\n\nDocked widgets now also match each other in size: with grid docking on, every\ndocked widget grows to the largest natural panel among them. Widgets report a\nnatural size measured with that minimum lifted, so the maximum can fall again\nwhen the widest widget is hidden rather than becoming a floor.\n\nTwo adjacent fixes: the `3p-5h` bucket was judged against the weekly alert\nthreshold because Antigravity's `primary_key` is pinned to the Gemini group, and\ndesktop notifications were the one place Antigravity's quota names still showed\nuntranslated.\n\nVerified against real accounts in the dev build (three docked widgets identical\nat 215x201 physical, switch correct in the compact style), with a security\nreview finding no HIGH or MEDIUM issues.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
         "url": "https://github.com/soma0sd/Session-Meter/commit/bd53248fa574b0bad0db957f83961dfb45816bab",
@@ -149,17 +154,17 @@
     ],
     "languages": [
       {
-        "size": 261020,
+        "size": 249729,
         "name": "Rust",
         "color": "#dea584"
       },
       {
-        "size": 127128,
+        "size": 129642,
         "name": "Svelte",
         "color": "#ff3e00"
       },
       {
-        "size": 44461,
+        "size": 45503,
         "name": "TypeScript",
         "color": "#3178c6"
       },
@@ -189,14 +194,19 @@
     "nameWithOwner": "soma0sd/soma0sd.github.io",
     "description": "GitHub Pages using GitHub GraphQL API",
     "createdAt": "2017-11-19T10:29:29Z",
-    "updatedAt": "2026-09-13T21:11:52Z",
-    "pushedAt": "2026-09-13T21:11:48Z",
+    "updatedAt": "2026-09-20T21:12:45Z",
+    "pushedAt": "2026-09-20T21:12:33Z",
     "url": "https://github.com/soma0sd/soma0sd.github.io",
     "homepageUrl": "https://soma0sd.github.io/",
     "isArchived": false,
     "isPrivate": false,
-    "commits": 46,
+    "commits": 47,
     "commit": [
+      {
+        "message": "chore(data): refresh GitHub API data",
+        "url": "https://github.com/soma0sd/soma0sd.github.io/commit/31c1de27116528d86fd8ff98762583620fe53ae5",
+        "date": "2026-09-20T21:12:25Z"
+      },
       {
         "message": "chore(data): refresh GitHub API data",
         "url": "https://github.com/soma0sd/soma0sd.github.io/commit/805516fad86df46701b19c64f032092cf9ac4fd5",

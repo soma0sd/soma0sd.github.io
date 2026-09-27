@@ -20,7 +20,7 @@
     "color": "#555555"
   },
   "TypeScript": {
-    "size": 503101,
+    "size": 504143,
     "color": "#3178c6"
   },
   "SCSS": {
@@ -28,7 +28,7 @@
     "color": "#c6538c"
   },
   "Rust": {
-    "size": 335601,
+    "size": 324310,
     "color": "#dea584"
   },
   "Cuda": {
@@ -48,7 +48,7 @@
     "color": "#DA3434"
   },
   "Svelte": {
-    "size": 127128,
+    "size": 129642,
     "color": "#ff3e00"
   },
   "AGS Script": {
