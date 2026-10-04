@@ -16,222 +16,11 @@
         "totalCount": 20,
         "nodes": [
           {
-            "nameWithOwner": "soma0sd/Session-Meter",
-            "description": "Claude·Codex·Gemini·Antigravity IDE 구독 사용량을 트레이 아이콘·데스크톱 위젯·통계 창으로 한눈에 보여 주는 Windows 데스크톱 앱. 5시간·주간 한도와 초기화까지 남은 시간, 소진 예측, 임계치 알림을 제공합니다. (Tauri v2 + Svelte)",
-            "createdAt": "2026-07-18T13:18:06Z",
-            "updatedAt": "2026-09-21T02:42:32Z",
-            "pushedAt": "2026-09-21T02:42:33Z",
-            "url": "https://github.com/soma0sd/Session-Meter",
-            "homepageUrl": null,
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "feat: dock widgets in one window and surface them in the taskbar in v1.3.0 (#10)\n\n- Redesign widget docking: docked services render as CSS grid cells of a single\n  runtime window (widget-dock) instead of per-service windows snapped together.\n  Drop the multi-window layout engine and size unification (widget_size.rs and\n  the dock_move_to / set_widget_*_size / set_widget_menu_open IPC).\n- Give the docked window its own opacity, always-on-top and move-lock settings\n  (Placement tab and widget header) and disable the per-service window controls\n  for docked members.\n- Show a widget window in the taskbar and Alt+Tab whenever always-on-top is off\n  (set_skip_taskbar follows always_on_top) and apply the saved layering when a\n  window is shown, which also fixes the Claude widget ignoring it at startup.\n- Clamp widget windows to the monitor work area (taskbar excluded) and re-clamp\n  right after a content-driven resize.\n- Compact styles render the Antigravity model-group switch as icon buttons under\n  the percentage readout; detailed styles keep the labelled row.\n- Bump the version to 1.3.0 and update the changelog, README and docs site.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/a42c2f8939f524e909906f44ba02cc5dfb01d96e",
-                    "committedDate": "2026-09-21T02:42:27Z"
-                  },
-                  {
-                    "message": "feat: switch Antigravity model groups from the widget in v1.2.0 (#9)\n\nAntigravity reports quota for two model groups - Gemini and Claude/GPT - but the\nonly way to choose which pair the widget headline showed was the Widget Style\nwindow. The widget now carries a two-segment switch below its readout, reusing\nthe existing `headline_group` setting so the widget and the Style window stay in\nsync in both directions. History and the tray stay pinned to the Gemini group,\npreserving the invariant that one history series never mixes two quota groups.\n\nWith the switch naming the group, the widget's readout no longer repeats it and\nsimply reads \"5-hour\" and \"Weekly\". The stats window and notifications keep the\nfull names, where both groups appear side by side.\n\nDocked widgets now also match each other in size: with grid docking on, every\ndocked widget grows to the largest natural panel among them. Widgets report a\nnatural size measured with that minimum lifted, so the maximum can fall again\nwhen the widest widget is hidden rather than becoming a floor.\n\nTwo adjacent fixes: the `3p-5h` bucket was judged against the weekly alert\nthreshold because Antigravity's `primary_key` is pinned to the Gemini group, and\ndesktop notifications were the one place Antigravity's quota names still showed\nuntranslated.\n\nVerified against real accounts in the dev build (three docked widgets identical\nat 215x201 physical, switch correct in the compact style), with a security\nreview finding no HIGH or MEDIUM issues.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/bd53248fa574b0bad0db957f83961dfb45816bab",
-                    "committedDate": "2026-09-15T04:39:14Z"
-                  },
-                  {
-                    "message": "chore: build release notes from the changelog and refresh the security policy (#8)\n\nThe release workflow published a fixed \"See the changelog for details.\" body.\nExtract the tag's section from CHANGELOG.md and CHANGELOG.en.md instead and\ncompose the release body from both, falling back to the old line for a manual\nrun or a version with no changelog section.\n\nSECURITY.md still described the single-service Claude app: widen the scope and\nthreat model to the four monitored services and document the per-service\nsession files (Antigravity IDE stores no credential at all).\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/1535bcfca6e3ff91ea727f5cd586085bd1b0176a",
-                    "committedDate": "2026-08-26T04:43:45Z"
-                  },
-                  {
-                    "message": "feat: track the Codex 5-hour session window in v1.1.0 (#7)\n\nChatGPT reports the Codex 5-hour session limit again. Parse both windows by\ntheir declared duration and make the session window the headline one, with the\nweekly quota as the secondary window. Plans without a session window (Pro) keep\nthe weekly quota as their headline, so nothing regresses there.\n\nExisting Codex history stored the weekly quota in the primary slot; migrate\nthose points to the secondary series the first time a session window is seen so\nthe weekly trend stays a single continuous series.\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/38e4ff91b3e602607ef2bdfa70c3d4552254c52d",
-                    "committedDate": "2026-08-26T04:04:34Z"
-                  },
-                  {
-                    "message": "fix: anchor the widget kebab menu and dock Codex in v1.0.3 (#6)\n\nThe compact widget's more-menu popover was positioned against the window\ninstead of the panel (`.panel` was `position: static`), so the transparent\ntop inset added for an upward menu moved the panel and left the popover\nbehind: everything but its last \"Settings\" row was clipped off the top of\nthe window and the usage body went with it. Anchor it to the panel, open it\njust outside the panel edge in either direction, and widen the window to its\nlabels so nothing is cut off. A docked widget showing a popover is now left\nin place by `apply_layout` instead of being snapped back mid-popover.\n\nA service signed into while the app was already running only ever reached\n`reconcile_widget_visibility`, which never offered it to the dock, so the\nCodex widget stayed outside the docked group until the next restart. Offer\nmembership there too and broadcast the resulting settings, and list any\nlogged-in service missing from the saved order in the Placement tab.\n\nCompact countdowns now show `D:HH:MM` past 24 hours, so Codex's weekly\nwindow reads `6:19:53` instead of `163:53`.\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/655939ecac0fcfa9019039895419dabf6d11e081",
-                    "committedDate": "2026-08-20T10:29:16Z"
-                  },
-                  {
-                    "message": "fix: complete Codex login in v1.0.2\n\nCodex 로그인 완료·창 종료·세션 경합 수정과 문서 갱신",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/fcd503db4e36d1f86f744338f6842846b0e097b8",
-                    "committedDate": "2026-08-20T09:59:43Z"
-                  },
-                  {
-                    "message": "Merge pull request #4 from soma0sd/codex/1.0.1-codex-login-fix\n\nfix: isolate Codex login in v1.0.1",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/c96f4b1ae790be156ff73c82da2b04dd5c06dc06",
-                    "committedDate": "2026-08-20T08:36:00Z"
-                  },
-                  {
-                    "message": "fix: isolate Codex login in v1.0.1",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/6188cf8b86ecb0d2777d31b1b158b9db795c5ce1",
-                    "committedDate": "2026-08-20T08:34:01Z"
-                  },
-                  {
-                    "message": "Merge pull request #3 from soma0sd/codex/1.0.0-codex-pages\n\nfeat: release 1.0.0 with Codex weekly quota",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/1850840609621240a74c2a7ef89bfdce96461fd8",
-                    "committedDate": "2026-08-20T07:45:25Z"
-                  },
-                  {
-                    "message": "feat: release 1.0.0 with Codex weekly quota",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/78309232458c75543b01f2e223726e9cbd1a510c",
-                    "committedDate": "2026-08-20T07:44:20Z"
-                  },
-                  {
-                    "message": "docs: cover Antigravity IDE in the user guide, link it from README (#2)\n\n* chore: track .claudeignore for Claude Code context scoping\n\nExcludes build output, lockfiles, and binary assets from Claude's\nfile-reading context (separate from .gitignore, which controls what\ngets committed).\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n* docs: cover Antigravity IDE throughout the user guide\n\nThe guide predated the Antigravity IDE integration and only mentioned\nClaude/Gemini. Brings it up to date and adds illustrative mockups\n(hand-drawn HTML/CSS placeholders, not real screenshots or captured\naccount data) for sections that were text-only:\n\n- Title, header, intro, and license text now cover all 3 services;\n  intro warn box distinguishes Antigravity's local-loopback access\n  from Claude/Gemini's web session scraping\n- New \"Antigravity IDE\" subsection under 서비스 로그인 (no login,\n  detected via running IDE), with a settings-account mockup\n- Tray icon color table gets swatches; tray right-click menu gets a\n  mockup\n- New \"위젯 그리드 도킹\" (widget grid docking, v0.5) subsection with\n  a 3-service docking mockup\n- 통계 창 (stats window) gets its first mockup - tabs, trend chart,\n  exhaustion prediction\n- 설정 (settings) gets a general/update panel mockup; account bullet\n  now explains Antigravity's running-status-only display\n- 문제 해결 gets an Antigravity connectivity bullet\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n* docs: link the published GitHub Pages user guide from README\n\nThe docs/ section only linked the in-repo folder even though it's\nbeen live on GitHub Pages. Adds the actual https://soma0sd.github.io/Session-Meter/\nlink, verified reachable (200) before committing.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/6dfee45a780853e5be8aee334d1468233cd32c75",
-                    "committedDate": "2026-08-14T10:02:42Z"
-                  },
-                  {
-                    "message": "Bump postcss from 8.5.19 to 8.5.26 (#1)\n\nBumps [postcss](https://github.com/postcss/postcss) from 8.5.19 to 8.5.26.\n- [Release notes](https://github.com/postcss/postcss/releases)\n- [Changelog](https://github.com/postcss/postcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/postcss/postcss/compare/8.5.19...8.5.26)\n\n---\nupdated-dependencies:\n- dependency-name: postcss\n  dependency-version: 8.5.26\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/7a302905ad0c40f4ff1dbcce65beebe84e82b2c5",
-                    "committedDate": "2026-08-14T08:50:33Z"
-                  },
-                  {
-                    "message": "docs: add Antigravity IDE monitoring details to README",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/5a79aa928ece6ca05d54fa743fcbc775384e39a5",
-                    "committedDate": "2026-07-23T10:57:07Z"
-                  },
-                  {
-                    "message": "release: v0.5.1 - Simplify tray popup & add automatic widget screen clamping",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/32288e94bcc1050821d3eb54c6a565ab36b1992f",
-                    "committedDate": "2026-07-23T10:40:38Z"
-                  },
-                  {
-                    "message": "Clean up CHANGELOG 0.5 wording\n\nRemove em dashes (project-wide style rule) and clarify that Antigravity\nmonitoring starts automatically, with no manual action needed.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/2d375927caa55f510a3cead2eb7bb84035e36334",
-                    "committedDate": "2026-07-22T22:56:55Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.5.0\n\nAdd widget grid docking:\n- New \"Placement\" tab in the Widget Style window: dock widgets into a grid (configurable\n  column count), drag-and-drop to reorder the group, and drag any docked widget to move the\n  whole group together\n- Docked widgets recover automatically if minimized, and re-flow around hidden/shown members\n\nAdd Antigravity IDE quota widget (new third monitored service):\n- Tracks Antigravity IDE's (Windsurf/Codeium-based) local coding quota via its\n  language_server process - no login required, fully automatic detection (mirrors how the\n  Claude widget behaves before sign-in)\n- Shows both the Gemini model group and the Claude/GPT model group (5-hour + weekly each),\n  with a toggle for which one headlines the widget/tray\n  - Settings' account list shows a monitoring status badge (running/not running) plus\n  best-effort account identity instead of a sign-in/out control\n\nFixes found during testing:\n- Group-drag pointer capture race that could lose mouse tracking and miss the end of a drag\n- Group-drag stutter from writing the dock anchor to disk on every drag frame\n- Placement tab's drag-and-drop reorder not working (Tauri's native file drag-drop handling\n  was intercepting the page's own HTML5 drag events)\n- A widget's icon row getting stuck unable to collapse into the kebab menu (a CSS flex\n  stretch feedback loop, not a timing issue)\n- A widget occasionally showing its default style instead of the saved one right after\n  launch (the static Claude window's webview can start before Rust finishes loading settings)\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/f546d39dcee0547b75aafb7ab89d80fd4e85eb76",
-                    "committedDate": "2026-07-22T22:54:37Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.4.5\n\nFix the what's-new window only showing versions up to 0.3:\n- The news window fetches the changelog from GitHub and falls back to a bundled copy when\n  that fails; the fallback was a hand-maintained src/lib/changelog.ts that had gone stale\n  (only up to 0.3), so a fetch failure showed an outdated list\n- Bundle the actual CHANGELOG.md / CHANGELOG.en.md at build time via ?raw so the fallback\n  always matches the shipped version; remove the hand-maintained changelog.ts\n- Join wrapped continuation lines when parsing so multi-line entries are not truncated\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/5f31bf1e5b428cfe6f4afaed33934258f8cc9836",
-                    "committedDate": "2026-07-22T08:10:01Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.4.4\n\nFix the widget style resetting to default after an update:\n- set_settings replaced the whole per-service widgets map with the frontend payload,\n  which is the only place widget config is written wholesale from the UI\n- The Settings window starts from an empty widgets map and fills it via an async\n  getSettings(); when it saved before that resolved (e.g. as windows are re-created\n  during the update relaunch), the empty map wiped the user's widget styles\n- set_settings now merges: services present in the payload win, services absent keep\n  their stored widget config, so an empty/partial map can no longer wipe styles\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/a802bb4071dd2927eac7e96187bb1cc89b42f737",
-                    "committedDate": "2026-07-22T07:52:53Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.4.3\n\nFix the app reverting to an older version after an update followed by a reboot:\n- tauri-plugin-autostart records the launch path from current_exe() when\n  autostart is first enabled and never revalidates it; a stale path (observed:\n  autostart enabled while an earlier build ran under a virtualized/sandboxed exe\n  path) keeps launching the old binary on boot even after the real install updates\n- On startup, if autostart is enabled, re-register it against the current exe\n  (release-only) so the stored Run-key path self-heals to the real install path\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/321c4f4208b2365e0ba63e250de0022a4ca51af5",
-                    "committedDate": "2026-07-22T06:51:09Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.4.2\n\nFix settings (widget style, refresh interval) resetting after an update:\n- Persist a migrated pre-0.4 settings file to the current format on load, instead of\n  re-deriving the widget config from the legacy flat fields on every launch\n- Re-read the latest settings when the settings/widget-style windows gain focus, so a change\n  in one window can't be reverted by a stale save in another\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/653416bf36c5a709167b222834fb61a5b44a636e",
-                    "committedDate": "2026-07-20T09:38:09Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.4.1\n\n- Move widget show/hide from the tray menu to the Widget Style window (per-service toggle)\n- Compact widget styles show remaining time as a clock (H:MM / M:SS)\n- Check for updates on startup and every 10 minutes\n- Rename the Antigravity service to Gemini, migrating existing session/settings/history/position\n- Settings account list shows account + subscription; Gemini email captured best-effort\n- Fix the statistics window not showing other services' tabs\n- Publish releases as a tagged prerelease so the updater URL stays reachable\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/f7ae669b0e917d6cbea6f1589ad864387a306366",
-                    "committedDate": "2026-07-20T08:13:11Z"
-                  },
-                  {
-                    "message": "docs: rewrite user manual for 0.4.0 with in-engine widget style renders\n\nUpdate the GitHub Pages manual for multi-service (Claude + Antigravity),\nper-service widgets, the widget style window, statistics tabs, and the tray\nmenu changes. The widget style gallery now embeds the app's own widget\ncomponents rendered to self-contained HTML (computed styles inlined) instead\nof screenshots, so the 10 styles stay crisp at any zoom. Drop the orphaned\nscreenshot assets.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/3395ddbbf5697dca232e48b0602206881dd30abd",
-                    "committedDate": "2026-07-20T03:06:24Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.4.0\n\nMulti-service usage monitoring: Antigravity (Gemini subscription) joins\nClaude, with per-service widgets, statistics tabs, and a new Widget style\nwindow (10 styles across 5 concepts). Antigravity sign-in runs in an\nisolated helper process so a Google page issue can't freeze the app.\n\nAlso fixes widget position resetting after an update and the tray menu's\nQuit item being clipped off-screen, and turns the widget show/hide row\ninto a toggle switch.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/584b89836aadc72c8243854ad406d9a6ea0aaa10",
-                    "committedDate": "2026-07-20T00:53:51Z"
-                  },
-                  {
-                    "message": "Share settings between debug and release builds\n\nRemove the per-build \"dev\" data subfolder so a dev run reads and keeps the same settings as\nthe installed app - options no longer appear to reset when switching between a dev build and\nthe installed one. Safe now that debug builds no longer clear settings on startup.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/54206c2b5cc126d4b5cb6960ed8d1f2674ce5173",
-                    "committedDate": "2026-07-19T04:01:44Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.3.1\n\nStatistics fixes:\n- History chart now plots points by real timestamp within a [now-range, now] window, so\n  24h / 7d / 30d render at their true time scale instead of the same stretched shape\n- Add a 30-day (1-month) history view\n- Fix \"NaN\" remaining time in the reset schedule when a bucket has no reset time yet\n  (formatCountdown returns \"-\" for a non-finite value)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/4fbf9e3099cebb4e119e6da5fca27e5352f08bbe",
-                    "committedDate": "2026-07-19T03:54:04Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.3.0\n\nFeatures:\n- Compact widget layout (donut charts), selectable in settings (detailed by default)\n- Subscription plan and a time axis in the statistics window\n- Per-window (session/weekly) usage-alert thresholds; settings grouped into cards\n- Widget visibility watchdog that recovers an off-screen widget\n\nFixes:\n- Settings/session no longer reset on update: atomic file writes, separate widget-position\n  file, corrupt-file backup+recovery, legacy-format migration\n- Widget no longer returns off-screen: minimized-sentinel guard and on-screen validation\n- Shortcut custom icon: install a standalone icon.ico and point the Start Menu and Desktop\n  shortcuts at it, and refresh the shell icon cache on install\n- Adversarial code-review fixes (widget-toggle event, notify per-bucket, subscription parse)\n\nAlso: remove the unused tray-window option and tauri-plugin-store, drop unused mobile/UWP\nicon assets, and fix lingering old-name strings.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/b82e4a61f67648e73941d4cf0d1e65b2035ae85e",
-                    "committedDate": "2026-07-18T19:20:30Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.2.2: group changelog by minor version\n\nGroup the changelog by minor version and parse two-part version headers in the\nwhat's-new window.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/8272e6a8b3e48aa6b115fa1e733e7661f679b96a",
-                    "committedDate": "2026-07-18T13:28:37Z"
-                  },
-                  {
-                    "message": "SessionMeter 0.2.1\n\nClaude usage tray, widget, and stats desktop app (Tauri v2, MIT).\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Session-Meter/commit/e0f0acae25eeb60346bf3a539d31ca1490075ed4",
-                    "committedDate": "2026-07-18T13:17:48Z"
-                  }
-                ],
-                "totalCount": 28
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 249729,
-                  "node": {
-                    "name": "Rust",
-                    "color": "#dea584"
-                  }
-                },
-                {
-                  "size": 129642,
-                  "node": {
-                    "name": "Svelte",
-                    "color": "#ff3e00"
-                  }
-                },
-                {
-                  "size": 45503,
-                  "node": {
-                    "name": "TypeScript",
-                    "color": "#3178c6"
-                  }
-                },
-                {
-                  "size": 3054,
-                  "node": {
-                    "name": "CSS",
-                    "color": "#663399"
-                  }
-                },
-                {
-                  "size": 2230,
-                  "node": {
-                    "name": "HTML",
-                    "color": "#e34c26"
-                  }
-                },
-                {
-                  "size": 1067,
-                  "node": {
-                    "name": "NSIS",
-                    "color": null
-                  }
-                },
-                {
-                  "size": 177,
-                  "node": {
-                    "name": "JavaScript",
-                    "color": "#f1e05a"
-                  }
-                }
-              ]
-            }
-          },
-          {
             "nameWithOwner": "soma0sd/soma0sd.github.io",
             "description": "GitHub Pages using GitHub GraphQL API",
             "createdAt": "2017-11-19T10:29:29Z",
-            "updatedAt": "2026-09-20T21:12:45Z",
-            "pushedAt": "2026-09-20T21:12:33Z",
+            "updatedAt": "2026-09-27T21:13:07Z",
+            "pushedAt": "2026-10-01T07:22:04Z",
             "url": "https://github.com/soma0sd/soma0sd.github.io",
             "homepageUrl": "https://soma0sd.github.io/",
             "isArchived": false,
@@ -239,6 +28,11 @@
             "object": {
               "history": {
                 "nodes": [
+                  {
+                    "message": "chore(data): refresh GitHub API data",
+                    "url": "https://github.com/soma0sd/soma0sd.github.io/commit/c7e1be463b110f5b58446c8e32ee7c98625f6b8f",
+                    "committedDate": "2026-09-27T21:13:01Z"
+                  },
                   {
                     "message": "chore(data): refresh GitHub API data",
                     "url": "https://github.com/soma0sd/soma0sd.github.io/commit/31c1de27116528d86fd8ff98762583620fe53ae5",
@@ -475,7 +269,7 @@
                     "committedDate": "2017-11-19T10:29:30Z"
                   }
                 ],
-                "totalCount": 47
+                "totalCount": 48
               }
             },
             "languages": {
@@ -513,6 +307,473 @@
                   "node": {
                     "name": "Ruby",
                     "color": "#701516"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/rpi-calendar-kiosk",
+            "description": "라즈베리파이 4 + Waveshare HDMI 패널용 키오스크. 구글 캘린더 일정·할 일을 D-Day 목록과 월간 달력으로 띄우고, Windows PC 의 CPU·GPU·드라이브 사용량을 육각 링으로 함께 표시합니다. (Rust 서버 + Chromium 키오스크)",
+            "createdAt": "2026-06-13T15:30:16Z",
+            "updatedAt": "2026-09-07T12:45:58Z",
+            "pushedAt": "2026-10-01T05:55:59Z",
+            "url": "https://github.com/soma0sd/rpi-calendar-kiosk",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "docs: MIT 라이선스 적용\n\n- 루트 LICENSE 추가 (MIT, Copyright (c) 2026 soma0sd)\n- pyproject.toml 에 PEP 639 라이선스 메타데이터 추가 (Cargo.toml 은 이미 MIT)\n- README·사용 설명서에 라이선스 절 추가\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/30b75b9d41e092f2388ff7de553338ce2452ae88",
+                    "committedDate": "2026-09-07T12:45:12Z"
+                  },
+                  {
+                    "message": "docs: 사용 설명서를 GitHub Pages 로 추가\n\n준비물·설치 순서·화면 조작·운영 명령·문제 해결·접근 범위를 사용자 관점으로 정리했습니다.\ndocs/ 를 Pages 소스로 쓰고 내부 회의록(docs/meetings)은 공개 문서에서 제외합니다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/5cb9960906827d364aa578a54d1269767e561a6d",
+                    "committedDate": "2026-09-07T07:00:33Z"
+                  },
+                  {
+                    "message": "fix: 셸 스크립트 CRLF 배포 실패 방지 + 미사용 import 제거\n\n- .gitattributes 로 *.sh, *.service, *.timer 를 LF 로 고정한다.\n  core.autocrlf=true 인 Windows 작업 트리에서는 이 파일들이 CRLF 로\n  체크아웃되는데, deploy.ps1 이 작업 트리를 그대로 scp 하므로 원격 bash 가\n  bootstrap_rust.sh 의 `set -euo pipefail` 을 `pipefail\\r` 로 읽고 배포가\n  중단됐다. setup_service.sh 도 같은 경로로 깨진다.\n- google.rs: tokio 의 OpenOptions 는 mode() 를 자체 제공하므로 std 의\n  OpenOptionsExt import 를 제거한다 (unix 빌드에서 unused_imports 경고).\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/cff0c01bcca23e34be46f2378b2b4145c7a3480e",
+                    "committedDate": "2026-09-06T13:40:48Z"
+                  },
+                  {
+                    "message": "feat: Rust 런타임 전환 + PC 시스템 모니터 + 보안 강화 (v0.4.0)\n\n운영 서버와 Windows 지표 송신기를 Rust 로 다시 작성하고, 키오스크 화면에 PC\n시스템 지표 표시를 추가한다. Python 구현은 최초 OAuth 인증과 로컬 회귀 검증용\n호환 계층으로 남긴다.\n\n기능\n- rust/: axum 기반 HTTP 서버(kiosk) + sysinfo 기반 지표 송신기(monitor)\n- web/: 육각링 시스템 모니터, 일정 상세 오버레이, 일정·달력 슬라이드 전환\n- 다중 장비 지표 수집 + 하단 버튼으로 순환 표시\n- monitor.py: Python 호환 계층의 지표 수집·푸시\n\n보안\n- 지표 푸시 인증을 공유 토큰 헤더에서 HMAC-SHA256 서명으로 전환.\n  X-Monitor-Timestamp + X-Monitor-Signature, 허용 시각 오차 120초.\n  평문 HTTP 스니핑만으로 토큰이 넘어가던 경로를 없앤다.\n- 루프백이 아닌 접속에는 POST /api/system 만 허용. 개인 일정·할일이 담긴\n  /api/state 와 UI 는 키오스크 본체 전용으로 제한.\n- Host 헤더가 도메인이면 400 으로 거절해 DNS 리바인딩 우회를 막는다.\n- bootstrap_rust.sh 를 curl | sh 에서 rustup-init 버전 고정 + SHA-256 대조\n  방식으로 교체.\n- 토큰 파일을 생성 시점부터 0600 으로 연다. 쓰고 나서 chmod 하던 노출 창 제거.\n- 배포 스테이징을 mktemp -d 와 난수 이름으로 바꾸고, 정리 실패는 경고가 아니라\n  오류로 중단한다.\n- 모니터 토큰을 작업 트리 밖에 설치하고 ACL 을 현재 계정으로 제한.\n- Google Tasks due 값의 바이트 슬라이싱 패닉, 비 ASCII 서명 헤더의 TypeError 제거.\n\n저장소 위생\n- 배포 대상 호스트·주소를 _ssh_config.ps1 이 환경 변수로 해석하도록 변경.\n  실제 별칭과 사설 IP 는 저장소에 두지 않는다.\n- 스크린샷을 더미 데이터로 재촬영하고 참조가 끊긴 이미지를 제거.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/e78f2bb565353c5f7dc8b3cefeb75480529a88d4",
+                    "committedDate": "2026-09-06T12:51:33Z"
+                  },
+                  {
+                    "message": "docs: 프로젝트 아카이빙 배너 및 회의록 관리 템플릿 추가",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/65b2ecac1b85692c1575f76d52c113c9cb939b55",
+                    "committedDate": "2026-09-06T12:51:33Z"
+                  },
+                  {
+                    "message": "chore(deps): refresh uv.lock for security advisories (#6)\n\nThree high-severity Dependabot alerts were open against uv.lock:\n\n- cryptography  -> 50.0.1  (needed >= 50.0.0)\n- httplib2      -> 0.32.0  (needed >= 0.32.0)\n- pyasn1        -> 0.6.4   (needed >= 0.6.4, three advisories)\n\nRan `uv lock --upgrade`; the rest of the churn is the transitive\ngoogle-api / protobuf stack moving with it. Declared ranges in\npyproject.toml are unchanged.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/18096c07050dd2c7fecc36ac2489c33724a0aa0b",
+                    "committedDate": "2026-09-04T13:51:20Z"
+                  },
+                  {
+                    "message": "Bump cryptography from 48.0.0 to 48.0.1 (#2)\n\nBumps [cryptography](https://github.com/pyca/cryptography) from 48.0.0 to 48.0.1.\n- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)\n- [Commits](https://github.com/pyca/cryptography/compare/48.0.0...48.0.1)\n\n---\nupdated-dependencies:\n- dependency-name: cryptography\n  dependency-version: 48.0.1\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/430737b9f4369735c8094cad26d284041f9f3037",
+                    "committedDate": "2026-07-16T16:31:14Z"
+                  },
+                  {
+                    "message": "Bump idna from 3.14 to 3.15 (#1)\n\nBumps [idna](https://github.com/kjd/idna) from 3.14 to 3.15.\n- [Release notes](https://github.com/kjd/idna/releases)\n- [Changelog](https://github.com/kjd/idna/blob/master/HISTORY.md)\n- [Commits](https://github.com/kjd/idna/compare/v3.14...v3.15)\n\n---\nupdated-dependencies:\n- dependency-name: idna\n  dependency-version: '3.15'\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/6fda156cd32cd79045707502ab34cb08f5d5d793",
+                    "committedDate": "2026-07-16T16:30:34Z"
+                  },
+                  {
+                    "message": "초기 커밋: rpi-calendar-kiosk — 라즈베리파이 구글 캘린더/할일 키오스크 (Python HTTP 서버 + chromium --kiosk)\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/fa8b872ea037e9a73b603fd084f9102a8c1bd3f3",
+                    "committedDate": "2026-06-13T15:22:22Z"
+                  }
+                ],
+                "totalCount": 9
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 102239,
+                  "node": {
+                    "name": "Python",
+                    "color": "#3572A5"
+                  }
+                },
+                {
+                  "size": 74581,
+                  "node": {
+                    "name": "Rust",
+                    "color": "#dea584"
+                  }
+                },
+                {
+                  "size": 31737,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
+                  }
+                },
+                {
+                  "size": 17212,
+                  "node": {
+                    "name": "PowerShell",
+                    "color": "#012456"
+                  }
+                },
+                {
+                  "size": 14419,
+                  "node": {
+                    "name": "CSS",
+                    "color": "#663399"
+                  }
+                },
+                {
+                  "size": 5711,
+                  "node": {
+                    "name": "Shell",
+                    "color": "#89e051"
+                  }
+                },
+                {
+                  "size": 3292,
+                  "node": {
+                    "name": "HTML",
+                    "color": "#e34c26"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/Tistory-Simple-Skin",
+            "description": null,
+            "createdAt": "2021-12-14T10:15:29Z",
+            "updatedAt": "2026-09-04T14:04:09Z",
+            "pushedAt": "2026-09-29T04:12:28Z",
+            "url": "https://github.com/soma0sd/Tistory-Simple-Skin",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "chore: stop tracking .env (#21)\n\n.env was committed to this public repository. The file is empty, so\nnothing leaked, but it was not listed in .gitignore - the next time it\nholds a Tistory token or any other credential it would be published\nalong with it.\n\nRemoved from the index (the working copy is untouched) and added to\n.gitignore next to tidory.config.js, which is ignored for the same\nreason.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/f08f43f05b6b092efbeccfa8548333eeb3de76f0",
+                    "committedDate": "2026-09-04T14:02:58Z"
+                  },
+                  {
+                    "message": "chore(deps): update toolchain and re-resolve package-lock (#20)\n\n`npm install` could not even resolve the tree: eslint was pinned at ^6.8.0\nwhile eslint-config-standard ^17 requires eslint ^8.0.1, so the lockfile had\nbeen frozen since 2022 with 100 open Dependabot alerts (7 critical, 46 high).\n\n- eslint 6 -> 8.57.1, the last release that still reads .eslintrc.yml, so\n  the existing config needs no rewrite.\n- eslint-plugin-node -> eslint-plugin-n 16 (the maintained successor, and\n  what eslint-config-standard 17 declares as a peer).\n- Drop eslint-loader (deprecated in favour of eslint-webpack-plugin) and\n  eslint-plugin-standard (folded into eslint-config-standard since 16).\n- typescript 4.6 -> 5.9, sass 1.51 -> 1.104, concurrently 7 -> 9,\n  autoprefixer, pug-lint and tidory to current.\n\nnpm audit: 79 -> 9 findings, 0 critical. The remainder are transitive\nthrough tidory 8.4.3 (copy-webpack-plugin, webpack-dev-server -> sockjs,\nexpress -> qs) and cannot be fixed from this repository.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/1622f9097727c7250e7785a857fa92c705e222b0",
+                    "committedDate": "2026-09-04T13:47:18Z"
+                  },
+                  {
+                    "message": "Bump shelljs from 0.8.4 to 0.8.5\n\nBumps [shelljs](https://github.com/shelljs/shelljs) from 0.8.4 to 0.8.5.\n- [Release notes](https://github.com/shelljs/shelljs/releases)\n- [Changelog](https://github.com/shelljs/shelljs/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/shelljs/shelljs/compare/v0.8.4...v0.8.5)\n\n---\nupdated-dependencies:\n- dependency-name: shelljs\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/bd72167e0cc7c5877bb3267c1040514dfe05aa99",
+                    "committedDate": "2022-05-16T01:39:43Z"
+                  },
+                  {
+                    "message": "change styles and tag page",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/932dd49af7325062f994c8ebbb526ed3b718baa7",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "mod) dev console",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/c2ba2f1f7a8dc7720747215f04a280fe43e56f5c",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "script update",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/5654532fd306a84aa9365d960901143039355d39",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "script update",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/02fa00f1cc5bdaaba0ad25c975899d6247cab9dc",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "change styles",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/3ce61214574b12b39d5c43c92ebfc111e493b481",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "change Structure",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/27659c2e69ad58c0e516db59c1cfb02554f3c1dc",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "add sass and typescript",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/0d2db192fd90ce6e1960d78719c6ffbb70b00d11",
+                    "committedDate": "2022-05-16T01:05:58Z"
+                  },
+                  {
+                    "message": "fix readme",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/01159f1859d43bca780c3bad2f2798fbfbc7738b",
+                    "committedDate": "2021-12-19T13:43:14Z"
+                  },
+                  {
+                    "message": "add new colorsets",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/0e7575997e5c87aaf30d3141661480375ea3de9c",
+                    "committedDate": "2021-12-19T13:26:39Z"
+                  },
+                  {
+                    "message": "comments add scripts",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/6d6ad042d24ebead598f8c3d5756f0091ab3d627",
+                    "committedDate": "2021-12-19T13:26:39Z"
+                  },
+                  {
+                    "message": "git flow fix",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/3e4f0efed0e8a56fea98ec16e5b67a4c981fe408",
+                    "committedDate": "2021-12-19T13:26:39Z"
+                  },
+                  {
+                    "message": "Merge pull request #1 from soma0sd/v1.0\n\nv1.0 version init",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/99945349b77cc39a6d4a99b0ceb0c0a68540268e",
+                    "committedDate": "2021-12-15T13:11:16Z"
+                  },
+                  {
+                    "message": "do not linting",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/bb0ac3d26f544daa9342ebebbd06094601b49c22",
+                    "committedDate": "2021-12-15T13:09:56Z"
+                  },
+                  {
+                    "message": "version init",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/f185d0bc758067dd840f4d21769019f901582032",
+                    "committedDate": "2021-12-15T13:05:29Z"
+                  },
+                  {
+                    "message": "Initial commit",
+                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/ab5a7b2ec56772dcbd56d090275c291aa6fa78ec",
+                    "committedDate": "2021-12-14T10:15:32Z"
+                  }
+                ],
+                "totalCount": 18
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 10342,
+                  "node": {
+                    "name": "Pug",
+                    "color": "#a86454"
+                  }
+                },
+                {
+                  "size": 7932,
+                  "node": {
+                    "name": "SCSS",
+                    "color": "#c6538c"
+                  }
+                },
+                {
+                  "size": 5560,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
+                  }
+                },
+                {
+                  "size": 3595,
+                  "node": {
+                    "name": "TypeScript",
+                    "color": "#3178c6"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nameWithOwner": "soma0sd/Session-Meter",
+            "description": "Claude·Codex·Gemini·Antigravity IDE 구독 사용량을 트레이 아이콘·데스크톱 위젯·통계 창으로 한눈에 보여 주는 Windows 데스크톱 앱. 5시간·주간 한도와 초기화까지 남은 시간, 소진 예측, 임계치 알림을 제공합니다. (Tauri v2 + Svelte)",
+            "createdAt": "2026-07-18T13:18:06Z",
+            "updatedAt": "2026-09-21T02:42:32Z",
+            "pushedAt": "2026-09-21T02:42:33Z",
+            "url": "https://github.com/soma0sd/Session-Meter",
+            "homepageUrl": null,
+            "isArchived": false,
+            "isPrivate": false,
+            "object": {
+              "history": {
+                "nodes": [
+                  {
+                    "message": "feat: dock widgets in one window and surface them in the taskbar in v1.3.0 (#10)\n\n- Redesign widget docking: docked services render as CSS grid cells of a single\n  runtime window (widget-dock) instead of per-service windows snapped together.\n  Drop the multi-window layout engine and size unification (widget_size.rs and\n  the dock_move_to / set_widget_*_size / set_widget_menu_open IPC).\n- Give the docked window its own opacity, always-on-top and move-lock settings\n  (Placement tab and widget header) and disable the per-service window controls\n  for docked members.\n- Show a widget window in the taskbar and Alt+Tab whenever always-on-top is off\n  (set_skip_taskbar follows always_on_top) and apply the saved layering when a\n  window is shown, which also fixes the Claude widget ignoring it at startup.\n- Clamp widget windows to the monitor work area (taskbar excluded) and re-clamp\n  right after a content-driven resize.\n- Compact styles render the Antigravity model-group switch as icon buttons under\n  the percentage readout; detailed styles keep the labelled row.\n- Bump the version to 1.3.0 and update the changelog, README and docs site.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/a42c2f8939f524e909906f44ba02cc5dfb01d96e",
+                    "committedDate": "2026-09-21T02:42:27Z"
+                  },
+                  {
+                    "message": "feat: switch Antigravity model groups from the widget in v1.2.0 (#9)\n\nAntigravity reports quota for two model groups - Gemini and Claude/GPT - but the\nonly way to choose which pair the widget headline showed was the Widget Style\nwindow. The widget now carries a two-segment switch below its readout, reusing\nthe existing `headline_group` setting so the widget and the Style window stay in\nsync in both directions. History and the tray stay pinned to the Gemini group,\npreserving the invariant that one history series never mixes two quota groups.\n\nWith the switch naming the group, the widget's readout no longer repeats it and\nsimply reads \"5-hour\" and \"Weekly\". The stats window and notifications keep the\nfull names, where both groups appear side by side.\n\nDocked widgets now also match each other in size: with grid docking on, every\ndocked widget grows to the largest natural panel among them. Widgets report a\nnatural size measured with that minimum lifted, so the maximum can fall again\nwhen the widest widget is hidden rather than becoming a floor.\n\nTwo adjacent fixes: the `3p-5h` bucket was judged against the weekly alert\nthreshold because Antigravity's `primary_key` is pinned to the Gemini group, and\ndesktop notifications were the one place Antigravity's quota names still showed\nuntranslated.\n\nVerified against real accounts in the dev build (three docked widgets identical\nat 215x201 physical, switch correct in the compact style), with a security\nreview finding no HIGH or MEDIUM issues.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/bd53248fa574b0bad0db957f83961dfb45816bab",
+                    "committedDate": "2026-09-15T04:39:14Z"
+                  },
+                  {
+                    "message": "chore: build release notes from the changelog and refresh the security policy (#8)\n\nThe release workflow published a fixed \"See the changelog for details.\" body.\nExtract the tag's section from CHANGELOG.md and CHANGELOG.en.md instead and\ncompose the release body from both, falling back to the old line for a manual\nrun or a version with no changelog section.\n\nSECURITY.md still described the single-service Claude app: widen the scope and\nthreat model to the four monitored services and document the per-service\nsession files (Antigravity IDE stores no credential at all).\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/1535bcfca6e3ff91ea727f5cd586085bd1b0176a",
+                    "committedDate": "2026-08-26T04:43:45Z"
+                  },
+                  {
+                    "message": "feat: track the Codex 5-hour session window in v1.1.0 (#7)\n\nChatGPT reports the Codex 5-hour session limit again. Parse both windows by\ntheir declared duration and make the session window the headline one, with the\nweekly quota as the secondary window. Plans without a session window (Pro) keep\nthe weekly quota as their headline, so nothing regresses there.\n\nExisting Codex history stored the weekly quota in the primary slot; migrate\nthose points to the secondary series the first time a session window is seen so\nthe weekly trend stays a single continuous series.\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/38e4ff91b3e602607ef2bdfa70c3d4552254c52d",
+                    "committedDate": "2026-08-26T04:04:34Z"
+                  },
+                  {
+                    "message": "fix: anchor the widget kebab menu and dock Codex in v1.0.3 (#6)\n\nThe compact widget's more-menu popover was positioned against the window\ninstead of the panel (`.panel` was `position: static`), so the transparent\ntop inset added for an upward menu moved the panel and left the popover\nbehind: everything but its last \"Settings\" row was clipped off the top of\nthe window and the usage body went with it. Anchor it to the panel, open it\njust outside the panel edge in either direction, and widen the window to its\nlabels so nothing is cut off. A docked widget showing a popover is now left\nin place by `apply_layout` instead of being snapped back mid-popover.\n\nA service signed into while the app was already running only ever reached\n`reconcile_widget_visibility`, which never offered it to the dock, so the\nCodex widget stayed outside the docked group until the next restart. Offer\nmembership there too and broadcast the resulting settings, and list any\nlogged-in service missing from the saved order in the Placement tab.\n\nCompact countdowns now show `D:HH:MM` past 24 hours, so Codex's weekly\nwindow reads `6:19:53` instead of `163:53`.\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/655939ecac0fcfa9019039895419dabf6d11e081",
+                    "committedDate": "2026-08-20T10:29:16Z"
+                  },
+                  {
+                    "message": "fix: complete Codex login in v1.0.2\n\nCodex 로그인 완료·창 종료·세션 경합 수정과 문서 갱신",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/fcd503db4e36d1f86f744338f6842846b0e097b8",
+                    "committedDate": "2026-08-20T09:59:43Z"
+                  },
+                  {
+                    "message": "Merge pull request #4 from soma0sd/codex/1.0.1-codex-login-fix\n\nfix: isolate Codex login in v1.0.1",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/c96f4b1ae790be156ff73c82da2b04dd5c06dc06",
+                    "committedDate": "2026-08-20T08:36:00Z"
+                  },
+                  {
+                    "message": "fix: isolate Codex login in v1.0.1",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/6188cf8b86ecb0d2777d31b1b158b9db795c5ce1",
+                    "committedDate": "2026-08-20T08:34:01Z"
+                  },
+                  {
+                    "message": "Merge pull request #3 from soma0sd/codex/1.0.0-codex-pages\n\nfeat: release 1.0.0 with Codex weekly quota",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/1850840609621240a74c2a7ef89bfdce96461fd8",
+                    "committedDate": "2026-08-20T07:45:25Z"
+                  },
+                  {
+                    "message": "feat: release 1.0.0 with Codex weekly quota",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/78309232458c75543b01f2e223726e9cbd1a510c",
+                    "committedDate": "2026-08-20T07:44:20Z"
+                  },
+                  {
+                    "message": "docs: cover Antigravity IDE in the user guide, link it from README (#2)\n\n* chore: track .claudeignore for Claude Code context scoping\n\nExcludes build output, lockfiles, and binary assets from Claude's\nfile-reading context (separate from .gitignore, which controls what\ngets committed).\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n* docs: cover Antigravity IDE throughout the user guide\n\nThe guide predated the Antigravity IDE integration and only mentioned\nClaude/Gemini. Brings it up to date and adds illustrative mockups\n(hand-drawn HTML/CSS placeholders, not real screenshots or captured\naccount data) for sections that were text-only:\n\n- Title, header, intro, and license text now cover all 3 services;\n  intro warn box distinguishes Antigravity's local-loopback access\n  from Claude/Gemini's web session scraping\n- New \"Antigravity IDE\" subsection under 서비스 로그인 (no login,\n  detected via running IDE), with a settings-account mockup\n- Tray icon color table gets swatches; tray right-click menu gets a\n  mockup\n- New \"위젯 그리드 도킹\" (widget grid docking, v0.5) subsection with\n  a 3-service docking mockup\n- 통계 창 (stats window) gets its first mockup - tabs, trend chart,\n  exhaustion prediction\n- 설정 (settings) gets a general/update panel mockup; account bullet\n  now explains Antigravity's running-status-only display\n- 문제 해결 gets an Antigravity connectivity bullet\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n* docs: link the published GitHub Pages user guide from README\n\nThe docs/ section only linked the in-repo folder even though it's\nbeen live on GitHub Pages. Adds the actual https://soma0sd.github.io/Session-Meter/\nlink, verified reachable (200) before committing.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/6dfee45a780853e5be8aee334d1468233cd32c75",
+                    "committedDate": "2026-08-14T10:02:42Z"
+                  },
+                  {
+                    "message": "Bump postcss from 8.5.19 to 8.5.26 (#1)\n\nBumps [postcss](https://github.com/postcss/postcss) from 8.5.19 to 8.5.26.\n- [Release notes](https://github.com/postcss/postcss/releases)\n- [Changelog](https://github.com/postcss/postcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/postcss/postcss/compare/8.5.19...8.5.26)\n\n---\nupdated-dependencies:\n- dependency-name: postcss\n  dependency-version: 8.5.26\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/7a302905ad0c40f4ff1dbcce65beebe84e82b2c5",
+                    "committedDate": "2026-08-14T08:50:33Z"
+                  },
+                  {
+                    "message": "docs: add Antigravity IDE monitoring details to README",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/5a79aa928ece6ca05d54fa743fcbc775384e39a5",
+                    "committedDate": "2026-07-23T10:57:07Z"
+                  },
+                  {
+                    "message": "release: v0.5.1 - Simplify tray popup & add automatic widget screen clamping",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/32288e94bcc1050821d3eb54c6a565ab36b1992f",
+                    "committedDate": "2026-07-23T10:40:38Z"
+                  },
+                  {
+                    "message": "Clean up CHANGELOG 0.5 wording\n\nRemove em dashes (project-wide style rule) and clarify that Antigravity\nmonitoring starts automatically, with no manual action needed.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/2d375927caa55f510a3cead2eb7bb84035e36334",
+                    "committedDate": "2026-07-22T22:56:55Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.5.0\n\nAdd widget grid docking:\n- New \"Placement\" tab in the Widget Style window: dock widgets into a grid (configurable\n  column count), drag-and-drop to reorder the group, and drag any docked widget to move the\n  whole group together\n- Docked widgets recover automatically if minimized, and re-flow around hidden/shown members\n\nAdd Antigravity IDE quota widget (new third monitored service):\n- Tracks Antigravity IDE's (Windsurf/Codeium-based) local coding quota via its\n  language_server process - no login required, fully automatic detection (mirrors how the\n  Claude widget behaves before sign-in)\n- Shows both the Gemini model group and the Claude/GPT model group (5-hour + weekly each),\n  with a toggle for which one headlines the widget/tray\n  - Settings' account list shows a monitoring status badge (running/not running) plus\n  best-effort account identity instead of a sign-in/out control\n\nFixes found during testing:\n- Group-drag pointer capture race that could lose mouse tracking and miss the end of a drag\n- Group-drag stutter from writing the dock anchor to disk on every drag frame\n- Placement tab's drag-and-drop reorder not working (Tauri's native file drag-drop handling\n  was intercepting the page's own HTML5 drag events)\n- A widget's icon row getting stuck unable to collapse into the kebab menu (a CSS flex\n  stretch feedback loop, not a timing issue)\n- A widget occasionally showing its default style instead of the saved one right after\n  launch (the static Claude window's webview can start before Rust finishes loading settings)\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/f546d39dcee0547b75aafb7ab89d80fd4e85eb76",
+                    "committedDate": "2026-07-22T22:54:37Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.4.5\n\nFix the what's-new window only showing versions up to 0.3:\n- The news window fetches the changelog from GitHub and falls back to a bundled copy when\n  that fails; the fallback was a hand-maintained src/lib/changelog.ts that had gone stale\n  (only up to 0.3), so a fetch failure showed an outdated list\n- Bundle the actual CHANGELOG.md / CHANGELOG.en.md at build time via ?raw so the fallback\n  always matches the shipped version; remove the hand-maintained changelog.ts\n- Join wrapped continuation lines when parsing so multi-line entries are not truncated\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/5f31bf1e5b428cfe6f4afaed33934258f8cc9836",
+                    "committedDate": "2026-07-22T08:10:01Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.4.4\n\nFix the widget style resetting to default after an update:\n- set_settings replaced the whole per-service widgets map with the frontend payload,\n  which is the only place widget config is written wholesale from the UI\n- The Settings window starts from an empty widgets map and fills it via an async\n  getSettings(); when it saved before that resolved (e.g. as windows are re-created\n  during the update relaunch), the empty map wiped the user's widget styles\n- set_settings now merges: services present in the payload win, services absent keep\n  their stored widget config, so an empty/partial map can no longer wipe styles\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/a802bb4071dd2927eac7e96187bb1cc89b42f737",
+                    "committedDate": "2026-07-22T07:52:53Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.4.3\n\nFix the app reverting to an older version after an update followed by a reboot:\n- tauri-plugin-autostart records the launch path from current_exe() when\n  autostart is first enabled and never revalidates it; a stale path (observed:\n  autostart enabled while an earlier build ran under a virtualized/sandboxed exe\n  path) keeps launching the old binary on boot even after the real install updates\n- On startup, if autostart is enabled, re-register it against the current exe\n  (release-only) so the stored Run-key path self-heals to the real install path\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/321c4f4208b2365e0ba63e250de0022a4ca51af5",
+                    "committedDate": "2026-07-22T06:51:09Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.4.2\n\nFix settings (widget style, refresh interval) resetting after an update:\n- Persist a migrated pre-0.4 settings file to the current format on load, instead of\n  re-deriving the widget config from the legacy flat fields on every launch\n- Re-read the latest settings when the settings/widget-style windows gain focus, so a change\n  in one window can't be reverted by a stale save in another\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/653416bf36c5a709167b222834fb61a5b44a636e",
+                    "committedDate": "2026-07-20T09:38:09Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.4.1\n\n- Move widget show/hide from the tray menu to the Widget Style window (per-service toggle)\n- Compact widget styles show remaining time as a clock (H:MM / M:SS)\n- Check for updates on startup and every 10 minutes\n- Rename the Antigravity service to Gemini, migrating existing session/settings/history/position\n- Settings account list shows account + subscription; Gemini email captured best-effort\n- Fix the statistics window not showing other services' tabs\n- Publish releases as a tagged prerelease so the updater URL stays reachable\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/f7ae669b0e917d6cbea6f1589ad864387a306366",
+                    "committedDate": "2026-07-20T08:13:11Z"
+                  },
+                  {
+                    "message": "docs: rewrite user manual for 0.4.0 with in-engine widget style renders\n\nUpdate the GitHub Pages manual for multi-service (Claude + Antigravity),\nper-service widgets, the widget style window, statistics tabs, and the tray\nmenu changes. The widget style gallery now embeds the app's own widget\ncomponents rendered to self-contained HTML (computed styles inlined) instead\nof screenshots, so the 10 styles stay crisp at any zoom. Drop the orphaned\nscreenshot assets.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/3395ddbbf5697dca232e48b0602206881dd30abd",
+                    "committedDate": "2026-07-20T03:06:24Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.4.0\n\nMulti-service usage monitoring: Antigravity (Gemini subscription) joins\nClaude, with per-service widgets, statistics tabs, and a new Widget style\nwindow (10 styles across 5 concepts). Antigravity sign-in runs in an\nisolated helper process so a Google page issue can't freeze the app.\n\nAlso fixes widget position resetting after an update and the tray menu's\nQuit item being clipped off-screen, and turns the widget show/hide row\ninto a toggle switch.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/584b89836aadc72c8243854ad406d9a6ea0aaa10",
+                    "committedDate": "2026-07-20T00:53:51Z"
+                  },
+                  {
+                    "message": "Share settings between debug and release builds\n\nRemove the per-build \"dev\" data subfolder so a dev run reads and keeps the same settings as\nthe installed app - options no longer appear to reset when switching between a dev build and\nthe installed one. Safe now that debug builds no longer clear settings on startup.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/54206c2b5cc126d4b5cb6960ed8d1f2674ce5173",
+                    "committedDate": "2026-07-19T04:01:44Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.3.1\n\nStatistics fixes:\n- History chart now plots points by real timestamp within a [now-range, now] window, so\n  24h / 7d / 30d render at their true time scale instead of the same stretched shape\n- Add a 30-day (1-month) history view\n- Fix \"NaN\" remaining time in the reset schedule when a bucket has no reset time yet\n  (formatCountdown returns \"-\" for a non-finite value)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/4fbf9e3099cebb4e119e6da5fca27e5352f08bbe",
+                    "committedDate": "2026-07-19T03:54:04Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.3.0\n\nFeatures:\n- Compact widget layout (donut charts), selectable in settings (detailed by default)\n- Subscription plan and a time axis in the statistics window\n- Per-window (session/weekly) usage-alert thresholds; settings grouped into cards\n- Widget visibility watchdog that recovers an off-screen widget\n\nFixes:\n- Settings/session no longer reset on update: atomic file writes, separate widget-position\n  file, corrupt-file backup+recovery, legacy-format migration\n- Widget no longer returns off-screen: minimized-sentinel guard and on-screen validation\n- Shortcut custom icon: install a standalone icon.ico and point the Start Menu and Desktop\n  shortcuts at it, and refresh the shell icon cache on install\n- Adversarial code-review fixes (widget-toggle event, notify per-bucket, subscription parse)\n\nAlso: remove the unused tray-window option and tauri-plugin-store, drop unused mobile/UWP\nicon assets, and fix lingering old-name strings.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/b82e4a61f67648e73941d4cf0d1e65b2035ae85e",
+                    "committedDate": "2026-07-18T19:20:30Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.2.2: group changelog by minor version\n\nGroup the changelog by minor version and parse two-part version headers in the\nwhat's-new window.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/8272e6a8b3e48aa6b115fa1e733e7661f679b96a",
+                    "committedDate": "2026-07-18T13:28:37Z"
+                  },
+                  {
+                    "message": "SessionMeter 0.2.1\n\nClaude usage tray, widget, and stats desktop app (Tauri v2, MIT).\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+                    "url": "https://github.com/soma0sd/Session-Meter/commit/e0f0acae25eeb60346bf3a539d31ca1490075ed4",
+                    "committedDate": "2026-07-18T13:17:48Z"
+                  }
+                ],
+                "totalCount": 28
+              }
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 249729,
+                  "node": {
+                    "name": "Rust",
+                    "color": "#dea584"
+                  }
+                },
+                {
+                  "size": 129642,
+                  "node": {
+                    "name": "Svelte",
+                    "color": "#ff3e00"
+                  }
+                },
+                {
+                  "size": 45503,
+                  "node": {
+                    "name": "TypeScript",
+                    "color": "#3178c6"
+                  }
+                },
+                {
+                  "size": 3054,
+                  "node": {
+                    "name": "CSS",
+                    "color": "#663399"
+                  }
+                },
+                {
+                  "size": 2230,
+                  "node": {
+                    "name": "HTML",
+                    "color": "#e34c26"
+                  }
+                },
+                {
+                  "size": 1067,
+                  "node": {
+                    "name": "NSIS",
+                    "color": null
+                  }
+                },
+                {
+                  "size": 177,
+                  "node": {
+                    "name": "JavaScript",
+                    "color": "#f1e05a"
                   }
                 }
               ]
@@ -626,122 +887,6 @@
                   "node": {
                     "name": "JavaScript",
                     "color": "#f1e05a"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/rpi-calendar-kiosk",
-            "description": "라즈베리파이 4 + Waveshare HDMI 패널용 키오스크. 구글 캘린더 일정·할 일을 D-Day 목록과 월간 달력으로 띄우고, Windows PC 의 CPU·GPU·드라이브 사용량을 육각 링으로 함께 표시합니다. (Rust 서버 + Chromium 키오스크)",
-            "createdAt": "2026-06-13T15:30:16Z",
-            "updatedAt": "2026-09-07T12:45:58Z",
-            "pushedAt": "2026-09-07T12:45:41Z",
-            "url": "https://github.com/soma0sd/rpi-calendar-kiosk",
-            "homepageUrl": null,
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "docs: MIT 라이선스 적용\n\n- 루트 LICENSE 추가 (MIT, Copyright (c) 2026 soma0sd)\n- pyproject.toml 에 PEP 639 라이선스 메타데이터 추가 (Cargo.toml 은 이미 MIT)\n- README·사용 설명서에 라이선스 절 추가\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/30b75b9d41e092f2388ff7de553338ce2452ae88",
-                    "committedDate": "2026-09-07T12:45:12Z"
-                  },
-                  {
-                    "message": "docs: 사용 설명서를 GitHub Pages 로 추가\n\n준비물·설치 순서·화면 조작·운영 명령·문제 해결·접근 범위를 사용자 관점으로 정리했습니다.\ndocs/ 를 Pages 소스로 쓰고 내부 회의록(docs/meetings)은 공개 문서에서 제외합니다.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/5cb9960906827d364aa578a54d1269767e561a6d",
-                    "committedDate": "2026-09-07T07:00:33Z"
-                  },
-                  {
-                    "message": "fix: 셸 스크립트 CRLF 배포 실패 방지 + 미사용 import 제거\n\n- .gitattributes 로 *.sh, *.service, *.timer 를 LF 로 고정한다.\n  core.autocrlf=true 인 Windows 작업 트리에서는 이 파일들이 CRLF 로\n  체크아웃되는데, deploy.ps1 이 작업 트리를 그대로 scp 하므로 원격 bash 가\n  bootstrap_rust.sh 의 `set -euo pipefail` 을 `pipefail\\r` 로 읽고 배포가\n  중단됐다. setup_service.sh 도 같은 경로로 깨진다.\n- google.rs: tokio 의 OpenOptions 는 mode() 를 자체 제공하므로 std 의\n  OpenOptionsExt import 를 제거한다 (unix 빌드에서 unused_imports 경고).\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/cff0c01bcca23e34be46f2378b2b4145c7a3480e",
-                    "committedDate": "2026-09-06T13:40:48Z"
-                  },
-                  {
-                    "message": "feat: Rust 런타임 전환 + PC 시스템 모니터 + 보안 강화 (v0.4.0)\n\n운영 서버와 Windows 지표 송신기를 Rust 로 다시 작성하고, 키오스크 화면에 PC\n시스템 지표 표시를 추가한다. Python 구현은 최초 OAuth 인증과 로컬 회귀 검증용\n호환 계층으로 남긴다.\n\n기능\n- rust/: axum 기반 HTTP 서버(kiosk) + sysinfo 기반 지표 송신기(monitor)\n- web/: 육각링 시스템 모니터, 일정 상세 오버레이, 일정·달력 슬라이드 전환\n- 다중 장비 지표 수집 + 하단 버튼으로 순환 표시\n- monitor.py: Python 호환 계층의 지표 수집·푸시\n\n보안\n- 지표 푸시 인증을 공유 토큰 헤더에서 HMAC-SHA256 서명으로 전환.\n  X-Monitor-Timestamp + X-Monitor-Signature, 허용 시각 오차 120초.\n  평문 HTTP 스니핑만으로 토큰이 넘어가던 경로를 없앤다.\n- 루프백이 아닌 접속에는 POST /api/system 만 허용. 개인 일정·할일이 담긴\n  /api/state 와 UI 는 키오스크 본체 전용으로 제한.\n- Host 헤더가 도메인이면 400 으로 거절해 DNS 리바인딩 우회를 막는다.\n- bootstrap_rust.sh 를 curl | sh 에서 rustup-init 버전 고정 + SHA-256 대조\n  방식으로 교체.\n- 토큰 파일을 생성 시점부터 0600 으로 연다. 쓰고 나서 chmod 하던 노출 창 제거.\n- 배포 스테이징을 mktemp -d 와 난수 이름으로 바꾸고, 정리 실패는 경고가 아니라\n  오류로 중단한다.\n- 모니터 토큰을 작업 트리 밖에 설치하고 ACL 을 현재 계정으로 제한.\n- Google Tasks due 값의 바이트 슬라이싱 패닉, 비 ASCII 서명 헤더의 TypeError 제거.\n\n저장소 위생\n- 배포 대상 호스트·주소를 _ssh_config.ps1 이 환경 변수로 해석하도록 변경.\n  실제 별칭과 사설 IP 는 저장소에 두지 않는다.\n- 스크린샷을 더미 데이터로 재촬영하고 참조가 끊긴 이미지를 제거.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/e78f2bb565353c5f7dc8b3cefeb75480529a88d4",
-                    "committedDate": "2026-09-06T12:51:33Z"
-                  },
-                  {
-                    "message": "docs: 프로젝트 아카이빙 배너 및 회의록 관리 템플릿 추가",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/65b2ecac1b85692c1575f76d52c113c9cb939b55",
-                    "committedDate": "2026-09-06T12:51:33Z"
-                  },
-                  {
-                    "message": "chore(deps): refresh uv.lock for security advisories (#6)\n\nThree high-severity Dependabot alerts were open against uv.lock:\n\n- cryptography  -> 50.0.1  (needed >= 50.0.0)\n- httplib2      -> 0.32.0  (needed >= 0.32.0)\n- pyasn1        -> 0.6.4   (needed >= 0.6.4, three advisories)\n\nRan `uv lock --upgrade`; the rest of the churn is the transitive\ngoogle-api / protobuf stack moving with it. Declared ranges in\npyproject.toml are unchanged.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/18096c07050dd2c7fecc36ac2489c33724a0aa0b",
-                    "committedDate": "2026-09-04T13:51:20Z"
-                  },
-                  {
-                    "message": "Bump cryptography from 48.0.0 to 48.0.1 (#2)\n\nBumps [cryptography](https://github.com/pyca/cryptography) from 48.0.0 to 48.0.1.\n- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)\n- [Commits](https://github.com/pyca/cryptography/compare/48.0.0...48.0.1)\n\n---\nupdated-dependencies:\n- dependency-name: cryptography\n  dependency-version: 48.0.1\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/430737b9f4369735c8094cad26d284041f9f3037",
-                    "committedDate": "2026-07-16T16:31:14Z"
-                  },
-                  {
-                    "message": "Bump idna from 3.14 to 3.15 (#1)\n\nBumps [idna](https://github.com/kjd/idna) from 3.14 to 3.15.\n- [Release notes](https://github.com/kjd/idna/releases)\n- [Changelog](https://github.com/kjd/idna/blob/master/HISTORY.md)\n- [Commits](https://github.com/kjd/idna/compare/v3.14...v3.15)\n\n---\nupdated-dependencies:\n- dependency-name: idna\n  dependency-version: '3.15'\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/6fda156cd32cd79045707502ab34cb08f5d5d793",
-                    "committedDate": "2026-07-16T16:30:34Z"
-                  },
-                  {
-                    "message": "초기 커밋: rpi-calendar-kiosk — 라즈베리파이 구글 캘린더/할일 키오스크 (Python HTTP 서버 + chromium --kiosk)\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/rpi-calendar-kiosk/commit/fa8b872ea037e9a73b603fd084f9102a8c1bd3f3",
-                    "committedDate": "2026-06-13T15:22:22Z"
-                  }
-                ],
-                "totalCount": 9
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 102239,
-                  "node": {
-                    "name": "Python",
-                    "color": "#3572A5"
-                  }
-                },
-                {
-                  "size": 74581,
-                  "node": {
-                    "name": "Rust",
-                    "color": "#dea584"
-                  }
-                },
-                {
-                  "size": 31737,
-                  "node": {
-                    "name": "JavaScript",
-                    "color": "#f1e05a"
-                  }
-                },
-                {
-                  "size": 17212,
-                  "node": {
-                    "name": "PowerShell",
-                    "color": "#012456"
-                  }
-                },
-                {
-                  "size": 14419,
-                  "node": {
-                    "name": "CSS",
-                    "color": "#663399"
-                  }
-                },
-                {
-                  "size": 5711,
-                  "node": {
-                    "name": "Shell",
-                    "color": "#89e051"
-                  }
-                },
-                {
-                  "size": 3292,
-                  "node": {
-                    "name": "HTML",
-                    "color": "#e34c26"
                   }
                 }
               ]
@@ -1023,146 +1168,6 @@
                   "node": {
                     "name": "CSS",
                     "color": "#663399"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "nameWithOwner": "soma0sd/Tistory-Simple-Skin",
-            "description": null,
-            "createdAt": "2021-12-14T10:15:29Z",
-            "updatedAt": "2026-09-04T14:04:09Z",
-            "pushedAt": "2026-09-04T14:34:10Z",
-            "url": "https://github.com/soma0sd/Tistory-Simple-Skin",
-            "homepageUrl": null,
-            "isArchived": false,
-            "isPrivate": false,
-            "object": {
-              "history": {
-                "nodes": [
-                  {
-                    "message": "chore: stop tracking .env (#21)\n\n.env was committed to this public repository. The file is empty, so\nnothing leaked, but it was not listed in .gitignore - the next time it\nholds a Tistory token or any other credential it would be published\nalong with it.\n\nRemoved from the index (the working copy is untouched) and added to\n.gitignore next to tidory.config.js, which is ignored for the same\nreason.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/f08f43f05b6b092efbeccfa8548333eeb3de76f0",
-                    "committedDate": "2026-09-04T14:02:58Z"
-                  },
-                  {
-                    "message": "chore(deps): update toolchain and re-resolve package-lock (#20)\n\n`npm install` could not even resolve the tree: eslint was pinned at ^6.8.0\nwhile eslint-config-standard ^17 requires eslint ^8.0.1, so the lockfile had\nbeen frozen since 2022 with 100 open Dependabot alerts (7 critical, 46 high).\n\n- eslint 6 -> 8.57.1, the last release that still reads .eslintrc.yml, so\n  the existing config needs no rewrite.\n- eslint-plugin-node -> eslint-plugin-n 16 (the maintained successor, and\n  what eslint-config-standard 17 declares as a peer).\n- Drop eslint-loader (deprecated in favour of eslint-webpack-plugin) and\n  eslint-plugin-standard (folded into eslint-config-standard since 16).\n- typescript 4.6 -> 5.9, sass 1.51 -> 1.104, concurrently 7 -> 9,\n  autoprefixer, pug-lint and tidory to current.\n\nnpm audit: 79 -> 9 findings, 0 critical. The remainder are transitive\nthrough tidory 8.4.3 (copy-webpack-plugin, webpack-dev-server -> sockjs,\nexpress -> qs) and cannot be fixed from this repository.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/1622f9097727c7250e7785a857fa92c705e222b0",
-                    "committedDate": "2026-09-04T13:47:18Z"
-                  },
-                  {
-                    "message": "Bump shelljs from 0.8.4 to 0.8.5\n\nBumps [shelljs](https://github.com/shelljs/shelljs) from 0.8.4 to 0.8.5.\n- [Release notes](https://github.com/shelljs/shelljs/releases)\n- [Changelog](https://github.com/shelljs/shelljs/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/shelljs/shelljs/compare/v0.8.4...v0.8.5)\n\n---\nupdated-dependencies:\n- dependency-name: shelljs\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/bd72167e0cc7c5877bb3267c1040514dfe05aa99",
-                    "committedDate": "2022-05-16T01:39:43Z"
-                  },
-                  {
-                    "message": "change styles and tag page",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/932dd49af7325062f994c8ebbb526ed3b718baa7",
-                    "committedDate": "2022-05-16T01:05:58Z"
-                  },
-                  {
-                    "message": "mod) dev console",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/c2ba2f1f7a8dc7720747215f04a280fe43e56f5c",
-                    "committedDate": "2022-05-16T01:05:58Z"
-                  },
-                  {
-                    "message": "script update",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/5654532fd306a84aa9365d960901143039355d39",
-                    "committedDate": "2022-05-16T01:05:58Z"
-                  },
-                  {
-                    "message": "script update",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/02fa00f1cc5bdaaba0ad25c975899d6247cab9dc",
-                    "committedDate": "2022-05-16T01:05:58Z"
-                  },
-                  {
-                    "message": "change styles",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/3ce61214574b12b39d5c43c92ebfc111e493b481",
-                    "committedDate": "2022-05-16T01:05:58Z"
-                  },
-                  {
-                    "message": "change Structure",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/27659c2e69ad58c0e516db59c1cfb02554f3c1dc",
-                    "committedDate": "2022-05-16T01:05:58Z"
-                  },
-                  {
-                    "message": "add sass and typescript",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/0d2db192fd90ce6e1960d78719c6ffbb70b00d11",
-                    "committedDate": "2022-05-16T01:05:58Z"
-                  },
-                  {
-                    "message": "fix readme",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/01159f1859d43bca780c3bad2f2798fbfbc7738b",
-                    "committedDate": "2021-12-19T13:43:14Z"
-                  },
-                  {
-                    "message": "add new colorsets",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/0e7575997e5c87aaf30d3141661480375ea3de9c",
-                    "committedDate": "2021-12-19T13:26:39Z"
-                  },
-                  {
-                    "message": "comments add scripts",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/6d6ad042d24ebead598f8c3d5756f0091ab3d627",
-                    "committedDate": "2021-12-19T13:26:39Z"
-                  },
-                  {
-                    "message": "git flow fix",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/3e4f0efed0e8a56fea98ec16e5b67a4c981fe408",
-                    "committedDate": "2021-12-19T13:26:39Z"
-                  },
-                  {
-                    "message": "Merge pull request #1 from soma0sd/v1.0\n\nv1.0 version init",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/99945349b77cc39a6d4a99b0ceb0c0a68540268e",
-                    "committedDate": "2021-12-15T13:11:16Z"
-                  },
-                  {
-                    "message": "do not linting",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/bb0ac3d26f544daa9342ebebbd06094601b49c22",
-                    "committedDate": "2021-12-15T13:09:56Z"
-                  },
-                  {
-                    "message": "version init",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/f185d0bc758067dd840f4d21769019f901582032",
-                    "committedDate": "2021-12-15T13:05:29Z"
-                  },
-                  {
-                    "message": "Initial commit",
-                    "url": "https://github.com/soma0sd/Tistory-Simple-Skin/commit/ab5a7b2ec56772dcbd56d090275c291aa6fa78ec",
-                    "committedDate": "2021-12-14T10:15:32Z"
-                  }
-                ],
-                "totalCount": 18
-              }
-            },
-            "languages": {
-              "edges": [
-                {
-                  "size": 10342,
-                  "node": {
-                    "name": "Pug",
-                    "color": "#a86454"
-                  }
-                },
-                {
-                  "size": 7932,
-                  "node": {
-                    "name": "SCSS",
-                    "color": "#c6538c"
-                  }
-                },
-                {
-                  "size": 5560,
-                  "node": {
-                    "name": "JavaScript",
-                    "color": "#f1e05a"
-                  }
-                },
-                {
-                  "size": 3595,
-                  "node": {
-                    "name": "TypeScript",
-                    "color": "#3178c6"
                   }
                 }
               ]
