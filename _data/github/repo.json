@@ -4,7 +4,7 @@
     "description": null,
     "createdAt": "2021-12-14T10:15:29Z",
     "updatedAt": "2026-09-04T14:04:09Z",
-    "pushedAt": "2026-10-08T15:35:42Z",
+    "pushedAt": "2026-10-17T14:52:01Z",
     "url": "https://github.com/soma0sd/Tistory-Simple-Skin",
     "homepageUrl": null,
     "isArchived": false,
@@ -129,14 +129,39 @@
     "nameWithOwner": "soma0sd/Session-Meter",
     "description": "Claude·Codex·Gemini·Antigravity IDE 구독 사용량을 트레이 아이콘·데스크톱 위젯·통계 창으로 한눈에 보여 주는 Windows 데스크톱 앱. 5시간·주간 한도와 초기화까지 남은 시간, 소진 예측, 임계치 알림을 제공합니다. (Tauri v2 + Svelte)",
     "createdAt": "2026-07-18T13:18:06Z",
-    "updatedAt": "2026-10-05T13:06:57Z",
-    "pushedAt": "2026-10-05T13:08:07Z",
+    "updatedAt": "2026-10-14T02:08:19Z",
+    "pushedAt": "2026-10-14T02:08:39Z",
     "url": "https://github.com/soma0sd/Session-Meter",
     "homepageUrl": null,
     "isArchived": false,
     "isPrivate": false,
-    "commits": 29,
+    "commits": 34,
     "commit": [
+      {
+        "message": "fix: allow widget movement across monitors in v1.4.2 (#16)\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>",
+        "url": "https://github.com/soma0sd/Session-Meter/commit/7da8fe80df9e496a557a25bbf0e331e77ebd146b",
+        "date": "2026-10-14T02:08:14Z"
+      },
+      {
+        "message": "fix: use a proper gear for the settings icon and bump rustls in v1.4.1 (#15)\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Sonnet 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/soma0sd/Session-Meter/commit/58cbe79c391e2ec4d361b2f4811033763e12c42a",
+        "date": "2026-10-13T06:46:51Z"
+      },
+      {
+        "message": "chore(deps-dev): bump source-map-js from 1.2.1 to 1.2.2 (#14)\n\nResolve GHSA-68fv-2mgg-jv7q (indexed source-map section offsets can block\nthe event loop). The package is a transitive development dependency\n(vite -> postcss) and is not part of the installer.\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Sonnet 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/soma0sd/Session-Meter/commit/11fabf3d7d7963377851290e97cfd2d08ea8ef03",
+        "date": "2026-10-12T13:23:26Z"
+      },
+      {
+        "message": "chore(deps-dev): bump devalue from 5.8.1 to 5.9.4 (#12)\n\nBumps [devalue](https://github.com/sveltejs/devalue) from 5.8.1 to 5.9.4.\n- [Release notes](https://github.com/sveltejs/devalue/releases)\n- [Changelog](https://github.com/sveltejs/devalue/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/sveltejs/devalue/compare/v5.8.1...v5.9.4)\n\n---\nupdated-dependencies:\n- dependency-name: devalue\n  dependency-version: 5.9.4\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+        "url": "https://github.com/soma0sd/Session-Meter/commit/ef1036e8eacf4b2e51015c217d1cfff0f92d78c0",
+        "date": "2026-10-12T13:11:27Z"
+      },
+      {
+        "message": "docs: state Windows-only support in README and SECURITY (#13)\n\nRemove the macOS/Linux best-effort wording and the planned OS secret\nservice integration, which no longer match the project scope. Session\nstorage is described as DPAPI-encrypted, and the gtk3-rs advisory note\nnow refers to the supported platform (Windows).\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>\nCo-authored-by: Claude Sonnet 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/soma0sd/Session-Meter/commit/ed2cc6628d9d451c00e037eeaf041371ccdff3ca",
+        "date": "2026-10-12T13:09:11Z"
+      },
       {
         "message": "fix: preserve Codex sign-in across browser challenges in v1.4.0 (#11)\n\nCo-authored-by: soma0sd <soma0sd@users.noreply.github.com>",
         "url": "https://github.com/soma0sd/Session-Meter/commit/3dcb4fecca601d40c2c4d45c8273f9f781dcc200",
@@ -285,12 +310,12 @@
     ],
     "languages": [
       {
-        "size": 262148,
+        "size": 272844,
         "name": "Rust",
         "color": "#dea584"
       },
       {
-        "size": 129642,
+        "size": 130253,
         "name": "Svelte",
         "color": "#ff3e00"
       },
@@ -325,14 +350,19 @@
     "nameWithOwner": "soma0sd/soma0sd.github.io",
     "description": "GitHub Pages using GitHub GraphQL API",
     "createdAt": "2017-11-19T10:29:29Z",
-    "updatedAt": "2026-10-04T21:25:05Z",
-    "pushedAt": "2026-10-04T21:25:01Z",
+    "updatedAt": "2026-10-11T21:13:17Z",
+    "pushedAt": "2026-10-11T21:13:13Z",
     "url": "https://github.com/soma0sd/soma0sd.github.io",
     "homepageUrl": "https://soma0sd.github.io/",
     "isArchived": false,
     "isPrivate": false,
-    "commits": 49,
+    "commits": 50,
     "commit": [
+      {
+        "message": "chore(data): refresh GitHub API data",
+        "url": "https://github.com/soma0sd/soma0sd.github.io/commit/8690f8c75d574e7f6245ca643653668eb574c0ed",
+        "date": "2026-10-11T21:13:12Z"
+      },
       {
         "message": "chore(data): refresh GitHub API data",
         "url": "https://github.com/soma0sd/soma0sd.github.io/commit/1caa338b6472e87c1ff3e8d18f34631d191c8df0",
