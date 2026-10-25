@@ -1,6 +1,6 @@
 {
   "Python": {
-    "size": 13483285,
+    "size": 13484739,
     "color": "#3572A5"
   },
   "Shell": {
@@ -12,7 +12,7 @@
     "color": "#f34b7d"
   },
   "JavaScript": {
-    "size": 1743108,
+    "size": 1746976,
     "color": "#f1e05a"
   },
   "C": {
@@ -20,7 +20,7 @@
     "color": "#555555"
   },
   "TypeScript": {
-    "size": 504143,
+    "size": 504108,
     "color": "#3178c6"
   },
   "SCSS": {
@@ -28,7 +28,7 @@
     "color": "#c6538c"
   },
   "Rust": {
-    "size": 347425,
+    "size": 364883,
     "color": "#dea584"
   },
   "Cuda": {
@@ -56,11 +56,11 @@
     "color": "#B9D9FF"
   },
   "CSS": {
-    "size": 97752,
+    "size": 98656,
     "color": "#663399"
   },
   "HTML": {
-    "size": 95369,
+    "size": 95649,
     "color": "#e34c26"
   },
   "Dockerfile": {
@@ -72,7 +72,7 @@
     "color": "#7355dd"
   },
   "PowerShell": {
-    "size": 18665,
+    "size": 19244,
     "color": "#012456"
   },
   "Makefile": {
